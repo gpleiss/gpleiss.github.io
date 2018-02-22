@@ -1,11 +1,8 @@
 import React from 'react';
-import { Link, H1, SmallH2, NavH3, Img, InfoBlock, Section } from '../components/utils.js';
+import { Link, H1, SmallH2, Img, InfoBlock, Section } from '../components/utils.js';
 //import { Tooltip, Modal, ModalHeader, ModalBody } from 'reactstrap';
 //import Highlight from 'react-highlight';
 
-import CvList from '../components/cv_list.js';
-import PubItem from '../components/pub_item.js';
-import SoftwareItem from '../components/software_item.js';
 import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/fontawesome-free-brands';
 import { faFileAlt, faVideo } from '@fortawesome/fontawesome-free-solid';
