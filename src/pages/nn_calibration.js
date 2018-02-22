@@ -10,6 +10,10 @@ import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/fontawesome-free-brands';
 import { faFileAlt, faVideo } from '@fortawesome/fontawesome-free-solid';
 
+// Assets
+import cifarUncal from '../images/cifar_uncal.png';
+import cifarTemp from '../images/cifar_temp.png';
+
 
 class NNCalibration extends React.Component {
   constructor(props) {
@@ -116,13 +120,13 @@ class NNCalibration extends React.Component {
 
                 <div className="row text-center mt-5 mb-4">
                   <div className="col-12 col-lg-6 mb-2 mb-lg-0">
-                    <Img src="/images/cifar_uncal.png" maxWidth="300px" maxHeight="300px">
+                    <Img src={cifarUncal} maxWidth="300px" maxHeight="300px">
                       An uncalibrated neural network, before temperature scaling.
                       The reliability diagram indicates miscalibration.
                     </Img>
                   </div>
                   <div className="col-12 col-lg-6 mb-0">
-                    <Img src="/images/cifar_temp.png" maxWidth="300px" maxHeight="300px">
+                    <Img src={cifarTemp} maxWidth="300px" maxHeight="300px">
                       Neural network after temperature scaling.
                       The reliability diagram indicates a well-calibrated network.
                     </Img>

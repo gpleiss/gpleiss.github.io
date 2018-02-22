@@ -1,6 +1,4 @@
 import React from 'react';
-import './App.css';
-
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 import { faGithub, faInstagram } from '@fortawesome/fontawesome-free-brands';
@@ -9,9 +7,10 @@ import { Link as ExternalLink } from './components/utils.js'
 import Home from './pages/home.js';
 import NNCalibration from './pages/nn_calibration.js';
 
-const historyOptions = {
-  queryKey : false
-};
+// Assets
+import './App.css';
+import gscholarWhite from './images/gscholar-white.png';
+
 
 class App extends React.Component {
   render() {
@@ -28,7 +27,7 @@ class App extends React.Component {
               </li>
               <li className="ml-3">
                 <ExternalLink href="https://scholar.google.com/citations?user=XO8T-Y4AAAAJ&hl=en&oi=ao">
-                  <img src="/images/gscholar-white.png" style={{width: "36px"}} alt="Google Scholar" />
+                  <img src={gscholarWhite} style={{width: "36px"}} alt="Google Scholar" />
                 </ExternalLink>
               </li>
               <li className="ml-3">

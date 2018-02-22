@@ -4,6 +4,9 @@ import CvList from '../components/cv_list.js';
 import PubItem from '../components/pub_item.js';
 import SoftwareItem from '../components/software_item.js';
 
+// Assets
+import meImg from '../images/me.jpg';
+
 
 class Home extends React.Component {
   constructor(props) {
@@ -44,7 +47,7 @@ class Home extends React.Component {
             </p>
           </div>
           <div className="col-sm-3 text-center text-sm-right">
-            <img alt="Geoff Pleiss" src="/images/me.jpg" style={{width: '100%', maxWidth: '250px'}}></img>
+            <img alt="Geoff Pleiss" src={meImg} style={{width: '100%', maxWidth: '250px'}}></img>
           </div>
         </div>
 

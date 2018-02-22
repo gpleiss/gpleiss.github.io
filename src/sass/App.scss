@@ -1,0 +1,32 @@
+@import "_variables.scss";
+@import "_fonts.scss";
+@import "bootstrap/scss/bootstrap.scss";
+
+
+// Links
+.link-unstyled, .link-unstyled:link {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+
+// List comma
+li.list-inline-item-comma{
+  &:after {
+    content: ", ";
+  }
+
+  &:last-child:after {
+    content: "";
+  }
+}
+
+
+// Shadow
+.shadow-bottom {
+  @include box-shadow(0px 0px 10px 5px $gray-400);
+}
+
+.shadow-subtle {
+  @include box-shadow(0px 0px 2px 2px $gray-300);
+}
