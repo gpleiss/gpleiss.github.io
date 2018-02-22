@@ -14,7 +14,8 @@
     "react-dom": "^16.2.0",
     "react-router": "^4.2.0",
     "react-router-dom": "^4.2.2",
-    "react-scripts": "1.1.1"
+    "react-scripts": "1.1.1",
+    "react-snapshot": "^1.3.0"
   },
   "scripts": {
     "build-css": "node-sass-chokidar --include-path ./src/sass --include-path ./node_modules src/sass -o src/",
@@ -22,8 +23,15 @@
     "start-js": "react-scripts start",
     "build-js": "react-scripts build",
     "start": "npm-run-all -p watch-css start-js",
-    "build": "npm-run-all build-css build-js",
+    "build": "npm-run-all build-css build-js && react-snapshot",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "reactSnapshot": {
+    "include": [
+      "/index.html",
+      "/nn_calibration/index.html"
+    ],
+    "snapshotDelay": 300
   }
 }
