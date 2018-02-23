@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link, H1, SmallH2, Img, InfoBlock, Section } from '../components/utils.js';
+import { Code } from '../components/code.js';
 //import { Tooltip, Modal, ModalHeader, ModalBody } from 'reactstrap';
 //import Highlight from 'react-highlight';
 
@@ -180,6 +181,17 @@ class NNCalibration extends React.Component {
                   Temperature scaling can be added incredibly easily to any model.
                   In PyTorch for example, add the following to a model after training:
                 </p>
+                <Code className="python shadow-subtle pl-4 pr-4 pt-0 pb-0 mb-3 mt-3">{`
+class Model(torch.nn.Module):
+    def __init__(self):
+        # ...
+        self.temperature = torch.nn.Parameter(torch.ones(1))
+
+    def forward(self, x):
+        # ...
+        # logits = final output of neural network
+        return logits / self.temperature
+                `}</Code>
                 <p>
                   Then simply optimize the <code>self.temperature</code> parameter with a few iterations of gradient descent.
                   For a more complete example, check out this <Link href="https://github.com/gpleiss/temperature_scaling">PyTorch temperature scaling example on Github</Link>.
