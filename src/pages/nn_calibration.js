@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link, H1, SmallH2, Img, InfoBlock, Section } from '../components/utils.js';
 import { Code } from '../components/code.js';
+import { Math } from '../components/math.js';
 //import { Tooltip, Modal, ModalHeader, ModalBody } from 'reactstrap';
 //import Highlight from 'react-highlight';
 
@@ -153,8 +154,13 @@ class NNCalibration extends React.Component {
                   Temperature scaling simply divides the logits vector by a learned scalar parameter, i.e. 
 								</p>
 								<div className="text-center bg-light border-rounded p-1 mb-3 mt-3">
+                  <Math> 
+                    { "P( \\hat \\mathbf y ) = \\frac{e^{\\mathbf z / T}}{\\sum_j e^{z_j / T}}" }
+                  </Math>
 								</div>
 								<p>
+                  where <Math inline>{"\\hat y"}</Math> is the prediction, where <Math inline>{"\\mathbf z"}</Math> is the logit, and <Math inline>{"T"}</Math> is the learned parameter.
+									We learn this parameter on a validation set, where <Math inline>{"T"}</Math> is chosen to minimize negative log likelihood. 
                   Intuitively, temperature scaling simply softens the neural network outputs. 
                   This makes the network slightly less confident, which makes the confidence scores reflect true probabilities. 
                 </p>
