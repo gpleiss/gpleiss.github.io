@@ -2,8 +2,7 @@ import React from 'react';
 import { Link, H1, SmallH2, Img, InfoBlock, Section } from '../components/utils.js';
 import { Code } from '../components/code.js';
 import { Math } from '../components/math.js';
-//import { Tooltip, Modal, ModalHeader, ModalBody } from 'reactstrap';
-//import Highlight from 'react-highlight';
+import { Tooltip, Modal, ModalHeader, ModalBody } from 'reactstrap';
 
 import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/fontawesome-free-brands';
@@ -17,11 +16,11 @@ import cifarTemp from '../images/cifar_temp.png';
 class NNCalibration extends React.Component {
   constructor(props) {
     super(props);
-		this.toggleTooltip = this.toggleTooltip.bind(this);
-		this.toggleModal = this.toggleModal.bind(this);
+		this.toggleNiculescuTooltip = this.toggleNiculescuTooltip.bind(this);
+		this.toggleBibtexModal = this.toggleBibtexModal.bind(this);
     this.state = {
       items: [],
-			tooltipOpen: false,
+			niculescuTooltipOpen: false,
 			modalOpen: false,
       loading: false,
     };
@@ -35,15 +34,15 @@ class NNCalibration extends React.Component {
     this.setState(state);
   }
 
-	toggleTooltip() {
+	toggleNiculescuTooltip() {
 		this.setState({
-			tooltipOpen: !this.state.tooltipOpen
+			niculescuTooltipOpen: !this.state.niculescuTooltipOpen
 		});
 	}
 
-	toggleModal() {
+	toggleBibtexModal() {
 		this.setState({
-			modalOpen: !this.state.modalOpen
+			bibtexModalOpen: !this.state.bibtexModalOpen
 		});
 	}
 
@@ -139,11 +138,19 @@ class NNCalibration extends React.Component {
                 </p>
 
                 <p>
-                  A simple way to visualize calibration is plotting accuracy as a function of confidence (known as a <strong><a href="http://www.datascienceassn.org/sites/default/files/Predicting%20good%20probabilities%20with%20supervised%20learning.pdf" id="reliability-diagram">reliability diagram</a></strong>). 
+                  A simple way to visualize calibration is plotting accuracy as
+                  a function of confidence (known as a <strong><a
+                      href="http://www.datascienceassn.org/sites/default/files/Predicting%20good%20probabilities%20with%20supervised%20learning.pdf"
+                      id="cite-niculescu2005predicting">reliability
+                      diagram</a></strong>). 
                   Since confidence should reflect accuracy, we'd like for the plot to be an identity function. 
                   In the reliability diagrams above on the left, we see that a DenseNet trained on CIFAR-100 is extremely overconfident.
                   However, after applying temperature scaling, the network becomes very well calibrated.
                 </p>
+
+								<Tooltip placement="bottom" isOpen={this.state.niculescuTooltipOpen} target="cite-niculescu2005predicting" toggle={this.toggleNiculescuTooltip}>
+									Niculescu-Mizil, A., & Caruana, R. <strong>Predicting good probabilities with supervised learning</strong>. In <em>International Conference on Machine Learning</em>, 2005.
+								</Tooltip>
 							</Section>
 
               <Section id="temperature-scaling">
@@ -176,9 +183,23 @@ class NNCalibration extends React.Component {
                 </blockquote>	
                 <ul>
                   <li><Link href="https://arxiv.org/abs/1706.04599">Paper on ArXiV</Link></li>
-                  <li><button className="btn btn-link p-0" type="button" onClick={this.toggleModal}>BibTeX</button></li>
+                  <li><button className="btn btn-link p-0" type="button" onClick={this.toggleBibtexModal}>BibTeX</button></li>
                   <li><Link href="https://vimeo.com/238242536">Video of ICML talk</Link></li>
                 </ul>
+
+				        <Modal size="lg" isOpen={this.state.bibtexModalOpen} toggle={this.toggleBibtexModal}>
+									<ModalHeader toggle={this.toggleBibtexModal}>BibTeX</ModalHeader>
+									<ModalBody>
+										<pre>{`
+@inproceedings{guo2017calibration,
+  title={On calibration of modern neural networks},
+  author={Guo, Chuan and Pleiss, Geoff and Sun, Yu and Weinberger, Kilian Q},
+  journal={ICML},
+  year={2017}
+}	
+										`}</pre>
+									</ModalBody>
+								</Modal>
               </Section>
 
               <Section>
