@@ -45,15 +45,15 @@ class Math extends React.Component {
 
     if (this.state.katexHtml) {
       if (inline) {
-        return <span className="foo" {...props} dangerouslySetInnerHTML={{__html: this.state.katexHtml}} />;
+        return <span {...props} dangerouslySetInnerHTML={{__html: this.state.katexHtml}} />;
       } else {
-        return <div className="bar" {...props} dangerouslySetInnerHTML={{__html: this.state.katexHtml}} />;
+        return <div {...props} dangerouslySetInnerHTML={{__html: this.state.katexHtml}} />;
       }
     } else if (this.state.error) {
       throw this.state.error;
     }
 
-    return <div>...</div>;
+    return inline ? <span>...</span> : <div>...</div>;
   }
 }
 
