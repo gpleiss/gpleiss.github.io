@@ -1,14 +1,15 @@
 {
   "name": "geoffpleiss.com",
-  "homepage": "http://geoffpleiss.com",
+  "author": "Geoff Pleiss <gpleiss@gmail.com>",
+  "homepage": "http://geoffpleiss.com/",
   "version": "0.1.0",
-  "private": true,
   "dependencies": {
     "@fortawesome/fontawesome": "^1.1.3",
     "@fortawesome/fontawesome-free-brands": "^5.0.6",
     "@fortawesome/fontawesome-free-solid": "^5.0.6",
     "@fortawesome/react-fontawesome": "0.0.17",
     "bootstrap": "^4.0.0",
+    "gh-pages": "^1.1.0",
     "highlight.js": "^9.12.0",
     "katex": "^0.9.0",
     "node-sass-chokidar": "0.0.3",
