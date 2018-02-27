@@ -53,12 +53,17 @@ class NavH3 extends React.Component {
 
 class Img extends React.Component {
   render() {
-    let {maxWidth, maxHeight, children, ...props} = this.props;
+    let {captionClassName, maxWidth, maxHeight, children, ...props} = this.props;
+    let className = '';
+    captionClassName = captionClassName ? captionClassName : '';
+    captionClassName += ' figure-caption pt-2';
 
     return (
-      <figure className="bg-light border border-medium border-rounded p-3 shadow-subtle" {...props}>
-        <img src={this.props.src} className="figure-img rounded" alt={children} style={{maxWidth: maxWidth, maxHeight: maxHeight}} />
-        <figcaption className="figure-caption mt-2">
+      <figure className={className} {...props}>
+        <div className="bg-white p-3">
+          <img src={this.props.src} className="figure-img rounded" alt={children} style={{maxWidth: maxWidth, maxHeight: maxHeight}} />
+        </div>
+        <figcaption className={captionClassName}>
           {children}
         </figcaption>
       </figure>
@@ -68,12 +73,8 @@ class Img extends React.Component {
 
 class InfoBlock extends React.Component {
   render() {
-    let {shadow, children, ...props} = this.props;
-
-		let className = "bg-light p-4 border border-medium border-rounded";
-		if (shadow) {
-			className += " shadow-subtle";
-		}
+    let {children, ...props} = this.props;
+		let className = "p-5 font-italic border-bottom";
 
     return (
       <div className={className} {...props}>
@@ -85,12 +86,22 @@ class InfoBlock extends React.Component {
 
 class Section extends React.Component {
   render() {
-    let {first, children, ...props} = this.props;
-    let className = first ? "mb-5" : "border-top pt-5 mb-5";
+    let {first, firstMd, children, ...props} = this.props;
+    let className = '';
+    if (!first) {
+      className += ' border-top pt-5';
+    }
+    if (firstMd) {
+      className += ' d-md-none d-block';
+    }
 
     return (
-      <div className={className} {...props}>
-        {children}
+      <div>
+        <div className={className} {...props}>
+        </div>
+        <div className="mb-5">
+          {children}
+        </div>
       </div>
     );
   }

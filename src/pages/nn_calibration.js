@@ -55,13 +55,31 @@ class NNCalibration extends React.Component {
           </div>
         </div>
 
+        <div className="bg-gradient-light pt-5 pb-4 shadow-bottom" id="reliability-diagrams">
+          <div className="container text-center">
+            <div className="row text-center">
+              <div className="col-12 offset-lg-1 col-lg-5 mb-2 mb-lg-0">
+                <Img src={cifarUncal} maxWidth="300px" maxHeight="300px">
+                  An uncalibrated neural network, before temperature scaling.
+                  The reliability diagram indicates miscalibration.
+                </Img>
+              </div>
+              <div className="col-12 col-lg-5 mb-0">
+                <Img src={cifarTemp} maxWidth="300px" maxHeight="300px">
+                  Neural network after temperature scaling.
+                  The reliability diagram indicates a well-calibrated network.
+                </Img>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div className="container">
-          <div className="row mt-5">
+          <div className="row mt-3">
             <div className="col-12">
-              <InfoBlock shadow>
-                <p className="mb-0">
+              <InfoBlock>
+                <p className="mb-0 text-center">
                   In recent years, the confidence estimates of neural networks have become <em>increasingly miscalibrated</em>.
-                  Networks tend to be extremely overconfident, an artifact of increased network capacity and less explicit regularization.
                   However, we can remidy this miscalibration with an extremely simple post-processing step called <strong><Link inside href="#temperature-scaling">temperature scaling</Link></strong>.
                 </p>
               </InfoBlock>
@@ -71,7 +89,7 @@ class NNCalibration extends React.Component {
           <div className="row mt-5">
             <div className="col-12 col-md-3 order-12">
 							<div className="pl-4 pr-4">
-                <Section>
+                <Section firstMd>
                   <SmallH2 center>Quick Links</SmallH2>
                   <nav className="nav flex-column text-center">
                     <Link className="nav-link mt-0 pt-0 text-truncate" href="https://arxiv.org/abs/1706.04599">
@@ -109,27 +127,9 @@ class NNCalibration extends React.Component {
                   Ideally, these confidence scores should match the true correctness likelihood. 
                   For example, if we assign 80% confidence to 100 predictions, then we'd expect that 80% of the predictions are actually correct. 
                   If this is the case, we say the network is <strong>calibrated</strong>.
-                </p>
-
-                <p>
                   Modern neural networks tend to be very poorly calibrated.
                   We find that this is a result of recent architectural trends, such as increased network capacity and less regularization.
                 </p>
-
-                <div className="row text-center mt-5 mb-4">
-                  <div className="col-12 col-lg-6 mb-2 mb-lg-0">
-                    <Img src={cifarUncal} maxWidth="300px" maxHeight="300px">
-                      An uncalibrated neural network, before temperature scaling.
-                      The reliability diagram indicates miscalibration.
-                    </Img>
-                  </div>
-                  <div className="col-12 col-lg-6 mb-0">
-                    <Img src={cifarTemp} maxWidth="300px" maxHeight="300px">
-                      Neural network after temperature scaling.
-                      The reliability diagram indicates a well-calibrated network.
-                    </Img>
-                  </div>
-                </div>
 
                 <p>
                   There is a surprisingly simple recipe to fix this problem: <strong>Temperature Scaling</strong> is
@@ -144,7 +144,8 @@ class NNCalibration extends React.Component {
                       id="cite-niculescu2005predicting">reliability
                       diagram</a></strong>). 
                   Since confidence should reflect accuracy, we'd like for the plot to be an identity function. 
-                  In the reliability diagrams above on the left, we see that a DenseNet trained on CIFAR-100 is extremely overconfident.
+                  In the <Link inside href="#reliability-diagrams">reliability diagram above</Link> on the left, we see that a DenseNet
+                  trained on CIFAR-100 is extremely overconfident.
                   However, after applying temperature scaling, the network becomes very well calibrated.
                 </p>
 
