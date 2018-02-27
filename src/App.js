@@ -18,7 +18,7 @@ class App extends React.Component {
       <Router>
         <div>
           <header className="navbar navbar-expand bg-dark text-light flex-column flex-md-row">
-            <a className="navbar-brand m-0 mr-md-4 ml-md-4 link-unstyled small-caps h3" href="http://geoffpleiss.com">Geoff Pleiss</a>
+            <a className="navbar-brand m-0 mr-md-4 ml-md-4 link-unstyled small-caps h3" href="/">Geoff Pleiss</a>
             <ul className="navbar-nav m-0 mr-md-4 ml-md-4 flex-row ml-md-auto d-none d-md-flex">
               <li className="ml-3">
                 <ExternalLink href="http://github.com/gpleiss">

@@ -17,7 +17,7 @@ class PubItem extends React.Component {
     return <li key={this.props.title} className="row mb-4">
       <div className="col-md-8">
         <h4 className="h5 font-weight-bold">
-          <Link className="link-unstyled" href={this.props.arxiv}>
+          <Link inside className="link-unstyled" href={this.props.website}>
             {this.props.title}
           </Link>
         </h4>
