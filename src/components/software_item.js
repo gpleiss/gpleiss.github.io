@@ -11,7 +11,7 @@ class SoftwareItem extends React.Component {
             <Link className="link-unstyled" href={this.props.github}>
               {this.props.title}
             </Link>
-            {(this.props.status === 'development') ? <span className="ml-3 badge badge-info p-2 pl-3 pr-3">Under Development</span> : null}
+            {(!! this.props.status) ? <span className="ml-3 badge badge-info p-2 pl-3 pr-3">{this.props.status}</span> : null}
           </h4>
           <div>{this.props.tagline}</div>
           <div className="ml-3 mt-1 mb-1">

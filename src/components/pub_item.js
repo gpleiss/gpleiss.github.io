@@ -33,7 +33,10 @@ class PubItem extends React.Component {
           </ul>
           {!!note ? <small className="ml-3 text-muted">{note}</small> : null}
         </div>
-        <div className="mt-1 ml-3">&#8212; In {this.props.conference}, {this.props.year}</div>
+        {! this.props.underSubmission ?
+          <div className="mt-1 ml-3">&#8212; In {this.props.conference}, {this.props.year}</div> :
+          <div className="mt-1 ml-3 font-italic">&#8212; Under Submission</div>
+        }
       </div>
       <div className="col-md-4">
         <ul className="list-inline">

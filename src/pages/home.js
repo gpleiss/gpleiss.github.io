@@ -55,17 +55,32 @@ class Home extends React.Component {
           <div className="col-md-12">
 						<H2>Publications</H2>
 						<CvList className="list-unstyled">
+						  <PubItem title="Constant-Time Predictive Distributions for Gaussian Processes"
+                authors={[
+                  "Geoff Pleiss",
+                  "Jacob R. Gardner",
+                  "Kilian Q. Weinberger",
+                  "Andrew Gordon Wilson",
+                ]}
+                underSubmission
+                year="2018"
+                arxiv="https://arxiv.org/abs/1803.06058"
+                pdf="https://arxiv.org/pdf/1803.06058.pdf"
+                github="https://github.com/cornellius-gp/gpytorch"
+              />	
 						  <PubItem title="Product Kernel Interpolation for Scalable Gaussian Processes"
                 authors={[
-                  "Jake Gardner",
+                  "Jacob R. Gardner",
                   "Geoff Pleiss",
                   "Ruihan Wu",
-                  "Andrew Gordon Wilson",
                   "Kilian Q. Weinberger",
+                  "Andrew Gordon Wilson",
                 ]}
                 conference="AISTATS"
                 year="2018"
-                github="https://github.com/jrg365/gpytorch"
+                arxiv="https://arxiv.org/abs/1802.08903"
+                pdf="https://arxiv.org/pdf/1802.08903.pdf"
+                github="https://github.com/cornellius-gp/gpytorch"
               />	
 						  <PubItem title="On Fairness and Calibration"
                 authors={[
@@ -99,7 +114,7 @@ class Home extends React.Component {
 						  <PubItem title="Deep Feature Interpolation for Image Content Changes"
                 authors={[
                   "Paul Upchurch",
-                  "Jacob Gardner",
+                  "Jacob R. Gardner",
                   "Geoff Pleiss",
                   "Robert Pless",
                   "Noah Snavely",
@@ -151,12 +166,12 @@ class Home extends React.Component {
                 </p>
               </SoftwareItem>
               <SoftwareItem title="GPyTorch"
-                status="development"
+                status="Alpha Release"
                 coauthors={[
-                  "Jake Gardner"
+                  "Jacob R. Gardner"
                 ]}
                 tagline="A implementation of gaussian process models in PyTorch, designed for speed, modularity, and prototyping."
-                github="https://github.com/jrg365/GPyTorch"
+                github="https://github.com/cornellius-gp/GPyTorch"
               >
                 <p>
                   GPyTorch is intended to be used as a prototyping library for building complex hierarchical gaussian process models.
