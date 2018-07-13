@@ -62,7 +62,7 @@ class Home extends React.Component {
                   "Kilian Q. Weinberger",
                   "Andrew Gordon Wilson",
                 ]}
-                underSubmission
+                conference="ICML"
                 year="2018"
                 arxiv="https://arxiv.org/abs/1803.06058"
                 pdf="https://arxiv.org/pdf/1803.06058.pdf"
