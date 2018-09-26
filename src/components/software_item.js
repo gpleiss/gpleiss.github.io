@@ -31,6 +31,11 @@ class SoftwareItem extends React.Component {
               <Link className="btn btn-github btn-sm" role="button" href={this.props.github}>Github</Link>
             </li>
           : null}
+          {!!this.props.website ? 
+            <li className="mb-1 list-inline-item">
+              <Link className="btn btn-website btn-sm" role="button" href={this.props.website}>Website</Link>
+            </li>
+          : null}
         </ul>
       </div>
       <div className="p-3 bg-light">

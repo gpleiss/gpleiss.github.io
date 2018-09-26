@@ -20,6 +20,7 @@ class PubItem extends React.Component {
           <Link inside className="link-unstyled" href={this.props.website}>
             {this.props.title}
           </Link>
+          {this.props.award ? <span className="h6 pl-2 text-muted text-uppercase">[{this.props.award}]</span> : null}
         </h4>
         <div>
           <ul className="list-inline ml-3 mt-1">

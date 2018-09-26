@@ -51,10 +51,42 @@ class Home extends React.Component {
           </div>
         </div>
 
+        <div className="row pt-5">
+          <div className="col-sm-12">
+            <div className="jumbotron bg-light mb-0 pt-4">
+              <H2>News</H2>
+              <ul className="m-0">
+                <li>
+                  A beta-release of <Link href="https://gpytorch.ai">GPyTorch</Link> will be out soon!
+                </li> 
+                <li>
+                  We are presenting GPyTorch (and it's inference engine) at the PyTorch developer's conference on October 2nd.
+                </li> 
+                <li>
+                  Our paper "Blackbox Matrix&times;Matrix Gaussian Process Inference" will be a spotlight at NIPS this year.
+                </li> 
+              </ul>
+            </div>
+          </div>
+        </div>
+
+
         <div className="row pt-8">  
           <div className="col-md-12">
 						<H2>Publications</H2>
 						<CvList className="list-unstyled">
+						  <PubItem title="Blackbox Matrix&times;Matrix Gaussian Process Inference"
+                authors={[
+                  "Jacob R. Gardner*",
+                  "Geoff Pleiss*",
+                  "Kilian Q. Weinberger",
+                  "Andrew Gordon Wilson",
+                ]}
+                award="spotlight"
+                conference="NIPS"
+                year="2018"
+                github="https://github.com/cornellius-gp/gpytorch"
+              />	
 						  <PubItem title="Constant-Time Predictive Distributions for Gaussian Processes"
                 authors={[
                   "Geoff Pleiss",
@@ -150,6 +182,21 @@ class Home extends React.Component {
           <div className="col-md-12">
 						<H2>Open Source</H2>
 						<CvList>
+              <SoftwareItem title="GPyTorch"
+                status="Beta Release"
+                coauthors={[
+                  "Jacob R. Gardner"
+                ]}
+                tagline="A implementation of gaussian process models in PyTorch, designed for speed, modularity, and prototyping."
+                website="https://gpytorch.ai"
+                github="https://github.com/cornellius-gp/GPyTorch"
+              >
+                <p>
+                  GPyTorch is a GPU-accelerated Gaussian process library, written in PyTorch.
+                  It combines the latest techniques in scalable GPs with an intuitive and modular interface.
+                  It is designed for both expert GP researchers and non-expert practicioners.
+                </p>
+              </SoftwareItem>
               <SoftwareItem title="Memory-Efficient DenseNets (PyTorch)"
                 coauthors={[
                   "Danlu Chen",
@@ -163,19 +210,6 @@ class Home extends React.Component {
                   Most implementations of DenseNets create many intermediate outputs.
                   Without proper management, the memory needed to store these outputs grows quadratically with network depth.
                   This implementation uses shared-memory allocations to store intermediate outputs.
-                </p>
-              </SoftwareItem>
-              <SoftwareItem title="GPyTorch"
-                status="Alpha Release"
-                coauthors={[
-                  "Jacob R. Gardner"
-                ]}
-                tagline="A implementation of gaussian process models in PyTorch, designed for speed, modularity, and prototyping."
-                github="https://github.com/cornellius-gp/GPyTorch"
-              >
-                <p>
-                  GPyTorch is intended to be used as a prototyping library for building complex hierarchical gaussian process models.
-                  It is designed to be flexible and modular, so that non-experts can also use GPs.
                 </p>
               </SoftwareItem>
 						</CvList>
