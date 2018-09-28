@@ -56,7 +56,7 @@ class App extends React.Component {
 										Software
 									</DropdownToggle>
 									<DropdownMenu>
-										<DropdownItem href="https://github.com/cornellius-gp/gpytorch" target="_blank">
+										<DropdownItem href="https://gpytorch.ai" target="_blank">
                       GPyTorch
 										</DropdownItem>
 										<DropdownItem href="https://github.com/gpleiss/efficient_densenet_pytorch" target="_blank">
@@ -67,6 +67,11 @@ class App extends React.Component {
 										</DropdownItem>
 									</DropdownMenu>
 								</UncontrolledDropdown>
+                <NavItem>
+                  <NavLink href="https://gpytorch.ai" target="_blank">
+                    GPyTorch
+                  </NavLink>
+                </NavItem>
 							</Nav>
 						</Collapse>
             <Nav navbar className="m-0 mr-md-4 ml-md-4 ml-auto d-none d-md-flex">
