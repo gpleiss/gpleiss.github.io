@@ -57,13 +57,13 @@ class Home extends React.Component {
               <H2>News</H2>
               <ul className="m-0">
                 <li>
-                  A beta-release of <Link href="https://gpytorch.ai">GPyTorch</Link> will be out soon!
+                  <Link href="https://gpytorch.ai">GPyTorch 0.1</Link> (beta release) is now available!
                 </li> 
                 <li>
                   We are presenting GPyTorch (and it's inference engine) at the PyTorch developer's conference on October 2nd.
                 </li> 
                 <li>
-                  Our paper "Blackbox Matrix&times;Matrix Gaussian Process Inference" will be a spotlight at NIPS this year.
+                  Our paper "GPyTorch: Blackbox Matrix-Matrix Gaussian Process Inference with GPU Acceleration" will be a spotlight at NIPS this year.
                 </li> 
               </ul>
             </div>
@@ -75,13 +75,16 @@ class Home extends React.Component {
           <div className="col-md-12">
 						<H2>Publications</H2>
 						<CvList className="list-unstyled">
-						  <PubItem title="Blackbox Matrix&times;Matrix Gaussian Process Inference"
+						  <PubItem title="GPyTorch: Blackbox Matrix-Matrix Gaussian Process Inference with GPU Acceleration"
                 authors={[
                   "Jacob R. Gardner*",
                   "Geoff Pleiss*",
+                  "David BIndel",
                   "Kilian Q. Weinberger",
                   "Andrew Gordon Wilson",
                 ]}
+                arxiv="https://arxiv.org/abs/1809.11165"
+                pdf="https://arxiv.org/pdf/1809.11165.pdf"
                 award="spotlight"
                 conference="NIPS"
                 year="2018"
