@@ -60,10 +60,10 @@ class Home extends React.Component {
                   <Link href="https://gpytorch.ai">GPyTorch 0.1</Link> (beta release) is now available!
                 </li> 
                 <li>
-                  We are presenting GPyTorch (and it's inference engine) at the PyTorch developer's conference on October 2nd.
+                  We presented GPyTorch (and it's inference engine) at the PyTorch developer's conference on October 2nd.
                 </li> 
                 <li>
-                  Our paper "GPyTorch: Blackbox Matrix-Matrix Gaussian Process Inference with GPU Acceleration" will be a spotlight at NIPS this year.
+                  Our paper "GPyTorch: Blackbox Matrix-Matrix Gaussian Process Inference with GPU Acceleration" was a spotlight at NeurIPS 2018.
                 </li> 
               </ul>
             </div>
@@ -86,7 +86,7 @@ class Home extends React.Component {
                 arxiv="https://arxiv.org/abs/1809.11165"
                 pdf="https://arxiv.org/pdf/1809.11165.pdf"
                 award="spotlight"
-                conference="NIPS"
+                conference="NeurIPS"
                 year="2018"
                 github="https://github.com/cornellius-gp/gpytorch"
               />	
@@ -125,7 +125,7 @@ class Home extends React.Component {
                   "Jon Kleinberg",
                   "Kilian Q. Weinberger",
                 ]}
-                conference="NIPS"
+                conference="NeurIPS"
                 year="2017"
                 arxiv="https://arxiv.org/abs/1709.02012"
                 pdf="https://arxiv.org/pdf/1709.02012.pdf"
