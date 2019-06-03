@@ -31,7 +31,7 @@ class Home extends React.Component {
         <div className="row pt-10">
           <div className="col-sm-9">
             <p>
-              I am a third-year Ph.D. student in the <Link href="http://www.cs.cornell.edu/">CS department at Cornell University</Link>,
+              I am a fifth-year Ph.D. student in the <Link href="http://www.cs.cornell.edu/">CS department at Cornell University</Link>,
 							studying machine learning under <Link href="https://www.cs.cornell.edu/~kilian/">Prof. Kilian Weinberger</Link>.
 							My research interests are:
             </p>
@@ -57,29 +57,40 @@ class Home extends React.Component {
               <H2>News</H2>
               <ul className="m-0">
                 <li>
-                  <Link href="https://gpytorch.ai">GPyTorch 0.1</Link> (beta release) is now available!
+                  <Link href="https://gpytorch.ai">GPyTorch 0.3</Link> (beta release) is now available!
                 </li> 
                 <li>
-                  We presented GPyTorch (and it's inference engine) at the PyTorch developer's conference on October 2nd.
-                </li> 
-                <li>
-                  Our paper "GPyTorch: Blackbox Matrix-Matrix Gaussian Process Inference with GPU Acceleration" was a spotlight at NeurIPS 2018.
+                  I gave a presentation about GPyTorch at Uber's Bayesian Optimization Symposium on May 3rd.
                 </li> 
               </ul>
             </div>
           </div>
         </div>
 
-
         <div className="row pt-8">  
           <div className="col-md-12">
 						<H2>Publications</H2>
 						<CvList className="list-unstyled">
+						  <PubItem title="Exact Gaussian Processes on a Million Data Points"
+                authors={[
+                  "Ke Alexander Wang",
+                  "Geoff Pleiss*",
+                  "Jacob R. Gardner",
+                  "Stephen Tyree",
+                  "Kilian Q. Weinberger",
+                  "Andrew Gordon Wilson",
+                ]}
+                arxiv="https://arxiv.org/abs/1903.08114"
+                pdf="https://arxiv.org/pdf/1903.08114"
+                year="2019"
+                underSubmission
+                github="https://github.com/cornellius-gp/gpytorch/blob/master/examples/01_Simple_GP_Regression/Simple_MultiGPU_GP_Regression.ipynb"
+              />	
 						  <PubItem title="GPyTorch: Blackbox Matrix-Matrix Gaussian Process Inference with GPU Acceleration"
                 authors={[
                   "Jacob R. Gardner*",
                   "Geoff Pleiss*",
-                  "David BIndel",
+                  "David Bindel",
                   "Kilian Q. Weinberger",
                   "Andrew Gordon Wilson",
                 ]}
