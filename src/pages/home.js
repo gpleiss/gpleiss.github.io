@@ -6,6 +6,7 @@ import SoftwareItem from '../components/software_item.js';
 
 // Assets
 import meImg from '../images/me.jpg';
+import densenetJournal from '../papers/DenseNet_Journal.pdf';
 
 
 class Home extends React.Component {
@@ -31,19 +32,14 @@ class Home extends React.Component {
         <div className="row pt-10">
           <div className="col-sm-9">
             <p>
-              I am a fifth-year Ph.D. student in the <Link href="http://www.cs.cornell.edu/">CS department at Cornell University</Link>,
-							studying machine learning under <Link href="https://www.cs.cornell.edu/~kilian/">Prof. Kilian Weinberger</Link>.
-							My research interests are:
-            </p>
-            <ul>
-              <li>Calibrated uncertainty in ML</li>
-              <li>Combining Bayesian ML with deep learning</li>
-              <li>Scalable Gaussian processes</li>
-              <li>Fairness in ML</li>
-              <li>ML in health care</li>
-            </ul>
-            <p>
-							I hold a B.S. in engineering from <Link href="http://olin.edu">Olin College of Engineering</Link> in Needham, MA.
+							I am a fifth-year Ph.D. candidate in the CS department at Cornell University, as well as a researcher at <Link href="http://asapp.com">ASAPP Inc</Link>. 
+							My research interests intersect deep learning and Bayesian machine learning, with an emphasis on how to make learning algorithms more scalable, robust, and reliable.
+							In particular, my work focuses on calibrating uncertainty estimates, detecting anomalous training and test data, and speeding up Gaussian processes.
+						</p>
+						<p>
+							I co-created and maintain the <Link href="http://gpytorch.ai">GPyTorch</Link> Gaussian process library with <Link href="https://jacobrgardner.github.io/">Jake Gardner</Link>.
+							At Cornell I am advised by <Link href="http://kilian.cs.cornell.edu/">Kilian Weinberger</Link>, and have also worked closely with Andrew Gordon Wilson.
+              I received a B.S. from Olin College of Engineering
             </p>
           </div>
           <div className="col-sm-3 text-center text-sm-right">
@@ -57,7 +53,7 @@ class Home extends React.Component {
               <H2>News</H2>
               <ul className="m-0">
                 <li>
-                  <Link href="https://gpytorch.ai">GPyTorch 0.3</Link> (beta release) is now available!
+                  <Link href="https://gpytorch.ai">GPyTorch 1.0</Link> is now available!
                 </li> 
                 <li>
                   I gave a presentation about GPyTorch at Uber's Bayesian Optimization Symposium on May 3rd.
@@ -73,7 +69,7 @@ class Home extends React.Component {
 						<CvList className="list-unstyled">
 						  <PubItem title="Exact Gaussian Processes on a Million Data Points"
                 authors={[
-                  "Ke Alexander Wang",
+                  "Ke Alexander Wang*",
                   "Geoff Pleiss*",
                   "Jacob R. Gardner",
                   "Stephen Tyree",
@@ -82,9 +78,21 @@ class Home extends React.Component {
                 ]}
                 arxiv="https://arxiv.org/abs/1903.08114"
                 pdf="https://arxiv.org/pdf/1903.08114"
+                conference="NeurIPS"
                 year="2019"
-                underSubmission
                 github="https://github.com/cornellius-gp/gpytorch/blob/master/examples/01_Simple_GP_Regression/Simple_MultiGPU_GP_Regression.ipynb"
+              />	
+						  <PubItem title="Convolutional Networks with Dense Connectivity"
+                authors={[
+                  "Gao Huang",
+                  "Zhuang Liu",
+                  "Geoff Pleiss",
+                  "Laurens van der Maaten",
+                  "Kilian Q. Weinberger",
+                ]}
+                pdf={densenetJournal}
+                conference="Pattern Analysis and Machine Intelligence"
+                year="2019"
               />	
 						  <PubItem title="GPyTorch: Blackbox Matrix-Matrix Gaussian Process Inference with GPU Acceleration"
                 authors={[
@@ -197,7 +205,7 @@ class Home extends React.Component {
 						<H2>Open Source</H2>
 						<CvList>
               <SoftwareItem title="GPyTorch"
-                status="Beta Release"
+                status="v1.0 Release"
                 coauthors={[
                   "Jacob R. Gardner"
                 ]}
