@@ -4,25 +4,25 @@
   "homepage": "http://geoffpleiss.com/",
   "version": "0.1.0",
   "dependencies": {
-    "@fortawesome/fontawesome": "^1.1.3",
-    "@fortawesome/fontawesome-free-brands": "^5.0.6",
-    "@fortawesome/fontawesome-free-solid": "^5.0.6",
+    "@fortawesome/fontawesome": "^1.1.8",
+    "@fortawesome/fontawesome-free-brands": "^5.0.13",
+    "@fortawesome/fontawesome-free-solid": "^5.0.13",
     "@fortawesome/react-fontawesome": "0.0.17",
-    "bootstrap": "^4.0.0",
-    "gh-pages": "^1.1.0",
-    "highlight.js": "^9.12.0",
+    "bootstrap": "^4.4.1",
+    "gh-pages": "^1.2.0",
+    "highlight.js": "^9.18.1",
     "katex": "^0.9.0",
-    "node-sass-chokidar": "0.0.3",
-    "npm-run-all": "^4.1.2",
-    "react": "^16.2.0",
-    "react-dom": "^16.2.0",
-    "react-popper": "^0.8.2",
-    "react-router": "^4.2.0",
-    "react-router-dom": "^4.2.2",
-    "react-scripts": "1.1.1",
+    "node-sass-chokidar": "^1.4.0",
+    "npm-run-all": "^4.1.5",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-popper": "^0.8.3",
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "^3.4.0",
     "react-snapshot": "^1.3.0",
     "react-transition-group": "^1.2.1",
-    "reactstrap": "^5.0.0-beta"
+    "reactstrap": "^5.0.0"
   },
   "scripts": {
     "build-css": "node-sass-chokidar --include-path ./src/sass --include-path ./node_modules src/sass -o src/",
@@ -42,5 +42,17 @@
       "/nn_calibration/index.html"
     ],
     "snapshotDelay": 300
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }

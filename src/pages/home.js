@@ -67,6 +67,46 @@ class Home extends React.Component {
           <div className="col-md-12">
 						<H2>Publications</H2>
 						<CvList className="list-unstyled">
+						  <PubItem title="Identifying Mislabeled Data using the Area Under the Margin Ranking"
+                authors={[
+                  "Geoff Pleiss",
+                  "Tianyi Zhang",
+                  "Ethan R. Elenberg",
+                  "Kilian Q. Weinberger"
+                ]}
+                arxiv="https://arxiv.org/abs/2001.10528"
+                pdf="https://arxiv.org/pdf/2001.10528.pdf"
+                underSubmission
+                year="2020"
+              />	
+						  <PubItem title="Parametric Gaussian Process Regressors"
+                authors={[
+                  "Martin Jankowiak",
+                  "Geoff Pleiss",
+                  "Jacob R. Gardner",
+                ]}
+                arxiv="https://arxiv.org/abs/1910.07123"
+                pdf="https://arxiv.org/pdf/1910.07123.pdf"
+                github="https://github.com/cornellius-gp/gpytorch/blob/master/examples/04_Variational_and_Approximate_GPs/Approximate_GP_Objective_Functions.ipynb"
+                underSubmission
+                year="2020"
+              />	
+						  <PubItem title="Pseudo-lidar++: Accurate depth for 3d object detection in autonomous driving."
+                authors={[
+                  "Yurong You",
+                  "Yan Wang",
+                  "Wei-Lun Chao",
+                  "Divyansh Garg",
+                  "Geoff Pleiss",
+                  "Bharath Hariharan",
+                  "Mark Campbell",
+                  "Kilian Q. Weinberger"
+                ]}
+                arxiv="https://arxiv.org/abs/1906.06310"
+                pdf="https://arxiv.org/pdf/1906.06310.pdf"
+                conference="ICLR"
+                year="2020"
+              />	
 						  <PubItem title="Exact Gaussian Processes on a Million Data Points"
                 authors={[
                   "Ke Alexander Wang*",
@@ -92,6 +132,7 @@ class Home extends React.Component {
                 ]}
                 pdf={densenetJournal}
                 conference="Pattern Analysis and Machine Intelligence"
+                github="https://github.com/gpleiss/efficient_densenet_pytorch"
                 year="2019"
               />	
 						  <PubItem title="GPyTorch: Blackbox Matrix-Matrix Gaussian Process Inference with GPU Acceleration"
@@ -107,6 +148,7 @@ class Home extends React.Component {
                 award="spotlight"
                 conference="NeurIPS"
                 year="2018"
+                talk="https://www.videoken.com/embed/QcFGBPNh24E?tocitem=101"
                 github="https://github.com/cornellius-gp/gpytorch"
               />	
 						  <PubItem title="Constant-Time Predictive Distributions for Gaussian Processes"
