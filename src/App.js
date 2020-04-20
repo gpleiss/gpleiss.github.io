@@ -72,6 +72,11 @@ class App extends React.Component {
                     GPyTorch
                   </NavLink>
                 </NavItem>
+                <NavItem>
+                  <NavLink href="/geoff_pleiss_cv.pdf" target="_blank">
+                    CV
+                  </NavLink>
+                </NavItem>
 							</Nav>
 						</Collapse>
             <Nav navbar className="m-0 mr-md-4 ml-md-4 ml-auto d-none d-md-flex">

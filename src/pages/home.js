@@ -1,5 +1,4 @@
-import React from 'react';
-import { Link, H2 } from '../components/utils.js';
+import React from 'react'; import { Link, H2 } from '../components/utils.js';
 import CvList from '../components/cv_list.js';
 import PubItem from '../components/pub_item.js';
 import SoftwareItem from '../components/software_item.js';
@@ -39,7 +38,7 @@ class Home extends React.Component {
 						<p>
 							I co-created and maintain the <Link href="http://gpytorch.ai">GPyTorch</Link> Gaussian process library with <Link href="https://jacobrgardner.github.io/">Jake Gardner</Link>.
 							At Cornell I am advised by <Link href="http://kilian.cs.cornell.edu/">Kilian Weinberger</Link>, and have also worked closely with Andrew Gordon Wilson.
-              I received a B.S. from Olin College of Engineering
+              I received a B.S. from Olin College of Engineering.
             </p>
           </div>
           <div className="col-sm-3 text-center text-sm-right">
@@ -55,9 +54,6 @@ class Home extends React.Component {
                 <li>
                   <Link href="https://gpytorch.ai">GPyTorch 1.0</Link> is now available!
                 </li> 
-                <li>
-                  I gave a presentation about GPyTorch at Uber's Bayesian Optimization Symposium on May 3rd.
-                </li> 
               </ul>
             </div>
           </div>
@@ -67,6 +63,17 @@ class Home extends React.Component {
           <div className="col-md-12">
 						<H2>Publications</H2>
 						<CvList className="list-unstyled">
+						  <PubItem title="Deep Sigma Point Processes"
+                authors={[
+                  "Martin Jankowiak",
+                  "Geoff Pleiss",
+                  "Jacob R. Gardner",
+                ]}
+                arxiv="https://arxiv.org/abs/2002.09112"
+                pdf="https://arxiv.org/pdf/2002.09112.pdf"
+                underSubmission
+                year="2020"
+              />	
 						  <PubItem title="Identifying Mislabeled Data using the Area Under the Margin Ranking"
                 authors={[
                   "Geoff Pleiss",
@@ -104,6 +111,7 @@ class Home extends React.Component {
                 ]}
                 arxiv="https://arxiv.org/abs/1906.06310"
                 pdf="https://arxiv.org/pdf/1906.06310.pdf"
+                github="https://github.com/mileyan/Pseudo_Lidar_V2"
                 conference="ICLR"
                 year="2020"
               />	
