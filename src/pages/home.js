@@ -31,14 +31,15 @@ class Home extends React.Component {
         <div className="row pt-10">
           <div className="col-sm-9">
             <p>
-							I am a fifth-year Ph.D. candidate in the CS department at Cornell University, as well as a researcher at <Link href="http://asapp.com">ASAPP Inc</Link>. 
 							My research interests intersect deep learning and Bayesian machine learning, with an emphasis on how to make learning algorithms more scalable, robust, and reliable.
 							In particular, my work focuses on calibrating uncertainty estimates, detecting anomalous training and test data, and speeding up Gaussian processes.
 						</p>
+            <p>
+							I received my Ph.D. from the CS department at Cornell University.
+							I was advised by <Link href="http://kilian.cs.cornell.edu/">Kilian Weinberger</Link> and also worked closely with Andrew Gordon Wilson.
+						</p>
 						<p>
 							I co-created and maintain the <Link href="http://gpytorch.ai">GPyTorch</Link> Gaussian process library with <Link href="https://jacobrgardner.github.io/">Jake Gardner</Link>.
-							At Cornell I am advised by <Link href="http://kilian.cs.cornell.edu/">Kilian Weinberger</Link>, and have also worked closely with Andrew Gordon Wilson.
-              I received a B.S. from Olin College of Engineering.
             </p>
           </div>
           <div className="col-sm-3 text-center text-sm-right">
@@ -52,7 +53,17 @@ class Home extends React.Component {
               <H2>News</H2>
               <ul className="m-0">
                 <li>
-                  <Link href="https://gpytorch.ai">GPyTorch 1.0</Link> is now available!
+                  I will be joining John Cunningham's lab at Columbia University as a postdoc this September.
+                </li> 
+                <li>
+                  I successfully defended my thesis on May 28!
+                </li> 
+                <li>
+                  Our recent papers <Link href="https://arxiv.org/abs/1910.07123">Parametric Gaussian Process Regressors</Link>
+                  and <Link href="https://arxiv.org/abs/2002.09112">Deep Sigma Point Processes</Link> were accepted into ICML and UAI.
+                </li> 
+                <li>
+                  <Link href="https://gpytorch.ai">GPyTorch 1.1</Link> is now available.
                 </li> 
               </ul>
             </div>
@@ -63,17 +74,6 @@ class Home extends React.Component {
           <div className="col-md-12">
 						<H2>Publications</H2>
 						<CvList className="list-unstyled">
-						  <PubItem title="Deep Sigma Point Processes"
-                authors={[
-                  "Martin Jankowiak",
-                  "Geoff Pleiss",
-                  "Jacob R. Gardner",
-                ]}
-                arxiv="https://arxiv.org/abs/2002.09112"
-                pdf="https://arxiv.org/pdf/2002.09112.pdf"
-                underSubmission
-                year="2020"
-              />	
 						  <PubItem title="Identifying Mislabeled Data using the Area Under the Margin Ranking"
                 authors={[
                   "Geoff Pleiss",
@@ -83,7 +83,19 @@ class Home extends React.Component {
                 ]}
                 arxiv="https://arxiv.org/abs/2001.10528"
                 pdf="https://arxiv.org/pdf/2001.10528.pdf"
+                github="https://github.com/asappresearch/aum"
                 underSubmission
+                year="2020"
+              />	
+						  <PubItem title="Deep Sigma Point Processes"
+                authors={[
+                  "Martin Jankowiak",
+                  "Geoff Pleiss",
+                  "Jacob R. Gardner",
+                ]}
+                arxiv="https://arxiv.org/abs/2002.09112"
+                pdf="https://arxiv.org/pdf/2002.09112.pdf"
+                conference="UAI"
                 year="2020"
               />	
 						  <PubItem title="Parametric Gaussian Process Regressors"
@@ -95,7 +107,7 @@ class Home extends React.Component {
                 arxiv="https://arxiv.org/abs/1910.07123"
                 pdf="https://arxiv.org/pdf/1910.07123.pdf"
                 github="https://github.com/cornellius-gp/gpytorch/blob/master/examples/04_Variational_and_Approximate_GPs/Approximate_GP_Objective_Functions.ipynb"
-                underSubmission
+                conference="ICML"
                 year="2020"
               />	
 						  <PubItem title="Pseudo-lidar++: Accurate depth for 3d object detection in autonomous driving."
@@ -255,7 +267,7 @@ class Home extends React.Component {
 						<H2>Open Source</H2>
 						<CvList>
               <SoftwareItem title="GPyTorch"
-                status="v1.0 Release"
+                status="v1.1 Release"
                 coauthors={[
                   "Jacob R. Gardner"
                 ]}
@@ -267,6 +279,17 @@ class Home extends React.Component {
                   GPyTorch is a GPU-accelerated Gaussian process library, written in PyTorch.
                   It combines the latest techniques in scalable GPs with an intuitive and modular interface.
                   It is designed for both expert GP researchers and non-expert practicioners.
+                </p>
+              </SoftwareItem>
+              <SoftwareItem title="Area Under the Margin (AUM)"
+                coauthors={[
+                  "Josh Shapiro"
+                ]}
+                tagline="A Python package for computing the AUM statistic with PyTorch models."
+                github="https://github.com/asappresearch/aum"
+              >
+                <p>
+                  A pip-installable package for computing the AUM statistic with PyTorch models.
                 </p>
               </SoftwareItem>
               <SoftwareItem title="Memory-Efficient DenseNets (PyTorch)"
