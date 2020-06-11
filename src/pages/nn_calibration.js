@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, H1, SmallH2, Img, InfoBlock, Section } from '../components/utils.js';
+import { Link, H1, SmallH2, Img, Section } from '../components/utils.js';
 import { Code } from '../components/code.js';
 import { Math } from '../components/math.js';
 import { Tooltip, Modal, ModalHeader, ModalBody } from 'reactstrap';
@@ -75,17 +75,6 @@ class NNCalibration extends React.Component {
         </div>
 
         <div className="container">
-          <div className="row mt-3">
-            <div className="col-12">
-              <InfoBlock>
-                <p className="mb-0 text-center">
-                  In recent years, the confidence estimates of neural networks have become <em>increasingly miscalibrated</em>.
-                  However, we can remidy this miscalibration with an extremely simple post-processing step called <strong><Link inside href="#temperature-scaling">temperature scaling</Link></strong>.
-                </p>
-              </InfoBlock>
-            </div>
-          </div>
-
           <div className="row mt-5">
             <div className="col-12 col-md-3 order-12">
 							<div className="pl-4 pr-4">
@@ -150,7 +139,7 @@ class NNCalibration extends React.Component {
                 </p>
 
 								<Tooltip placement="bottom" isOpen={this.state.niculescuTooltipOpen} target="cite-niculescu2005predicting" toggle={this.toggleNiculescuTooltip}>
-									Niculescu-Mizil, A., & Caruana, R. <strong>Predicting good probabilities with supervised learning</strong>. In <em>International Conference on Machine Learning</em>, 2005.
+									Niculescu-Mizil, A., & Caruana, R. <strong>Predicting good probabilities with supervised learning</strong>. In <em>ICML</em>, 2005.
 								</Tooltip>
 							</Section>
 
@@ -180,7 +169,7 @@ class NNCalibration extends React.Component {
 									This work is introduced in:
                 </p>
                 <blockquote className="text-center mt-2 mb-3">
-                  Guo, C., Pleiss, G., Sun, Y. and Weinberger, K.Q.  <strong>On Calibration of Modern Neural Networks</strong>. In <em>International Conference on Machine Learning</em>, 2017.
+                  Guo, C., Pleiss, G., Sun, Y. and Weinberger, K.Q.  <strong>On Calibration of Modern Neural Networks</strong>. In <em>ICML</em>, 2017.
                 </blockquote>	
                 <ul>
                   <li><Link href="https://arxiv.org/abs/1706.04599">Paper on ArXiV</Link></li>

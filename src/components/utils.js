@@ -51,17 +51,35 @@ class NavH3 extends React.Component {
   }
 }
 
+class SmallH3 extends React.Component {
+  render() {
+    let {center, children, ...props} = this.props;
+
+		let className = "h6 text-uppercase mb-3 text-center"
+		if (!center) {
+			className += " text-md-left";
+		}
+
+    return <h3 className={className} {...props}>{children}</h3>
+  }
+}
+
 class Img extends React.Component {
   render() {
-    let {captionClassName, maxWidth, maxHeight, children, ...props} = this.props;
+    let {captionClassName, maxWidth, maxHeight, children, fluid, src, ...props} = this.props;
     let className = '';
     captionClassName = captionClassName ? captionClassName : '';
     captionClassName += ' figure-caption pt-2';
 
+    let imgClassName = 'figure-img rounded';
+    if (fluid) {
+      imgClassName += ' img-fluid';
+    }
+
     return (
       <figure className={className} {...props}>
         <div className="bg-white p-3">
-          <img src={this.props.src} className="figure-img rounded" alt={children} style={{maxWidth: maxWidth, maxHeight: maxHeight}} />
+          <img src={this.props.src} className={imgClassName} alt={children} style={{maxWidth: maxWidth, maxHeight: maxHeight}} />
         </div>
         <figcaption className={captionClassName}>
           {children}
@@ -113,6 +131,7 @@ export {
 	H2,
   SmallH2,
   NavH3,
+  SmallH3,
   Img,
   InfoBlock,
   Section,

@@ -7,6 +7,7 @@ import { Navbar, NavbarToggler, Collapse, NavbarBrand, Nav, NavItem, NavLink,
          UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
 import Home from './pages/home.js';
 import NNCalibration from './pages/nn_calibration.js';
+import AUM from './pages/aum.js';
 
 // Assets
 import './App.css';
@@ -45,6 +46,9 @@ class App extends React.Component {
 									<DropdownMenu>
 										<DropdownItem href="/nn_calibration">
 											Neural Network Calibration
+										</DropdownItem>
+										<DropdownItem href="/aum">
+											Area Under the Margin (AUM)
 										</DropdownItem>
 										<DropdownItem href="https://github.com/cornellius-gp/gpytorch" target="_blank">
 											Efficient Gaussian Processes
@@ -101,6 +105,7 @@ class App extends React.Component {
           <div>
             <Route exact path='/' component={ Home }/>
             <Route path="/nn_calibration" component={ NNCalibration }/>
+            <Route path="/aum" component={ AUM }/>
           </div>
         </div>
       </Router>
