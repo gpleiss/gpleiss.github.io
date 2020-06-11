@@ -23,6 +23,9 @@
     "react-transition-group": "^1.2.1",
     "reactstrap": "^5.0.0"
   },
+  "engines": {
+    "node": "10.5"
+  },
   "scripts": {
     "build-css": "node-sass-chokidar --include-path ./src/sass --include-path ./node_modules src/sass -o src/",
     "watch-css": "npm run build-css && node-sass-chokidar --include-path ./src/sass --include-path ./node_modules src/sass -o src/ --watch --recursive",
