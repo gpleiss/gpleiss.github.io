@@ -187,7 +187,7 @@ class AUM extends React.Component {
                 <SmallH2>The Area Under the Margin (AUM) Statistic</SmallH2>
 								<p>
 									Mislabeled samples hurt network generalization, while clean samples help generalization.
-									One simple metric that <Link id="margin-paper" href="http://papers.nips.cc/paper/7204-spectrally-normalized-margin-bounds-for-neural-networks">
+									One simple metric that <Link id="margin-paper" href="https://arxiv.org/abs/1810.00113">
 										has been shown to be strongly correlated with neural network generalization
 									</Link> is the <strong>margin</strong>.
 									At epoch <Math inline>t</Math>, the margin of sample <Math inline>{"(\\mathbf x, y)"}</Math> is defined as:
@@ -195,7 +195,7 @@ class AUM extends React.Component {
 
 								<Tooltip placement="bottom" isOpen={this.state.marginTooltipOpen} target="margin-paper" toggle={this.toggleMarginTooltip}>
 									E.g. 
-									Bartlett, P.L., Foster, D.J. and Telgarsky, M.J., <strong>Spectrally-normalized margin bounds for neural networks.</strong> In <em>NeurIPS</em>, 2017.
+									Jiang, Y., Krishnan, D., Mobahi, H. and Bengio, S., 2018. <strong>Predicting the generalization gap in deep networks with margin distributions.</strong> In <em>ICLR</em>, 2019.
 								</Tooltip>
 
 								<div className="text-center bg-light border-rounded p-1 mb-3 mt-3">
@@ -367,7 +367,7 @@ class AUM extends React.Component {
               <Section>
                 <SmallH2>Code</SmallH2>
 								<p>
-                  We offer a simple PyTorch library for computing the AUM statistic:
+                  We offer a simple PyTorch library (written by <Link href="http://www.jshapiro.info/">Josh Shapiro</Link>) for computing the AUM statistic:
                 </p>
                 <Code className="shell text-center shadow-subtle pl-4 pr-4 pt-0 pb-0 mb-3 mt-3" style={{fontSize: "1.25em"}}>{`
 pip install aum
@@ -414,6 +414,7 @@ for batch in loader:
                 <ul>
                   <li><Link href="https://arxiv.org/abs/2001.10528">Paper on ArXiV</Link></li>
                   <li><button className="btn btn-link p-0" type="button" onClick={this.toggleBibtexModal}>BibTeX</button></li>
+                  <li><Link href="https://github.com/asappresearch/aum">Code</Link> (written by <Link href="http://www.jshapiro.info/">Josh Shaprio</Link>)</li>
                 </ul>
 
 				        <Modal size="lg" isOpen={this.state.bibtexModalOpen} toggle={this.toggleBibtexModal}>
