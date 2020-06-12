@@ -35,13 +35,15 @@
     "build": "npm-run-all build-css build-js && react-snapshot",
     "predeploy": "npm run build",
     "deploy": "gh-pages -b master -d build",
+    "stage": "npm run build && cd build && mv index.html home.html && echo '<?php include_once(\"home.html\"); ?>' > index.php && echo '{}' > composer.json && git init && git add . && git ci -m Stuff && git remote add heroku https://git.heroku.com/geoffpleiss.git && git push heroku master -f; cd -",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
   "reactSnapshot": {
     "include": [
       "/index.html",
-      "/nn_calibration/index.html"
+      "/nn_calibration/index.html",
+      "/aum/index.html"
     ],
     "snapshotDelay": 300
   },
