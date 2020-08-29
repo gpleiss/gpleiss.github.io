@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.fcfe2daa.chunk.css",
-    "main.js": "/static/js/main.d87d1f48.chunk.js",
-    "main.js.map": "/static/js/main.d87d1f48.chunk.js.map",
+    "main.css": "/static/css/main.b8916a2e.chunk.css",
+    "main.js": "/static/js/main.40c32240.chunk.js",
+    "main.js.map": "/static/js/main.40c32240.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.de0bdea7.js",
     "runtime-main.js.map": "/static/js/runtime-main.de0bdea7.js.map",
     "static/css/2.fdb50765.chunk.css": "/static/css/2.fdb50765.chunk.css",
-    "static/js/2.12b31f10.chunk.js": "/static/js/2.12b31f10.chunk.js",
-    "static/js/2.12b31f10.chunk.js.map": "/static/js/2.12b31f10.chunk.js.map",
+    "static/js/2.d2283d16.chunk.js": "/static/js/2.d2283d16.chunk.js",
+    "static/js/2.d2283d16.chunk.js.map": "/static/js/2.d2283d16.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.2da6e0b50a1ae73feb7f0f53d42b2814.js": "/precache-manifest.2da6e0b50a1ae73feb7f0f53d42b2814.js",
+    "precache-manifest.66e000e4983f655d2c9c718afa6672ed.js": "/precache-manifest.66e000e4983f655d2c9c718afa6672ed.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.fdb50765.chunk.css.map": "/static/css/2.fdb50765.chunk.css.map",
-    "static/css/main.fcfe2daa.chunk.css.map": "/static/css/main.fcfe2daa.chunk.css.map",
-    "static/js/2.12b31f10.chunk.js.LICENSE.txt": "/static/js/2.12b31f10.chunk.js.LICENSE.txt",
+    "static/css/main.b8916a2e.chunk.css.map": "/static/css/main.b8916a2e.chunk.css.map",
+    "static/js/2.d2283d16.chunk.js.LICENSE.txt": "/static/js/2.d2283d16.chunk.js.LICENSE.txt",
     "static/media/DenseNet_Journal.pdf": "/static/media/DenseNet_Journal.8791eef8.pdf",
     "static/media/katex.css": "/static/media/KaTeX_Typewriter-Regular.f43e8696.woff2",
     "static/media/averaged_trajectories_clean.png": "/static/media/averaged_trajectories_clean.d1e0f3f2.png",
@@ -28,6 +28,7 @@
     "static/media/cifar8.png": "/static/media/cifar8.bfcd5763.png",
     "static/media/cifar_temp.png": "/static/media/cifar_temp.8c566b45.png",
     "static/media/cifar_uncal.png": "/static/media/cifar_uncal.eed183f7.png",
+    "static/media/gpleiss_thesis.pdf": "/static/media/gpleiss_thesis.d218bc00.pdf",
     "static/media/imagenet1.png": "/static/media/imagenet1.90666ccb.png",
     "static/media/imagenet2.png": "/static/media/imagenet2.4607c876.png",
     "static/media/imagenet3.png": "/static/media/imagenet3.df4f16c1.png",
@@ -36,7 +37,7 @@
     "static/media/imagenet6.png": "/static/media/imagenet6.ba3be719.png",
     "static/media/imagenet7.png": "/static/media/imagenet7.e8009a7f.png",
     "static/media/imagenet8.png": "/static/media/imagenet8.1396e7e6.png",
-    "static/media/me.jpg": "/static/media/me.b77552d8.jpg",
+    "static/media/me.png": "/static/media/me.8a12646a.png",
     "static/media/mnist.png": "/static/media/mnist.4cb9b0a5.png",
     "static/media/App.css": "/static/media/proxima_nova_alt_regular-webfont.e802340f.eot",
     "static/media/webvision1.png": "/static/media/webvision1.1b88f3e8.png",
@@ -51,8 +52,8 @@
   "entrypoints": [
     "static/js/runtime-main.de0bdea7.js",
     "static/css/2.fdb50765.chunk.css",
-    "static/js/2.12b31f10.chunk.js",
-    "static/css/main.fcfe2daa.chunk.css",
-    "static/js/main.d87d1f48.chunk.js"
+    "static/js/2.d2283d16.chunk.js",
+    "static/css/main.b8916a2e.chunk.css",
+    "static/js/main.40c32240.chunk.js"
   ]
 }
