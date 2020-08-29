@@ -4,7 +4,7 @@ import PubItem from '../components/pub_item.js';
 import SoftwareItem from '../components/software_item.js';
 
 // Assets
-import meImg from '../images/me.png';
+import meImg from '../images/me.jpg';
 import densenetJournal from '../papers/DenseNet_Journal.pdf';
 import thesis from '../papers/gpleiss_thesis.pdf';
 
