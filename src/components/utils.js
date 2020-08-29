@@ -20,8 +20,14 @@ class H1 extends React.Component {
 
 class H2 extends React.Component {
   render() {
-    let {children, ...props} = this.props;
-    return <h2 className="mb-5 text-dark text-uppercase" {...props}>{children}</h2>
+    let {children, className, noMb, ...props} = this.props;
+    className = className || "";
+    let fontName = className.indexOf("text-") === -1 ? "text-dark" : "";
+    className = fontName + " text-uppercase " + className;
+    if (!noMb) {
+      className += " mb-5";
+    }
+    return <h2 className={className} {...props}>{children}</h2>
   }
 }
 

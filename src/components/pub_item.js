@@ -15,7 +15,7 @@ class PubItem extends React.Component {
     }
 
     return <li key={this.props.title} className="row mb-4">
-      <div className="col-md-8">
+      <div className="col-md-9">
         <h4 className="h5 font-weight-bold">
           <Link inside className="link-unstyled" href={this.props.website}>
             {this.props.title}
@@ -34,12 +34,14 @@ class PubItem extends React.Component {
           </ul>
           {!!note ? <small className="ml-3 text-muted">{note}</small> : null}
         </div>
-        {! this.props.underSubmission ?
-          <div className="mt-1 ml-3">&#8212; In {this.props.conference}, {this.props.year}</div> :
-          <div className="mt-1 ml-3 font-italic">&#8212; Under Submission</div>
+        { this.props.underSubmission ?
+          <div className="mt-1 ml-3 font-italic">&#8212; Under Submission</div> :
+          this.props.thesis ? 
+           <div className="mt-1 ml-3 font-italic">Ph.D. Thesis, {this.props.year}</div> :
+           <div className="mt-1 ml-3">&#8212; In {this.props.conference}, {this.props.year}</div>
         }
       </div>
-      <div className="col-md-4">
+      <div className="col-md-3">
         <ul className="list-inline">
           {!! this.props.pdf ? 
             <li className="mb-1 list-inline-item">

@@ -38,9 +38,6 @@ class SoftwareItem extends React.Component {
           : null}
         </ul>
       </div>
-      <div className="p-3 bg-light">
-        {this.props.children}
-      </div>
     </li>
   }
 }
