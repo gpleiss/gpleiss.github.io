@@ -409,7 +409,7 @@ for batch in loader:
               <Section>
                 <SmallH2>References</SmallH2>
                 <blockquote className="text-center mt-2 mb-3">
-                  Pleiss, G., Zhang, T., Elenberg, E. R., & Weinberger, K. Q. <strong>Identifying Mislabeled Data using the Area Under the Margin Ranking.</strong> arXiv preprint arXiv:2001.10528 (2020).
+                  Pleiss, G., Zhang, T., Elenberg, E. R., & Weinberger, K. Q. <strong>Identifying Mislabeled Data using the Area Under the Margin Ranking.</strong> In <em>Neural Information Processing Systems</em> (2020).
                 </blockquote>	
                 <ul>
                   <li><Link href="https://arxiv.org/abs/2001.10528">Paper on ArXiV</Link></li>
@@ -421,10 +421,10 @@ for batch in loader:
 									<ModalHeader toggle={this.toggleBibtexModal}>BibTeX</ModalHeader>
 									<ModalBody>
 										<pre>{`
-@article{pleiss2020identifying,
+@inproceedings{pleiss2020identifying,
   title={Identifying Mislabeled Data using the Area Under the Margin Ranking},
   author={Pleiss, Geoff and Zhang, Tianyi and Elenberg, Ethan R. and Weinberger, Kilian Q.},
-  journal={arXiv preprint arXiv:2001.10528},
+  booktitle={Neural Information Processing Systems},
   year={2020}
 }
 										`}</pre>

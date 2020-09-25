@@ -84,7 +84,7 @@ class Home extends React.Component {
                     ]}
                     arxiv="https://arxiv.org/abs/2006.11267"
                     pdf="https://arxiv.org/pdf/2006.11267.pdf"
-                    underSubmission
+                    conference="NeurIPS"
                     year="2020"
                   />	
                   <PubItem title="Identifying Mislabeled Data using the Area Under the Margin Ranking"
@@ -97,7 +97,7 @@ class Home extends React.Component {
                     arxiv="https://arxiv.org/abs/2001.10528"
                     pdf="https://arxiv.org/pdf/2001.10528.pdf"
                     github="https://github.com/asappresearch/aum"
-                    underSubmission
+                    conference="NeurIPS"
                     year="2020"
                   />	
                   <PubItem title="Deep Sigma Point Processes"
