@@ -2,6 +2,8 @@ import React from 'react'; import { Link, H2 } from '../components/utils.js';
 import CvList from '../components/cv_list.js';
 import PubItem from '../components/pub_item.js';
 import SoftwareItem from '../components/software_item.js';
+import FontAwesomeIcon from '@fortawesome/react-fontawesome';
+import { faEnvelopeSquare } from '@fortawesome/fontawesome-free-solid';
 
 // Assets
 import meImg from '../images/me.jpg';
@@ -39,7 +41,9 @@ class Home extends React.Component {
               <p className="mb-5 text-muted font-italic">
                 Postdoctoral Research Scientist<br />
                 <Link className="text-muted" href="https://zuckermaninstitute.columbia.edu/">Zuckerman Institute</Link>,{" "}
-                <Link className="text-muted" href="http://stat.columbia.edu/">Columbia University</Link>
+                <Link className="text-muted" href="http://stat.columbia.edu/">Columbia University</Link><br />
+                <FontAwesomeIcon icon={faEnvelopeSquare} size="1.5x" title="Email: " className="mr-3" />
+                gmp2162 &lt;at&gt; columbia.edu
               </p>
               <picture className="text-center float-md-right d-block d-md-none mb-5">
                 <img className="rounded img-thumbnail" alt="Geoff Pleiss" src={meImg} style={{width: '100%', maxWidth: '300px'}}></img>

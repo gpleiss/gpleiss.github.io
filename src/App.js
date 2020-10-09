@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import FontAwesomeIcon from '@fortawesome/react-fontawesome';
-import { faGithub, faInstagram } from '@fortawesome/fontawesome-free-brands';
+import { faGithub, faTwitter } from '@fortawesome/fontawesome-free-brands';
 
 import { Navbar, NavbarToggler, Collapse, NavbarBrand, Nav, NavItem, NavLink,
          UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
@@ -95,8 +95,8 @@ class App extends React.Component {
                 </NavLink>
               </NavItem>
               <NavItem className="ml-3">
-                <NavLink className="text-white" href="http://instagram.com/gpleiss" target="_blank">
-                  <FontAwesomeIcon icon={faInstagram} size="2x" title="Instagram" />
+                <NavLink className="text-white" href="http://twitter.com/gpleiss" target="_blank">
+                  <FontAwesomeIcon icon={faTwitter} size="2x" title="Twitter" />
                 </NavLink>
               </NavItem>
             </Nav>
