@@ -1,24 +1,26 @@
 {
   "files": {
     "main.css": "/static/css/main.b8916a2e.chunk.css",
-    "main.js": "/static/js/main.e1f8c041.chunk.js",
-    "main.js.map": "/static/js/main.e1f8c041.chunk.js.map",
+    "main.js": "/static/js/main.b1cb86b5.chunk.js",
+    "main.js.map": "/static/js/main.b1cb86b5.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.de0bdea7.js",
     "runtime-main.js.map": "/static/js/runtime-main.de0bdea7.js.map",
     "static/css/2.fdb50765.chunk.css": "/static/css/2.fdb50765.chunk.css",
-    "static/js/2.5e1be00f.chunk.js": "/static/js/2.5e1be00f.chunk.js",
-    "static/js/2.5e1be00f.chunk.js.map": "/static/js/2.5e1be00f.chunk.js.map",
+    "static/js/2.e23e909e.chunk.js": "/static/js/2.e23e909e.chunk.js",
+    "static/js/2.e23e909e.chunk.js.map": "/static/js/2.e23e909e.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.74192d3b0bf82c0be80af09a214110f6.js": "/precache-manifest.74192d3b0bf82c0be80af09a214110f6.js",
+    "precache-manifest.0707c10ebd3e20b5148c855ccd3e4f3f.js": "/precache-manifest.0707c10ebd3e20b5148c855ccd3e4f3f.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.fdb50765.chunk.css.map": "/static/css/2.fdb50765.chunk.css.map",
     "static/css/main.b8916a2e.chunk.css.map": "/static/css/main.b8916a2e.chunk.css.map",
-    "static/js/2.5e1be00f.chunk.js.LICENSE.txt": "/static/js/2.5e1be00f.chunk.js.LICENSE.txt",
+    "static/js/2.e23e909e.chunk.js.LICENSE.txt": "/static/js/2.e23e909e.chunk.js.LICENSE.txt",
     "static/media/DenseNet_Journal.pdf": "/static/media/DenseNet_Journal.8791eef8.pdf",
     "static/media/katex.css": "/static/media/KaTeX_Typewriter-Regular.f43e8696.woff2",
     "static/media/averaged_trajectories_clean.png": "/static/media/averaged_trajectories_clean.d1e0f3f2.png",
     "static/media/averaged_trajectories_mislabeled.png": "/static/media/averaged_trajectories_mislabeled.f16b9d8d.png",
     "static/media/cifar1.png": "/static/media/cifar1.7d34c260.png",
+    "static/media/cifar100_high_aum.csv": "/static/media/cifar100_high_aum.cf8272e5.csv",
+    "static/media/cifar10_high_aum.csv": "/static/media/cifar10_high_aum.1d188306.csv",
     "static/media/cifar2.png": "/static/media/cifar2.f8549a14.png",
     "static/media/cifar3.png": "/static/media/cifar3.781af702.png",
     "static/media/cifar4.png": "/static/media/cifar4.1b9aabd1.png",
@@ -52,8 +54,8 @@
   "entrypoints": [
     "static/js/runtime-main.de0bdea7.js",
     "static/css/2.fdb50765.chunk.css",
-    "static/js/2.5e1be00f.chunk.js",
+    "static/js/2.e23e909e.chunk.js",
     "static/css/main.b8916a2e.chunk.css",
-    "static/js/main.e1f8c041.chunk.js"
+    "static/js/main.b1cb86b5.chunk.js"
   ]
 }
