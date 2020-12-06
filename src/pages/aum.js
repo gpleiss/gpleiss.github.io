@@ -36,6 +36,10 @@ import webvision6 from '../images/webvision6.png';
 import webvision7 from '../images/webvision7.png';
 import webvision8 from '../images/webvision8.png';
 
+// Mislabeled sample lists
+import cifar10List from "../papers/cifar10_high_aum.csv";
+import cifar100List from "../papers/cifar100_high_aum.csv";
+
 
 class AUM extends React.Component {
   constructor(props) {
@@ -387,11 +391,14 @@ for batch in loader:
                 `}</Code>
               </Section>
 
-              <Section>
-								<SmallH2>List of Mislabeled Examples in CIFAR/ImageNet</SmallH2>
-								<p>
-									Coming soon!
-								</p>
+              <Section id="list_of_mislabeled_examples">
+								<SmallH2>List of Mislabeled Examples in CIFAR</SmallH2>
+                The following are list of highly-suspicious/low-quality samples identified in the CIFAR dataset.
+                It countains the training set index, the assigned-class label, as well as the AUM score.
+                <ul>
+                  <li><Link href={cifar10List}>List of mislabeled CIFAR10 training data</Link></li>
+                  <li><Link href={cifar100List}>List of mislabeled CIFAR100 training data</Link></li>
+                </ul>
               </Section>
 
               <Section>
