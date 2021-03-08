@@ -8,6 +8,7 @@ import { faEnvelopeSquare } from '@fortawesome/fontawesome-free-solid';
 // Assets
 import meImg from '../images/me.jpg';
 import densenetJournal from '../papers/DenseNet_Journal.pdf';
+import hydrometeorologyJournal from '../papers/Hydrometeorology_Journal.pdf';
 import thesis from '../papers/gpleiss_thesis.pdf';
 
 
@@ -70,6 +71,45 @@ class Home extends React.Component {
               <div className="col-md-12">
                 <H2>Publications</H2>
                 <CvList className="list-unstyled">
+                  <PubItem title="Bias-Free Scalable Gaussian Processes via Randomized Truncations"
+                    authors={[
+                      "Andres Potapczynski",
+                      "Luhuan Wu",
+                      "Dan Biderman",
+                      "Geoff Pleiss",
+                      "John P. Cunningham"
+                    ]}
+                    arxiv="https://arxiv.org/abs/2102.06695"
+                    pdf="https://arxiv.org/pdf/2102.06695"
+                    underSubmission
+                    year="2021"
+                  />	
+                  <PubItem title="Hierarchical Inducing Point Gaussian Process for Inter-domain Observations"
+                    authors={[
+                      "Luhuan Wu",
+                      "Andrew Miller",
+                      "Lauren Anderson",
+                      "Geoff Pleiss",
+                      "David Blei",
+                      "John P. Cunningham"
+                    ]}
+                    arxiv="https://arxiv.org/abs/2103.00393"
+                    pdf="https://arxiv.org/pdf/2103.00393.pdf"
+                    conference="AISTATS"
+                    year="2021"
+                  />	
+                  <PubItem title="Uses and Abuses of the Cross-Entropy Loss: Case Studies in Modern Deep Learning"
+                    authors={[
+                      "Elliott Gordon-Rodriguez",
+                      "Gabriel Loaiza-Ganem",
+                      "Geoff Pleiss",
+                      "John P. Cunningham"
+                    ]}
+                    arxiv="https://arxiv.org/abs/2011.05231"
+                    pdf="https://arxiv.org/pdf/2011.05231.pdf"
+                    conference="NeurIPS &quot;I Can&#39;t Believe It&#39;s Not Better&#33;&quot; Workshop"
+                    year="2020"
+                  />	
                   <PubItem title="A Scalable and Flexible Framework for Gaussian Processes via Matrix-Vector Multiplication"
                     authors={[
                       "Geoff Pleiss",
@@ -88,6 +128,8 @@ class Home extends React.Component {
                     ]}
                     arxiv="https://arxiv.org/abs/2006.11267"
                     pdf="https://arxiv.org/pdf/2006.11267.pdf"
+                    github="https://arxiv.org/pdf/2102.06695"
+                    talk="https://slideslive.com/38936908/fast-matrix-square-roots-with-applications-to-gaussian-processes-and-bayesian-optimization?ref=speaker-27667-latest"
                     conference="NeurIPS"
                     year="2020"
                   />	
@@ -101,6 +143,7 @@ class Home extends React.Component {
                     arxiv="https://arxiv.org/abs/2001.10528"
                     pdf="https://arxiv.org/pdf/2001.10528.pdf"
                     github="https://github.com/asappresearch/aum"
+                    talk="https://slideslive.com/38936900/identifying-mislabeled-data-using-the-area-under-the-margin-ranking?ref=speaker-27667-latest"
                     conference="NeurIPS"
                     year="2020"
                   />	
@@ -171,6 +214,19 @@ class Home extends React.Component {
                     pdf={densenetJournal}
                     conference="Pattern Analysis and Machine Intelligence"
                     github="https://github.com/gpleiss/efficient_densenet_pytorch"
+                    year="2019"
+                  />	
+                  <PubItem title="Potential Predictability of Regional Precipitation and Discharge Extremes Using Synoptic-Scale Climate Information via Machine Learning"
+                    authors={[
+                      "James Knighton",
+                      "Geoff Pleiss",
+                      "Elizabeth Carter",
+                      "Steven Lyon",
+                      "M Todd Walter",
+                      "Scott Steinschneider",
+                    ]}
+                    pdf={hydrometeorologyJournal}
+                    conference="Journal of Hydrometeorology"
                     year="2019"
                   />	
                   <PubItem title="GPyTorch: Blackbox Matrix-Matrix Gaussian Process Inference with GPU Acceleration"
@@ -289,7 +345,7 @@ class Home extends React.Component {
                 <H2 className="text-light">Open Source</H2>
                 <CvList>
                   <SoftwareItem title="GPyTorch"
-                    status="v1.1 Release"
+                    status="v1.4 Release"
                     coauthors={[
                       "Jacob R. Gardner"
                     ]}
