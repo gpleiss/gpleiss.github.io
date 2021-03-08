@@ -1,20 +1,21 @@
 {
   "files": {
     "main.css": "/static/css/main.b8916a2e.chunk.css",
-    "main.js": "/static/js/main.b1cb86b5.chunk.js",
-    "main.js.map": "/static/js/main.b1cb86b5.chunk.js.map",
+    "main.js": "/static/js/main.00d411b9.chunk.js",
+    "main.js.map": "/static/js/main.00d411b9.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.de0bdea7.js",
     "runtime-main.js.map": "/static/js/runtime-main.de0bdea7.js.map",
     "static/css/2.fdb50765.chunk.css": "/static/css/2.fdb50765.chunk.css",
-    "static/js/2.e23e909e.chunk.js": "/static/js/2.e23e909e.chunk.js",
-    "static/js/2.e23e909e.chunk.js.map": "/static/js/2.e23e909e.chunk.js.map",
+    "static/js/2.f54b3ae7.chunk.js": "/static/js/2.f54b3ae7.chunk.js",
+    "static/js/2.f54b3ae7.chunk.js.map": "/static/js/2.f54b3ae7.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.0707c10ebd3e20b5148c855ccd3e4f3f.js": "/precache-manifest.0707c10ebd3e20b5148c855ccd3e4f3f.js",
+    "precache-manifest.2d0e0d1c05c53b8fae8f2b70ad440d75.js": "/precache-manifest.2d0e0d1c05c53b8fae8f2b70ad440d75.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.fdb50765.chunk.css.map": "/static/css/2.fdb50765.chunk.css.map",
     "static/css/main.b8916a2e.chunk.css.map": "/static/css/main.b8916a2e.chunk.css.map",
-    "static/js/2.e23e909e.chunk.js.LICENSE.txt": "/static/js/2.e23e909e.chunk.js.LICENSE.txt",
+    "static/js/2.f54b3ae7.chunk.js.LICENSE.txt": "/static/js/2.f54b3ae7.chunk.js.LICENSE.txt",
     "static/media/DenseNet_Journal.pdf": "/static/media/DenseNet_Journal.8791eef8.pdf",
+    "static/media/Hydrometeorology_Journal.pdf": "/static/media/Hydrometeorology_Journal.f6acb318.pdf",
     "static/media/katex.css": "/static/media/KaTeX_Typewriter-Regular.f43e8696.woff2",
     "static/media/averaged_trajectories_clean.png": "/static/media/averaged_trajectories_clean.d1e0f3f2.png",
     "static/media/averaged_trajectories_mislabeled.png": "/static/media/averaged_trajectories_mislabeled.f16b9d8d.png",
@@ -54,8 +55,8 @@
   "entrypoints": [
     "static/js/runtime-main.de0bdea7.js",
     "static/css/2.fdb50765.chunk.css",
-    "static/js/2.e23e909e.chunk.js",
+    "static/js/2.f54b3ae7.chunk.js",
     "static/css/main.b8916a2e.chunk.css",
-    "static/js/main.b1cb86b5.chunk.js"
+    "static/js/main.00d411b9.chunk.js"
   ]
 }
