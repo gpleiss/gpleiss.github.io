@@ -50,6 +50,7 @@ class Home extends React.Component {
                 <img className="rounded img-thumbnail" alt="Geoff Pleiss" src={meImg} style={{width: '100%', maxWidth: '300px'}}></img>
               </picture>
               <p>
+                I am a postdoc at Columbia University, working with <Link href="https://stat.columbia.edu/~cunningham/">John Cunningham</Link>.
                 My research interests intersect deep learning and Bayesian machine learning, with an emphasis on how to make learning algorithms more scalable, robust, and reliable.
                 In particular, my work focuses on reliable uncertainty estimates from neural networks and efficient Gaussian process inference.
               </p>
@@ -71,6 +72,38 @@ class Home extends React.Component {
               <div className="col-md-12">
                 <H2>Publications</H2>
                 <CvList className="list-unstyled">
+                  <PubItem title="The Limitations of Large Width in Neural Networks: A Deep Gaussian Process Perspective"
+                    authors={[
+                      "Geoff Pleiss",
+                      "John P. Cunningham"
+                    ]}
+                    arxiv="https://arxiv.org/abs/2106.06529"
+                    pdf="https://arxiv.org/pdf/2106.06529.pdf"
+                    underSubmission
+                    year="2021"
+                  />
+                  <PubItem title="Rectangular Flows for Manifold Learning"
+                    authors={[
+                      "Anthony L. Caterini",
+                      "Gabriel Loaiza-Ganem",
+                      "Geoff Pleiss",
+                      "John P. Cunningham"
+                    ]}
+                    arxiv="https://arxiv.org/abs/2106.01413"
+                    pdf="https://arxiv.org/pdf/2106.01413.pdf"
+                    underSubmission
+                    year="2021"
+                  />
+                  <PubItem title="Scalable Cross Validation Losses for Gaussian Process Models"
+                    authors={[
+                      "Martin Jankowiak",
+                      "Geoff Pleiss"
+                    ]}
+                    arxiv="https://arxiv.org/abs/2105.11535"
+                    pdf="https://arxiv.org/pdf/2105.11535.pdf"
+                    underSubmission
+                    year="2021"
+                  />
                   <PubItem title="Bias-Free Scalable Gaussian Processes via Randomized Truncations"
                     authors={[
                       "Andres Potapczynski",
@@ -81,7 +114,8 @@ class Home extends React.Component {
                     ]}
                     arxiv="https://arxiv.org/abs/2102.06695"
                     pdf="https://arxiv.org/pdf/2102.06695"
-                    underSubmission
+                    conference="ICML"
+                    github="https://github.com/cunningham-lab/RTGPS"
                     year="2021"
                   />	
                   <PubItem title="Hierarchical Inducing Point Gaussian Process for Inter-domain Observations"
@@ -95,6 +129,7 @@ class Home extends React.Component {
                     ]}
                     arxiv="https://arxiv.org/abs/2103.00393"
                     pdf="https://arxiv.org/pdf/2103.00393.pdf"
+                    github="https://github.com/cunningham-lab/hipgp"
                     conference="AISTATS"
                     year="2021"
                   />	
@@ -108,6 +143,7 @@ class Home extends React.Component {
                     arxiv="https://arxiv.org/abs/2011.05231"
                     pdf="https://arxiv.org/pdf/2011.05231.pdf"
                     conference="NeurIPS &quot;I Can&#39;t Believe It&#39;s Not Better&#33;&quot; Workshop"
+                    github="https://github.com/cunningham-lab/cb_and_cc"
                     year="2020"
                   />	
                   <PubItem title="A Scalable and Flexible Framework for Gaussian Processes via Matrix-Vector Multiplication"
