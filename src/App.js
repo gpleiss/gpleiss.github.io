@@ -77,7 +77,7 @@ class App extends React.Component {
                   </NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href="/geoff_pleiss_cv.pdf" target="_blank">
+                  <NavLink href="/geoffpleiss_cv.pdf" target="_blank">
                     CV
                   </NavLink>
                 </NavItem>

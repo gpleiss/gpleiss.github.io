@@ -36,12 +36,13 @@ class Home extends React.Component {
           <div className="row">
             <div className="col-sm-12">
               <picture className="text-center float-md-right pl-md-5 d-none d-md-inline">
-                <img className="rounded img-thumbnail" alt="Geoff Pleiss" src={meImg} style={{width: '100%', maxWidth: '300px'}}></img>
+                <img className="rounded img-thumbnail" alt="Geoff Pleiss" src={meImg} style={{width: '100%', maxWidth: '275px'}}></img>
               </picture>
               <H2 noMb>Geoff Pleiss</H2>
               <p className="mb-5 text-muted font-italic">
                 Postdoctoral Research Scientist<br />
-                <Link className="text-muted" href="https://zuckermaninstitute.columbia.edu/">Zuckerman Institute</Link>,{" "}
+                <Link className="text-muted" href="http://stat.columbia.edu/">Department of Statistics</Link> and{" "}
+                <Link className="text-muted" href="https://zuckermaninstitute.columbia.edu/">Zuckerman Institute</Link><br />
                 <Link className="text-muted" href="http://stat.columbia.edu/">Columbia University</Link><br />
                 <FontAwesomeIcon icon={faEnvelopeSquare} size="1.5x" title="Email: " className="mr-3" />
                 gmp2162 &lt;at&gt; columbia.edu
@@ -49,10 +50,24 @@ class Home extends React.Component {
               <picture className="text-center float-md-right d-block d-md-none mb-5">
                 <img className="rounded img-thumbnail" alt="Geoff Pleiss" src={meImg} style={{width: '100%', maxWidth: '300px'}}></img>
               </picture>
+              <p className="mb-0">
+                <strong>[Fall 2021] I am on the faculty market in CS/stats.</strong><br />
+                Please contact me if you think I'd be a good fit for your department.
+              </p>
+            </div>
+          </div>
+          <hr className="mt-4 mb-4" />
+          <div className="row">
+            <div className="col-sm-12">
               <p>
                 I am a postdoc at Columbia University, working with <Link href="https://stat.columbia.edu/~cunningham/">John Cunningham</Link>.
-                My research interests intersect deep learning and Bayesian machine learning, with an emphasis on how to make learning algorithms more scalable, robust, and reliable.
-                In particular, my work focuses on reliable uncertainty estimates from neural networks and efficient Gaussian process inference.
+                My research interests intersect deep learning and probablistic modeling, with an emphasis on how to make learning algorithms more robust, calibrated, and scalable.
+                Major focuses of my work are:
+                <ol>
+                  <li>improving uncertainty estimates from neural networks;</li>
+                  <li>simplifying Gaussian process inference; and</li>
+                  <li>understanding neural networks through probablistic modeling.</li>
+                </ol>
               </p>
               <p>
                 I received my Ph.D. from the CS department at Cornell University in August 2020.
@@ -72,25 +87,16 @@ class Home extends React.Component {
               <div className="col-md-12">
                 <H2>Publications</H2>
                 <CvList className="list-unstyled">
-                  <PubItem title="The Limitations of Large Width in Neural Networks: A Deep Gaussian Process Perspective"
+                  <PubItem title="Reducing the Variance of Gaussian Process Hyperparameter Optimization with Preconditioning"
                     authors={[
+                      "Jonathan Wenger",
                       "Geoff Pleiss",
-                      "John P. Cunningham"
+                      "Philipp Hennig",
+                      "John P. Cunningham",
+                      "Jacob R. Gardner",
                     ]}
-                    arxiv="https://arxiv.org/abs/2106.06529"
-                    pdf="https://arxiv.org/pdf/2106.06529.pdf"
-                    underSubmission
-                    year="2021"
-                  />
-                  <PubItem title="Rectangular Flows for Manifold Learning"
-                    authors={[
-                      "Anthony L. Caterini",
-                      "Gabriel Loaiza-Ganem",
-                      "Geoff Pleiss",
-                      "John P. Cunningham"
-                    ]}
-                    arxiv="https://arxiv.org/abs/2106.01413"
-                    pdf="https://arxiv.org/pdf/2106.01413.pdf"
+                    arxiv="https://arxiv.org/abs/2107.00243"
+                    pdf="https://arxiv.org/pdf/2107.00243.pdf"
                     underSubmission
                     year="2021"
                   />
@@ -102,6 +108,28 @@ class Home extends React.Component {
                     arxiv="https://arxiv.org/abs/2105.11535"
                     pdf="https://arxiv.org/pdf/2105.11535.pdf"
                     underSubmission
+                    year="2021"
+                  />
+                  <PubItem title="The Limitations of Large Width in Neural Networks: A Deep Gaussian Process Perspective"
+                    authors={[
+                      "Geoff Pleiss",
+                      "John P. Cunningham"
+                    ]}
+                    arxiv="https://arxiv.org/abs/2106.06529"
+                    pdf="https://arxiv.org/pdf/2106.06529.pdf"
+                    conference="NeurIPS"
+                    year="2021"
+                  />
+                  <PubItem title="Rectangular Flows for Manifold Learning"
+                    authors={[
+                      "Anthony L. Caterini",
+                      "Gabriel Loaiza-Ganem",
+                      "Geoff Pleiss",
+                      "John P. Cunningham"
+                    ]}
+                    arxiv="https://arxiv.org/abs/2106.01413"
+                    pdf="https://arxiv.org/pdf/2106.01413.pdf"
+                    conference="NeurIPS"
                     year="2021"
                   />
                   <PubItem title="Bias-Free Scalable Gaussian Processes via Randomized Truncations"
@@ -381,7 +409,7 @@ class Home extends React.Component {
                 <H2 className="text-light">Open Source</H2>
                 <CvList>
                   <SoftwareItem title="GPyTorch"
-                    status="v1.4 Release"
+                    status="v1.5 Release"
                     coauthors={[
                       "Jacob R. Gardner"
                     ]}
