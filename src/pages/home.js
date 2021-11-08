@@ -118,6 +118,7 @@ class Home extends React.Component {
                     arxiv="https://arxiv.org/abs/2106.06529"
                     pdf="https://arxiv.org/pdf/2106.06529.pdf"
                     conference="NeurIPS"
+                    github="https://github.com/gpleiss/limits_of_large_width"
                     year="2021"
                   />
                   <PubItem title="Rectangular Flows for Manifold Learning"
