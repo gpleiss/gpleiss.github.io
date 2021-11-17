@@ -4,6 +4,7 @@ import PubItem from '../components/pub_item.js';
 import SoftwareItem from '../components/software_item.js';
 import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 import { faEnvelopeSquare } from '@fortawesome/fontawesome-free-solid';
+import { Modal, ModalHeader, ModalBody } from 'reactstrap';
 
 // Assets
 import meImg from '../images/me.jpg';
@@ -15,8 +16,10 @@ import thesis from '../papers/gpleiss_thesis.pdf';
 class Home extends React.Component {
   constructor(props) {
     super(props);
+		this.toggleShortBioModal = this.toggleShortBioModal.bind(this);
     this.state = {
       items : [],
+			shortBioModalOpen: false,
       loading: false
     };
   }
@@ -29,15 +32,18 @@ class Home extends React.Component {
     this.setState(state);
   }
 
+	toggleShortBioModal() {
+		this.setState({
+			shortBioModalOpen: !this.state.shortBioModalOpen
+		});
+	}
+
   render() {
     return (
       <div>
         <div className="container pt-10 pb-8">
           <div className="row">
-            <div className="col-sm-12">
-              <picture className="text-center float-md-right pl-md-5 d-none d-md-inline">
-                <img className="rounded img-thumbnail" alt="Geoff Pleiss" src={meImg} style={{width: '100%', maxWidth: '275px'}}></img>
-              </picture>
+            <div className="col-md-8">
               <H2 noMb>Geoff Pleiss</H2>
               <p className="mb-5 text-muted font-italic">
                 Postdoctoral Research Scientist<br />
@@ -47,31 +53,68 @@ class Home extends React.Component {
                 <FontAwesomeIcon icon={faEnvelopeSquare} size="1.5x" title="Email: " className="mr-3" />
                 gmp2162 &lt;at&gt; columbia.edu
               </p>
-              <picture className="text-center float-md-right d-block d-md-none mb-5">
-                <img className="rounded img-thumbnail" alt="Geoff Pleiss" src={meImg} style={{width: '100%', maxWidth: '300px'}}></img>
-              </picture>
+              <p className="text-center">
+                <picture className="d-inline-block d-md-none mb-5 mb-md-0">
+                  <img className="rounded img-thumbnail" alt="Geoff Pleiss" src={meImg} style={{width: '100%', maxWidth: '300px'}}></img>
+                </picture>
+              </p>
               <p className="mb-0">
                 <strong>[Fall 2021] I am on the faculty market in CS/stats.</strong><br />
-                Please contact me if you think I'd be a good fit for your department.
+                Please contact me if you think I'd be a good fit for your department.<br />
               </p>
             </div>
+            <div className="col-md-4">
+              <picture className="float-md-right d-none d-md-inline">
+                <img className="rounded img-thumbnail" alt="Geoff Pleiss" src={meImg} style={{width: '100%', maxWidth: '270px'}}></img>
+              </picture>
+            </div>
+            <div className="col-md-12">
+              <ul className="list-inline">
+                <li className="list-inline-item mt-2">
+                  <Link className="btn btn-dark" role="button" href="/geoffpleiss_cv.pdf">CV</Link>
+                </li>
+                <li className="list-inline-item mt-2">
+                  <button className="btn btn-dark" onClick={this.toggleShortBioModal}>Short Bio</button>
+                </li>
+                <li className="list-inline-item mt-2">
+                  <Link className="btn btn-light" role="button" href="/geoffpleiss_research_statement.pdf">Research Statement</Link>
+                </li>
+                <li className="list-inline-item mt-2">
+                  <Link className="btn btn-light" role="button" href="/geoffpleiss_teaching_statement_cs.pdf">Teaching Statement</Link>
+                </li>
+              </ul>
+              <Modal size="lg" isOpen={this.state.shortBioModalOpen} toggle={this.toggleShortBioModal}>
+                <ModalHeader className="ml-3 mr-3" toggle={this.toggleShortBioModal}>Short Bio</ModalHeader>
+                <ModalBody>
+                  <p className="m-3">
+                    Geoff Pleiss is a postdoc in the Department of Statistics and Zuckerman Institute at Columbia University.
+                    He received his Ph.D. from Cornell University under the supervision of Kilian Q. Weinberger,
+                    and his undergraduate degree in engineering from Olin College of Engineering.
+                    His research interests intersect deep learning and probabilistic modeling,
+                    with an emphasis on developing models that are capable of reasoning beyond in-distribution accuracy.
+                    In particular, his work focuses on uncertainty quantification, inductive biases of neural networks, and Gaussian processes scalability.
+                  </p>
+                </ModalBody>
+              </Modal>
+            </div>
           </div>
-          <hr className="mt-4 mb-4" />
+          <hr className="mt-4 mb-5" />
           <div className="row">
             <div className="col-sm-12">
               <p>
                 I am a postdoc at Columbia University, working with <Link href="https://stat.columbia.edu/~cunningham/">John Cunningham</Link>.
-                My research interests intersect deep learning and probablistic modeling, with an emphasis on how to make learning algorithms more robust, calibrated, and scalable.
-                Major focuses of my work are:
+                My research interests intersect deep learning and probablistic modeling, with an emphasis on developing models that are capable of <em>reasoning beyond in-distribution accuracy</em>.
+                Major focuses of my work include:
                 <ol>
-                  <li>improving uncertainty estimates from neural networks;</li>
-                  <li>simplifying Gaussian process inference; and</li>
-                  <li>understanding neural networks through probablistic modeling.</li>
+                  <li>uncertainty quantification in deep learning;</li>
+                  <li>scalability of Gaussian process; and</li>
+                  <li>inductive biases of neural network architectures.</li>
                 </ol>
               </p>
               <p>
                 I received my Ph.D. from the CS department at Cornell University in August 2020.
-                I was advised by <Link href="http://kilian.cs.cornell.edu/">Kilian Weinberger</Link> and also worked closely with Andrew Gordon Wilson.
+                I was advised by <Link href="http://kilian.cs.cornell.edu/">Kilian Weinberger</Link> and
+                also worked closely with <Link href="https://cims.nyu.edu/~andrewgw/">Andrew Gordon Wilson</Link>.
               </p>
               <p>
                 I co-created and maintain the <Link href="http://gpytorch.ai">GPyTorch</Link> Gaussian process library with <Link href="https://jacobrgardner.github.io/">Jake Gardner</Link>.

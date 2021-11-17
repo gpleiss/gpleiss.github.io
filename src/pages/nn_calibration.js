@@ -21,7 +21,7 @@ class NNCalibration extends React.Component {
     this.state = {
       items: [],
 			niculescuTooltipOpen: false,
-			modalOpen: false,
+			bibtexModalOpen: false,
       loading: false,
     };
   }
