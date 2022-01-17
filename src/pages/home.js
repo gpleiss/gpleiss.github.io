@@ -87,12 +87,11 @@ class Home extends React.Component {
                 <ModalHeader className="ml-3 mr-3" toggle={this.toggleShortBioModal}>Short Bio</ModalHeader>
                 <ModalBody>
                   <p className="m-3">
-                    Geoff Pleiss is a postdoc in the Department of Statistics and Zuckerman Institute at Columbia University.
-                    He received his Ph.D. from Cornell University under the supervision of Kilian Q. Weinberger,
-                    and his undergraduate degree in engineering from Olin College of Engineering.
-                    His research interests intersect deep learning and probabilistic modeling,
-                    with an emphasis on developing models that are capable of reasoning beyond in-distribution accuracy.
-                    In particular, his work focuses on uncertainty quantification, inductive biases of neural networks, and Gaussian processes scalability.
+                    Geoff Pleiss is a postdoctoral researcher at Columbia University, hosted by John Cunningham, with affiliations in the Department of Statistics and the Zuckerman Institute.
+                    He obtained his Ph.D. in Computer Science from Cornell University, advised by Kilian Weinberger, and his B.Sc. from Olin College of Engineering.
+                    His research interests are broadly situated in machine learning,
+                    including neural networks, Gaussian processes, uncertainty quantification, and scalability.
+                    Geoff is also the co-founder and maintainer of the GPyTorch software library.
                   </p>
                 </ModalBody>
               </Modal>
@@ -103,12 +102,13 @@ class Home extends React.Component {
             <div className="col-sm-12">
               <p>
                 I am a postdoc at Columbia University, working with <Link href="https://stat.columbia.edu/~cunningham/">John Cunningham</Link>.
-                My research interests intersect deep learning and probablistic modeling, with an emphasis on developing models that are capable of <em>reasoning beyond in-distribution accuracy</em>.
+                My research interests intersect deep learning and probablistic modeling.
                 Major focuses of my work include:
                 <ol>
-                  <li>uncertainty quantification in deep learning;</li>
-                  <li>scalability of Gaussian process; and</li>
-                  <li>inductive biases of neural network architectures.</li>
+                  <li>neural networks;</li>
+                  <li>Gaussian processes;</li>
+                  <li>uncertainty quantification; and</li>
+                  <li>scalability.</li>
                 </ol>
               </p>
               <p>
