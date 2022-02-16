@@ -130,7 +130,31 @@ class Home extends React.Component {
               <div className="col-md-12">
                 <H2>Publications</H2>
                 <CvList className="list-unstyled">
-                  <PubItem title="Reducing the Variance of Gaussian Process Hyperparameter Optimization with Preconditioning"
+                  <PubItem title="Deep Ensembles Work, But Are They Necessary?"
+                    authors={[
+                      "Taiga Abe",
+                      "E. Kelly Buchanan",
+                      "Geoff Pleiss",
+                      "Richard Zemel",
+                      "John P. Cunningham",
+                    ]}
+                    arxiv="https://arxiv.org/abs/2202.06985"
+                    pdf="https://arxiv.org/pdf/2202.06985.pdf"
+                    underSubmission
+                    year="2022"
+                  />
+                  <PubItem title="Variational Nearest Neighbor Gaussian Processes"
+                    authors={[
+                      "Luhuan Wu",
+                      "Geoff Pleiss",
+                      "John P. Cunningham",
+                    ]}
+                    arxiv="https://arxiv.org/abs/2202.01694"
+                    pdf="https://arxiv.org/pdf/2202.01694"
+                    underSubmission
+                    year="2022"
+                  />
+                  <PubItem title="Preconditioning for Scalable Gaussian Process Hyperparameter Optimization"
                     authors={[
                       "Jonathan Wenger",
                       "Geoff Pleiss",
@@ -141,17 +165,7 @@ class Home extends React.Component {
                     arxiv="https://arxiv.org/abs/2107.00243"
                     pdf="https://arxiv.org/pdf/2107.00243.pdf"
                     underSubmission
-                    year="2021"
-                  />
-                  <PubItem title="Scalable Cross Validation Losses for Gaussian Process Models"
-                    authors={[
-                      "Martin Jankowiak",
-                      "Geoff Pleiss"
-                    ]}
-                    arxiv="https://arxiv.org/abs/2105.11535"
-                    pdf="https://arxiv.org/pdf/2105.11535.pdf"
-                    underSubmission
-                    year="2021"
+                    year="2022"
                   />
                   <PubItem title="The Limitations of Large Width in Neural Networks: A Deep Gaussian Process Perspective"
                     authors={[
@@ -205,6 +219,16 @@ class Home extends React.Component {
                     conference="AISTATS"
                     year="2021"
                   />	
+                  <PubItem title="Scalable Cross Validation Losses for Gaussian Process Models"
+                    authors={[
+                      "Martin Jankowiak",
+                      "Geoff Pleiss"
+                    ]}
+                    arxiv="https://arxiv.org/abs/2105.11535"
+                    pdf="https://arxiv.org/pdf/2105.11535.pdf"
+                    techReport
+                    year="2021"
+                  />
                   <PubItem title="Uses and Abuses of the Cross-Entropy Loss: Case Studies in Modern Deep Learning"
                     authors={[
                       "Elliott Gordon-Rodriguez",
@@ -453,11 +477,11 @@ class Home extends React.Component {
                 <H2 className="text-light">Open Source</H2>
                 <CvList>
                   <SoftwareItem title="GPyTorch"
-                    status="v1.5 Release"
+                    status="v1.6 Release"
                     coauthors={[
                       "Jacob R. Gardner"
                     ]}
-                    tagline="A implementation of gaussian process models in PyTorch, designed for speed, modularity, and prototyping."
+                    tagline="A implementation of Gaussian process models in PyTorch, designed for speed, modularity, and prototyping."
                     website="https://gpytorch.ai"
                     github="https://github.com/cornellius-gp/GPyTorch"
                   >

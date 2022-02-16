@@ -36,9 +36,11 @@ class PubItem extends React.Component {
         </div>
         { this.props.underSubmission ?
           <div className="mt-1 ml-3 font-italic">&#8212; Under Submission</div> :
-          this.props.thesis ? 
-           <div className="mt-1 ml-3 font-italic">Ph.D. Thesis, {this.props.year}</div> :
-           <div className="mt-1 ml-3">&#8212; In {this.props.conference}, {this.props.year}</div>
+          this.props.techReport ?
+            <div className="mt-1 ml-3">&#8212; <span className="font-italic">Tech Report</span>, {this.props.year}</div> :
+            this.props.thesis ?
+              <div className="mt-1 ml-3 font-italic">Ph.D. Thesis, {this.props.year}</div> :
+              <div className="mt-1 ml-3">&#8212; In {this.props.conference}, {this.props.year}</div>
         }
       </div>
       <div className="col-md-3">
