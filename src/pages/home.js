@@ -59,42 +59,15 @@ class Home extends React.Component {
                 </picture>
               </p>
               <p className="mb-0">
-                <strong>[Fall 2021] I am on the faculty market in CS/stats.</strong><br />
-                Please contact me if you think I'd be a good fit for your department.<br />
+                <strong>In July 2023, I will be joining the University of British Columbia as an assistant professor in the <Link className="text-dark" href="https://www.stat.ubc.ca">Department of Statistics</Link>.</strong><br />
+                I will also be joining the <Link className="text-dark" href="https://vectorinstitute.ai">Vector Institute</Link> as a faculty member.
+                Please contact me if you are interested in collaborating or joining my lab as a student.
               </p>
             </div>
             <div className="col-md-4">
               <picture className="float-md-right d-none d-md-inline">
                 <img className="rounded img-thumbnail" alt="Geoff Pleiss" src={meImg} style={{width: '100%', maxWidth: '270px'}}></img>
               </picture>
-            </div>
-            <div className="col-md-12">
-              <ul className="list-inline">
-                <li className="list-inline-item mt-2">
-                  <Link className="btn btn-dark" role="button" href="/geoffpleiss_cv.pdf">CV</Link>
-                </li>
-                <li className="list-inline-item mt-2">
-                  <button className="btn btn-dark" onClick={this.toggleShortBioModal}>Short Bio</button>
-                </li>
-                <li className="list-inline-item mt-2">
-                  <Link className="btn btn-light" role="button" href="/geoffpleiss_research_statement.pdf">Research Statement</Link>
-                </li>
-                <li className="list-inline-item mt-2">
-                  <Link className="btn btn-light" role="button" href="/geoffpleiss_teaching_statement_cs.pdf">Teaching Statement</Link>
-                </li>
-              </ul>
-              <Modal size="lg" isOpen={this.state.shortBioModalOpen} toggle={this.toggleShortBioModal}>
-                <ModalHeader className="ml-3 mr-3" toggle={this.toggleShortBioModal}>Short Bio</ModalHeader>
-                <ModalBody>
-                  <p className="m-3">
-                    Geoff Pleiss is a postdoctoral researcher at Columbia University, hosted by John Cunningham, with affiliations in the Department of Statistics and the Zuckerman Institute.
-                    He obtained his Ph.D. in Computer Science from Cornell University, advised by Kilian Weinberger, and his B.Sc. from Olin College of Engineering.
-                    His research interests are broadly situated in machine learning,
-                    including neural networks, Gaussian processes, uncertainty quantification, and scalability.
-                    Geoff is also the co-founder and maintainer of the GPyTorch software library.
-                  </p>
-                </ModalBody>
-              </Modal>
             </div>
           </div>
           <hr className="mt-4 mb-5" />
@@ -121,6 +94,28 @@ class Home extends React.Component {
               </p>
               <div className="clearfix" />
             </div>
+            <div className="col-md-12">
+              <ul className="list-inline">
+                <li className="list-inline-item mt-2">
+                  <Link className="btn btn-dark" role="button" href="/geoffpleiss_cv.pdf">CV</Link>
+                </li>
+                <li className="list-inline-item mt-2">
+                  <button className="btn btn-dark" onClick={this.toggleShortBioModal}>Short Bio</button>
+                </li>
+              </ul>
+              <Modal size="lg" isOpen={this.state.shortBioModalOpen} toggle={this.toggleShortBioModal}>
+                <ModalHeader className="ml-3 mr-3" toggle={this.toggleShortBioModal}>Short Bio</ModalHeader>
+                <ModalBody>
+                  <p className="m-3">
+                    Geoff Pleiss is a postdoctoral researcher at Columbia University, hosted by John Cunningham, with affiliations in the Department of Statistics and the Zuckerman Institute.
+                    He obtained his Ph.D. in Computer Science from Cornell University, advised by Kilian Weinberger, and his B.Sc. from Olin College of Engineering.
+                    His research interests are broadly situated in machine learning,
+                    including neural networks, Gaussian processes, uncertainty quantification, and scalability.
+                    Geoff is also the co-founder and maintainer of the GPyTorch software library.
+                  </p>
+                </ModalBody>
+              </Modal>
+            </div>
           </div>
         </div>
 
@@ -130,10 +125,24 @@ class Home extends React.Component {
               <div className="col-md-12">
                 <H2>Publications</H2>
                 <CvList className="list-unstyled">
+                  <PubItem title="Posterior and Computational Uncertainty in Gaussian Processes"
+                    authors={[
+                      "Jonathan Wenger",
+                      "Geoff Pleiss",
+                      "Marvin Pf\u00f6rtner",
+                      "Philipp Hennig",
+                      "John P. Cunningham",
+                    ]}
+                    arxiv="https://arxiv.org/abs/2205.15449"
+                    pdf="https://arxiv.org/pdf/2205.15449.pdf"
+                    github="https://github.com/JonathanWenger/itergp"
+                    underSubmission
+                    year="2022"
+                  />
                   <PubItem title="Deep Ensembles Work, But Are They Necessary?"
                     authors={[
-                      "Taiga Abe",
-                      "E. Kelly Buchanan",
+                      "Taiga Abe*",
+                      "E. Kelly Buchanan*",
                       "Geoff Pleiss",
                       "Richard Zemel",
                       "John P. Cunningham",
@@ -151,7 +160,7 @@ class Home extends React.Component {
                     ]}
                     arxiv="https://arxiv.org/abs/2202.01694"
                     pdf="https://arxiv.org/pdf/2202.01694"
-                    underSubmission
+                    conference="ICML"
                     year="2022"
                   />
                   <PubItem title="Preconditioning for Scalable Gaussian Process Hyperparameter Optimization"
@@ -164,7 +173,32 @@ class Home extends React.Component {
                     ]}
                     arxiv="https://arxiv.org/abs/2107.00243"
                     pdf="https://arxiv.org/pdf/2107.00243.pdf"
-                    underSubmission
+                    conference="ICML"
+                    year="2022"
+                  />
+                  <PubItem title="Harnessing Interpretable and Unsupervised Machine Learning to Address Big Data From Modern X-Ray Diffraction"
+                    authors={[
+                      "Jordan Venderley",
+                      "Michael Matty",
+                      "Krishnanand Mallayya",
+                      "Matthew Krogstad",
+                      "Jacob Ruff",
+                      "Geoff Pleiss",
+                      "Varsha Kishore",
+                      "David Mandrus",
+                      "Daniel Phelan",
+                      "Lekhanath Poudel",
+                      "Andrew Gordon Wilson",
+                      "Kilian Q. Weinberger",
+                      "Puspa Upreti",
+                      "Michael R. Norman",
+                      "Stephan Rosenkranz",
+                      "Ray Osborn",
+                      "Eun-Ah Kim",
+                    ]}
+                    arxiv="https://arxiv.org/abs/2008.03275"
+                    pdf="https://arxiv.org/pdf/2008.03275.pdf"
+                    conference="Proceedings of the National Academy of Sciences (to appear)"
                     year="2022"
                   />
                   <PubItem title="The Limitations of Large Width in Neural Networks: A Deep Gaussian Process Perspective"
@@ -180,8 +214,8 @@ class Home extends React.Component {
                   />
                   <PubItem title="Rectangular Flows for Manifold Learning"
                     authors={[
-                      "Anthony L. Caterini",
-                      "Gabriel Loaiza-Ganem",
+                      "Anthony L. Caterini*",
+                      "Gabriel Loaiza-Ganem*",
                       "Geoff Pleiss",
                       "John P. Cunningham"
                     ]}
@@ -192,9 +226,9 @@ class Home extends React.Component {
                   />
                   <PubItem title="Bias-Free Scalable Gaussian Processes via Randomized Truncations"
                     authors={[
-                      "Andres Potapczynski",
-                      "Luhuan Wu",
-                      "Dan Biderman",
+                      "Andres Potapczynski*",
+                      "Luhuan Wu*",
+                      "Dan Biderman*",
                       "Geoff Pleiss",
                       "John P. Cunningham"
                     ]}
@@ -206,8 +240,8 @@ class Home extends React.Component {
                   />	
                   <PubItem title="Hierarchical Inducing Point Gaussian Process for Inter-domain Observations"
                     authors={[
-                      "Luhuan Wu",
-                      "Andrew Miller",
+                      "Luhuan Wu*",
+                      "Andrew Miller*",
                       "Lauren Anderson",
                       "Geoff Pleiss",
                       "David Blei",
@@ -305,9 +339,9 @@ class Home extends React.Component {
                   />	
                   <PubItem title="Pseudo-lidar++: Accurate depth for 3d object detection in autonomous driving."
                     authors={[
-                      "Yurong You",
-                      "Yan Wang",
-                      "Wei-Lun Chao",
+                      "Yurong You*",
+                      "Yan Wang*",
+                      "Wei-Lun Chao*",
                       "Divyansh Garg",
                       "Geoff Pleiss",
                       "Bharath Hariharan",
@@ -337,8 +371,8 @@ class Home extends React.Component {
                   />	
                   <PubItem title="Convolutional Networks with Dense Connectivity"
                     authors={[
-                      "Gao Huang",
-                      "Zhuang Liu",
+                      "Gao Huang*",
+                      "Zhuang Liu*",
                       "Geoff Pleiss",
                       "Laurens van der Maaten",
                       "Kilian Q. Weinberger",
@@ -435,8 +469,8 @@ class Home extends React.Component {
                   />	
                   <PubItem title="Deep Feature Interpolation for Image Content Changes"
                     authors={[
-                      "Paul Upchurch",
-                      "Jacob R. Gardner",
+                      "Paul Upchurch*",
+                      "Jacob R. Gardner*",
                       "Geoff Pleiss",
                       "Robert Pless",
                       "Noah Snavely",
@@ -451,8 +485,8 @@ class Home extends React.Component {
                   />	
                   <PubItem title="Snapshot Ensembles: Train 1, get M for free"
                     authors={[
-                      "Gao Huang", 
-                      "Yixuan Li",
+                      "Gao Huang*", 
+                      "Yixuan Li*",
                       "Geoff Pleiss",
                       "Zhuang Liu",
                       "John Hopcroft",
