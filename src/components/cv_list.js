@@ -8,6 +8,9 @@ class CvList extends React.Component {
     if (!!className) {
       fullClassName += ' ' + className;
     }
+    if (this.props.indent) {
+      fullClassName += 'ml-3';
+    }
 		return <ul {...others} className={fullClassName}>{this.props.children}</ul>
 	}
 }

@@ -8,6 +8,8 @@ import { Navbar, NavbarToggler, Collapse, NavbarBrand, Nav, NavItem, NavLink,
 import Home from './pages/home.js';
 import NNCalibration from './pages/nn_calibration.js';
 import AUM from './pages/aum.js';
+import research from './pages/research.js';
+import bio from './pages/bio.js';
 
 // Assets
 import './App.css';
@@ -40,8 +42,35 @@ class App extends React.Component {
 						<Collapse isOpen={this.state.isNavbarOpen} navbar>
 							<Nav className="mr-auto ml-md-4" navbar>
 								<UncontrolledDropdown nav inNavbar>
+									<DropdownToggle nav caret href="/research">
+                    Research
+									</DropdownToggle>
+									<DropdownMenu>
+										<DropdownItem href="/research#uq">Uncertainty Quantification</DropdownItem>
+										<DropdownItem href="/research#overparam">Overparameterization and Ensemble Methods</DropdownItem>
+										<DropdownItem href="/research#nla">Numerical Methods for Gaussian Processes</DropdownItem>
+										<DropdownItem href="/research#approx-inf">Approximate Inference for Gaussian Processes</DropdownItem>
+										<DropdownItem href="/research#reliable-nn">"Reliable" Deep Learning</DropdownItem>
+										<DropdownItem href="/research#prob-modeling">Probabilistic Modeling</DropdownItem>
+										<DropdownItem href="/research#sci-app">Scientific Applications</DropdownItem>
+									</DropdownMenu>
+								</UncontrolledDropdown>
+								<UncontrolledDropdown nav inNavbar>
 									<DropdownToggle nav caret>
-										Projects
+										Open Source
+									</DropdownToggle>
+									<DropdownMenu>
+										<DropdownItem href="https://gpytorch.ai" target="_blank">
+                      GPyTorch
+										</DropdownItem>
+										<DropdownItem href="https://linear-operator.readthedocs.io" target="_blank">
+                      LinearOperator
+										</DropdownItem>
+									</DropdownMenu>
+								</UncontrolledDropdown>
+								<UncontrolledDropdown nav inNavbar>
+									<DropdownToggle nav caret>
+										Blog
 									</DropdownToggle>
 									<DropdownMenu>
 										<DropdownItem href="/nn_calibration">
@@ -50,35 +79,16 @@ class App extends React.Component {
 										<DropdownItem href="/aum">
 											Area Under the Margin (AUM)
 										</DropdownItem>
-										<DropdownItem href="https://github.com/cornellius-gp/gpytorch" target="_blank">
-											Efficient Gaussian Processes
-										</DropdownItem>
 									</DropdownMenu>
 								</UncontrolledDropdown>
-								<UncontrolledDropdown nav inNavbar>
-									<DropdownToggle nav caret>
-										Software
-									</DropdownToggle>
-									<DropdownMenu>
-										<DropdownItem href="https://gpytorch.ai" target="_blank">
-                      GPyTorch
-										</DropdownItem>
-										<DropdownItem href="https://github.com/gpleiss/efficient_densenet_pytorch" target="_blank">
-                      Efficient DenseNets
-										</DropdownItem>
-										<DropdownItem href="https://github.com/gpleiss/temperature_scaling" target="_blank">
-                      Temperature Scaling
-										</DropdownItem>
-									</DropdownMenu>
-								</UncontrolledDropdown>
-                <NavItem>
-                  <NavLink href="https://gpytorch.ai" target="_blank">
-                    GPyTorch
-                  </NavLink>
-                </NavItem>
                 <NavItem>
                   <NavLink href="/geoffpleiss_cv.pdf" target="_blank">
                     CV
+                  </NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink href="/bio">
+                    Bio
                   </NavLink>
                 </NavItem>
 							</Nav>
@@ -104,8 +114,10 @@ class App extends React.Component {
 
           <div>
             <Route exact path='/' component={ Home }/>
+            <Route path="/research" component={ research }/>
             <Route path="/nn_calibration" component={ NNCalibration }/>
             <Route path="/aum" component={ AUM }/>
+            <Route path="/bio" component={ bio }/>
           </div>
         </div>
       </Router>

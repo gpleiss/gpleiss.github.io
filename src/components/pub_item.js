@@ -17,6 +17,7 @@ class PubItem extends React.Component {
     return <li key={this.props.title} className="row mb-4">
       <div className="col-md-9">
         <h4 className="h5 font-weight-bold">
+          {this.props.isNew ? <span className="badge badge-danger mr-2">NEW</span> : null}
           <Link inside className="link-unstyled" href={this.props.website}>
             {this.props.title}
           </Link>

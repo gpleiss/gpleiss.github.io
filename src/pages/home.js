@@ -1,16 +1,15 @@
-import React from 'react'; import { Link, H2 } from '../components/utils.js';
+import React from 'react';
+import { Link, H2 } from '../components/utils.js';
 import CvList from '../components/cv_list.js';
 import PubItem from '../components/pub_item.js';
 import SoftwareItem from '../components/software_item.js';
+import bio from '../components/bio.js';
 import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 import { faEnvelopeSquare } from '@fortawesome/fontawesome-free-solid';
 import { Modal, ModalHeader, ModalBody } from 'reactstrap';
 
 // Assets
 import meImg from '../images/me.jpg';
-import densenetJournal from '../papers/DenseNet_Journal.pdf';
-import hydrometeorologyJournal from '../papers/Hydrometeorology_Journal.pdf';
-import thesis from '../papers/gpleiss_thesis.pdf';
 
 
 class Home extends React.Component {
@@ -58,10 +57,16 @@ class Home extends React.Component {
                   <img className="rounded img-thumbnail" alt="Geoff Pleiss" src={meImg} style={{width: '100%', maxWidth: '300px'}}></img>
                 </picture>
               </p>
-              <p className="mb-0">
-                <strong>In July 2023, I will be joining the University of British Columbia as an assistant professor in the <Link className="text-dark" href="https://www.stat.ubc.ca">Department of Statistics</Link>.</strong><br />
-                I will also be joining the <Link className="text-dark" href="https://vectorinstitute.ai">Vector Institute</Link> as a faculty member.
-                Please contact me if you are interested in collaborating or joining my lab as a student.
+              <p>
+                <strong>In July 2023, I will be joining the University of British Columbia as an assistant professor in the <Link className="text-dark" href="https://www.stat.ubc.ca">Department of Statistics</Link>.</strong> I
+                will also be joining the <Link className="text-dark" href="https://vectorinstitute.ai">Vector Institute</Link> as a faculty member.
+              </p>
+              <p>
+                <strong>Interested in joining my lab?</strong> I
+                am looking for prospective M.S. and Ph.D students with research interests similar to my own&mdash;please
+                apply directly to the <Link href="https://www.stat.ubc.ca/graduate-admissions">UBC stats department</Link>, and mention me as a potential research advisor in your application.
+                I am also open to advising postdocs through <Link href="https://vectorinstitute.bamboohr.com/jobs/view.php?id=136">Vector's post-doctoral fellowship</Link>&mdash;please
+                contact me if you are interested in having me as a potential postdoc supervisor.
               </p>
             </div>
             <div className="col-md-4">
@@ -74,45 +79,54 @@ class Home extends React.Component {
           <div className="row">
             <div className="col-sm-12">
               <p>
-                I am a postdoc at Columbia University, working with <Link href="https://stat.columbia.edu/~cunningham/">John Cunningham</Link>.
-                My research interests intersect deep learning and probablistic modeling.
-                Major focuses of my work include:
-                <ol>
-                  <li>neural networks;</li>
-                  <li>Gaussian processes;</li>
-                  <li>uncertainty quantification; and</li>
-                  <li>scalability.</li>
-                </ol>
-              </p>
-              <p>
+                I am a postdoc at Columbia University, working with <Link href="https://stat.columbia.edu/~cunningham/">John P. Cunningham</Link>.
                 I received my Ph.D. from the CS department at Cornell University in August 2020.
                 I was advised by <Link href="http://kilian.cs.cornell.edu/">Kilian Weinberger</Link> and
                 also worked closely with <Link href="https://cims.nyu.edu/~andrewgw/">Andrew Gordon Wilson</Link>.
               </p>
               <p>
-                I co-created and maintain the <Link href="http://gpytorch.ai">GPyTorch</Link> Gaussian process library with <Link href="https://jacobrgardner.github.io/">Jake Gardner</Link>.
+                My research interests intersect deep learning and probablistic modeling.
+                Major focuses of my work include:
+                <ol>
+                  <li>uncertainty quantification,</li>
+                  <li>"reliable" deep learning, and</li>
+                  <li>numerical methods for Gaussian processes.</li>
+                </ol>
+                Recently, I have also begun investigating
+                <ol>
+                  <li>overparameterization,</li>
+                  <li>ensemble methods for neural networks, and</li>
+                  <li>approximate inference.</li>
+                </ol>
+              </p>
+              <p>
+                I am also an active open source contributior.
+                Most notably, I co-created and maintain the <Link href="http://gpytorch.ai">GPyTorch</Link> Gaussian process library with <Link href="https://jacobrgardner.github.io/">Jake Gardner</Link>.
               </p>
               <div className="clearfix" />
             </div>
             <div className="col-md-12">
-              <ul className="list-inline">
+              <ul className="list-inline mt-2">
                 <li className="list-inline-item mt-2">
-                  <Link className="btn btn-dark" role="button" href="/geoffpleiss_cv.pdf">CV</Link>
+                  <Link className="btn btn-light" role="button" href="/geoffpleiss_cv.pdf">CV</Link>
                 </li>
                 <li className="list-inline-item mt-2">
-                  <button className="btn btn-dark" onClick={this.toggleShortBioModal}>Short Bio</button>
+                  <button className="btn btn-light" onClick={this.toggleShortBioModal}>Short Bio</button>
+                </li>
+                <li className="list-inline-item mt-2">
+                  <Link className="btn btn-light" role="button" href="/geoffpleiss_research_statement.pdf">Research Statement</Link>
+                </li>
+                <li className="list-inline-item mt-2">
+                  <Link className="btn btn-light" role="button" href="/geoffpleiss_teaching_statement.pdf">Teaching Statement</Link>
+                </li>
+                <li className="list-inline-item mt-2">
+                  <Link className="btn btn-light" role="button" href="/geoffpleiss_dei_statement.pdf">DEI Statement</Link>
                 </li>
               </ul>
               <Modal size="lg" isOpen={this.state.shortBioModalOpen} toggle={this.toggleShortBioModal}>
                 <ModalHeader className="ml-3 mr-3" toggle={this.toggleShortBioModal}>Short Bio</ModalHeader>
                 <ModalBody>
-                  <p className="m-3">
-                    Geoff Pleiss is a postdoctoral researcher at Columbia University, hosted by John Cunningham, with affiliations in the Department of Statistics and the Zuckerman Institute.
-                    He obtained his Ph.D. in Computer Science from Cornell University, advised by Kilian Weinberger, and his B.Sc. from Olin College of Engineering.
-                    His research interests are broadly situated in machine learning,
-                    including neural networks, Gaussian processes, uncertainty quantification, and scalability.
-                    Geoff is also the co-founder and maintainer of the GPyTorch software library.
-                  </p>
+                  <p className="m-3">{ bio }</p>
                 </ModalBody>
               </Modal>
             </div>
@@ -121,10 +135,26 @@ class Home extends React.Component {
 
         <section className="pt-10 pb-8 bg-light">
           <div className="container">
-            <div className="row pt-4 pb-8 bg-light">  
+            <div className="row pt-4 pb-8">  
               <div className="col-md-12">
-                <H2>Publications</H2>
+                <H2 className="mb-1" noMb>Recent and Selected Publications</H2>
+                <p className="mb-5">
+                  <small className="font-italic">For a full list of publications, please see my <Link href="/geoffpleiss_cv.pdf">CV</Link> or my <Link href="https://scholar.google.com/citations?user=XO8T-Y4AAAAJ&hl=en&oi=ao">Google Scholar</Link> page.</small>
+                </p>
+                
                 <CvList className="list-unstyled">
+                  <PubItem title="The Best Deep Ensembles Sacrifice Predictive Diversity"
+                    authors={[
+                      "Taiga Abe*",
+                      "E. Kelly Buchanan*",
+                      "Geoff Pleiss",
+                      "John P. Cunningham",
+                    ]}
+                    isNew
+                    award="oral"
+                    conference="NeurIPS &quot;I Can&#39;t Believe It&#39;s Not Better&#33;&quot; Workshop"
+                    year="2022"
+                  />
                   <PubItem title="Posterior and Computational Uncertainty in Gaussian Processes"
                     authors={[
                       "Jonathan Wenger",
@@ -133,10 +163,11 @@ class Home extends React.Component {
                       "Philipp Hennig",
                       "John P. Cunningham",
                     ]}
+                    isNew
                     arxiv="https://arxiv.org/abs/2205.15449"
                     pdf="https://arxiv.org/pdf/2205.15449.pdf"
                     github="https://github.com/JonathanWenger/itergp"
-                    underSubmission
+                    conference="NeurIPS"
                     year="2022"
                   />
                   <PubItem title="Deep Ensembles Work, But Are They Necessary?"
@@ -147,58 +178,11 @@ class Home extends React.Component {
                       "Richard Zemel",
                       "John P. Cunningham",
                     ]}
+                    isNew
                     arxiv="https://arxiv.org/abs/2202.06985"
                     pdf="https://arxiv.org/pdf/2202.06985.pdf"
-                    underSubmission
-                    year="2022"
-                  />
-                  <PubItem title="Variational Nearest Neighbor Gaussian Processes"
-                    authors={[
-                      "Luhuan Wu",
-                      "Geoff Pleiss",
-                      "John P. Cunningham",
-                    ]}
-                    arxiv="https://arxiv.org/abs/2202.01694"
-                    pdf="https://arxiv.org/pdf/2202.01694"
-                    conference="ICML"
-                    year="2022"
-                  />
-                  <PubItem title="Preconditioning for Scalable Gaussian Process Hyperparameter Optimization"
-                    authors={[
-                      "Jonathan Wenger",
-                      "Geoff Pleiss",
-                      "Philipp Hennig",
-                      "John P. Cunningham",
-                      "Jacob R. Gardner",
-                    ]}
-                    arxiv="https://arxiv.org/abs/2107.00243"
-                    pdf="https://arxiv.org/pdf/2107.00243.pdf"
-                    conference="ICML"
-                    year="2022"
-                  />
-                  <PubItem title="Harnessing Interpretable and Unsupervised Machine Learning to Address Big Data From Modern X-Ray Diffraction"
-                    authors={[
-                      "Jordan Venderley",
-                      "Michael Matty",
-                      "Krishnanand Mallayya",
-                      "Matthew Krogstad",
-                      "Jacob Ruff",
-                      "Geoff Pleiss",
-                      "Varsha Kishore",
-                      "David Mandrus",
-                      "Daniel Phelan",
-                      "Lekhanath Poudel",
-                      "Andrew Gordon Wilson",
-                      "Kilian Q. Weinberger",
-                      "Puspa Upreti",
-                      "Michael R. Norman",
-                      "Stephan Rosenkranz",
-                      "Ray Osborn",
-                      "Eun-Ah Kim",
-                    ]}
-                    arxiv="https://arxiv.org/abs/2008.03275"
-                    pdf="https://arxiv.org/pdf/2008.03275.pdf"
-                    conference="Proceedings of the National Academy of Sciences (to appear)"
+                    github="https://github.com/cellistigs/interp_ensembles"
+                    conference="NeurIPS"
                     year="2022"
                   />
                   <PubItem title="The Limitations of Large Width in Neural Networks: A Deep Gaussian Process Perspective"
@@ -212,93 +196,6 @@ class Home extends React.Component {
                     github="https://github.com/gpleiss/limits_of_large_width"
                     year="2021"
                   />
-                  <PubItem title="Rectangular Flows for Manifold Learning"
-                    authors={[
-                      "Anthony L. Caterini*",
-                      "Gabriel Loaiza-Ganem*",
-                      "Geoff Pleiss",
-                      "John P. Cunningham"
-                    ]}
-                    arxiv="https://arxiv.org/abs/2106.01413"
-                    pdf="https://arxiv.org/pdf/2106.01413.pdf"
-                    conference="NeurIPS"
-                    year="2021"
-                  />
-                  <PubItem title="Bias-Free Scalable Gaussian Processes via Randomized Truncations"
-                    authors={[
-                      "Andres Potapczynski*",
-                      "Luhuan Wu*",
-                      "Dan Biderman*",
-                      "Geoff Pleiss",
-                      "John P. Cunningham"
-                    ]}
-                    arxiv="https://arxiv.org/abs/2102.06695"
-                    pdf="https://arxiv.org/pdf/2102.06695"
-                    conference="ICML"
-                    github="https://github.com/cunningham-lab/RTGPS"
-                    year="2021"
-                  />	
-                  <PubItem title="Hierarchical Inducing Point Gaussian Process for Inter-domain Observations"
-                    authors={[
-                      "Luhuan Wu*",
-                      "Andrew Miller*",
-                      "Lauren Anderson",
-                      "Geoff Pleiss",
-                      "David Blei",
-                      "John P. Cunningham"
-                    ]}
-                    arxiv="https://arxiv.org/abs/2103.00393"
-                    pdf="https://arxiv.org/pdf/2103.00393.pdf"
-                    github="https://github.com/cunningham-lab/hipgp"
-                    conference="AISTATS"
-                    year="2021"
-                  />	
-                  <PubItem title="Scalable Cross Validation Losses for Gaussian Process Models"
-                    authors={[
-                      "Martin Jankowiak",
-                      "Geoff Pleiss"
-                    ]}
-                    arxiv="https://arxiv.org/abs/2105.11535"
-                    pdf="https://arxiv.org/pdf/2105.11535.pdf"
-                    techReport
-                    year="2021"
-                  />
-                  <PubItem title="Uses and Abuses of the Cross-Entropy Loss: Case Studies in Modern Deep Learning"
-                    authors={[
-                      "Elliott Gordon-Rodriguez",
-                      "Gabriel Loaiza-Ganem",
-                      "Geoff Pleiss",
-                      "John P. Cunningham"
-                    ]}
-                    arxiv="https://arxiv.org/abs/2011.05231"
-                    pdf="https://arxiv.org/pdf/2011.05231.pdf"
-                    conference="NeurIPS &quot;I Can&#39;t Believe It&#39;s Not Better&#33;&quot; Workshop"
-                    github="https://github.com/cunningham-lab/cb_and_cc"
-                    year="2020"
-                  />	
-                  <PubItem title="A Scalable and Flexible Framework for Gaussian Processes via Matrix-Vector Multiplication"
-                    authors={[
-                      "Geoff Pleiss",
-                    ]}
-                    pdf={thesis}
-                    thesis
-                    year="2020"
-                  />	
-                  <PubItem title="Fast Matrix Square Roots with Applications to Gaussian Processes and Bayesian Optimization"
-                    authors={[
-                      "Geoff Pleiss",
-                      "Martin Jankowiak",
-                      "David Eriksson",
-                      "Anil Damle",
-                      "Jacob R. Gardner"
-                    ]}
-                    arxiv="https://arxiv.org/abs/2006.11267"
-                    pdf="https://arxiv.org/pdf/2006.11267.pdf"
-                    github="https://arxiv.org/pdf/2102.06695"
-                    talk="https://slideslive.com/38936908/fast-matrix-square-roots-with-applications-to-gaussian-processes-and-bayesian-optimization?ref=speaker-27667-latest"
-                    conference="NeurIPS"
-                    year="2020"
-                  />	
                   <PubItem title="Identifying Mislabeled Data using the Area Under the Margin Ranking"
                     authors={[
                       "Geoff Pleiss",
@@ -312,88 +209,6 @@ class Home extends React.Component {
                     talk="https://slideslive.com/38936900/identifying-mislabeled-data-using-the-area-under-the-margin-ranking?ref=speaker-27667-latest"
                     conference="NeurIPS"
                     year="2020"
-                  />	
-                  <PubItem title="Deep Sigma Point Processes"
-                    authors={[
-                      "Martin Jankowiak",
-                      "Geoff Pleiss",
-                      "Jacob R. Gardner",
-                    ]}
-                    arxiv="https://arxiv.org/abs/2002.09112"
-                    pdf="https://arxiv.org/pdf/2002.09112.pdf"
-                    github="https://github.com/cornellius-gp/gpytorch/blob/master/examples/05_Deep_Gaussian_Processes/Deep_Sigma_Point_Processes.ipynb"
-                    conference="UAI"
-                    year="2020"
-                  />	
-                  <PubItem title="Parametric Gaussian Process Regressors"
-                    authors={[
-                      "Martin Jankowiak",
-                      "Geoff Pleiss",
-                      "Jacob R. Gardner",
-                    ]}
-                    arxiv="https://arxiv.org/abs/1910.07123"
-                    pdf="https://arxiv.org/pdf/1910.07123.pdf"
-                    github="https://github.com/cornellius-gp/gpytorch/blob/master/examples/04_Variational_and_Approximate_GPs/Approximate_GP_Objective_Functions.ipynb"
-                    conference="ICML"
-                    year="2020"
-                  />	
-                  <PubItem title="Pseudo-lidar++: Accurate depth for 3d object detection in autonomous driving."
-                    authors={[
-                      "Yurong You*",
-                      "Yan Wang*",
-                      "Wei-Lun Chao*",
-                      "Divyansh Garg",
-                      "Geoff Pleiss",
-                      "Bharath Hariharan",
-                      "Mark Campbell",
-                      "Kilian Q. Weinberger"
-                    ]}
-                    arxiv="https://arxiv.org/abs/1906.06310"
-                    pdf="https://arxiv.org/pdf/1906.06310.pdf"
-                    github="https://github.com/mileyan/Pseudo_Lidar_V2"
-                    conference="ICLR"
-                    year="2020"
-                  />	
-                  <PubItem title="Exact Gaussian Processes on a Million Data Points"
-                    authors={[
-                      "Ke Alexander Wang*",
-                      "Geoff Pleiss*",
-                      "Jacob R. Gardner",
-                      "Stephen Tyree",
-                      "Kilian Q. Weinberger",
-                      "Andrew Gordon Wilson",
-                    ]}
-                    arxiv="https://arxiv.org/abs/1903.08114"
-                    pdf="https://arxiv.org/pdf/1903.08114"
-                    conference="NeurIPS"
-                    year="2019"
-                    github="https://github.com/cornellius-gp/gpytorch/blob/master/examples/01_Simple_GP_Regression/Simple_MultiGPU_GP_Regression.ipynb"
-                  />	
-                  <PubItem title="Convolutional Networks with Dense Connectivity"
-                    authors={[
-                      "Gao Huang*",
-                      "Zhuang Liu*",
-                      "Geoff Pleiss",
-                      "Laurens van der Maaten",
-                      "Kilian Q. Weinberger",
-                    ]}
-                    pdf={densenetJournal}
-                    conference="Pattern Analysis and Machine Intelligence"
-                    github="https://github.com/gpleiss/efficient_densenet_pytorch"
-                    year="2019"
-                  />	
-                  <PubItem title="Potential Predictability of Regional Precipitation and Discharge Extremes Using Synoptic-Scale Climate Information via Machine Learning"
-                    authors={[
-                      "James Knighton",
-                      "Geoff Pleiss",
-                      "Elizabeth Carter",
-                      "Steven Lyon",
-                      "M Todd Walter",
-                      "Scott Steinschneider",
-                    ]}
-                    pdf={hydrometeorologyJournal}
-                    conference="Journal of Hydrometeorology"
-                    year="2019"
                   />	
                   <PubItem title="GPyTorch: Blackbox Matrix-Matrix Gaussian Process Inference with GPU Acceleration"
                     authors={[
@@ -409,33 +224,6 @@ class Home extends React.Component {
                     conference="NeurIPS"
                     year="2018"
                     talk="https://www.videoken.com/embed/QcFGBPNh24E?tocitem=101"
-                    github="https://github.com/cornellius-gp/gpytorch"
-                  />	
-                  <PubItem title="Constant-Time Predictive Distributions for Gaussian Processes"
-                    authors={[
-                      "Geoff Pleiss",
-                      "Jacob R. Gardner",
-                      "Kilian Q. Weinberger",
-                      "Andrew Gordon Wilson",
-                    ]}
-                    conference="ICML"
-                    year="2018"
-                    arxiv="https://arxiv.org/abs/1803.06058"
-                    pdf="https://arxiv.org/pdf/1803.06058.pdf"
-                    github="https://github.com/cornellius-gp/gpytorch"
-                  />	
-                  <PubItem title="Product Kernel Interpolation for Scalable Gaussian Processes"
-                    authors={[
-                      "Jacob R. Gardner",
-                      "Geoff Pleiss",
-                      "Ruihan Wu",
-                      "Kilian Q. Weinberger",
-                      "Andrew Gordon Wilson",
-                    ]}
-                    conference="AISTATS"
-                    year="2018"
-                    arxiv="https://arxiv.org/abs/1802.08903"
-                    pdf="https://arxiv.org/pdf/1802.08903.pdf"
                     github="https://github.com/cornellius-gp/gpytorch"
                   />	
                   <PubItem title="On Fairness and Calibration"
@@ -467,37 +255,6 @@ class Home extends React.Component {
                     github="https://github.com/gpleiss/temperature_scaling"
                     talk="https://vimeo.com/238242536"
                   />	
-                  <PubItem title="Deep Feature Interpolation for Image Content Changes"
-                    authors={[
-                      "Paul Upchurch*",
-                      "Jacob R. Gardner*",
-                      "Geoff Pleiss",
-                      "Robert Pless",
-                      "Noah Snavely",
-                      "Kavita Bala",
-                      "Kilian Q. Weinberger"
-                    ]}
-                    conference="CVPR"
-                    year="2017"
-                    arxiv="https://arxiv.org/abs/1611.05507"
-                    pdf="https://arxiv.org/pdf/1611.05507.pdf"
-                    github="https://github.com/paulu/deepfeatinterp"
-                  />	
-                  <PubItem title="Snapshot Ensembles: Train 1, get M for free"
-                    authors={[
-                      "Gao Huang*", 
-                      "Yixuan Li*",
-                      "Geoff Pleiss",
-                      "Zhuang Liu",
-                      "John Hopcroft",
-                      "Kilian Q. Weinberger"
-                    ]}
-                    conference="ICLR"
-                    year="2017"
-                    arxiv="https://arxiv.org/abs/1704.00109"
-                    pdf="https://arxiv.org/pdf/1704.00109.pdf"
-                    github="https://github.com/gaohuang/SnapshotEnsemble"
-                  />
                 </CvList>
               </div>
             </div>
@@ -508,36 +265,49 @@ class Home extends React.Component {
           <div className="container">
             <div className="row">  
               <div className="col-md-12">
-                <H2 className="text-light">Open Source</H2>
+                <H2 className="mb-1 text-light" noMb>Selected Open Source</H2>
+                <p className="mb-5">
+                  <small className="font-italic">For a full list of respositories I actively contribute to, please see my <Link href="https://github.com/gpleiss">Github</Link> page.</small>
+                </p>
                 <CvList>
                   <SoftwareItem title="GPyTorch"
-                    status="v1.6 Release"
+                    status="v1.9 Release"
                     coauthors={[
                       "Jacob R. Gardner"
                     ]}
-                    tagline="A implementation of Gaussian process models in PyTorch, designed for speed, modularity, and prototyping."
+                    tagline="A implementation of Gaussian processes in PyTorch, designed for speed, modularity, and prototyping."
                     website="https://gpytorch.ai"
                     github="https://github.com/cornellius-gp/GPyTorch"
                   >
                   </SoftwareItem>
-                  <SoftwareItem title="Area Under the Margin (AUM)"
-                    coauthors={[
-                      "Josh Shapiro"
-                    ]}
-                    tagline="A Python package for computing the AUM statistic with PyTorch models."
-                    github="https://github.com/asappresearch/aum"
+                  <SoftwareItem title="LinearOperator"
+                    status="v0.1 Release"
+                    coauthors={["Max Balandat"]}
+                    tagline="A library for structured linear algebra operations in PyTorch."
+                    website="https://linear-operator.readthedocs.io/en/latest/"
+                    github="https://github.com/cornellius-gp/linear_operator"
                   >
                   </SoftwareItem>
-                  <SoftwareItem title="Memory-Efficient DenseNets (PyTorch)"
-                    coauthors={[
-                      "Danlu Chen",
-                      "Gao Huang"
-                    ]}
-                    tagline="A PyTorch implementation of DenseNets, optimized to save GPU memory."
-                    github="https://github.com/gpleiss/efficient_densenet_pytorch"
-                    report="https://arxiv.org/pdf/1707.06990.pdf"
-                  >
-                  </SoftwareItem>
+                  {/*
+                    <SoftwareItem title="Area Under the Margin (AUM)"
+                      coauthors={[
+                        "Josh Shapiro"
+                      ]}
+                      tagline="A Python package for computing the AUM statistic with PyTorch models."
+                      github="https://github.com/asappresearch/aum"
+                    >
+                    </SoftwareItem>
+                    <SoftwareItem title="Memory-Efficient DenseNets (PyTorch)"
+                      coauthors={[
+                        "Danlu Chen",
+                        "Gao Huang"
+                      ]}
+                      tagline="A PyTorch implementation of DenseNets, optimized to save GPU memory."
+                      github="https://github.com/gpleiss/efficient_densenet_pytorch"
+                      report="https://arxiv.org/pdf/1707.06990.pdf"
+                    >
+                    </SoftwareItem>
+                  */}
                 </CvList>
               </div>
             </div>
