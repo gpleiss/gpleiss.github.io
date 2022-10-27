@@ -194,6 +194,7 @@ class Home extends React.Component {
                     pdf="https://arxiv.org/pdf/2106.06529.pdf"
                     conference="NeurIPS"
                     github="https://github.com/gpleiss/limits_of_large_width"
+                    talk="https://slideslive.com/38967621/the-limitations-of-large-width-in-neural-networks-a-deep-gaussian-process-perspective?ref=search-presentations-geoff+pleiss"
                     year="2021"
                   />
                   <PubItem title="Identifying Mislabeled Data using the Area Under the Margin Ranking"

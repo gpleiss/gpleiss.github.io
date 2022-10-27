@@ -29,6 +29,7 @@ class Home extends React.Component {
                       "Philipp Hennig",
                       "John P. Cunningham",
                     ]}
+                    isNew
                     arxiv="https://arxiv.org/abs/2205.15449"
                     pdf="https://arxiv.org/pdf/2205.15449.pdf"
                     github="https://github.com/JonathanWenger/itergp"
@@ -43,6 +44,7 @@ class Home extends React.Component {
                       "Richard Zemel",
                       "John P. Cunningham",
                     ]}
+                    isNew
                     arxiv="https://arxiv.org/abs/2202.06985"
                     pdf="https://arxiv.org/pdf/2202.06985.pdf"
                     github="https://github.com/cellistigs/interp_ensembles"
@@ -82,6 +84,18 @@ class Home extends React.Component {
 
                 <H3 id="overparam">Overparameterization and Ensemble Methods</H3>
                 <CvList indent>
+                  <PubItem title="The Best Deep Ensembles Sacrifice Predictive Diversity"
+                    authors={[
+                      "Taiga Abe*",
+                      "E. Kelly Buchanan*",
+                      "Geoff Pleiss",
+                      "John P. Cunningham",
+                    ]}
+                    isNew
+                    award="oral"
+                    conference="NeurIPS &quot;I Can&#39;t Believe It&#39;s Not Better&#33;&quot; Workshop"
+                    year="2022"
+                  />
                   <PubItem title="Deep Ensembles Work, But Are They Necessary?"
                     authors={[
                       "Taiga Abe*",
@@ -90,6 +104,7 @@ class Home extends React.Component {
                       "Richard Zemel",
                       "John P. Cunningham",
                     ]}
+                    isNew
                     arxiv="https://arxiv.org/abs/2202.06985"
                     pdf="https://arxiv.org/pdf/2202.06985.pdf"
                     github="https://github.com/cellistigs/interp_ensembles"
@@ -105,6 +120,7 @@ class Home extends React.Component {
                     pdf="https://arxiv.org/pdf/2106.06529.pdf"
                     conference="NeurIPS"
                     github="https://github.com/gpleiss/limits_of_large_width"
+                    talk="https://slideslive.com/38967621/the-limitations-of-large-width-in-neural-networks-a-deep-gaussian-process-perspective?ref=search-presentations-geoff+pleiss"
                     year="2021"
                   />
                   <PubItem title="Snapshot Ensembles: Train 1, get M for free"
@@ -134,6 +150,7 @@ class Home extends React.Component {
                       "Philipp Hennig",
                       "John P. Cunningham",
                     ]}
+                    isNew
                     arxiv="https://arxiv.org/abs/2205.15449"
                     pdf="https://arxiv.org/pdf/2205.15449.pdf"
                     github="https://github.com/JonathanWenger/itergp"
@@ -150,9 +167,11 @@ class Home extends React.Component {
                     ]}
                     arxiv="https://arxiv.org/abs/2107.00243"
                     pdf="https://arxiv.org/pdf/2107.00243.pdf"
+                    github="https://github.com/cornellius-gp/gpytorch"
                     award="long oral"
                     conference="ICML"
                     year="2022"
+                    talk="https://slideslive.com/38983179/preconditioning-for-scalable-gaussian-process-hyperparameter-optimization?ref=search-presentations-geoff+pleiss"
                   />
                   <PubItem title="Bias-Free Scalable Gaussian Processes via Randomized Truncations"
                     authors={[
@@ -167,6 +186,7 @@ class Home extends React.Component {
                     conference="ICML"
                     github="https://github.com/cunningham-lab/RTGPS"
                     year="2021"
+                    talk="https://slideslive.com/38959632/biasfree-scalable-gaussian-processes-via-randomized-truncations?ref=search-presentations-geoff+pleiss"
                   />	
                   <PubItem title="A Scalable and Flexible Framework for Gaussian Processes via Matrix-Vector Multiplication"
                     authors={[
@@ -263,6 +283,8 @@ class Home extends React.Component {
                     pdf="https://arxiv.org/pdf/2202.01694"
                     conference="ICML"
                     year="2022"
+                    github="https://docs.gpytorch.ai/en/latest/examples/04_Variational_and_Approximate_GPs/VNNGP.html"
+                    talk="https://slideslive.com/38983939/vnngp-variational-nearest-neighbor-gaussian-process?ref=search-presentations-geoff+pleiss"
                   />
                   <PubItem title="Scalable Cross Validation Losses for Gaussian Process Models"
                     authors={[
@@ -284,6 +306,7 @@ class Home extends React.Component {
                     pdf="https://arxiv.org/pdf/1910.07123.pdf"
                     github="https://github.com/cornellius-gp/gpytorch/blob/master/examples/04_Variational_and_Approximate_GPs/Approximate_GP_Objective_Functions.ipynb"
                     conference="ICML"
+                    talk="https://slideslive.com/38928016/parametric-gaussian-process-regressors?ref=search-presentations-geoff+pleiss"
                     year="2020"
                   />	
                 </CvList>
@@ -365,6 +388,8 @@ class Home extends React.Component {
                     pdf="https://arxiv.org/pdf/2106.01413.pdf"
                     conference="NeurIPS"
                     year="2021"
+                    github="https://github.com/layer6ai-labs/rectangular-flows"
+                    talk="https://slideslive.com/38966976/rectangular-flows-for-manifold-learning-proceedings-of-neural-information-processing-systems?ref=search-presentations-geoff+pleiss"
                   />
                   <PubItem title="Uses and Abuses of the Cross-Entropy Loss: Case Studies in Modern Deep Learning"
                     authors={[
@@ -378,6 +403,7 @@ class Home extends React.Component {
                     conference="NeurIPS &quot;I Can&#39;t Believe It&#39;s Not Better&#33;&quot; Workshop"
                     github="https://github.com/cunningham-lab/cb_and_cc"
                     year="2020"
+                    talk="https://slideslive.com/38942667/uses-and-abuses-of-the-crossentropy-loss-case-studies-in-modern-deep-learning?ref=search-presentations-geoff+pleiss"
                   />	
                   <PubItem title="Deep Sigma Point Processes"
                     authors={[
@@ -417,7 +443,7 @@ class Home extends React.Component {
                     ]}
                     arxiv="https://arxiv.org/abs/2008.03275"
                     pdf="https://arxiv.org/pdf/2008.03275.pdf"
-                    conference="Proceedings of the National Academy of Sciences (to appear)"
+                    conference="Proceedings of the National Academy of Sciences"
                     year="2022"
                   />
                   <PubItem title="Hierarchical Inducing Point Gaussian Process for Inter-domain Observations"
