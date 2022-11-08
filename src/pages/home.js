@@ -89,13 +89,13 @@ class Home extends React.Component {
                 Major focuses of my work include:
                 <ol>
                   <li>uncertainty quantification,</li>
-                  <li>"reliable" deep learning, and</li>
-                  <li>numerical methods for Gaussian processes.</li>
+                  <li>Gaussian processes, and </li>
+                  <li>"reliable" deep learning.</li>
                 </ol>
                 Recently, I have also begun investigating
                 <ol>
                   <li>overparameterization,</li>
-                  <li>ensemble methods for neural networks, and</li>
+                  <li>ensemble methods, and</li>
                   <li>approximate inference.</li>
                 </ol>
               </p>
@@ -282,7 +282,7 @@ class Home extends React.Component {
                   >
                   </SoftwareItem>
                   <SoftwareItem title="LinearOperator"
-                    status="v0.1 Release"
+                    status="v0.2 Release"
                     coauthors={["Max Balandat"]}
                     tagline="A library for structured linear algebra operations in PyTorch."
                     website="https://linear-operator.readthedocs.io/en/latest/"

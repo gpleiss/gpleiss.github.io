@@ -391,6 +391,18 @@ class Home extends React.Component {
                     github="https://github.com/layer6ai-labs/rectangular-flows"
                     talk="https://slideslive.com/38966976/rectangular-flows-for-manifold-learning-proceedings-of-neural-information-processing-systems?ref=search-presentations-geoff+pleiss"
                   />
+                  <PubItem title="The Limitations of Large Width in Neural Networks: A Deep Gaussian Process Perspective"
+                    authors={[
+                      "Geoff Pleiss",
+                      "John P. Cunningham"
+                    ]}
+                    arxiv="https://arxiv.org/abs/2106.06529"
+                    pdf="https://arxiv.org/pdf/2106.06529.pdf"
+                    conference="NeurIPS"
+                    github="https://github.com/gpleiss/limits_of_large_width"
+                    talk="https://slideslive.com/38967621/the-limitations-of-large-width-in-neural-networks-a-deep-gaussian-process-perspective?ref=search-presentations-geoff+pleiss"
+                    year="2021"
+                  />
                   <PubItem title="Uses and Abuses of the Cross-Entropy Loss: Case Studies in Modern Deep Learning"
                     authors={[
                       "Elliott Gordon-Rodriguez",
