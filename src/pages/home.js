@@ -143,6 +143,19 @@ class Home extends React.Component {
                 </p>
                 
                 <CvList className="list-unstyled">
+                  <PubItem title="Pathologies of Predictive Diversity in Deep Ensembles"
+                    authors={[
+                      "Taiga Abe",
+                      "E. Kelly Buchanan",
+                      "Geoff Pleiss",
+                      "John P. Cunningham",
+                    ]}
+                    isNew
+                    arxiv="https://arxiv.org/abs/2302.00704"
+                    pdf="https://arxiv.org/pdf/2302.00704.pdf"
+                    underSubmission
+                    year="2023"
+                  />
                   <PubItem title="The Best Deep Ensembles Sacrifice Predictive Diversity"
                     authors={[
                       "Taiga Abe*",
@@ -151,7 +164,8 @@ class Home extends React.Component {
                       "John P. Cunningham",
                     ]}
                     isNew
-                    award="oral"
+                    award="Most Surprising Result Award"
+                    pdf="https://openreview.net/pdf?id=6sBiAIpkUiO"
                     conference="NeurIPS &quot;I Can&#39;t Believe It&#39;s Not Better&#33;&quot; Workshop"
                     year="2022"
                   />
@@ -178,7 +192,6 @@ class Home extends React.Component {
                       "Richard Zemel",
                       "John P. Cunningham",
                     ]}
-                    isNew
                     arxiv="https://arxiv.org/abs/2202.06985"
                     pdf="https://arxiv.org/pdf/2202.06985.pdf"
                     github="https://github.com/cellistigs/interp_ensembles"
@@ -197,20 +210,6 @@ class Home extends React.Component {
                     talk="https://slideslive.com/38967621/the-limitations-of-large-width-in-neural-networks-a-deep-gaussian-process-perspective?ref=search-presentations-geoff+pleiss"
                     year="2021"
                   />
-                  <PubItem title="Identifying Mislabeled Data using the Area Under the Margin Ranking"
-                    authors={[
-                      "Geoff Pleiss",
-                      "Tianyi Zhang",
-                      "Ethan R. Elenberg",
-                      "Kilian Q. Weinberger"
-                    ]}
-                    arxiv="https://arxiv.org/abs/2001.10528"
-                    pdf="https://arxiv.org/pdf/2001.10528.pdf"
-                    github="https://github.com/asappresearch/aum"
-                    talk="https://slideslive.com/38936900/identifying-mislabeled-data-using-the-area-under-the-margin-ranking?ref=speaker-27667-latest"
-                    conference="NeurIPS"
-                    year="2020"
-                  />	
                   <PubItem title="GPyTorch: Blackbox Matrix-Matrix Gaussian Process Inference with GPU Acceleration"
                     authors={[
                       "Jacob R. Gardner*",

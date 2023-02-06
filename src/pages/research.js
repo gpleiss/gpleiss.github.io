@@ -29,7 +29,6 @@ class Home extends React.Component {
                       "Philipp Hennig",
                       "John P. Cunningham",
                     ]}
-                    isNew
                     arxiv="https://arxiv.org/abs/2205.15449"
                     pdf="https://arxiv.org/pdf/2205.15449.pdf"
                     github="https://github.com/JonathanWenger/itergp"
@@ -44,7 +43,6 @@ class Home extends React.Component {
                       "Richard Zemel",
                       "John P. Cunningham",
                     ]}
-                    isNew
                     arxiv="https://arxiv.org/abs/2202.06985"
                     pdf="https://arxiv.org/pdf/2202.06985.pdf"
                     github="https://github.com/cellistigs/interp_ensembles"
@@ -84,6 +82,19 @@ class Home extends React.Component {
 
                 <H3 id="overparam">Overparameterization and Ensemble Methods</H3>
                 <CvList indent>
+                  <PubItem title="Pathologies of Predictive Diversity in Deep Ensembles"
+                    authors={[
+                      "Taiga Abe",
+                      "E. Kelly Buchanan",
+                      "Geoff Pleiss",
+                      "John P. Cunningham",
+                    ]}
+                    isNew
+                    arxiv="https://arxiv.org/abs/2302.00704"
+                    pdf="https://arxiv.org/pdf/2302.00704.pdf"
+                    underSubmission
+                    year="2023"
+                  />
                   <PubItem title="The Best Deep Ensembles Sacrifice Predictive Diversity"
                     authors={[
                       "Taiga Abe*",
@@ -91,8 +102,8 @@ class Home extends React.Component {
                       "Geoff Pleiss",
                       "John P. Cunningham",
                     ]}
-                    isNew
-                    award="oral"
+                    award="Most Surprising Result Award"
+                    pdf="https://openreview.net/pdf?id=6sBiAIpkUiO"
                     conference="NeurIPS &quot;I Can&#39;t Believe It&#39;s Not Better&#33;&quot; Workshop"
                     year="2022"
                   />
@@ -104,7 +115,6 @@ class Home extends React.Component {
                       "Richard Zemel",
                       "John P. Cunningham",
                     ]}
-                    isNew
                     arxiv="https://arxiv.org/abs/2202.06985"
                     pdf="https://arxiv.org/pdf/2202.06985.pdf"
                     github="https://github.com/cellistigs/interp_ensembles"
@@ -150,7 +160,6 @@ class Home extends React.Component {
                       "Philipp Hennig",
                       "John P. Cunningham",
                     ]}
-                    isNew
                     arxiv="https://arxiv.org/abs/2205.15449"
                     pdf="https://arxiv.org/pdf/2205.15449.pdf"
                     github="https://github.com/JonathanWenger/itergp"
