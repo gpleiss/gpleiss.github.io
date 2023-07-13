@@ -45,12 +45,10 @@ class Home extends React.Component {
             <div className="col-md-8">
               <H2 noMb>Geoff Pleiss</H2>
               <p className="mb-5 text-muted font-italic">
-                Postdoctoral Research Scientist<br />
-                <Link className="text-muted" href="http://stat.columbia.edu/">Department of Statistics</Link> and{" "}
-                <Link className="text-muted" href="https://zuckermaninstitute.columbia.edu/">Zuckerman Institute</Link><br />
-                <Link className="text-muted" href="http://stat.columbia.edu/">Columbia University</Link><br />
+                Assistant Professor, <Link className="text-muted" href="http://stat.ubc.ca/">UBC Department of Statistics</Link><br />
+                Faculty, <Link className="text-muted" href="http://vectorinstitute.ai/">Vector Institute</Link><br />
                 <FontAwesomeIcon icon={faEnvelopeSquare} size="1.5x" title="Email: " className="mr-3" />
-                gmp2162 &lt;at&gt; columbia.edu
+                geoff.pleiss &lt;at&gt; stat.ubc.ca
               </p>
               <p className="text-center">
                 <picture className="d-inline-block d-md-none mb-5 mb-md-0">
@@ -58,38 +56,37 @@ class Home extends React.Component {
                 </picture>
               </p>
               <p>
-                <strong>In July 2023, I will be joining the University of British Columbia as an assistant professor in the <Link className="text-dark" href="https://www.stat.ubc.ca">Department of Statistics</Link>.</strong> I
-                will also be joining the <Link className="text-dark" href="https://vectorinstitute.ai">Vector Institute</Link> as a faculty member.
+                I am an assistant professor in the {" "}
+                <Link className="text-muted" href="http://stat.ubc.ca/">Department of Statistics</Link>{" "}
+                at the University of British Columbia,
+                where I am an inaugural member of the {" "}
+                <Link className="text-muted" href="http://caida.ubc.ca/aim-si">AIM-SI</Link> (AI Methods for Scientific Impact) cluster.
+                I am also a faculty member of the {" "}
+                <Link className="text-muted" href="http://vectorinstitue.ai/">Vector Institute</Link> and {" "}
+                <Link className="text-muted" href="http://caida.ubc.ca/">CAIDA</Link>.
               </p>
+
               <p>
-                <strong>Interested in joining my lab?</strong> I
-                am looking for prospective M.S. and Ph.D students with research interests similar to my own&mdash;please
-                apply directly to the <Link href="https://www.stat.ubc.ca/graduate-admissions">UBC stats department</Link>, and mention me as a potential research advisor in your application.
-                I am also open to advising postdocs through <Link href="https://vectorinstitute.bamboohr.com/jobs/view.php?id=136">Vector's post-doctoral fellowship</Link>&mdash;please
-                contact me if you are interested in having me as a potential postdoc supervisor.
+                Previously, I was a postdoc at Columbia University with <Link href="https://stat.columbia.edu/~cunningham/">John P. Cunningham</Link>.
+                I received my Ph.D. from the CS department at Cornell University in August 2020.
+                where I was advised by <Link href="http://kilian.cs.cornell.edu/">Kilian Weinberger</Link> and
+                also worked closely with <Link href="https://cims.nyu.edu/~andrewgw/">Andrew Gordon Wilson</Link>.
               </p>
+              <div className="clearfix" />
             </div>
             <div className="col-md-4">
               <picture className="float-md-right d-none d-md-inline">
                 <img className="rounded img-thumbnail" alt="Geoff Pleiss" src={meImg} style={{width: '100%', maxWidth: '270px'}}></img>
               </picture>
             </div>
-          </div>
-          <hr className="mt-4 mb-5" />
-          <div className="row">
             <div className="col-sm-12">
-              <p>
-                I am a postdoc at Columbia University, working with <Link href="https://stat.columbia.edu/~cunningham/">John P. Cunningham</Link>.
-                I received my Ph.D. from the CS department at Cornell University in August 2020.
-                I was advised by <Link href="http://kilian.cs.cornell.edu/">Kilian Weinberger</Link> and
-                also worked closely with <Link href="https://cims.nyu.edu/~andrewgw/">Andrew Gordon Wilson</Link>.
-              </p>
               <p>
                 My research interests intersect deep learning and probablistic modeling.
                 Major focuses of my work include:
                 <ol>
                   <li>uncertainty quantification,</li>
-                  <li>Gaussian processes, and </li>
+                  <li>Gaussian processes,</li>
+                  <li>Bayesian optimization, and</li>
                   <li>"reliable" deep learning.</li>
                 </ol>
                 Recently, I have also begun investigating
@@ -103,7 +100,6 @@ class Home extends React.Component {
                 I am also an active open source contributior.
                 Most notably, I co-created and maintain the <Link href="http://gpytorch.ai">GPyTorch</Link> Gaussian process library with <Link href="https://jacobrgardner.github.io/">Jake Gardner</Link>.
               </p>
-              <div className="clearfix" />
             </div>
             <div className="col-md-12">
               <ul className="list-inline mt-2">
@@ -129,6 +125,18 @@ class Home extends React.Component {
                   <p className="m-3">{ bio }</p>
                 </ModalBody>
               </Modal>
+            </div>
+          </div>
+          <hr className="mt-4 mb-5" />
+          <div className="row">
+            <div className="col-sm-12">
+              <p>
+                <strong>Interested in joining my lab?</strong> I
+                am looking for prospective M.S. and Ph.D students with research interests similar to my own&mdash;please
+                apply directly to the <Link href="https://www.stat.ubc.ca/graduate-admissions">UBC stats department</Link>, and mention me as a potential research advisor in your application.
+                I am also open to advising postdocs through <Link href="https://vectorinstitute.bamboohr.com/jobs/view.php?id=136">Vector's post-doctoral fellowship</Link>&mdash;please
+                contact me if you are interested in having me as a potential postdoc supervisor.
+              </p>
             </div>
           </div>
         </div>
