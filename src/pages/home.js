@@ -59,11 +59,11 @@ class Home extends React.Component {
                 I am an assistant professor in the {" "}
                 <Link className="text-muted" href="http://stat.ubc.ca/">Department of Statistics</Link>{" "}
                 at the University of British Columbia,
-                where I am an inaugural member of the {" "}
+                where I am an inaugural member of {" "}
+                <Link className="text-muted" href="http://caida.ubc.ca/">CAIDA's</Link> {" "}
                 <Link className="text-muted" href="http://caida.ubc.ca/aim-si">AIM-SI</Link> (AI Methods for Scientific Impact) cluster.
                 I am also a faculty member of the {" "}
-                <Link className="text-muted" href="http://vectorinstitue.ai/">Vector Institute</Link> and {" "}
-                <Link className="text-muted" href="http://caida.ubc.ca/">CAIDA</Link>.
+                <Link className="text-muted" href="http://vectorinstitue.ai/">Vector Institute</Link>.
               </p>
 
               <p>
@@ -84,16 +84,16 @@ class Home extends React.Component {
                 My research interests intersect deep learning and probablistic modeling.
                 Major focuses of my work include:
                 <ol>
+									<li>neural networks,</li>
                   <li>uncertainty quantification,</li>
-                  <li>Gaussian processes,</li>
-                  <li>Bayesian optimization, and</li>
-                  <li>"reliable" deep learning.</li>
+                  <li>probabilistic modeling, and</li>
+                  <li>Bayesian optimization.</li>
                 </ol>
-                Recently, I have also begun investigating
+                More specifically, some recent interests include
                 <ol>
-                  <li>overparameterization,</li>
+                  <li>"reliable" neural networks,</li>
                   <li>ensemble methods, and</li>
-                  <li>approximate inference.</li>
+                  <li>Gaussian processes.</li>
                 </ol>
               </p>
               <p>
