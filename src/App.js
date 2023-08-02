@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import FontAwesomeIcon from '@fortawesome/react-fontawesome';
-import { faGithub, faTwitter } from '@fortawesome/fontawesome-free-brands';
+import { faGithub } from '@fortawesome/fontawesome-free-brands';
 
 import { Navbar, NavbarToggler, Collapse, NavbarBrand, Nav, NavItem, NavLink,
          UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
@@ -34,53 +34,53 @@ class App extends React.Component {
     return (
       <Router>
         <div>
-          <Navbar color="dark" dark expand="md">
+          <Navbar color="dark" dark expand="lg">
             <NavbarBrand className="m-0 mr-md-4 ml-md-4 link-unstyled small-caps h3" href="/">
               Geoff Pleiss
             </NavbarBrand>
-						<NavbarToggler onClick={this.toggleNavbar} />
-						<Collapse isOpen={this.state.isNavbarOpen} navbar>
-							<Nav className="mr-auto ml-md-4" navbar>
-								<UncontrolledDropdown nav inNavbar>
-									<DropdownToggle nav caret href="/research">
+            <NavbarToggler onClick={this.toggleNavbar} />
+            <Collapse isOpen={this.state.isNavbarOpen} navbar>
+              <Nav className="mr-auto ml-md-4" navbar>
+                <UncontrolledDropdown nav inNavbar>
+                  <DropdownToggle nav caret href="/research">
                     Research
-									</DropdownToggle>
-									<DropdownMenu>
-										<DropdownItem href="/research/#uq">Uncertainty Quantification</DropdownItem>
-										<DropdownItem href="/research/#overparam">Overparameterization and Ensemble Methods</DropdownItem>
-										<DropdownItem href="/research/#nla">Numerical Methods for Gaussian Processes</DropdownItem>
-										<DropdownItem href="/research/#approx-inf">Approximate Inference for Gaussian Processes</DropdownItem>
-										<DropdownItem href="/research/#reliable-nn">"Reliable" Deep Learning</DropdownItem>
-										<DropdownItem href="/research/#prob-modeling">Probabilistic Modeling</DropdownItem>
-										<DropdownItem href="/research/#sci-app">Scientific Applications</DropdownItem>
-									</DropdownMenu>
-								</UncontrolledDropdown>
-								<UncontrolledDropdown nav inNavbar>
-									<DropdownToggle nav caret>
-										Open Source
-									</DropdownToggle>
-									<DropdownMenu>
-										<DropdownItem href="https://gpytorch.ai" target="_blank">
+                  </DropdownToggle>
+                  <DropdownMenu>
+                    <DropdownItem href="/research/#uq">Uncertainty Quantification</DropdownItem>
+                    <DropdownItem href="/research/#overparam">Overparameterization and Ensemble Methods</DropdownItem>
+                    <DropdownItem href="/research/#nla">Numerical Methods for Gaussian Processes</DropdownItem>
+                    <DropdownItem href="/research/#approx-inf">Approximate Inference for Gaussian Processes</DropdownItem>
+                    <DropdownItem href="/research/#reliable-nn">"Reliable" Deep Learning</DropdownItem>
+                    <DropdownItem href="/research/#prob-modeling">Probabilistic Modeling</DropdownItem>
+                    <DropdownItem href="/research/#sci-app">Scientific Applications</DropdownItem>
+                  </DropdownMenu>
+                </UncontrolledDropdown>
+                <UncontrolledDropdown nav inNavbar>
+                  <DropdownToggle nav caret>
+                    Open Source
+                  </DropdownToggle>
+                  <DropdownMenu>
+                    <DropdownItem href="https://gpytorch.ai" target="_blank">
                       GPyTorch
-										</DropdownItem>
-										<DropdownItem href="https://linear-operator.readthedocs.io" target="_blank">
+                    </DropdownItem>
+                    <DropdownItem href="https://linear-operator.readthedocs.io" target="_blank">
                       LinearOperator
-										</DropdownItem>
-									</DropdownMenu>
-								</UncontrolledDropdown>
-								<UncontrolledDropdown nav inNavbar>
-									<DropdownToggle nav caret>
-										Blog
-									</DropdownToggle>
-									<DropdownMenu>
-										<DropdownItem href="/blog/nn_calibration.html">
-											Neural Network Calibration
-										</DropdownItem>
-										<DropdownItem href="/blog/aum.html">
-											Area Under the Margin (AUM)
-										</DropdownItem>
-									</DropdownMenu>
-								</UncontrolledDropdown>
+                    </DropdownItem>
+                  </DropdownMenu>
+                </UncontrolledDropdown>
+                <UncontrolledDropdown nav inNavbar>
+                  <DropdownToggle nav caret>
+                    Blog
+                  </DropdownToggle>
+                  <DropdownMenu>
+                    <DropdownItem href="/blog/nn_calibration.html">
+                      Neural Network Calibration
+                    </DropdownItem>
+                    <DropdownItem href="/blog/aum.html">
+                      Area Under the Margin (AUM)
+                    </DropdownItem>
+                  </DropdownMenu>
+                </UncontrolledDropdown>
                 <NavItem>
                   <NavLink href="/geoffpleiss_cv.pdf" target="_blank">
                     CV
@@ -91,22 +91,27 @@ class App extends React.Component {
                     Bio
                   </NavLink>
                 </NavItem>
-							</Nav>
-						</Collapse>
-            <Nav navbar className="m-0 mr-md-4 ml-md-4 ml-auto d-none d-md-flex">
-              <NavItem className="ml-3">
-                <NavLink className="text-white" href="http://github.com/gpleiss" target="_blank">
-                  <FontAwesomeIcon icon={faGithub} size="2x" title="Github" />
-                </NavLink>
-              </NavItem>
+                <NavItem className="d-inline d-lg-none">
+                  <NavLink href="https://scholar.google.com/citations?user=XO8T-Y4AAAAJ&hl=en&oi=ao" target="_blank">
+                    Google Scholar
+                  </NavLink>
+                </NavItem>
+                <NavItem className="d-inline d-lg-none">
+                  <NavLink href="http://github.com/gpleiss" target="_blank">
+                    Github
+                  </NavLink>
+                </NavItem>
+              </Nav>
+            </Collapse>
+            <Nav navbar className="mr-lg-4 ml-lg-4 d-none d-lg-flex" aria-hidden="true">
               <NavItem className="ml-3">
                 <NavLink className="text-white" href="https://scholar.google.com/citations?user=XO8T-Y4AAAAJ&hl=en&oi=ao" target="_blank">
                   <img src={gscholarWhite} style={{width: "36px"}} alt="Google Scholar" />
                 </NavLink>
               </NavItem>
               <NavItem className="ml-3">
-                <NavLink className="text-white" href="http://twitter.com/gpleiss" target="_blank">
-                  <FontAwesomeIcon icon={faTwitter} size="2x" title="Twitter" />
+                <NavLink className="text-white" href="http://github.com/gpleiss" target="_blank">
+                  <FontAwesomeIcon icon={faGithub} size="2x" title="Github" />
                 </NavLink>
               </NavItem>
             </Nav>

@@ -40,21 +40,29 @@ class Home extends React.Component {
   render() {
     return (
       <div>
-        <div className="container pt-10 pb-8">
+        <div className="container py-8 pt-md-10">
           <div className="row">
-            <div className="col-md-8">
-              <H2 noMb>Geoff Pleiss</H2>
-              <p className="mb-5 text-muted font-italic">
-                Assistant Professor, <Link className="text-muted" href="http://stat.ubc.ca/">UBC Department of Statistics</Link><br />
-                Faculty, <Link className="text-muted" href="http://vectorinstitute.ai/">Vector Institute</Link><br />
-                <FontAwesomeIcon icon={faEnvelopeSquare} size="1.5x" title="Email: " className="mr-3" />
-                geoff.pleiss &lt;at&gt; stat.ubc.ca
-              </p>
-              <p className="text-center">
-                <picture className="d-inline-block d-md-none mb-5 mb-md-0">
-                  <img className="rounded img-thumbnail" alt="Geoff Pleiss" src={meImg} style={{width: '100%', maxWidth: '300px'}}></img>
+            <div className="col-sm-12">
+              <p className="text-center float-md-right mb-md-4 ml-md-5">
+                <picture className="d-inline-block">
+                  <img className="rounded img-thumbnail" alt="Geoff Pleiss" src={meImg} style={{width: '100%', maxWidth: '275px'}}></img>
                 </picture>
               </p>
+              <H2 noMb className="text-center text-md-left">Geoff Pleiss</H2>
+              <div className="row mb-5 text-muted font-italic text-center text-md-left">
+                <div className="col-lg-6 px-md-0 mt-3">
+                  Assistant Professor<br />
+                  <Link className="text-muted" href="http://stat.ubc.ca/">UBC Department of Statistics</Link><br />
+                  <FontAwesomeIcon icon={faEnvelopeSquare} size="1.5x" title="Email: " className="mr-3" />
+                  geoff.pleiss &lt;at&gt; stat.ubc.ca
+                </div>
+                <div className="col-lg-6 px-md-0 mt-3">
+                  Faculty Member<br />
+                  <Link className="text-muted" href="http://vectorinstitute.ai/">Vector Institute</Link><br />
+                  <FontAwesomeIcon icon={faEnvelopeSquare} size="1.5x" title="Email: " className="mr-3" />
+                  geoff.pleiss &lt;at&gt; vectorinstitute.ai
+                </div>
+              </div>
               <p>
                 I am an assistant professor in the {" "}
                 <Link className="text-muted" href="http://stat.ubc.ca/">Department of Statistics</Link>{" "}
@@ -65,21 +73,12 @@ class Home extends React.Component {
                 I am also a faculty member of the {" "}
                 <Link className="text-muted" href="http://vectorinstitue.ai/">Vector Institute</Link>.
               </p>
-
               <p>
                 Previously, I was a postdoc at Columbia University with <Link href="https://stat.columbia.edu/~cunningham/">John P. Cunningham</Link>.
                 I received my Ph.D. from the CS department at Cornell University in August 2020.
                 where I was advised by <Link href="http://kilian.cs.cornell.edu/">Kilian Weinberger</Link> and
                 also worked closely with <Link href="https://cims.nyu.edu/~andrewgw/">Andrew Gordon Wilson</Link>.
               </p>
-              <div className="clearfix" />
-            </div>
-            <div className="col-md-4">
-              <picture className="float-md-right d-none d-md-inline">
-                <img className="rounded img-thumbnail" alt="Geoff Pleiss" src={meImg} style={{width: '100%', maxWidth: '270px'}}></img>
-              </picture>
-            </div>
-            <div className="col-sm-12">
               <p>
                 My research interests intersect deep learning and probablistic modeling.
                 Major focuses of my work include:
