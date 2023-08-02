@@ -2,7 +2,7 @@ import React from 'react';
 import bio from '../components/bio.js';
 
 
-class AUM extends React.Component {
+class Bio extends React.Component {
   render() {
     return (
       <div>
@@ -18,4 +18,4 @@ class AUM extends React.Component {
   }
 }
 
-export default AUM;
+export default Bio;

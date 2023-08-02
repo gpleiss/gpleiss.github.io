@@ -46,13 +46,13 @@ class App extends React.Component {
                     Research
 									</DropdownToggle>
 									<DropdownMenu>
-										<DropdownItem href="/research#uq">Uncertainty Quantification</DropdownItem>
-										<DropdownItem href="/research#overparam">Overparameterization and Ensemble Methods</DropdownItem>
-										<DropdownItem href="/research#nla">Numerical Methods for Gaussian Processes</DropdownItem>
-										<DropdownItem href="/research#approx-inf">Approximate Inference for Gaussian Processes</DropdownItem>
-										<DropdownItem href="/research#reliable-nn">"Reliable" Deep Learning</DropdownItem>
-										<DropdownItem href="/research#prob-modeling">Probabilistic Modeling</DropdownItem>
-										<DropdownItem href="/research#sci-app">Scientific Applications</DropdownItem>
+										<DropdownItem href="/research/#uq">Uncertainty Quantification</DropdownItem>
+										<DropdownItem href="/research/#overparam">Overparameterization and Ensemble Methods</DropdownItem>
+										<DropdownItem href="/research/#nla">Numerical Methods for Gaussian Processes</DropdownItem>
+										<DropdownItem href="/research/#approx-inf">Approximate Inference for Gaussian Processes</DropdownItem>
+										<DropdownItem href="/research/#reliable-nn">"Reliable" Deep Learning</DropdownItem>
+										<DropdownItem href="/research/#prob-modeling">Probabilistic Modeling</DropdownItem>
+										<DropdownItem href="/research/#sci-app">Scientific Applications</DropdownItem>
 									</DropdownMenu>
 								</UncontrolledDropdown>
 								<UncontrolledDropdown nav inNavbar>
@@ -73,10 +73,10 @@ class App extends React.Component {
 										Blog
 									</DropdownToggle>
 									<DropdownMenu>
-										<DropdownItem href="/nn_calibration">
+										<DropdownItem href="/blog/nn_calibration.html">
 											Neural Network Calibration
 										</DropdownItem>
-										<DropdownItem href="/aum">
+										<DropdownItem href="/blog/aum.html">
 											Area Under the Margin (AUM)
 										</DropdownItem>
 									</DropdownMenu>
@@ -87,7 +87,7 @@ class App extends React.Component {
                   </NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href="/bio">
+                  <NavLink href="/bio.html">
                     Bio
                   </NavLink>
                 </NavItem>
@@ -114,10 +114,10 @@ class App extends React.Component {
 
           <div>
             <Route exact path='/' component={ Home }/>
-            <Route path="/research" component={ research }/>
-            <Route path="/nn_calibration" component={ NNCalibration }/>
-            <Route path="/aum" component={ AUM }/>
-            <Route path="/bio" component={ bio }/>
+            <Route path="/research/" component={ research }/>
+            <Route path="/blog/nn_calibration.html" component={ NNCalibration }/>
+            <Route path="/blog/aum.html" component={ AUM }/>
+            <Route path="/bio.html" component={ bio }/>
           </div>
         </div>
       </Router>
