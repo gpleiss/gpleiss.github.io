@@ -10,6 +10,8 @@ import NNCalibration from './pages/nn_calibration.js';
 import AUM from './pages/aum.js';
 import research from './pages/research.js';
 import bio from './pages/bio.js';
+import stat520p_2023 from './pages/stat520p.js';
+import stat548_2023 from './pages/stat548.js';
 
 // Assets
 import './App.css';
@@ -53,6 +55,15 @@ class App extends React.Component {
                     <DropdownItem href="/research/#reliable-nn">"Reliable" Deep Learning</DropdownItem>
                     <DropdownItem href="/research/#prob-modeling">Probabilistic Modeling</DropdownItem>
                     <DropdownItem href="/research/#sci-app">Scientific Applications</DropdownItem>
+                  </DropdownMenu>
+                </UncontrolledDropdown>
+                <UncontrolledDropdown nav inNavbar>
+                  <DropdownToggle nav caret href="/teaching/">
+                    Teaching
+                  </DropdownToggle>
+                  <DropdownMenu>
+                    <DropdownItem href="/teaching/stat520p/">STAT 520P (Bayesian Optimization)</DropdownItem>
+                    <DropdownItem href="/teaching/stat548/">STAT 548 (PhD Qualifying Course)</DropdownItem>
                   </DropdownMenu>
                 </UncontrolledDropdown>
                 <UncontrolledDropdown nav inNavbar>
@@ -123,6 +134,8 @@ class App extends React.Component {
             <Route path="/blog/nn_calibration.html" component={ NNCalibration }/>
             <Route path="/blog/aum.html" component={ AUM }/>
             <Route path="/bio.html" component={ bio }/>
+            <Route path="/teaching/stat520p/" component={ stat520p_2023 }/>
+            <Route path="/teaching/stat548/" component={ stat548_2023 }/>
           </div>
         </div>
       </Router>
