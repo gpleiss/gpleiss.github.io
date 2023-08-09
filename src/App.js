@@ -14,7 +14,7 @@ import stat520p_2023 from './pages/stat520p.js';
 import stat548_2023 from './pages/stat548.js';
 
 // Assets
-import './App.css';
+import './sass/App.css';
 import gscholarWhite from './images/gscholar-white.png';
 
 class App extends React.Component {
