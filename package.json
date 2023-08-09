@@ -30,13 +30,13 @@
     "build-css": "sass -I ./src -I ./node_modules src/:src/",
     "watch-css": "npm run build-css && sass -I ./src -I ./node_modules src/:src/ --watch",
     "start-js": "react-scripts --openssl-legacy-provider start",
-    "build-js": "react-scripts build",
+    "build-js": "react-scripts --openssl-legacy-provider build",
     "start": "npm-run-all -p watch-css start-js",
     "build": "npm-run-all build-css build-js && react-snapshot",
     "predeploy": "npm run build",
     "deploy": "gh-pages -b master -d build",
     "stage": "npm run build && cd build && mv index.html home.html && echo '<?php include_once(\"home.html\"); ?>' > index.php && echo '{}' > composer.json && git init && git add . && git ci -m Stuff && git remote add heroku https://git.heroku.com/geoffpleiss.git && git push heroku master -f; cd -",
-    "test": "react-scripts test --env=jsdom",
+    "test": "react-scripts test --openssl-legacy-provider --env=jsdom",
     "eject": "react-scripts eject"
   },
   "reactSnapshot": {
