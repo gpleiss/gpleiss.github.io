@@ -72,7 +72,7 @@ class SmallH3 extends React.Component {
   render() {
     let {center, children, ...props} = this.props;
 
-		let className = "h6 text-uppercase mb-3 text-center"
+		let className = "h6 text-uppercase mb-3 mt-4 text-center"
 		if (!center) {
 			className += " text-md-left";
 		}
