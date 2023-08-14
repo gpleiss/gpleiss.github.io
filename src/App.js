@@ -1,18 +1,22 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import {
+  createBrowserRouter,
+  Outlet,
+  RouterProvider,
+} from "react-router-dom";
 import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/fontawesome-free-brands';
 
 import { Navbar, NavbarToggler, Collapse, NavbarBrand, Nav, NavItem, NavLink,
          UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
 import Home from './pages/home.js';
-import fourOhFour from './pages/fourOhFour.js';
+import FourOhFour from './pages/fourOhFour.js';
 import NNCalibration from './pages/nn_calibration.js';
 import AUM from './pages/aum.js';
-import research from './pages/research.js';
-import bio from './pages/bio.js';
-import stat520p_2023 from './pages/stat520p.js';
-import stat548_2023 from './pages/stat548.js';
+import Research from './pages/research.js';
+import Bio from './pages/bio.js';
+import Stat520p_2023 from './pages/stat520p.js';
+import Stat548_2023 from './pages/stat548.js';
 
 // Assets
 import './sass/App.css';
@@ -34,9 +38,64 @@ class App extends React.Component {
   }
 
   render() {
+    const router = createBrowserRouter([
+      {
+        path: "/",
+        element: <Outlet />,
+        children: [
+          { index: true, element: <Home /> },
+          { path: "index.html", element: <Home /> },
+          {
+            path: "blog",
+            element: <Outlet />,
+            children: [
+              { path: "aum.html", element: <AUM /> },
+              { path: "nn_calibration.html", element: <NNCalibration /> },
+            ],
+          },
+          { path: "bio.html", element: <Bio /> },
+          {
+            path: "research",
+            element: <Outlet />,
+            children: [
+              { index: true, element: <Research /> },
+              { path: "index.html", element: <Research /> },
+            ],
+          },
+          {
+            path: "teaching",
+            element: <Outlet />,
+            children: [
+              {
+                path: "stat548",
+                element: <Outlet />,
+                children: [
+                  // eslint-disable-next-line
+                  { index: true, element: <Stat548_2023 /> },
+                  // eslint-disable-next-line
+                  { path: "index.html", element: <Stat548_2023 /> },
+                ],
+              },
+              {
+                path: "stat520p",
+                element: <Outlet />,
+                children: [
+                  // eslint-disable-next-line
+                  { index: true, element: <Stat520p_2023 /> },
+                  // eslint-disable-next-line
+                  { path: "index.html", element: <Stat520p_2023 /> },
+                ],
+              },
+            ],
+          },
+        ],
+        errorElement: <FourOhFour />,
+      },
+    ]);
+
     return (
-      <Router>
-        <div>
+      <div>
+        <div id="app">
           <Navbar color="dark" dark expand="lg">
             <NavbarBrand className="m-0 mr-md-4 ml-md-4 link-unstyled small-caps h3" href="/">
               Geoff Pleiss
@@ -45,7 +104,7 @@ class App extends React.Component {
             <Collapse isOpen={this.state.isNavbarOpen} navbar>
               <Nav className="mr-auto ml-md-4" navbar>
                 <UncontrolledDropdown nav inNavbar>
-                  <DropdownToggle nav caret href="/research/index.html">
+                  <DropdownToggle nav caret href="/research/">
                     Research
                   </DropdownToggle>
                   <DropdownMenu>
@@ -59,12 +118,12 @@ class App extends React.Component {
                   </DropdownMenu>
                 </UncontrolledDropdown>
                 <UncontrolledDropdown nav inNavbar>
-                  <DropdownToggle nav caret href="/teaching/index.html">
+                  <DropdownToggle nav caret href="/teaching/">
                     Teaching
                   </DropdownToggle>
                   <DropdownMenu>
-                    <DropdownItem href="/teaching/stat520p/index.html">STAT 520P (Bayesian Optimization)</DropdownItem>
-                    <DropdownItem href="/teaching/stat548/index.html">STAT 548 (PhD Qualifying Course)</DropdownItem>
+                    <DropdownItem href="/teaching/stat520p/">STAT 520P (Bayesian Optimization)</DropdownItem>
+                    <DropdownItem href="/teaching/stat548/">STAT 548 (PhD Qualifying Course)</DropdownItem>
                   </DropdownMenu>
                 </UncontrolledDropdown>
                 <UncontrolledDropdown nav inNavbar>
@@ -128,20 +187,10 @@ class App extends React.Component {
               </NavItem>
             </Nav>
           </Navbar>
-
-          <Switch>
-            <Route exact path='/' component={ Home }/>
-            <Route path="/research/index.html" component={ research }/>
-            <Route path="/blog/nn_calibration.html" component={ NNCalibration }/>
-            <Route path="/blog/aum.html" component={ AUM }/>
-            <Route path="/bio.html" component={ bio }/>
-            <Route path="/teaching/stat520p/index.html" component={ stat520p_2023 }/>
-            <Route path="/teaching/stat548/index.html" component={ stat548_2023 }/>
-            <Route path="404.html" component={ fourOhFour }/>
-            <Route path="*" component={ fourOhFour }/>
-          </Switch>
         </div>
-      </Router>
+
+        <RouterProvider router={router} />
+      </div>
     );
   }
 }
