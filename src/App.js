@@ -1,11 +1,12 @@
 import React from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/fontawesome-free-brands';
 
 import { Navbar, NavbarToggler, Collapse, NavbarBrand, Nav, NavItem, NavLink,
          UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
 import Home from './pages/home.js';
+import fourOhFour from './pages/fourOhFour.js';
 import NNCalibration from './pages/nn_calibration.js';
 import AUM from './pages/aum.js';
 import research from './pages/research.js';
@@ -44,26 +45,26 @@ class App extends React.Component {
             <Collapse isOpen={this.state.isNavbarOpen} navbar>
               <Nav className="mr-auto ml-md-4" navbar>
                 <UncontrolledDropdown nav inNavbar>
-                  <DropdownToggle nav caret href="/research">
+                  <DropdownToggle nav caret href="/research/index.html">
                     Research
                   </DropdownToggle>
                   <DropdownMenu>
-                    <DropdownItem href="/research/#uq">Uncertainty Quantification</DropdownItem>
-                    <DropdownItem href="/research/#overparam">Overparameterization and Ensemble Methods</DropdownItem>
-                    <DropdownItem href="/research/#nla">Numerical Methods for Gaussian Processes</DropdownItem>
-                    <DropdownItem href="/research/#approx-inf">Approximate Inference for Gaussian Processes</DropdownItem>
-                    <DropdownItem href="/research/#reliable-nn">"Reliable" Deep Learning</DropdownItem>
-                    <DropdownItem href="/research/#prob-modeling">Probabilistic Modeling</DropdownItem>
-                    <DropdownItem href="/research/#sci-app">Scientific Applications</DropdownItem>
+                    <DropdownItem href="/research/index.html#uq">Uncertainty Quantification</DropdownItem>
+                    <DropdownItem href="/research/index.html#overparam">Overparameterization and Ensemble Methods</DropdownItem>
+                    <DropdownItem href="/research/index.html#nla">Numerical Methods for Gaussian Processes</DropdownItem>
+                    <DropdownItem href="/research/index.html#approx-inf">Approximate Inference for Gaussian Processes</DropdownItem>
+                    <DropdownItem href="/research/index.html#reliable-nn">"Reliable" Deep Learning</DropdownItem>
+                    <DropdownItem href="/research/index.html#prob-modeling">Probabilistic Modeling</DropdownItem>
+                    <DropdownItem href="/research/index.html#sci-app">Scientific Applications</DropdownItem>
                   </DropdownMenu>
                 </UncontrolledDropdown>
                 <UncontrolledDropdown nav inNavbar>
-                  <DropdownToggle nav caret href="/teaching/">
+                  <DropdownToggle nav caret href="/teaching/index.html">
                     Teaching
                   </DropdownToggle>
                   <DropdownMenu>
-                    <DropdownItem href="/teaching/stat520p/">STAT 520P (Bayesian Optimization)</DropdownItem>
-                    <DropdownItem href="/teaching/stat548/">STAT 548 (PhD Qualifying Course)</DropdownItem>
+                    <DropdownItem href="/teaching/stat520p/index.html">STAT 520P (Bayesian Optimization)</DropdownItem>
+                    <DropdownItem href="/teaching/stat548/index.html">STAT 548 (PhD Qualifying Course)</DropdownItem>
                   </DropdownMenu>
                 </UncontrolledDropdown>
                 <UncontrolledDropdown nav inNavbar>
@@ -128,15 +129,17 @@ class App extends React.Component {
             </Nav>
           </Navbar>
 
-          <div>
+          <Switch>
             <Route exact path='/' component={ Home }/>
-            <Route path="/research/" component={ research }/>
+            <Route path="/research/index.html" component={ research }/>
             <Route path="/blog/nn_calibration.html" component={ NNCalibration }/>
             <Route path="/blog/aum.html" component={ AUM }/>
             <Route path="/bio.html" component={ bio }/>
-            <Route path="/teaching/stat520p/" component={ stat520p_2023 }/>
-            <Route path="/teaching/stat548/" component={ stat548_2023 }/>
-          </div>
+            <Route path="/teaching/stat520p/index.html" component={ stat520p_2023 }/>
+            <Route path="/teaching/stat548/index.html" component={ stat548_2023 }/>
+            <Route path="404.html" component={ fourOhFour }/>
+            <Route path="*" component={ fourOhFour }/>
+          </Switch>
         </div>
       </Router>
     );
