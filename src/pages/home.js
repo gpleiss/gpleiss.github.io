@@ -38,41 +38,58 @@ class Home extends React.Component {
 	}
 
   render() {
+    const picture = (
+      <picture className="d-inline-block mb-md-4 ml-md-5">
+        <img className="rounded img-thumbnail" alt="Geoff Pleiss" src={meImg} style={{width: '100%', maxWidth: '275px'}}></img>
+      </picture>
+    );
+
+    const introText = (
+      <span>
+        I am an assistant professor in the {" "}
+        <Link className="text-muted" href="http://stat.ubc.ca/">Department of Statistics</Link>{" "}
+        at the University of British Columbia,
+        where I am an inaugural member of {" "}
+        <Link className="text-muted" href="http://caida.ubc.ca/">CAIDA's</Link> {" "}
+        <Link className="text-muted" href="http://caida.ubc.ca/aim-si">AIM-SI</Link> (AI Methods for Scientific Impact) cluster.
+        I am also a faculty member of the {" "}
+        <Link className="text-muted" href="http://vectorinstitue.ai/">Vector Institute</Link>.
+      </span>
+    );
+
     return (
       <div>
         <div className="container py-8 pt-md-10">
           <div className="row">
-            <div className="col-sm-12">
-              <p className="text-center float-md-right mb-md-4 ml-md-5">
-                <picture className="d-inline-block">
-                  <img className="rounded img-thumbnail" alt="Geoff Pleiss" src={meImg} style={{width: '100%', maxWidth: '275px'}}></img>
-                </picture>
-              </p>
+            <div className="col-12 col-md-6 col-xl-8">
               <H2 noMb className="text-center text-md-left">Geoff Pleiss</H2>
-              <div className="row mb-5 text-muted font-italic text-center text-md-left">
-                <div className="col-lg-6 px-md-0 mt-3">
+
+              <div className="col-12 d-md-none text-center my-3">{ picture }</div>
+
+              <div className="row mx-0 mb-5 text-muted font-italic text-center text-md-left">
+                <div className="col-12 col-xl-6 px-md-0 mt-3">
                   Assistant Professor<br />
                   <Link className="text-muted" href="http://stat.ubc.ca/">UBC Department of Statistics</Link><br />
                   <FontAwesomeIcon icon={faEnvelopeSquare} size="1.5x" title="Email: " className="mr-3" />
                   geoff.pleiss &lt;at&gt; stat.ubc.ca
                 </div>
-                <div className="col-lg-6 px-md-0 mt-3">
+                <div className="col-12 col-xl-6 px-md-0 mt-4 mt-xl-3">
                   Faculty Member<br />
                   <Link className="text-muted" href="http://vectorinstitute.ai/">Vector Institute</Link><br />
                   <FontAwesomeIcon icon={faEnvelopeSquare} size="1.5x" title="Email: " className="mr-3" />
                   geoff.pleiss &lt;at&gt; vectorinstitute.ai
                 </div>
               </div>
-              <p>
-                I am an assistant professor in the {" "}
-                <Link className="text-muted" href="http://stat.ubc.ca/">Department of Statistics</Link>{" "}
-                at the University of British Columbia,
-                where I am an inaugural member of {" "}
-                <Link className="text-muted" href="http://caida.ubc.ca/">CAIDA's</Link> {" "}
-                <Link className="text-muted" href="http://caida.ubc.ca/aim-si">AIM-SI</Link> (AI Methods for Scientific Impact) cluster.
-                I am also a faculty member of the {" "}
-                <Link className="text-muted" href="http://vectorinstitue.ai/">Vector Institute</Link>.
-              </p>
+
+              <p className="d-none d-xl-block" aria-hidden="true">{ introText }</p>
+            </div>
+
+            <div className="col-md-6 col-xl-4 d-none d-md-block text-md-right" aria-hidden="true">{ picture }</div>
+          </div>
+
+          <div className="row">
+            <div className="col-sm-12">
+              <p className="d-xl-none">{ introText }</p>
               <p>
                 Previously, I was a postdoc at Columbia University with <Link href="https://stat.columbia.edu/~cunningham/">John P. Cunningham</Link>.
                 I received my Ph.D. from the CS department at Cornell University in August 2020.
@@ -126,6 +143,7 @@ class Home extends React.Component {
               </Modal>
             </div>
           </div>
+          <div className="clearfix"></div>
           <hr className="mt-4 mb-5" />
           <div className="row">
             <div className="col-sm-12">
