@@ -108,6 +108,8 @@ class App extends React.Component {
                     Research
                   </DropdownToggle>
                   <DropdownMenu>
+                    <DropdownItem href="/research/">Overview</DropdownItem>
+                    <div className="dropdown-divider"></div>
                     <DropdownItem href="/research/index.html#uq">Uncertainty Quantification</DropdownItem>
                     <DropdownItem href="/research/index.html#overparam">Overparameterization and Ensemble Methods</DropdownItem>
                     <DropdownItem href="/research/index.html#nla">Numerical Methods for Gaussian Processes</DropdownItem>
