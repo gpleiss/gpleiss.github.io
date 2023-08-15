@@ -12,17 +12,30 @@ const updated = today.getDate() + ' ' + monthNames[today.getMonth()] + ' ' + tod
 
 class PaperLi extends React.Component {
   render() {
+
     const venueStr = this.props.venue ? this.props.venue + ', ' + this.props.year : 'ArXiV, ' + this.props.year;
+
     let bodyStr = '';
     if (!!this.props.children) {
       bodyStr = (
         <p className="font-italic text-secondary">({ this.props.children })</p>
       )
     }
+    
+    const link = this.props.taken ? (
+      <del>{ this.props.title }</del>
+    ) : (
+      <Link href={ this.props.link }>{ this.props.title }</Link>
+    );
+
+    let liClassName = "mb-3";
+    if (this.props.taken) {
+      liClassName += " text-secondary"
+    }
 
     return (
-      <li className="mb-3">
-        <Link href={ this.props.link }>{ this.props.title }</Link><br />
+      <li className={ liClassName }>
+        { link }<br />
         <span>{ this.props.authors }</span><br />
         <span>{ venueStr }</span><br />
         <strong>Topics:</strong> { this.props.topics }<br />
