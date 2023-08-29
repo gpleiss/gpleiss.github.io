@@ -274,7 +274,7 @@ class Home extends React.Component {
                     ]}
                     conference="ICML"
                     year="2017"
-                    website="/nn_calibration.html"
+                    website="/blog/nn_calibration.html"
                     arxiv="https://arxiv.org/abs/1706.04599"
                     pdf="https://arxiv.org/pdf/1706.04599.pdf"
                     github="https://github.com/gpleiss/temperature_scaling"
