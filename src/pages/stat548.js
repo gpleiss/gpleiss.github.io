@@ -2,12 +2,13 @@ import React from 'react';
 import { Link, H1, SmallH2, SmallH3, Section } from '../components/utils.js';
 
 
-const monthNames = [
-  "January", "February", "March", "April", "May", "June",
-  "July", "August", "September", "October", "November", "December"
-];
-const today = new Date();
-const updated = today.getDate() + ' ' + monthNames[today.getMonth()] + ' ' + today.getFullYear();
+//const monthNames = [
+  //"January", "February", "March", "April", "May", "June",
+  //"July", "August", "September", "October", "November", "December"
+//];
+//const today = new Date();
+//const updated = today.getDate() + ' ' + monthNames[today.getMonth()] + ' ' + today.getFullYear();
+const updated = "29 August 2023";
 
 
 class PaperLi extends React.Component {
@@ -98,12 +99,14 @@ class Stat548 extends React.Component {
                 <p>
                   The qualifying papers I've listed below are representative of my research interests,
                   which broadly encompass many sub-areas of machine learning:
-                  <ol className="my-3">
-                    <li>Gaussian processes,</li>
-                    <li>Bayesian optimization,</li>
-                    <li>neural networks, and</li>
-                    <li>ensemble methods.</li>
-                  </ol>
+                </p>
+                <ol className="my-3">
+                  <li>Gaussian processes,</li>
+                  <li>Bayesian optimization,</li>
+                  <li>neural networks, and</li>
+                  <li>ensemble methods.</li>
+                </ol>
+                <p>
                   Within the realm of neural networks, my primary focus includes uncertainty quantification,
                   robustness under covariate shift, theoretical models of overparameterization/fine-tuning, and connections to Bayesian inference.
                   I'm also open to supervising qualifying papers on generative models (though you'll need to propose your own paper).
@@ -205,15 +208,17 @@ class Stat548 extends React.Component {
                 </p>
                 <ul>
                   <li>
-                    <em>Theory papers:</em>
-                    If you choose a paper that is purely theoretical in nature,
-                    I will expect a predominantly mathematical project (extending the paper's theorems to a novel setting, apply the paper's proof techniques to a different problem, etc).
+                    <em>Theory papers:</em> If you choose a paper that is
+                    purely theoretical in nature, I will expect a predominantly
+                    mathematical project (extending the paper's theorems to a
+                    novel setting, apply the paper's proof techniques to a
+                    different problem, etc).
                   </li>
                   <li>
-                    <em>Methodological papers:</em>
-                    Expect a mix of theory and coding,
-                    as well as getting your hands dirty with some real-world data.
-                    (If you want to use a language other than Python, you will need a really convincing argument!)
+                    <em>Methodological papers:</em> Expect a mix of theory and
+                    coding, as well as getting your hands dirty with some
+                    real-world data.  (If you want to use a language other than
+                    Python, you will need a really convincing argument!)
                   </li>
                 </ul>
                 <p>
@@ -232,8 +237,8 @@ class Stat548 extends React.Component {
                   Slack communication is preferred, but I'm always happy to meet in person if you want to bounce ideas off of each other.
                 </p>
                 <p>
-                  <strong>Formatting:</strong> Submit the report as a GitHub repository, using the template at
-                  <Link href="https://github.com/ben-br/qp-template/">https://github.com/ben-br/qp-template/</Link>.  The
+                  <strong>Formatting:</strong> Submit the report as a GitHub repository, using the template
+                  at <Link href="https://github.com/ben-br/qp-template/">https://github.com/ben-br/qp-template/</Link>.  The
                   template includes a LATEX style file that should be used for the report.
                   (Detailed instructions for usage can be found in the repository’s README file.)
                   Ensure that the experimental results are reproducible.
@@ -259,16 +264,16 @@ class Stat548 extends React.Component {
                   The qualifying paper also gives me the chance to gauge your research potential and our compatibility in a mentor-mentee dynamic.
                   I will not judge you based on how good your project results are.
                   Rather, I will evaluate you on the following:
-                  <ul>
-                    <li>shared research interests,</li>
-                    <li>strong technical proficiency (or an ability to quickly acquire new skills),</li>
-                    <li>capacity to "fail fast" (as described in the project details),</li>
-                    <li>independence and proactivity,</li>
-                    <li>effective communication of when assistance is needed,</li>
-                    <li>receptiveness to feedback, and</li>
-                    <li>awareness of the societal and ethical implications of machine learning research</li>
-                  </ul>
                 </p>
+                <ul>
+                  <li>shared research interests,</li>
+                  <li>strong technical proficiency (or an ability to quickly acquire new skills),</li>
+                  <li>capacity to "fail fast" (as described in the project details),</li>
+                  <li>independence and proactivity,</li>
+                  <li>effective communication of when assistance is needed,</li>
+                  <li>receptiveness to feedback, and</li>
+                  <li>awareness of the societal and ethical implications of machine learning research.</li>
+                </ul>
               </Section>
 
               <Section>
@@ -349,12 +354,12 @@ class Stat548 extends React.Component {
                     Many of these links have been shared by other faculty members as well:
                   </p>
                   <ul>
-                    <li>Nancy Heckman's <Link href="http://ugrad.stat.ubc.ca/~nancy/writing/">page on technical writing</Link></li>
-                    <li>Harry Joe's <Link href="http://www.stat.ubc.ca/~harry/papers/">page on mathematical writing and typesetting in LaTeX</Link></li>
-                    <li>Trevor Campbell's <Link href="https://docs.google.com/presentation/d/13vwchlzQAZjjfiI3AiBC_kM-syI6GJKzbuZoLxgy1a4/edit">talk on "How to Explain Things"</Link></li>
-                    <li>Knuth, Larrabee, and Roberts <Link href="http://www.jmlr.org/reviewing-papers/knuth_mathematical_writing.pdf">on mathematical writing</Link></li>
-                    <li>Getting started with git: <Link href="https://git-scm.com/book/en/v2">Chapters 1 and 2</Link></li>
-                    <li>My <Link href="../../git_wizard.pdf">talk on "How to Be a Git Wizard"</Link> (if git still scares you after reading the above resource)</li>
+                    <li>Nancy Heckman's <Link href="http://ugrad.stat.ubc.ca/~nancy/writing/">page on technical writing,</Link></li>
+                    <li>Harry Joe's <Link href="http://www.stat.ubc.ca/~harry/papers/">page on mathematical writing and typesetting in LaTeX,</Link></li>
+                    <li>Trevor Campbell's <Link href="https://docs.google.com/presentation/d/13vwchlzQAZjjfiI3AiBC_kM-syI6GJKzbuZoLxgy1a4/edit">talk on "How to Explain Things,"</Link></li>
+                    <li>Knuth, Larrabee, and Roberts <Link href="http://www.jmlr.org/reviewing-papers/knuth_mathematical_writing.pdf">on mathematical writing,</Link></li>
+                    <li>"Getting Started with Git": <Link href="https://git-scm.com/book/en/v2">Chapters 1 and 2</Link>, and</li>
+                    <li>my <Link href="../../git_wizard.pdf">talk on "How to Be a Git Wizard"</Link> (if git still scares you after reading the above resource).</li>
                   </ul>
               </Section>
 

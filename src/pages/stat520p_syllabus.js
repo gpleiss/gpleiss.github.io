@@ -401,8 +401,8 @@ class Stat520PSyllabus extends React.Component {
                 <td>60%</td>
                 <td>
                   See description above. 
-                  {/* FILLIN */} 
                   Specific grading breakdown TBD.
+                  {/* FILLIN */} 
                 </td>
               </tr>
             </tbody>
