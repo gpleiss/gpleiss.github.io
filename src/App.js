@@ -1,6 +1,7 @@
 import React from 'react';
 import {
   createBrowserRouter,
+  Navigate,
   Outlet,
   RouterProvider,
 } from 'react-router-dom';
@@ -46,8 +47,14 @@ class App extends React.Component {
         path: "/",
         element: <Outlet />,
         children: [
-          { index: true, element: <Home /> },
-          { path: "index.html", element: <Home /> },
+          {
+            index: true,
+            element: <Home />
+          },
+          {
+            path: "index.html",
+            element: <Navigate to="/" />
+          },
           {
             path: "blog",
             element: <Outlet />,
@@ -56,13 +63,16 @@ class App extends React.Component {
               { path: "nn_calibration.html", element: <NNCalibration /> },
             ],
           },
-          { path: "bio.html", element: <Bio /> },
+          {
+            path: "bio.html",
+            element: <Bio />
+          },
           {
             path: "research",
             element: <Outlet />,
             children: [
               { index: true, element: <Research /> },
-              { path: "index.html", element: <Research /> },
+              { path: "index.html", element: <Navigate to="/research/" /> },
             ],
           },
           {
@@ -76,7 +86,7 @@ class App extends React.Component {
                   // eslint-disable-next-line
                   { index: true, element: <Stat548_2023 /> },
                   // eslint-disable-next-line
-                  { path: "index.html", element: <Stat548_2023 /> },
+                  { path: "index.html", element: <Navigate to="/teaching/stat548/" /> },
                 ],
               },
               {
@@ -87,7 +97,7 @@ class App extends React.Component {
                   // eslint-disable-next-line
                   { index: true, element: <Stat520PIndex_2023 /> },
                   // eslint-disable-next-line
-                  { path: "index.html", element: <Stat520PIndex_2023 /> },
+                  { path: "index.html", element: <Navigate to="/teaching/stat520p/" /> },
                   // eslint-disable-next-line
                   { path: "syllabus.html", element: <Stat520PSyllabus_2023 /> },
                   // eslint-disable-next-line
@@ -118,13 +128,13 @@ class App extends React.Component {
                   <DropdownMenu>
                     <DropdownItem href="/research/">Overview</DropdownItem>
                     <div className="dropdown-divider"></div>
-                    <DropdownItem href="/research/index.html#uq">Uncertainty Quantification</DropdownItem>
-                    <DropdownItem href="/research/index.html#overparam">Overparameterization and Ensemble Methods</DropdownItem>
-                    <DropdownItem href="/research/index.html#nla">Numerical Methods for Gaussian Processes</DropdownItem>
-                    <DropdownItem href="/research/index.html#approx-inf">Approximate Inference for Gaussian Processes</DropdownItem>
-                    <DropdownItem href="/research/index.html#reliable-nn">"Reliable" Deep Learning</DropdownItem>
-                    <DropdownItem href="/research/index.html#prob-modeling">Probabilistic Modeling</DropdownItem>
-                    <DropdownItem href="/research/index.html#sci-app">Scientific Applications</DropdownItem>
+                    <DropdownItem href="/research/#uq">Uncertainty Quantification</DropdownItem>
+                    <DropdownItem href="/research/#overparam">Overparameterization and Ensemble Methods</DropdownItem>
+                    <DropdownItem href="/research/#nla">Numerical Methods for Gaussian Processes</DropdownItem>
+                    <DropdownItem href="/research/#approx-inf">Approximate Inference for Gaussian Processes</DropdownItem>
+                    <DropdownItem href="/research/#reliable-nn">"Reliable" Deep Learning</DropdownItem>
+                    <DropdownItem href="/research/#prob-modeling">Probabilistic Modeling</DropdownItem>
+                    <DropdownItem href="/research/#sci-app">Scientific Applications</DropdownItem>
                   </DropdownMenu>
                 </UncontrolledDropdown>
                 <UncontrolledDropdown nav inNavbar>
@@ -132,8 +142,8 @@ class App extends React.Component {
                     Teaching
                   </DropdownToggle>
                   <DropdownMenu>
-                    <DropdownItem href="/teaching/stat520p/index.html">STAT 520P (Bayesian Optimization)</DropdownItem>
-                    <DropdownItem href="/teaching/stat548/index.html">STAT 548 (PhD Qualifying Course)</DropdownItem>
+                    <DropdownItem href="/teaching/stat520p/">STAT 520P (Bayesian Optimization)</DropdownItem>
+                    <DropdownItem href="/teaching/stat548/">STAT 548 (PhD Qualifying Course)</DropdownItem>
                   </DropdownMenu>
                 </UncontrolledDropdown>
                 <UncontrolledDropdown nav inNavbar>

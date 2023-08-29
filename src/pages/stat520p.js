@@ -32,13 +32,13 @@ class Stat520P extends React.Component {
             <div className="col-lg-6 pt-5 mb-4">
               <ul className="list-unstyled">
                 <li>
-                  <NavLinkCustom to="index.html">Course Homepage</NavLinkCustom>
+                  <NavLinkCustom to="/teaching/stat520p/">Course Homepage</NavLinkCustom>
                 </li>
                 <li>
-                  <NavLinkCustom to="syllabus.html">Syllabus</NavLinkCustom>
+                  <NavLinkCustom to="/teaching/stat520p/syllabus.html">Syllabus</NavLinkCustom>
                 </li>
                 <li>
-                  <NavLinkCustom to="papers.html">Special Topics Papers</NavLinkCustom>
+                  <NavLinkCustom to="/teaching/stat520p/papers.html">Special Topics Papers</NavLinkCustom>
                 </li>
                 <li>
                   <Link href="https://bayesoptbook.com#download">Textbook</Link>
