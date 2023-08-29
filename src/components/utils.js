@@ -142,6 +142,21 @@ class Section extends React.Component {
   }
 }
 
+class AnonFeedback extends React.Component {
+  render() {
+    let {children, ...props} = this.props;
+    if (!children) {
+      children = "anonymous feedback form";
+    }
+
+    return (
+      <Link href="https://forms.gle/nnh5kzGzNTfBc3e8A" {...props}>
+        { children }
+      </Link>
+    )
+  }
+}
+
 export {
 	Link,
 	H1,
@@ -153,4 +168,5 @@ export {
   Img,
   InfoBlock,
   Section,
+  AnonFeedback,
 };

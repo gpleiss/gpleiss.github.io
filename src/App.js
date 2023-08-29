@@ -3,7 +3,7 @@ import {
   createBrowserRouter,
   Outlet,
   RouterProvider,
-} from "react-router-dom";
+} from 'react-router-dom';
 import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/fontawesome-free-brands';
 
@@ -15,7 +15,10 @@ import NNCalibration from './pages/nn_calibration.js';
 import AUM from './pages/aum.js';
 import Research from './pages/research.js';
 import Bio from './pages/bio.js';
-import Stat520p_2023 from './pages/stat520p.js';
+import Stat520P_2023 from './pages/stat520p.js';
+import Stat520PIndex_2023 from './pages/stat520p_index.js';
+import Stat520PPapers_2023 from './pages/stat520p_papers.js';
+import Stat520PSyllabus_2023 from './pages/stat520p_syllabus.js';
 import Stat548_2023 from './pages/stat548.js';
 
 // Assets
@@ -78,12 +81,17 @@ class App extends React.Component {
               },
               {
                 path: "stat520p",
-                element: <Outlet />,
+                // eslint-disable-next-line
+                element: <Stat520P_2023 />,
                 children: [
                   // eslint-disable-next-line
-                  { index: true, element: <Stat520p_2023 /> },
+                  { index: true, element: <Stat520PIndex_2023 /> },
                   // eslint-disable-next-line
-                  { path: "index.html", element: <Stat520p_2023 /> },
+                  { path: "index.html", element: <Stat520PIndex_2023 /> },
+                  // eslint-disable-next-line
+                  { path: "syllabus.html", element: <Stat520PSyllabus_2023 /> },
+                  // eslint-disable-next-line
+                  { path: "papers.html", element: <Stat520PPapers_2023 /> },
                 ],
               },
             ],
@@ -124,8 +132,8 @@ class App extends React.Component {
                     Teaching
                   </DropdownToggle>
                   <DropdownMenu>
-                    <DropdownItem href="/teaching/stat520p/">STAT 520P (Bayesian Optimization)</DropdownItem>
-                    <DropdownItem href="/teaching/stat548/">STAT 548 (PhD Qualifying Course)</DropdownItem>
+                    <DropdownItem href="/teaching/stat520p/index.html">STAT 520P (Bayesian Optimization)</DropdownItem>
+                    <DropdownItem href="/teaching/stat548/index.html">STAT 548 (PhD Qualifying Course)</DropdownItem>
                   </DropdownMenu>
                 </UncontrolledDropdown>
                 <UncontrolledDropdown nav inNavbar>

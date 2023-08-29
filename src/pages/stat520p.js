@@ -1,12 +1,20 @@
 import React from 'react';
-import { H1, Section } from '../components/utils.js';
+import {
+  NavLink,
+  Outlet,
+} from "react-router-dom";
+import { H1, Link } from '../components/utils.js';
 
 
-const monthNames = [
-  "January", "February", "March", "April", "May", "June",
-  "July", "August", "September", "October", "November", "December"
-];
-const today = new Date();
+class NavLinkCustom extends React.Component {
+  render() {
+    return (
+      <NavLink to={ this.props.to } className={({ isActive, _ }) => isActive ? 'text-dark font-weight-bold' : '' }>
+        { this.props.children }
+      </NavLink>
+    );
+  }
+}
 
 
 class Stat520P extends React.Component {
@@ -21,18 +29,38 @@ class Stat520P extends React.Component {
 
         <div className="container">
           <div className="row">
-            <div className="col-sm-12">
-              <Section>
-                <div>
-                  <strong>Last Updated:</strong> { today.getDate() } { monthNames[today.getMonth()] } { today.getFullYear() }
-                  <br />
-                  More info soon!
-                </div>
-              </Section>
+            <div className="col-lg-6 pt-5 mb-4">
+              <ul className="list-unstyled">
+                <li>
+                  <NavLinkCustom to="index.html">Course Homepage</NavLinkCustom>
+                </li>
+                <li>
+                  <NavLinkCustom to="syllabus.html">Syllabus</NavLinkCustom>
+                </li>
+                <li>
+                  <NavLinkCustom to="papers.html">Special Topics Papers</NavLinkCustom>
+                </li>
+                <li>
+                  <Link href="https://bayesoptbook.com#download">Textbook</Link>
+                </li>
+              </ul>
             </div>
+            <div className="col-lg-6 pt-5 mb-lg-4 text-right">
+              <ul className="list-unstyled">
+                <li>
+                  20 Oct 2023 &mdash; 7 Dec 2023
+                </li>
+                <li>
+                  Tuesdays and Thursdays, 1:00 &mdash; 2:30PM
+                </li>
+                <li>
+                  Earth Science Building, Room #4192
+                </li>
+              </ul>
+            </div>
+            <Outlet />
           </div>
         </div>
-
       </div>
     );
   }
