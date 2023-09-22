@@ -21,6 +21,18 @@ class Home extends React.Component {
 
                 <H3 id="uq">Uncertainty Quantification</H3>
                 <CvList indent>
+                  <PubItem title="Sharp Calibrated Gaussian Processes"
+                    authors={[
+                      "Alexandre Capone",
+                      "Sandra Hirche",
+                      "Geoff Pleiss",
+                    ]}
+                    isNew
+                    arxiv="https://arxiv.org/abs/2302.11961"
+                    pdf="https://arxiv.org/pdf/2302.11961.pdf"
+                    conference="NeurIPS"
+                    year="2023"
+                  />
                   <PubItem title="Posterior and Computational Uncertainty in Gaussian Processes"
                     authors={[
                       "Jonathan Wenger",
@@ -150,8 +162,21 @@ class Home extends React.Component {
                   />
                 </CvList>
 
-                <H3 id="nla">Numerical Methods for Gaussian Processes</H3>
+                <H3 id="nla">Numerical Methods for Gaussian Processes and Machine Learning</H3>
                 <CvList indent>
+                  <PubItem title="CoLA: Exploiting Compositional Structure for Automatic and Efficient Numerical Linear Algebra"
+                    authors={[
+                      "Andres Potapczynski*",
+                      "Marc Anton Finzi*",
+                      "Geoff Pleiss",
+                      "Andrew Gordon Wilson",
+                    ]}
+                    isNew
+                    arxiv="https://arxiv.org/abs/2309.03060"
+                    pdf="https://arxiv.org/pdf/2309.03060.pdf"
+                    conference="NeurIPS"
+                    year="2023"
+                  />
                   <PubItem title="Posterior and Computational Uncertainty in Gaussian Processes"
                     authors={[
                       "Jonathan Wenger",

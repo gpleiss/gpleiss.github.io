@@ -70,13 +70,13 @@ class Home extends React.Component {
                 <div className="col-12 col-xl-6 px-md-0 mt-3">
                   Assistant Professor<br />
                   <Link className="text-muted" href="http://stat.ubc.ca/">UBC Department of Statistics</Link><br />
-                  <FontAwesomeIcon icon={faEnvelopeSquare} size="1.5x" title="Email: " className="mr-3" />
+                  <FontAwesomeIcon icon={faEnvelopeSquare} size="1x" title="Email: " className="mr-3" />
                   geoff.pleiss &lt;at&gt; stat.ubc.ca
                 </div>
                 <div className="col-12 col-xl-6 px-md-0 mt-4 mt-xl-3">
                   Faculty Member<br />
                   <Link className="text-muted" href="http://vectorinstitute.ai/">Vector Institute</Link><br />
-                  <FontAwesomeIcon icon={faEnvelopeSquare} size="1.5x" title="Email: " className="mr-3" />
+                  <FontAwesomeIcon icon={faEnvelopeSquare} size="1x" title="Email: " className="mr-3" />
                   geoff.pleiss &lt;at&gt; vectorinstitute.ai
                 </div>
               </div>
@@ -99,19 +99,21 @@ class Home extends React.Component {
               <p>
                 My research interests intersect deep learning and probablistic modeling.
                 Major focuses of my work include:
-                <ol>
-									<li>neural networks,</li>
-                  <li>uncertainty quantification,</li>
-                  <li>probabilistic modeling, and</li>
-                  <li>Bayesian optimization.</li>
-                </ol>
-                More specifically, some recent interests include
-                <ol>
-                  <li>"reliable" neural networks,</li>
-                  <li>ensemble methods, and</li>
-                  <li>Gaussian processes.</li>
-                </ol>
               </p>
+              <ol>
+                <li>neural networks,</li>
+                <li>uncertainty quantification,</li>
+                <li>probabilistic modeling, and</li>
+                <li>Bayesian optimization.</li>
+              </ol>
+              <p>
+                More specifically, some recent interests include
+              </p>
+              <ol>
+                <li>"reliable" neural networks,</li>
+                <li>ensemble methods, and</li>
+                <li>Gaussian processes.</li>
+              </ol>
               <p>
                 I am also an active open source contributior.
                 Most notably, I co-created and maintain the <Link href="http://gpytorch.ai">GPyTorch</Link> Gaussian process library with <Link href="https://jacobrgardner.github.io/">Jake Gardner</Link>.
@@ -149,11 +151,15 @@ class Home extends React.Component {
             <div className="col-sm-12">
               <p>
                 <strong>Interested in joining my lab?</strong> I
-                am looking for prospective M.S. and Ph.D students with research interests similar to my own&mdash;please
-                apply directly to the <Link href="https://www.stat.ubc.ca/graduate-admissions">UBC stats department</Link>, and mention me as a potential research advisor in your application.
-                I am also open to advising postdocs through <Link href="https://vectorinstitute.bamboohr.com/jobs/view.php?id=136">Vector's post-doctoral fellowship</Link>&mdash;please
-                contact me if you are interested in having me as a potential postdoc supervisor.
+                am looking for prospective M.S. students, Ph.D students, and postdocs with research interests similar to my own.
+                While I am open to strong students with any ML/stats interests, I am particularly hoping to hire lab members for the following research topics:
               </p>
+              <ul>
+                <li>Bayesian optimization,</li>
+                <li>spatiotemporal modeling, and</li>
+                <li>neural network uncertainty quantification.</li>
+              </ul>
+              See the <Link inside href="/prospective_member.html">page on joining my lab</Link> for information on how to apply/contact me.
             </div>
           </div>
         </div>
@@ -168,6 +174,31 @@ class Home extends React.Component {
                 </p>
                 
                 <CvList className="list-unstyled">
+                  <PubItem title="CoLA: Exploiting Compositional Structure for Automatic and Efficient Numerical Linear Algebra"
+                    authors={[
+                      "Andres Potapczynski*",
+                      "Marc Anton Finzi*",
+                      "Geoff Pleiss",
+                      "Andrew Gordon Wilson",
+                    ]}
+                    isNew
+                    arxiv="https://arxiv.org/abs/2309.03060"
+                    pdf="https://arxiv.org/pdf/2309.03060.pdf"
+                    conference="NeurIPS"
+                    year="2023"
+                  />
+                  <PubItem title="Sharp Calibrated Gaussian Processes"
+                    authors={[
+                      "Alexandre Capone",
+                      "Sandra Hirche",
+                      "Geoff Pleiss",
+                    ]}
+                    isNew
+                    arxiv="https://arxiv.org/abs/2302.11961"
+                    pdf="https://arxiv.org/pdf/2302.11961.pdf"
+                    conference="NeurIPS"
+                    year="2023"
+                  />
                   <PubItem title="Pathologies of Predictive Diversity in Deep Ensembles"
                     authors={[
                       "Taiga Abe",
@@ -181,19 +212,6 @@ class Home extends React.Component {
                     underSubmission
                     year="2023"
                   />
-                  <PubItem title="The Best Deep Ensembles Sacrifice Predictive Diversity"
-                    authors={[
-                      "Taiga Abe*",
-                      "E. Kelly Buchanan*",
-                      "Geoff Pleiss",
-                      "John P. Cunningham",
-                    ]}
-                    isNew
-                    award="Most Surprising Result Award"
-                    pdf="https://openreview.net/pdf?id=6sBiAIpkUiO"
-                    conference="NeurIPS &quot;I Can&#39;t Believe It&#39;s Not Better&#33;&quot; Workshop"
-                    year="2022"
-                  />
                   <PubItem title="Posterior and Computational Uncertainty in Gaussian Processes"
                     authors={[
                       "Jonathan Wenger",
@@ -202,7 +220,6 @@ class Home extends React.Component {
                       "Philipp Hennig",
                       "John P. Cunningham",
                     ]}
-                    isNew
                     arxiv="https://arxiv.org/abs/2205.15449"
                     pdf="https://arxiv.org/pdf/2205.15449.pdf"
                     github="https://github.com/JonathanWenger/itergp"
@@ -286,6 +303,20 @@ class Home extends React.Component {
           </div>
         </section>
 
+        {/*
+          <section className="pt-8 pb-5 bg-medium text-light">
+            <div className="container">
+              <div className="row">
+                <div className="col-md-12">
+                  <H2 className="mb-1 text-light" noMb>Selected Talks</H2>
+                  <CvList>
+                  </CvList>
+                </div>
+              </div>
+            </div>
+          </section>
+        */}
+
         <section className="pt-8 pb-5 bg-dark text-light">
           <div className="container">
             <div className="row">  
@@ -296,7 +327,7 @@ class Home extends React.Component {
                 </p>
                 <CvList>
                   <SoftwareItem title="GPyTorch"
-                    status="v1.9 Release"
+                    status="v1.11 Release"
                     coauthors={[
                       "Jacob R. Gardner"
                     ]}
@@ -305,15 +336,26 @@ class Home extends React.Component {
                     github="https://github.com/cornellius-gp/GPyTorch"
                   >
                   </SoftwareItem>
-                  <SoftwareItem title="LinearOperator"
-                    status="v0.2 Release"
-                    coauthors={["Max Balandat"]}
-                    tagline="A library for structured linear algebra operations in PyTorch."
-                    website="https://linear-operator.readthedocs.io/en/latest/"
-                    github="https://github.com/cornellius-gp/linear_operator"
+                  <SoftwareItem title="CoLA (Compositional Linear Algebra)"
+                    status="Alpha Release"
+                    coauthors={[
+                      "Andres Potapczynski",
+                      "Marc Anton Finzi",
+                    ]}
+                    tagline="A library for structured linear algebra operations in JaX and PyTorch."
+                    website="https://cola.readthedocs.io/"
+                    github="https://github.com/wilson-labs/cola"
                   >
                   </SoftwareItem>
                   {/*
+                    <SoftwareItem title="LinearOperator"
+                      status="v0.5 Release"
+                      coauthors={["Max Balandat"]}
+                      tagline="A library for structured linear algebra operations in PyTorch."
+                      website="https://linear-operator.readthedocs.io/en/latest/"
+                      github="https://github.com/cornellius-gp/linear_operator"
+                    >
+                    </SoftwareItem>
                     <SoftwareItem title="Area Under the Margin (AUM)"
                       coauthors={[
                         "Josh Shapiro"

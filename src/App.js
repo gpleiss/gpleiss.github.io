@@ -11,6 +11,7 @@ import { faGithub } from '@fortawesome/fontawesome-free-brands';
 import { Navbar, NavbarToggler, Collapse, NavbarBrand, Nav, NavItem, NavLink,
          UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
 import Home from './pages/home.js';
+import ProspectiveMember from './pages/prospective_member.js';
 import FourOhFour from './pages/fourOhFour.js';
 import NNCalibration from './pages/nn_calibration.js';
 import AUM from './pages/aum.js';
@@ -54,6 +55,10 @@ class App extends React.Component {
           {
             path: "index.html",
             element: <Navigate to="/" />
+          },
+          {
+            path: "prospective_member.html",
+            element: <ProspectiveMember />
           },
           {
             path: "blog",
