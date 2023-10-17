@@ -15,10 +15,11 @@ class Stat520PIndex extends React.Component {
           </SmallH2>
           <ul>
             <li>The <Link inside href="syllabus.html">syllabus</Link> is now posted.</li>
-            <li>The first class will be on Tuesday, 20 Oct 2023.</li>
+            <li>The first class will be on Tuesday, 24 Oct 2023.</li>
             <li>
               The diagnostic problem <Link href="../../stat520p_pset1.pdf">has been released</Link>.
               (<Link href="../../stat520p_pset1.tex">TeX template</Link>.)
+              It will be due on Tuesday, Oct 31.
             </li>
           </ul>
         </Section>
@@ -56,20 +57,12 @@ class Stat520PIndex extends React.Component {
               </tr>
 
               <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>
-                  <Link href="../../stat520p_pset1.pdf">Diagonstic problem set</Link> (<Link href="../../stat520p_pset1.tex">TeX template</Link>)
-                  on Friday, Oct 27
-                </td>
-              </tr>
-
-              <tr>
                 <td>Class 3 (Tues, Oct 31)</td>
                 <td>Gaussian processes and kernels</td>
                 <td>{ textbook } Ch. 3, 9.1 (optional)</td>
-                <td></td>
+                <td>
+                  <Link href="../../stat520p_pset1.pdf">Diagonstic problem set</Link> (<Link href="../../stat520p_pset1.tex">TeX template</Link>)
+                </td>
               </tr>
 
               <tr>

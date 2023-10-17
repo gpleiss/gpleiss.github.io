@@ -135,12 +135,12 @@ You should solve all of these problems using only the following rules:
 
 \clearpage
 
-\section{The Univariate Linear Gaussian Identity}
+\section{(10 pts) The Univariate Linear Gaussian Identity}
 
 Consider the univariate Gaussian random variable $Y \sim \normal(\mu, \sigma^2)$.
 
 \begin{enumerate}
-  \item Since $\normal(a; \mu, \sigma^2)$ is a density, we have that
+  \item (3 pts) Since $\normal(a; \mu, \sigma^2)$ is a density, we have that
     \begin{equation}
       \int_{-\infty}^\infty \frac{1}{(2 \pi \sigma^2)^{1/2}} e^{-\tfrac{1}{2 \sigma^2} (a - \mu)^2} \intd a = 1.
       \label{eqn:univariate_density_int}
@@ -151,14 +151,14 @@ Consider the univariate Gaussian random variable $Y \sim \normal(\mu, \sigma^2)$
   TODO
 \end{answer}
 
-  \item Let $Y, Y' \sim \normal(0, 1)$ be two i.i.d. standard Gaussian random variables.
+  \item (2 pts) Let $Y, Y' \sim \normal(0, 1)$ be two i.i.d. standard Gaussian random variables.
     Write out the joint density $p(Y\!=\!(b-a), Y'\!=\!a)$ and simplify.
 
 \begin{answer}
   TODO
 \end{answer}
 
-  \item Using your answer above, prove that
+  \item (3 pts) Using your answer above, prove that
     $\int_{-\infty}^{\infty} p(Y\!=\!(b-a)) p(Y'\!=\!a) \intd a = (4\pi)^{-1/2} \exp(-\tfrac{1}{2^2} b^2).$
     (Hint: you should be able to prove this in ~4 lines by \href{https://en.wikipedia.org/wiki/Completing_the_square}{completing the square}
     and using \cref{eqn:univariate_density_int}.)
@@ -167,7 +167,7 @@ Consider the univariate Gaussian random variable $Y \sim \normal(\mu, \sigma^2)$
   TODO
 \end{answer}
 
-  \item Based on the previous result, what can you say about the distribution of the random variable $Z = Y + Y'$?
+  \item (2 pts) Based on the previous result, what can you say about the distribution of the random variable $Z = Y + Y'$?
 
 \begin{answer}
   TODO
@@ -191,7 +191,7 @@ $Y \sim \normal(\mu, \sigma^2)$ and $Y' \sim \normal(\mu', \sigma^{\prime2})$, t
 You can prove this result with the same techniques as above, but it requires more bookkeeping.
 
 
-\section{Multivariate Gaussian Random Variables}
+\section{(25 pts) Multivariate Gaussian Random Variables}
 
 \paragraph{Definition:}
 Let $Y$ be a $d$-dimensional vector-valued random variable.
@@ -199,7 +199,7 @@ $Y$ is \emph{multivariate Gaussian} if and only all linear combination of its en
 i.e. for all $\vc \in \R^d$, we have that $\vc^\top Y \sim \normal(\mu, \sigma^2)$ for some $\mu, \sigma \in \R$.
 
 \begin{enumerate}
-  \item Let $U = \begin{bmatrix} U_1 & \ldots & U_d\end{bmatrix}$ be a random $d$-dimensional vector,
+  \item (2 pts) Let $U = \begin{bmatrix} U_1 & \ldots & U_d\end{bmatrix}$ be a random $d$-dimensional vector,
     where $U_1$, $\ldots$, $U_d$ are all i.i.d. standard Gaussian random variables.
     ($U_1, \ldots, U_d \simiid \normal(0, 1).$)
     Prove that $U$ meets the definition of a multivariate Gaussian random variable.
@@ -208,14 +208,14 @@ i.e. for all $\vc \in \R^d$, we have that $\vc^\top Y \sim \normal(\mu, \sigma^2
   TODO
 \end{answer}
 
-  \item Consider the random vector $Y = \mL U + \vmu$, where $\vmu$ and $\mL$ are deterministic.
+  \item (3 pts) Consider the random vector $Y = \mL U + \vmu$, where $\vmu$ and $\mL$ are deterministic.
     Prove that $Y$ also meets the definition for a multivariate Gaussian random variable, and compute its mean and covariance.
 
 \begin{answer}
   TODO
 \end{answer}
 
-  \item Let $Z$ be a multivariate Gaussian random variable where $\E[Z] = \vmu$ and \\
+  \item (4 pts) Let $Z$ be a multivariate Gaussian random variable where $\E[Z] = \vmu$ and \\
     $\E[(Z - \E[Z])(Z - \E[Z])^\top] = \mL\mL^\top$.
     Prove that, for any $a \in R$ and $c \in \R^d$, we have that \\
     $p((\vc^\top Z)\!=\!a) \: = \: p((\vc^\top (\mL^\top U + \vmu))\!=\!a)$.
@@ -234,14 +234,14 @@ We will exploit this fact to derive a density for $Z$.
 
 
 \begin{enumerate}[resume]
-  \item Write the joint density $p(U = \va)$ as a matrix.
+  \item (2 pts) Write the joint density $p(U = \va)$ as a matrix.
 
 \begin{answer}
   TODO
 \end{answer}
 
 
-  \item Assume that $\mL$ is a square matrix, and define $\mK = \mL\mL^\top$.
+  \item (4 pts) Assume that $\mL$ is a square matrix, and define $\mK = \mL\mL^\top$.
     Using the change-of-variables formula, prove that the density of $\mL U + \vmu$ is
     \begin{equation}
       \normal \left( \va; \vmu, \mK \right)
@@ -261,6 +261,7 @@ Moreover, we have also demonstrated that $\mK = \mL \mL^\top$, and therefore the
 
 \begin{enumerate}[resume]
   \item
+    (5 pts)
     Consider the following multivariate Gaussian, written in block matrix form:
     %
     \begin{equation*}
@@ -284,7 +285,7 @@ Moreover, we have also demonstrated that $\mK = \mL \mL^\top$, and therefore the
   TODO
 \end{answer}
 
-  \item Prove the following generalization of the linear Gaussian identity:
+  \item (5 pts) Prove the following generalization of the linear Gaussian identity:
     if $Y \sim \normal(\vmu, \mL\mL^\top)$ and $Y' \sim \normal(\vmu', \mL' \mL^{\prime\top})$ are independent multivariate Gaussian random variables, then
     \begin{equation}
       p\left( \mA Y + \mB Y' + \vc \right) \sim \normal(\mA \vmu + \mB \vmu' + \vc, \: \mA \mL\mL^\top \mA^\top + \mB \mL'\mL^{\prime\top} \mB^\top).
@@ -300,7 +301,7 @@ Moreover, we have also demonstrated that $\mK = \mL \mL^\top$, and therefore the
 
 
 
-\section{Marginal and Conditional Distributions}
+\section{(15 pts) Marginal and Conditional Distributions}
 \emph{Using results from the previous problems, answers to these sub-problems should each be about 1-5 lines long!}
 
 Consider the following multivariate Gaussian, written in block matrix form:
@@ -322,7 +323,7 @@ Consider the following multivariate Gaussian, written in block matrix form:
 where $Y$ is $d$-dimensional and $Y^\prime$ is $d^\prime$-dimensional.
 %
 \begin{enumerate}
-  \item Without performing any integration, prove that the marginal density of $Y$ is equal to
+  \item (5 pts) Without performing any integration, prove that the marginal density of $Y$ is equal to
   \begin{equation}
     p(Y = \va)
     = \int p\left( \begin{bmatrix} Y \\ Y' \end{bmatrix} = \begin{bmatrix} \va \\ \va' \end{bmatrix} \right) \intd \va'
@@ -334,7 +335,7 @@ where $Y$ is $d$-dimensional and $Y^\prime$ is $d^\prime$-dimensional.
   TODO
 \end{answer}
 
-  \item Define the random variable $Z$ such that
+  \item (5 pts) Define the random variable $Z$ such that
     $$
       \begin{bmatrix}
         Y \\ Z
@@ -353,7 +354,7 @@ where $Y$ is $d$-dimensional and $Y^\prime$ is $d^\prime$-dimensional.
   TODO
 \end{answer}
 
-  \item Combine the previous two results to show that
+  \item (5 pts) Combine the previous two results to show that
     \begin{equation}
       p\left( Y' = \va' \mid Y = \va \right) = \normal \left(
         \va'; \:\: \mK^{\prime\top} \mK^{-1} \va, \: \mK^{\prime\prime} - \mK^{\prime\top} \mK^{-1} \mK
@@ -361,89 +362,6 @@ where $Y$ is $d$-dimensional and $Y^\prime$ is $d^\prime$-dimensional.
       \label{eqn:conditioning}
     \end{equation}
     (Hint: use the product rule, and the fact that $Z$ is determined by $Y$ and $Y'$.)
-
-\begin{answer}
-  TODO
-\end{answer}
-
-\end{enumerate}
-
-
-\section{(Optional Bonus!) The Cholesky Factorization}
-In this problem, we're going to derive an algorithm for drawing a sample from a $d$-dimensional multivariate Gaussian distribution $Y = \normal(\vzero, \mK)$.
-We will assume that we have access only to univariate standard Gaussian samples $\epsilon_1, \ldots, \epsilon_d \sim \normal(0, 1)$.\footnote{
-  You can generate these via {\tt numpy.random.randn}, {\tt torch.randn}, etc.
-}
-
-Using the product rule, we can factorize the density of $Y$ as:
-%
-$$
-p(Y \!=\! \va) = p(Y_1 \!=\! a_1) \times p(Y_2 \!=\! a_2 \mid Y_1 \!=\! a_1) \times p(Y_3 \!=\! a_3 \mid Y_2\!=\!a_2, Y_1\!=\!a_1) \times \ldots \times
-p(Y_d \!=\! a_d \mid Y_{-d} \!=\! \va_{-d}),
-$$
-%
-where $Y_{-d}$ and $\va_{-d}$ refer to vectors that contain all but the $d^\mathrm{th}$ entry.
-This decomposition defines a sequential sampling procedure:
-\begin{enumerate}
-  \item First, we will sample $Y_1$.
-  \item Then, after ``observing'' $Y_1$, we will sample $Y_2 \mid Y_1$.
-  \item After observing $Y_2$, we will sample $Y_3 \mid Y_2, Y_1$.
-  \item We will continue this process until we have sampled $Y_d \mid Y_{d-1}, \ldots, Y_1$.
-\end{enumerate}
-
-\begin{enumerate}
-  \item
-    We can ``transform'' $\epsilon_1$ into $Y_1$ using a simple affine transformation $Y_1 = \ell_{11} \epsilon_1$
-    for some scalar $\ell_{11}$.
-    Write $\ell_{11}$ terms of $k_{11}$, where $k_{ij}$ is the $ij^\mathrm{th}$ entry of $\mK$.
-    Explain your answer.
-
-\begin{answer}
-  TODO
-\end{answer}
-
-  \item We can ``transform'' $\epsilon_1, \epsilon_2$ into $Y_2$ through an affine transformation $Y_2 = \ell_{21} \epsilon_1 + \ell_{22} \epsilon_2$
-    for some scalars $\ell_{21}$ and $\ell_{22}$.
-    Write $\ell_{21}$ and $\ell_{22}$ in terms of $\ell_{11}$, $k_{21}$, $k_{22}$.
-    Explain your answer.
-
-\begin{answer}
-  TODO
-\end{answer}
-
-  \item Define $\mL_2 = \begin{bmatrix} \ell_{11} & 0 \\ \ell_{21} & \ell_{22} \end{bmatrix}.$
-    Without explicitly performing matrix multiplication, prove that
-    $$\mL_2 \mL_2^\top = \begin{bmatrix} k_{11} & k_{21}^\top \\ k_{21} & k_{22} \end{bmatrix}.$$
-    (Hint: consider the second moment of the random variable $\mL_2 \begin{bmatrix} \epsilon_1 \\ \epsilon_2 \end{bmatrix}.$)
-
-\begin{answer}
-  TODO
-\end{answer}
-
-  \item
-    Define $\vepsilon_{1:2} = \begin{bmatrix} \epsilon_1 & \epsilon_2 \end{bmatrix}^\top.$
-    We can ``transform'' $\vepsilon_{1:2}, \epsilon_3$ into $Y_3$ through the affine transformation
-    $$Y_3 = (\vell_{3,1:2}^\top) \vepsilon_{1:2} + \ell_{33},$$
-    for some vector $\vell_{3,1:2} \in \R^2$ and scalar $\ell_{33}$.
-    Write $\vell_{3,1:2}$ and $\ell_{33}$ in terms of $\mL_{2}$, $k_{33}$, and $\vk_{3,1:2} := \begin{bmatrix} k_{31} & k_{32} \end{bmatrix}^\top$.
-    Explain your answer.
-
-\begin{answer}
-  TODO
-\end{answer}
-
-  \item
-    Without any formal proof,
-    generalize the steps above into a recursive algorithm to compute a lower-triangular matrix $\mL_d$
-    such that
-    $$
-      \begin{bmatrix} Y_1 \\ \vdots \\ Y_d \end{bmatrix}
-      =
-      \mL_d
-      \begin{bmatrix} \epsilon_1 \\ \vdots \\ \epsilon_d \end{bmatrix}.
-    $$
-    and $\mL_d \mL_d^\top = \mK$.
-    $\mL_d$ is known as the Cholesky factorization of $\mK$.
 
 \begin{answer}
   TODO
@@ -463,9 +381,6 @@ From the previous results, we have proven the following (remarkable) facts about
   \item multivariate Gaussian random variables are closed under marginalization (Eq.~\ref{eqn:marginalization}), and
   \item multivariate Gaussian conditionals are Gaussian (Eq.~\ref{eqn:conditioning}).
 \end{enumerate}
-%
-Moreover, we have also derived their density, mean, and variance from first principles,
-and we have also found a connection between the Cholesky factorization and sequential sampling!
 
 
 \end{document}

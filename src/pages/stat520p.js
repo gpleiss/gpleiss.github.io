@@ -48,7 +48,7 @@ class Stat520P extends React.Component {
             <div className="col-lg-6 pt-5 mb-lg-4 text-right">
               <ul className="list-unstyled">
                 <li>
-                  20 Oct 2023 &mdash; 7 Dec 2023
+                  24 Oct 2023 &mdash; 7 Dec 2023
                 </li>
                 <li>
                   Tuesdays and Thursdays, 1:00 &mdash; 2:30PM
