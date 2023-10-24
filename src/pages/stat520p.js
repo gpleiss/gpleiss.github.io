@@ -41,6 +41,9 @@ class Stat520P extends React.Component {
                   <NavLinkCustom to="/teaching/stat520p/papers.html">Special Topics Papers</NavLinkCustom>
                 </li>
                 <li>
+                  <Link href="https://canvas.ubc.ca/courses/135093">Canvas Course Page</Link>
+                </li>
+                <li>
                   <Link href="https://bayesoptbook.com#download">Textbook</Link>
                 </li>
               </ul>

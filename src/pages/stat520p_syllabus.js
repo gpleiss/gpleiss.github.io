@@ -12,7 +12,7 @@ function formatAuthorName(authorName) {
 
 class Citation extends React.Component {
   render() {
-    const _title = <Link href="{ this.props.url }">{ this.props.title }</Link>;
+    const _title = <Link href={this.props.link}>{ this.props.title }</Link>;
 
     const authors = this.props.authors.split(',').map((authorName) => formatAuthorName(authorName)).join(', ').trim();
     const title = this.props.book ? <em>{ _title }</em> : <span>"{ _title }"</span>;
@@ -28,6 +28,7 @@ class Citation extends React.Component {
 class Stat520PSyllabus extends React.Component {
   render() {
     const textbook = <Link inside href="#textbook">textbook</Link>;
+    const canvas = <Link href="https://canvas.ubc.ca/courses/135093">Canvas</Link>;
     const contactMe = <Link inside href="#contact">contact me</Link>;
 
     return (
@@ -125,7 +126,7 @@ class Stat520PSyllabus extends React.Component {
           </p>
           <p>
             <strong id="contact">How to contact me</strong>.
-            Send me a message through the <Link inside href="#course-slack">Slack</Link> (preferred) or email (only if you absolutely need to).
+            Send me a message through { canvas }, the UBC Stats Slack (preferred, if you have access), or email (only if you absolutely need to).
             Please note that I will not respond on weekends or after 6PM on weekdays. 
           </p>
         </Section>
@@ -435,12 +436,13 @@ class Stat520PSyllabus extends React.Component {
             as a hardcover book from <Link href="https://www.amazon.ca/Bayesian-Optimization-Roman-Garnett/dp/110842578X">Amazon</Link>.
           </p>
 
-          <SmallH3 id="slack">Slack Workspace</SmallH3>
-          <p id="course-slack">
-            We will have a Slack workspace for this course, which you will be invited to before the first day of class.
-            I will communicate most announcements through the Slack rather than through email.
-            There will be public channels for questions, discussions, project ideas, etc.
-            Please post all non-personal questions to public channels&mdash;your fellow classmates might be able to answer them for you!
+          <SmallH3 id="canvas">Canvas</SmallH3>
+          <p id="course-canvas">
+            We will use { canvas } for 
+            1) announcements,
+            2) discussions,
+            and 3) uploading assignments.
+            Please post all non-personal questions as a discussion&mdash;your fellow classmates might be able to answer them for you!
           </p>
 
           <SmallH3 id="textbook">Optional References</SmallH3>

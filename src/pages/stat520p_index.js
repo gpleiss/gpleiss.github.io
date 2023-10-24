@@ -76,7 +76,7 @@ class Stat520PIndex extends React.Component {
                 <td>Class 5 (Tues, Nov 7)</td>
                 <td>Acquisition functions</td>
                 <td>{ textbook } Ch. 7</td>
-                <td></td>
+                <td>Project proposal (for those choosing the project final asssessment option)</td>
               </tr>
 
               <tr>
@@ -90,7 +90,7 @@ class Stat520PIndex extends React.Component {
                 <td>Class 7 (Tues, Nov 14)</td>
                 <td>Theory</td>
                 <td>{ textbook } Ch. 10</td>
-                <td></td>
+                <td>Short coding assignment</td>
               </tr>
 
               <tr>
