@@ -381,7 +381,7 @@ class Stat520PSyllabus extends React.Component {
                     Diagnostic problem set
                   </Link>
                 </td>
-                <td>10%</td>
+                <td>15%</td>
                 <td>See description above.</td>
               </tr>
               <tr>
@@ -390,7 +390,7 @@ class Stat520PSyllabus extends React.Component {
                     Short coding exercise
                   </Link>
                 </td>
-                <td>15%</td>
+                <td>20%</td>
                 <td>See description above.</td>
               </tr>
               <tr>
@@ -443,6 +443,12 @@ class Stat520PSyllabus extends React.Component {
             2) discussions,
             and 3) uploading assignments.
             Please post all non-personal questions as a discussion&mdash;your fellow classmates might be able to answer them for you!
+          </p>
+
+          <SmallH3>Demonstrations</SmallH3>
+          <p>
+            I will occasionally present small toy demonstrations during class.
+            They will be made available on <Link href="https://github.com/gpleiss/gp_bo_demos/">this Github repository</Link>.
           </p>
 
           <SmallH3 id="textbook">Optional References</SmallH3>

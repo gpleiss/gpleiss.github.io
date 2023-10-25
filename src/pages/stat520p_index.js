@@ -14,12 +14,25 @@ class Stat520PIndex extends React.Component {
             Announcements
           </SmallH2>
           <ul>
-            <li>The <Link inside href="syllabus.html">syllabus</Link> is now posted.</li>
-            <li>The first class will be on Tuesday, 24 Oct 2023.</li>
             <li>
-              The diagnostic problem <Link href="../../stat520p_pset1.pdf">has been released</Link>.
-              (<Link href="../../stat520p_pset1.tex">TeX template</Link>.)
-              It will be due on Tuesday, Oct 31.
+              Office hours immediately follow Thursday classes. Location: my office (ESB 3142).
+            </li>
+            <li>
+              The <Link href="../../stat520p_pset1.pdf">diagnostic problem set</Link>
+              is due on Tuesday, Oct 31.
+            </li>
+            <li>
+              Choose your <Link inside href="syllabus.html#final_assessment">final assessment option</Link> by
+              Tuesday, Oct 31.
+            </li>
+            <li>
+              For those of you choosing the "Topics Paper Presentation" final assessment option,
+              the list of potential papers <Link inside href="papers.html">has been posted</Link>.
+            </li>
+            <li>
+              I have posted the <Link href="https://github.com/gpleiss/gp_bo_demos/blob/main/gp_demo.ipynb">Gaussian process demo</Link> and
+              the <Link href="https://github.com/gpleiss/gp_bo_demos/blob/main/1d_bo_demo.ipynb">Bayesian optimization demo</Link> from
+              from the first class.
             </li>
           </ul>
         </Section>
@@ -51,7 +64,10 @@ class Stat520PIndex extends React.Component {
 
               <tr>
                 <td>Class 2 (Thurs, Oct 26)</td>
-                <td>Gaussian processes</td>
+                <td>
+                  Gaussian processes<br />
+                  (<Link href="../../mvn_cheat_sheet.pdf">Cheat sheet on multivariate Gaussians</Link>)
+                </td>
                 <td>{ textbook } Ch. 1-2</td>
                 <td></td>
               </tr>

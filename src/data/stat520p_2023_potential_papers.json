@@ -1,0 +1,250 @@
+﻿[
+ {
+   "Paper": "High-Dimensional Bayesian Optimisation with Variational Autoencoders and Deep Metric Learning",
+   "Tags": "latent space BO",
+   "Date": 2021,
+   "URL": "https://arxiv.org/abs/2106.03609",
+   "Venue": "",
+   "Authors": "Antoine Grosnit, Rasul Tutunov, Alexandre Max Maraval, Ryan-Rhys Griffiths, Alexander I. Cowen-Rivers, Lin Yang, Lin Zhu, Wenlong Lyu, Zhitang Chen, Jun Wang, Jan Peters, Haitham Bou-Ammar"
+ },
+ {
+   "Paper": "Combining Latent Space and Structured Kernels for Bayesian Optimization over Combinatorial Spaces",
+   "Tags": "latent space BO",
+   "Date": 2021,
+   "URL": "https://arxiv.org/abs/2111.01186",
+   "Venue": "NeurIPS",
+   "Authors": "Aryan Deshwal, Janardhan Rao Doppa"
+ },
+ {
+   "Paper": "Local Latent Space Bayesian Optimization over Structured Inputs",
+   "Tags": "latent space BO, local BO",
+   "Date": 2023,
+   "URL": "https://arxiv.org/abs/2201.11872",
+   "Venue": "NeurIPS",
+   "Authors": "Natalie Maus, Haydn T. Jones, Juston S. Moore, Matt J. Kusner, John Bradshaw, Jacob R. Gardner"
+ },
+ {
+   "Paper": "Accelerating Bayesian Optimization for Biological Sequence Design with Denoising Autoencoders",
+   "Tags": "latent space BO",
+   "Date": 2023,
+   "URL": "https://arxiv.org/abs/2203.12742",
+   "Venue": "ICML",
+   "Authors": "Samuel Stanton, Wesley Maddox, Nate Gruver, Phillip Maffettone, Emily Delaney, Peyton Greenside, Andrew Gordon Wilson"
+ },
+ {
+   "Paper": "Scalable Global Optimization via Local Bayesian",
+   "Tags": "local BO",
+   "Date": 2019,
+   "URL": "https://arxiv.org/abs/1910.01739",
+   "Venue": "NeurIPS",
+   "Authors": "David Eriksson, Michael Pearce, Jacob R Gardner, Ryan Turner, Matthias Poloczek"
+ },
+ {
+   "Paper": "Discovering Many Diverse Solutions with Bayesian Optimization\n",
+   "Tags": "latent space BO, local BO, misspecified BO",
+   "Date": 2023,
+   "URL": "https://arxiv.org/abs/2210.10953",
+   "Venue": "AISTATS",
+   "Authors": "Natalie Maus, Kaiwen Wu, David Eriksson, Jacob R. Gardner"
+ },
+ {
+   "Paper": "The Behavior and Convergence of\nLocal Bayesian Optimization\n",
+   "Tags": "local BO",
+   "Date": 2023,
+   "URL": "https://arxiv.org/abs/2305.15572",
+   "Venue": "NeurIPS",
+   "Authors": "Kaiwen Wu, Kyurae Kim, Roman Garnett, Jacob R. Gardner"
+ },
+ {
+   "Paper": "Deep Gaussian Processes for Multi-fidelity Modeling",
+   "Tags": "greybox BO",
+   "Date": 2019,
+   "URL": "https://arxiv.org/abs/1903.07320",
+   "Venue": "",
+   "Authors": "Kurt Cutajar, Mark Pullin, Andreas Damianou, Neil Lawrence, Javier González"
+ },
+ {
+   "Paper": "Bayesian Optimization of Function Networks",
+   "Tags": "greybox BO",
+   "Date": 2021,
+   "URL": "https://arxiv.org/abs/2112.15311",
+   "Venue": "NeurIPS",
+   "Authors": "Raul Astudillo, Peter I. Frazier"
+ },
+ {
+   "Paper": "Parallel Bayesian Optimization of Multiple Noisy Objectives with Expected Hypervolume Improvement",
+   "Tags": "multi-objective BO",
+   "Date": 2021,
+   "URL": "https://arxiv.org/abs/2105.08195",
+   "Venue": "NeurIPS",
+   "Authors": "Samuel Daulton, Maximilian Balandat, Eytan Bakshy"
+ },
+ {
+   "Paper": "Multi-Objective Bayesian Optimization over High-Dimensional Search Spaces",
+   "Tags": "multi-objective BO",
+   "Date": 2022,
+   "URL": "https://arxiv.org/abs/2109.10964",
+   "Venue": "UAI",
+   "Authors": "Samuel Daulton, David Eriksson, Maximilian Balandat, Eytan Bakshy"
+ },
+ {
+   "Paper": "Multi-Attribute Bayesian Optimization With Interactive Preference Learning",
+   "Tags": "preference BO",
+   "Date": 2020,
+   "URL": "https://arxiv.org/abs/1911.05934",
+   "Venue": "AISTATS",
+   "Authors": "Raul Astudillo, Peter I. Frazier"
+ },
+ {
+   "Paper": "Preference Exploration for Efficient Bayesian Optimization with Multiple Outcomes",
+   "Tags": "preference BO",
+   "Date": 2022,
+   "URL": "https://arxiv.org/abs/2203.11382",
+   "Venue": "AISTATS",
+   "Authors": "Zhiyuan Jerry Lin, Raul Astudillo, Peter I. Frazier, Eytan Bakshy"
+ },
+ {
+   "Paper": "qEUBO: A Decision-Theoretic Acquisition Function for Preferential Bayesian Optimization",
+   "Tags": "preference BO",
+   "Date": 2023,
+   "URL": "https://arxiv.org/abs/2303.15746",
+   "Venue": "AISTATS",
+   "Authors": "Raul Astudillo, Zhiyuan Jerry Lin, Eytan Bakshy, Peter I. Frazier"
+ },
+ {
+   "Paper": "Preference-Aware Constrained Multi-Objective Bayesian Optimization",
+   "Tags": "multi-objective BO, preference BO",
+   "Date": 2022,
+   "URL": "https://arxiv.org/abs/2303.13034",
+   "Venue": "NeurIPS Workshop on Gaussian Processes, Spatiotemporal Modeling, and Decision-making Systems",
+   "Authors": "Alaleh Ahmadianshalchi, Syrine Belakaria, Janardhan Rao Doppa"
+ },
+ {
+   "Paper": "Preference Exploration for Efficient Bayesian Optimization with Multiple Outcomes",
+   "Tags": "preference BO",
+   "Date": 2022,
+   "URL": "https://arxiv.org/abs/2203.11382",
+   "Venue": "AISTATS",
+   "Authors": "Zhiyuan Jerry Lin, Raul Astudillo, Peter I. Frazier, Eytan Bakshy"
+ },
+ {
+   "Paper": "Multi-Attribute Bayesian Optimization With Interactive Preference Learning",
+   "Tags": "preference BO",
+   "Date": 2020,
+   "URL": "https://arxiv.org/abs/1911.05934",
+   "Venue": "AISTATS",
+   "Authors": "Raul Astudillo, Peter I. Frazier"
+ },
+ {
+   "Paper": "Causal Bayesian Optimization",
+   "Tags": "causal BO",
+   "Date": 2020,
+   "URL": "https://arxiv.org/abs/2005.11741",
+   "Venue": "AISTATS",
+   "Authors": "Virginia Aglietti, Xiaoyu Lu, Andrei Paleyes, Javier González"
+ },
+ {
+   "Paper": "Dynamic Causal Bayesian Optimization",
+   "Tags": "causal BO",
+   "Date": 2021,
+   "URL": "https://arxiv.org/abs/2110.13891",
+   "Venue": "NeurIPS",
+   "Authors": "Virginia Aglietti, Neil Dhir, Javier González, Theodoros Damoulas"
+ },
+ {
+   "Paper": "Model-based Causal Bayesian Optimization",
+   "Tags": "causal BO",
+   "Date": 2023,
+   "URL": "https://arxiv.org/abs/2211.10257",
+   "Venue": "ICLR",
+   "Authors": "Scott Sussex, Anastasiia Makarova, Andreas Krause"
+ },
+ {
+   "Paper": "Functional Causal Bayesian Optimization",
+   "Tags": "causal BO",
+   "Date": 2023,
+   "URL": "https://arxiv.org/abs/2306.06409",
+   "Venue": "UAI",
+   "Authors": "Limor Gultchin, Virginia Aglietti, Alexis Bellot, Silvia Chiappa"
+ },
+ {
+   "Paper": "Efficient Nonmyopic Bayesian Optimization via One-Shot Multi-Step Trees",
+   "Tags": "non-myopic decision making",
+   "Date": 2020,
+   "URL": "https://proceedings.neurips.cc/paper/2020/hash/d1d5923fc822531bbfd9d87d4760914b-Abstract.html",
+   "Venue": "NeurIPS",
+   "Authors": "Shali Jiang, Daniel R. Jiang, Maximilian Balandat, Brian Karrer, Jacob R. Gardner, Roman Garnett"
+ },
+ {
+   "Paper": "Multi-Step Budgeted Bayesian Optimization with Unknown Evaluation Costs",
+   "Tags": "cost aware BO, non-myopic decision making",
+   "Date": 2021,
+   "URL": "https://arxiv.org/abs/2111.06537",
+   "Venue": "NeurIPS",
+   "Authors": "Raul Astudillo, Daniel R. Jiang, Maximilian Balandat, Eytan Bakshy, Peter I. Frazier"
+ },
+ {
+   "Paper": "A Nonmyopic Approach to Cost-Constrained Bayesian Optimization",
+   "Tags": "cost aware BO, non-myopic decision making",
+   "Date": 2021,
+   "URL": "https://arxiv.org/abs/2106.06079",
+   "Venue": "UAI",
+   "Authors": "Eric Hans Lee, David Eriksson, Valerio Perrone, Matthias Seeger"
+ },
+ {
+   "Paper": "Budgeted Bandit Problems with Continuous Random Costs",
+   "Tags": "cost aware BO",
+   "Date": 2016,
+   "URL": "https://proceedings.mlr.press/v45/Xia15.html",
+   "Venue": "ACML",
+   "Authors": "Yingce Xia, Wenkui Ding, Xu-Dong Zhang, Nenghai Yu, Tao Qin"
+ },
+ {
+   "Paper": "Budgeted Multi–Armed Bandit in Continuous Action\nSpace",
+   "Tags": "cost aware BO",
+   "Date": 2016,
+   "URL": "https://dl.acm.org/doi/pdf/10.3233/978-1-61499-672-9-560",
+   "Venue": "ECAI",
+   "Authors": "Francesco Trovo, Stefano Paladino, Marcello Restelli, Nicola Gatti"
+ },
+ {
+   "Paper": "Efficient Nonmyopic Active Search",
+   "Tags": "generalizations of BO, non-myopic decision making",
+   "Date": 2017,
+   "URL": "http://proceedings.mlr.press/v70/jiang17d.html",
+   "Venue": "ICML",
+   "Authors": "Shali Jiang, Gustavo Malkomes, Geoff Converse, Alyssa Shofner, Benjamin Moseley, Roman Garnett"
+ },
+ {
+   "Paper": "Bayesian Algorithm Execution: Estimating Computable Properties of Black-box Functions Using Mutual Information",
+   "Tags": "generalizations of BO",
+   "Date": 2021,
+   "URL": "https://arxiv.org/abs/2104.09460",
+   "Venue": "ICML",
+   "Authors": "Willie Neiswanger, Ke Alexander Wang, Stefano Ermon"
+ },
+ {
+   "Paper": "Bayesian Optimization with Conformal Coverage Guarantees\n",
+   "Tags": "generalizations of BO",
+   "Date": 2023,
+   "URL": "https://arxiv.org/abs/2210.12496",
+   "Venue": "AISTATS",
+   "Authors": "Samuel Stanton, Wesley Maddox, Andrew Gordon Wilson"
+ },
+ {
+   "Paper": "Bayesian Optimization with Inequality Constraints",
+   "Tags": "constrained BO",
+   "Date": 2014,
+   "URL": "http://proceedings.mlr.press/v32/gardner14.pdf",
+   "Venue": "ICML",
+   "Authors": "Jacob R. Gardner, Matt J. Kusner, Zhixiang Xu, Kilian Q. Weinberger, John P. Cunningham"
+ },
+ {
+   "Paper": "Bayesian Optimization over Discrete and Mixed Spaces via Probabilistic Reparameterization",
+   "Tags": "mixed-space BO",
+   "Date": 2022,
+   "URL": "https://arxiv.org/abs/2210.10199",
+   "Venue": "NeurIPS",
+   "Authors": "Samuel Daulton, Xingchen Wan, David Eriksson, Maximilian Balandat, Michael A. Osborne, Eytan Bakshy"
+ }
+]

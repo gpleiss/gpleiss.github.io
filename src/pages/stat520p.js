@@ -46,6 +46,9 @@ class Stat520P extends React.Component {
                 <li>
                   <Link href="https://bayesoptbook.com#download">Textbook</Link>
                 </li>
+                <li>
+                  <Link href="https://github.com/gpleiss/gp_bo_demos">Demos</Link>
+                </li>
               </ul>
             </div>
             <div className="col-lg-6 pt-5 mb-lg-4 text-right">
