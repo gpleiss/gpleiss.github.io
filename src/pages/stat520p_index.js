@@ -18,8 +18,15 @@ class Stat520PIndex extends React.Component {
               Office hours immediately follow Thursday classes. Location: my office (ESB 3142).
             </li>
             <li>
-              The <Link href="../../stat520p_pset1.pdf">diagnostic problem set</Link>
-              is due on Tuesday, Oct 31.
+              <p>
+                The <Link href="../../stat520p_pset1.pdf">diagnostic problem set</Link>
+                is due on Tuesday, Oct 31.
+              </p>
+              <p>
+                If you are using the <Link href="../../stat520p_pset1.tex">TeX template</Link> I posted,
+                you'll probably also want the <Link href="../../math_commands.tex">math_commands.tex</Link> macros file.
+                (I forgot to link to this earlier!)
+              </p>
             </li>
             <li>
               Choose your <Link inside href="syllabus.html#final_assessment">final assessment option</Link> by
@@ -77,7 +84,11 @@ class Stat520PIndex extends React.Component {
                 <td>Gaussian processes and kernels</td>
                 <td>{ textbook } Ch. 3, 9.1 (optional)</td>
                 <td>
-                  <Link href="../../stat520p_pset1.pdf">Diagonstic problem set</Link> (<Link href="../../stat520p_pset1.tex">TeX template</Link>)
+                  <Link href="../../stat520p_pset1.pdf">Diagonstic problem set</Link>{ " " }
+                  (
+                    <Link href="../../stat520p_pset1.tex">TeX template</Link> and{ " " }
+                    <Link href="../../math_commands.tex">math_commands.tex</Link> macros file
+                  )
                 </td>
               </tr>
 
