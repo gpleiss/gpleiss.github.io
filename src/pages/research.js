@@ -164,6 +164,20 @@ class Home extends React.Component {
 
                 <H3 id="nla">Numerical Methods for Gaussian Processes and Machine Learning</H3>
                 <CvList indent>
+                  <PubItem title="Large-Scale Gaussian Processes via Alternating Projection"
+                    authors={[
+                      "Kaiwen Wu",
+                      "Jonathan Wenger",
+                      "Hadyn Jones",
+                      "Geoff Pleiss",
+                      "Jacob R. Gardner",
+                    ]}
+                    isNew
+                    arxiv="https://arxiv.org/abs/2310.17137"
+                    pdf="https://arxiv.org/pdf/2310.17137.pdf"
+                    underSubmission
+                    year="2023"
+                  />
                   <PubItem title="CoLA: Exploiting Compositional Structure for Automatic and Efficient Numerical Linear Algebra"
                     authors={[
                       "Andres Potapczynski*",
@@ -174,6 +188,7 @@ class Home extends React.Component {
                     isNew
                     arxiv="https://arxiv.org/abs/2309.03060"
                     pdf="https://arxiv.org/pdf/2309.03060.pdf"
+                    github="https://github.com/wilson-labs/cola"
                     conference="NeurIPS"
                     year="2023"
                   />

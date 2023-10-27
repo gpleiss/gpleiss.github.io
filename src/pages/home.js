@@ -174,6 +174,20 @@ class Home extends React.Component {
                 </p>
                 
                 <CvList className="list-unstyled">
+                  <PubItem title="Large-Scale Gaussian Processes via Alternating Projection"
+                    authors={[
+                      "Kaiwen Wu",
+                      "Jonathan Wenger",
+                      "Hadyn Jones",
+                      "Geoff Pleiss",
+                      "Jacob R. Gardner",
+                    ]}
+                    isNew
+                    arxiv="https://arxiv.org/abs/2310.17137"
+                    pdf="https://arxiv.org/pdf/2310.17137.pdf"
+                    underSubmission
+                    year="2023"
+                  />
                   <PubItem title="CoLA: Exploiting Compositional Structure for Automatic and Efficient Numerical Linear Algebra"
                     authors={[
                       "Andres Potapczynski*",
@@ -184,6 +198,7 @@ class Home extends React.Component {
                     isNew
                     arxiv="https://arxiv.org/abs/2309.03060"
                     pdf="https://arxiv.org/pdf/2309.03060.pdf"
+                    github="https://github.com/wilson-labs/cola"
                     conference="NeurIPS"
                     year="2023"
                   />
@@ -197,19 +212,6 @@ class Home extends React.Component {
                     arxiv="https://arxiv.org/abs/2302.11961"
                     pdf="https://arxiv.org/pdf/2302.11961.pdf"
                     conference="NeurIPS"
-                    year="2023"
-                  />
-                  <PubItem title="Pathologies of Predictive Diversity in Deep Ensembles"
-                    authors={[
-                      "Taiga Abe",
-                      "E. Kelly Buchanan",
-                      "Geoff Pleiss",
-                      "John P. Cunningham",
-                    ]}
-                    isNew
-                    arxiv="https://arxiv.org/abs/2302.00704"
-                    pdf="https://arxiv.org/pdf/2302.00704.pdf"
-                    underSubmission
                     year="2023"
                   />
                   <PubItem title="Posterior and Computational Uncertainty in Gaussian Processes"
@@ -337,7 +339,7 @@ class Home extends React.Component {
                   >
                   </SoftwareItem>
                   <SoftwareItem title="CoLA (Compositional Linear Algebra)"
-                    status="Alpha Release"
+                    status="Beta Release"
                     coauthors={[
                       "Andres Potapczynski",
                       "Marc Anton Finzi",
