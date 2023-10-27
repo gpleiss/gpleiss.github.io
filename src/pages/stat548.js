@@ -290,6 +290,7 @@ class Stat548 extends React.Component {
                     link="https://arxiv.org/abs/2010.15538"
                     topics="Gaussian processes, kernels"
                     styl="Methodological"
+                    taken
                   >
                   </PaperLi>
                   <PaperLi
