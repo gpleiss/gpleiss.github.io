@@ -62,6 +62,11 @@ class Stat520P extends React.Component {
                 <li>
                   Earth Science Building, Room #4192
                 </li>
+                <li>
+                  <em>
+                    (Office hours immediately follow Thursday class, ESB 3142.)
+                  </em>
+                </li>
               </ul>
             </div>
             <Outlet />

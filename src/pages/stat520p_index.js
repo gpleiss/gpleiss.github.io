@@ -15,31 +15,40 @@ class Stat520PIndex extends React.Component {
           </SmallH2>
           <ul>
             <li>
-              Office hours immediately follow Thursday classes. Location: my office (ESB 3142).
-            </li>
-            <li>
-              <p>
-                The <Link href="../../stat520p_pset1.pdf">diagnostic problem set</Link>
-                is due on Tuesday, Oct 31.
-              </p>
-              <p>
-                If you are using the <Link href="../../stat520p_pset1.tex">TeX template</Link> I posted,
-                you'll probably also want the <Link href="../../math_commands.tex">math_commands.tex</Link> macros file.
-                (I forgot to link to this earlier!)
-              </p>
+              The <Link href="../../stat520p_pset1.pdf">diagnostic problem set</Link> is
+              due on October 31.
+              (<Link href="../../stat520p_pset1.tex">TeX template</Link> and <Link href="../../math_commands.tex">math_commands.tex</Link> macros file.)
+              Please message me if you need an extension.
             </li>
             <li>
               Choose your <Link inside href="syllabus.html#final_assessment">final assessment option</Link> by
-              Tuesday, Oct 31.
+              Tuesday, Oct 31. See Canvas announcement for instructions.
+              <ul>
+                <li>
+                  For those of you choosing the Topics Paper Presentation final assessment option,
+                  the list of potential papers <Link inside href="papers.html">has been posted</Link>.
+                  Choose a paper and add your name to the topics paper presentation spreadsheet (see Canvas).
+                </li>
+                <li>
+                  For those of you choosing the Research Project final assessment option,
+                  your <Link href="https://canvas.ubc.ca/courses/135093/assignments/1692854">
+                    1-page project proposal
+                  </Link> will be due on Tuesday, Nov 7.
+                </li>
+              </ul>
             </li>
             <li>
-              For those of you choosing the "Topics Paper Presentation" final assessment option,
-              the list of potential papers <Link inside href="papers.html">has been posted</Link>.
-            </li>
-            <li>
-              I have posted the <Link href="https://github.com/gpleiss/gp_bo_demos/blob/main/gp_demo.ipynb">Gaussian process demo</Link> and
-              the <Link href="https://github.com/gpleiss/gp_bo_demos/blob/main/1d_bo_demo.ipynb">Bayesian optimization demo</Link> from
-              from the first class.
+              Demos of different Gaussian process covariance functions:
+              <ul>
+                <li>
+                  My <Link href="https://github.com/gpleiss/gp_bo_demos/blob/main/kernel_demo.ipynb">
+                    interactive Jupyter demo
+                  </Link> (download and play around with it locally)
+                </li>
+                <li>
+                  David Duvenaud's <Link href="https://www.cs.toronto.edu/~duvenaud/cookbook/">kernel cookbook</Link>
+                </li>
+              </ul>
             </li>
           </ul>
         </Section>
@@ -49,7 +58,7 @@ class Stat520PIndex extends React.Component {
             Schedule
           </SmallH2>
           <p>
-            Subject to change; check <Link inside href="#announcements">announcements</Link> and Slack!.
+            Subject to change; check <Link inside href="#announcements">announcements</Link> and Canvas!.
           </p>
           <Table striped hover>
             <thead>
