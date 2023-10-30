@@ -319,6 +319,7 @@ class Stat548 extends React.Component {
                     link="https://arxiv.org/abs/2301.09633"
                     topics="Uncertainty quantification, neural networks, conformal prediction"
                     styl="Methodological"
+                    taken
                   >
                   </PaperLi>
                   <PaperLi
