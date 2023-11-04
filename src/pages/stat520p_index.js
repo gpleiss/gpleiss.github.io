@@ -100,15 +100,15 @@ class Stat520PIndex extends React.Component {
 
               <tr>
                 <td>Class 6 (Thurs, Nov 9)</td>
-                <td>Implementation details</td>
-                <td></td>
+                <td>Acquisition functions</td>
+                <td>{ textbook } Ch. 8, 9.2</td>
                 <td></td>
               </tr>
 
               <tr>
                 <td>Class 7 (Tues, Nov 14)</td>
                 <td>Implementation details</td>
-                <td>{ textbook } Ch. 8, 9.2</td>
+                <td></td>
                 <td></td>
               </tr>
 
