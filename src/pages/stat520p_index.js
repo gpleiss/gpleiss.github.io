@@ -20,12 +20,6 @@ class Stat520PIndex extends React.Component {
               Please message me if you need an extension.
             </li>
             <li>
-              For those of you choosing the Research Project final assessment option,
-              your <Link href="https://canvas.ubc.ca/courses/135093/assignments/1692854">
-                1-page project proposal
-              </Link> will be due on Tuesday, Nov 7.
-            </li>
-            <li>
               The topics paper presentations are now posted.
             </li>
           </ul>
@@ -71,7 +65,7 @@ class Stat520PIndex extends React.Component {
                 <td>
                   Gaussian processes and kernels<br />
                   (<Link href="https://github.com/gpleiss/gp_bo_demos/blob/main/kernel_demo.ipynb">
-                    Interactive Jupyter demo
+                    Jupyter demo
                    </Link>, David Duvenaud's <Link href="https://www.cs.toronto.edu/~duvenaud/cookbook/">kernel cookbook</Link>)
                 </td>
                 <td>{ textbook } Ch. 3, 9.1 (optional)</td>
@@ -92,23 +86,36 @@ class Stat520PIndex extends React.Component {
               </tr>
 
               <tr>
-                <td>Class 5 (Tues, Nov 7)</td>
+                <td>
+                  Class 5 (Tues, Nov 7)
+                  (<Link href="https://github.com/gpleiss/gp_bo_demos/blob/main/1d_bo_demo.ipynb">
+                    Jupyter demo
+                   </Link> on BDT acquisition functions)
+                </td>
                 <td>Acquisition functions</td>
                 <td>{ textbook } Ch. 6-7</td>
                 <td>Project proposal (for those choosing the project final asssessment option)</td>
               </tr>
 
               <tr>
-                <td>Class 6 (Thurs, Nov 9)</td>
+                <td>
+                  Class 6 (Thurs, Nov 9)
+                  (<Link href="https://github.com/gpleiss/gp_bo_demos/blob/main/1d_bo_ucb_demo.ipynb">
+                    Jupyter demo
+                   </Link> on UCB, <Link href="https://github.com/gpleiss/gp_bo_demos/blob/main/1d_bo_ts_demo.ipynb">
+                    Jupyter demo
+                   </Link> on Thompson sampling
+                  )
+                </td>
                 <td>Acquisition functions</td>
-                <td>{ textbook } Ch. 8, 9.2</td>
+                <td></td>
                 <td></td>
               </tr>
 
               <tr>
                 <td>Class 7 (Tues, Nov 14)</td>
                 <td>Implementation details</td>
-                <td></td>
+                <td>{ textbook } Ch. 8, 9.2</td>
                 <td></td>
               </tr>
 
