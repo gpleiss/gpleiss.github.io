@@ -20,7 +20,9 @@ class Stat520PIndex extends React.Component {
               Please message me if you need an extension.
             </li>
             <li>
-              The topics paper presentations are now posted.
+              Topics paper presentations will start on Tuesday, November 21.
+              If you are not presenting (and not doing a final project), you will need to read each paper
+              before class and write a short review. (Details to follow.)
             </li>
           </ul>
         </Section>
@@ -73,8 +75,7 @@ class Stat520PIndex extends React.Component {
                   <Link href="../../stat520p_pset1.pdf">Diagonstic problem set</Link>{ " " }
                   (
                     <Link href="../../stat520p_pset1.tex">TeX template</Link> and{ " " }
-                    <Link href="../../math_commands.tex">math_commands.tex</Link> macros file
-                  )
+                    <Link href="../../math_commands.tex">math_commands.tex</Link> macros file)
                 </td>
               </tr>
 
@@ -113,21 +114,18 @@ class Stat520PIndex extends React.Component {
               </tr>
 
               <tr>
-                <td>Class 7 (Tues, Nov 14)</td>
-                <td>Implementation details</td>
-                <td>{ textbook } Ch. 8, 9.2</td>
-                <td></td>
+                <td colspan="4" className="text-center"><em>No Class on Nov 14</em><br />(Reading Week)</td>
               </tr>
 
               <tr>
                 <td>Class 8 (Thurs, Nov 16)</td>
-                <td>Theory</td>
-                <td>{ textbook } Ch. 10</td>
+                <td>Implementation details</td>
+                <td>{ textbook } Ch. 8, 9.2</td>
                 <td>Short coding assignment</td>
               </tr>
 
               <tr>
-                <td>Class 9 (Tues, Nov 21)</td>
+                <td>Class 8 (Tues, Nov 21)</td>
                 <td>
                   Special Topic (Multi-Objective BO)
                 </td>
@@ -140,7 +138,7 @@ class Stat520PIndex extends React.Component {
               </tr>
 
               <tr>
-                <td>Class 10 (Thurs, Nov 23)</td>
+                <td>Class 9 (Thurs, Nov 23)</td>
                 <td>
                   Special Topic (Local BO)
                 </td>
@@ -153,7 +151,7 @@ class Stat520PIndex extends React.Component {
               </tr>
 
               <tr>
-                <td>Class 11 (Tues, Nov 28)</td>
+                <td>Class 10 (Tues, Nov 28)</td>
                 <td>
                   Special Topic (Mixed-Space BO)
                 </td>
@@ -166,7 +164,7 @@ class Stat520PIndex extends React.Component {
               </tr>
 
               <tr>
-                <td>Class 12 (Thurs, Nov 30)</td>
+                <td>Class 11 (Thurs, Nov 30)</td>
                 <td>
                   Special Topic (Causal BO)
                 </td>
@@ -179,7 +177,7 @@ class Stat520PIndex extends React.Component {
               </tr>
 
               <tr>
-                <td>Class 13 (Tues, Dec 5)</td>
+                <td>Class 12 (Tues, Dec 5)</td>
                 <td>
                   Special Topic (Preference BO)
                 </td>
@@ -192,7 +190,7 @@ class Stat520PIndex extends React.Component {
               </tr>
 
               <tr>
-                <td>Class 14 (Thurs, Dec 7)</td>
+                <td>Class 13 (Thurs, Dec 7)</td>
                 <td>
                   Special Topic (Cost-Aware BO)
                 </td>

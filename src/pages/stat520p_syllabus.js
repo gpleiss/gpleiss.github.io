@@ -478,6 +478,14 @@ class Stat520PSyllabus extends React.Component {
               <ul>
                 <li>
                   <Citation
+                    authors="P. I. Frazier"
+                    link="https://arxiv.org/pdf/1807.02811.pdf"
+                    title="A Tutorial on Bayesian Optimization"
+                    year={ 2018 }
+                  />
+                </li>
+                <li>
+                  <Citation
                     authors="J. Snoek, H. Larochelle, R. P. Adams"
                     link="https://arxiv.org/pdf/1206.2944.pdf"
                     title="Practical Bayesian optimization of machine learning algorithms"
