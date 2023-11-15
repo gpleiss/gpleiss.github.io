@@ -16,13 +16,13 @@ class Stat520PIndex extends React.Component {
           <ul>
             <li>
               The coding exercise is due on Thursday, November 16.
-              (See Canvas for details.)
+              (See <Link href="https://canvas.ubc.ca/courses/135093">Canvas</Link> for details.)
               Please message me if you need an extension.
             </li>
             <li>
               Topics paper presentations will start on Tuesday, November 21.
               If you are not presenting (and not doing a final project), you will need to read each paper
-              before class and write a short review. (Details to follow.)
+              before class and write a short review. (See <Link href="https://canvas.ubc.ca/courses/135093">Canvas</Link> for details.)
             </li>
           </ul>
         </Section>
@@ -118,7 +118,7 @@ class Stat520PIndex extends React.Component {
               </tr>
 
               <tr>
-                <td>Class 8 (Thurs, Nov 16)</td>
+                <td>Class 7 (Thurs, Nov 16)</td>
                 <td>Implementation details</td>
                 <td>{ textbook } Ch. 8, 9.2</td>
                 <td>Short coding assignment</td>
