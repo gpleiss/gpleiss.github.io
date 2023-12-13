@@ -9,16 +9,12 @@ class Stat520PIndex extends React.Component {
 
     return (
       <div className="col-12">
+        { /*
         <Section id="announcements">
           <SmallH2>
             Announcements
           </SmallH2>
           <ul>
-            <li>
-              The coding exercise is due on Thursday, November 16.
-              (See <Link href="https://canvas.ubc.ca/courses/135093">Canvas</Link> for details.)
-              Please message me if you need an extension.
-            </li>
             <li>
               Topics paper presentations will start on Tuesday, November 21.
               If you are not presenting (and not doing a final project), you will need to read each paper
@@ -26,6 +22,7 @@ class Stat520PIndex extends React.Component {
             </li>
           </ul>
         </Section>
+        */ }
 
         <Section id="schedule">
           <SmallH2>
