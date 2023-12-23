@@ -188,6 +188,20 @@ class Home extends React.Component {
                     underSubmission
                     year="2023"
                   />
+                  <PubItem title="Pathologies of Predictive Diversity in Deep Ensembles"
+                    authors={[
+                      "Taiga Abe",
+                      "E. Kelly Buchanan",
+                      "Geoff Pleiss",
+                      "John P. Cunningham",
+                    ]}
+                    isNew
+                    award="featured paper"
+                    arxiv="https://arxiv.org/abs/2302.00704"
+                    pdf="https://arxiv.org/pdf/2302.00704.pdf"
+                    conference="TMLR"
+                    year="2024"
+                  />
                   <PubItem title="CoLA: Exploiting Compositional Structure for Automatic and Efficient Numerical Linear Algebra"
                     authors={[
                       "Andres Potapczynski*",

@@ -102,10 +102,11 @@ class Home extends React.Component {
                       "John P. Cunningham",
                     ]}
                     isNew
+                    award="featured paper"
                     arxiv="https://arxiv.org/abs/2302.00704"
                     pdf="https://arxiv.org/pdf/2302.00704.pdf"
-                    underSubmission
-                    year="2023"
+                    conference="TMLR"
+                    year="2024"
                   />
                   <PubItem title="The Best Deep Ensembles Sacrifice Predictive Diversity"
                     authors={[
