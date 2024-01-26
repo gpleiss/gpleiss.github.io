@@ -27,7 +27,6 @@ class Home extends React.Component {
                       "Sandra Hirche",
                       "Geoff Pleiss",
                     ]}
-                    isNew
                     arxiv="https://arxiv.org/abs/2302.11961"
                     pdf="https://arxiv.org/pdf/2302.11961.pdf"
                     conference="NeurIPS"
@@ -58,6 +57,7 @@ class Home extends React.Component {
                     arxiv="https://arxiv.org/abs/2202.06985"
                     pdf="https://arxiv.org/pdf/2202.06985.pdf"
                     github="https://github.com/cellistigs/interp_ensembles"
+                    talk="https://www.youtube.com/watch?v=703FzYv-j9o&ab_channel=VectorInstitute"
                     conference="NeurIPS"
                     year="2022"
                   />
@@ -131,6 +131,7 @@ class Home extends React.Component {
                     arxiv="https://arxiv.org/abs/2202.06985"
                     pdf="https://arxiv.org/pdf/2202.06985.pdf"
                     github="https://github.com/cellistigs/interp_ensembles"
+                    talk="https://www.youtube.com/watch?v=703FzYv-j9o&ab_channel=VectorInstitute"
                     conference="NeurIPS"
                     year="2022"
                   />
@@ -176,8 +177,8 @@ class Home extends React.Component {
                     isNew
                     arxiv="https://arxiv.org/abs/2310.17137"
                     pdf="https://arxiv.org/pdf/2310.17137.pdf"
-                    underSubmission
-                    year="2023"
+                    conference="AISTATS"
+                    year="2024"
                   />
                   <PubItem title="CoLA: Exploiting Compositional Structure for Automatic and Efficient Numerical Linear Algebra"
                     authors={[
@@ -186,7 +187,6 @@ class Home extends React.Component {
                       "Geoff Pleiss",
                       "Andrew Gordon Wilson",
                     ]}
-                    isNew
                     arxiv="https://arxiv.org/abs/2309.03060"
                     pdf="https://arxiv.org/pdf/2309.03060.pdf"
                     github="https://github.com/wilson-labs/cola"

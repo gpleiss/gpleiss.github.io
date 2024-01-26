@@ -185,8 +185,8 @@ class Home extends React.Component {
                     isNew
                     arxiv="https://arxiv.org/abs/2310.17137"
                     pdf="https://arxiv.org/pdf/2310.17137.pdf"
-                    underSubmission
-                    year="2023"
+                    conference="AISTATS"
+                    year="2024"
                   />
                   <PubItem title="Pathologies of Predictive Diversity in Deep Ensembles"
                     authors={[
@@ -195,10 +195,10 @@ class Home extends React.Component {
                       "Geoff Pleiss",
                       "John P. Cunningham",
                     ]}
-                    isNew
                     award="featured paper"
                     arxiv="https://arxiv.org/abs/2302.00704"
                     pdf="https://arxiv.org/pdf/2302.00704.pdf"
+                    isNew
                     conference="TMLR"
                     year="2024"
                   />
@@ -209,22 +209,9 @@ class Home extends React.Component {
                       "Geoff Pleiss",
                       "Andrew Gordon Wilson",
                     ]}
-                    isNew
                     arxiv="https://arxiv.org/abs/2309.03060"
                     pdf="https://arxiv.org/pdf/2309.03060.pdf"
                     github="https://github.com/wilson-labs/cola"
-                    conference="NeurIPS"
-                    year="2023"
-                  />
-                  <PubItem title="Sharp Calibrated Gaussian Processes"
-                    authors={[
-                      "Alexandre Capone",
-                      "Sandra Hirche",
-                      "Geoff Pleiss",
-                    ]}
-                    isNew
-                    arxiv="https://arxiv.org/abs/2302.11961"
-                    pdf="https://arxiv.org/pdf/2302.11961.pdf"
                     conference="NeurIPS"
                     year="2023"
                   />
@@ -253,6 +240,7 @@ class Home extends React.Component {
                     arxiv="https://arxiv.org/abs/2202.06985"
                     pdf="https://arxiv.org/pdf/2202.06985.pdf"
                     github="https://github.com/cellistigs/interp_ensembles"
+                    talk="https://www.youtube.com/watch?v=703FzYv-j9o&ab_channel=VectorInstitute"
                     conference="NeurIPS"
                     year="2022"
                   />
