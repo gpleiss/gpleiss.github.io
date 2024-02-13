@@ -52,7 +52,8 @@ class Home extends React.Component {
         where I am an inaugural member of {" "}
         <Link className="text-muted" href="http://caida.ubc.ca/">CAIDA's</Link> {" "}
         <Link className="text-muted" href="http://caida.ubc.ca/aim-si">AIM-SI</Link> (AI Methods for Scientific Impact) cluster.
-        I am also a faculty member of the {" "}
+        I am also a <Link className="text-muted" href="https://cifar.ca/ai/canada-cifar-ai-chairs/">Canada CIFAR AI Chair</Link>{" "}
+        and a faculty member at the {" "}
         <Link className="text-muted" href="http://vectorinstitue.ai/">Vector Institute</Link>.
       </span>
     );
@@ -67,17 +68,15 @@ class Home extends React.Component {
               <div className="col-12 d-md-none text-center my-3">{ picture }</div>
 
               <div className="row mx-0 mb-5 text-muted font-italic text-center text-md-left">
-                <div className="col-12 col-xl-6 px-md-0 mt-3">
-                  Assistant Professor<br />
-                  <Link className="text-muted" href="http://stat.ubc.ca/">UBC Department of Statistics</Link><br />
+                <div className="col-12 col-xl-12 px-md-0 mt-3">
+                  Assistant Professor,{" "}
+                  <Link className="text-muted" href="http://stat.ubc.ca/">UBC Department of Statistics</Link>
+                  <br />
+                  CIFAR AI Chair,{" "}
+                  <Link className="text-muted" href="http://vectorinstitute.ai/">Vector Institute</Link>
+                  <br />
                   <FontAwesomeIcon icon={faEnvelopeSquare} size="1x" title="Email: " className="mr-3" />
                   geoff.pleiss &lt;at&gt; stat.ubc.ca
-                </div>
-                <div className="col-12 col-xl-6 px-md-0 mt-4 mt-xl-3">
-                  Faculty Member<br />
-                  <Link className="text-muted" href="http://vectorinstitute.ai/">Vector Institute</Link><br />
-                  <FontAwesomeIcon icon={faEnvelopeSquare} size="1x" title="Email: " className="mr-3" />
-                  geoff.pleiss &lt;at&gt; vectorinstitute.ai
                 </div>
               </div>
 
