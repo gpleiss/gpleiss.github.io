@@ -173,6 +173,21 @@ class Home extends React.Component {
                 </p>
                 
                 <CvList className="list-unstyled">
+                  <PubItem title="A Sober Look at LLMs for Material Discovery: Are They Actually Good for Bayesian Optimization Over Molecules?"
+                    authors={[
+                      "Agustinus Kristiadi",
+                      "Felix Strieth-Kalthoff",
+                      "Marta Skreta",
+                      "Pascal Poupart",
+                      "Al\u00E1n Aspuru-Guzik",
+                      "Geoff Pleiss",
+                    ]}
+                    isNew
+                    arxiv="https://arxiv.org/abs/2402.05015"
+                    pdf="https://arxiv.org/pdf/2402.05015.pdf"
+                    underSubmission
+                    year="2024"
+                  />
                   <PubItem title="Large-Scale Gaussian Processes via Alternating Projection"
                     authors={[
                       "Kaiwen Wu",

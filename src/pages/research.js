@@ -92,7 +92,96 @@ class Home extends React.Component {
                   />	
                 </CvList>
 
-                <H3 id="overparam">Overparameterization and Ensemble Methods</H3>
+                <H3 id="spatiotemporal">Spatiotemporal Modeling</H3>
+                <CvList indent>
+                  <PubItem title="Variational Nearest Neighbor Gaussian Processes"
+                    authors={[
+                      "Luhuan Wu",
+                      "Geoff Pleiss",
+                      "John P. Cunningham",
+                    ]}
+                    arxiv="https://arxiv.org/abs/2202.01694"
+                    pdf="https://arxiv.org/pdf/2202.01694"
+                    conference="ICML"
+                    year="2022"
+                    github="https://docs.gpytorch.ai/en/latest/examples/04_Variational_and_Approximate_GPs/VNNGP.html"
+                    talk="https://slideslive.com/38983939/vnngp-variational-nearest-neighbor-gaussian-process?ref=search-presentations-geoff+pleiss"
+                  />
+                  <PubItem title="Scalable Cross Validation Losses for Gaussian Process Models"
+                    authors={[
+                      "Martin Jankowiak",
+                      "Geoff Pleiss"
+                    ]}
+                    arxiv="https://arxiv.org/abs/2105.11535"
+                    pdf="https://arxiv.org/pdf/2105.11535.pdf"
+                    techReport
+                    year="2021"
+                  />
+                  <PubItem title="Hierarchical Inducing Point Gaussian Process for Inter-domain Observations"
+                    authors={[
+                      "Luhuan Wu*",
+                      "Andrew Miller*",
+                      "Lauren Anderson",
+                      "Geoff Pleiss",
+                      "David Blei",
+                      "John P. Cunningham"
+                    ]}
+                    arxiv="https://arxiv.org/abs/2103.00393"
+                    pdf="https://arxiv.org/pdf/2103.00393.pdf"
+                    github="https://github.com/cunningham-lab/hipgp"
+                    conference="AISTATS"
+                    year="2021"
+                  />	
+                  <PubItem title="Potential Predictability of Regional Precipitation and Discharge Extremes Using Synoptic-Scale Climate Information via Machine Learning"
+                    authors={[
+                      "James Knighton",
+                      "Geoff Pleiss",
+                      "Elizabeth Carter",
+                      "Steven Lyon",
+                      "M Todd Walter",
+                      "Scott Steinschneider",
+                    ]}
+                    pdf={hydrometeorologyJournal}
+                    conference="Journal of Hydrometeorology"
+                    year="2019"
+                  />	
+                </CvList>
+
+                <H3 id="bo">Bayesian Optimization</H3>
+                <CvList indent>
+                  <PubItem title="A Sober Look at LLMs for Material Discovery: Are They Actually Good for Bayesian Optimization Over Molecules?"
+                    authors={[
+                      "Agustinus Kristiadi",
+                      "Felix Strieth-Kalthoff",
+                      "Marta Skreta",
+                      "Pascal Poupart",
+                      "Al\u00E1n Aspuru-Guzik",
+                      "Geoff Pleiss",
+                    ]}
+                    isNew
+                    arxiv="https://arxiv.org/abs/2402.05015"
+                    pdf="https://arxiv.org/pdf/2402.05015.pdf"
+                    underSubmission
+                    year="2024"
+                  />
+                  <PubItem title="Fast Matrix Square Roots with Applications to Gaussian Processes and Bayesian Optimization"
+                    authors={[
+                      "Geoff Pleiss",
+                      "Martin Jankowiak",
+                      "David Eriksson",
+                      "Anil Damle",
+                      "Jacob R. Gardner"
+                    ]}
+                    arxiv="https://arxiv.org/abs/2006.11267"
+                    pdf="https://arxiv.org/pdf/2006.11267.pdf"
+                    github="https://arxiv.org/pdf/2102.06695"
+                    talk="https://slideslive.com/38936908/fast-matrix-square-roots-with-applications-to-gaussian-processes-and-bayesian-optimization?ref=speaker-27667-latest"
+                    conference="NeurIPS"
+                    year="2020"
+                  />	
+                </CvList>
+
+                <H3 id="reliable-nn">"Reliable" Deep Learning</H3>
                 <CvList indent>
                   <PubItem title="Pathologies of Predictive Diversity in Deep Ensembles"
                     authors={[
@@ -147,6 +236,21 @@ class Home extends React.Component {
                     talk="https://slideslive.com/38967621/the-limitations-of-large-width-in-neural-networks-a-deep-gaussian-process-perspective?ref=search-presentations-geoff+pleiss"
                     year="2021"
                   />
+                  <PubItem title="Identifying Mislabeled Data using the Area Under the Margin Ranking"
+                    authors={[
+                      "Geoff Pleiss",
+                      "Tianyi Zhang",
+                      "Ethan R. Elenberg",
+                      "Kilian Q. Weinberger"
+                    ]}
+                    website="/blog/aum.html"
+                    arxiv="https://arxiv.org/abs/2001.10528"
+                    pdf="https://arxiv.org/pdf/2001.10528.pdf"
+                    github="https://github.com/asappresearch/aum"
+                    talk="https://slideslive.com/38936900/identifying-mislabeled-data-using-the-area-under-the-margin-ranking?ref=speaker-27667-latest"
+                    conference="NeurIPS"
+                    year="2020"
+                  />	
                   <PubItem title="Snapshot Ensembles: Train 1, get M for free"
                     authors={[
                       "Gao Huang*", 
@@ -162,9 +266,24 @@ class Home extends React.Component {
                     pdf="https://arxiv.org/pdf/1704.00109.pdf"
                     github="https://github.com/gaohuang/SnapshotEnsemble"
                   />
+                  <PubItem title="On Calibration of Modern Neural Networks"
+                    authors={[
+                      "Chuan Gao*",
+                      "Geoff Pleiss*",
+                      "Yu Sun*",
+                      "Kilian Q. Weinberger",
+                    ]}
+                    conference="ICML"
+                    year="2017"
+                    website="/blog/nn_calibration.html"
+                    arxiv="https://arxiv.org/abs/1706.04599"
+                    pdf="https://arxiv.org/pdf/1706.04599.pdf"
+                    github="https://github.com/gpleiss/temperature_scaling"
+                    talk="https://vimeo.com/238242536"
+                  />	
                 </CvList>
 
-                <H3 id="nla">Numerical Methods for Gaussian Processes and Machine Learning</H3>
+                <H3 id="nla">Scalable Gaussian Processes via Numerical Methods</H3>
                 <CvList indent>
                   <PubItem title="Large-Scale Gaussian Processes via Alternating Projection"
                     authors={[
@@ -321,113 +440,33 @@ class Home extends React.Component {
                   />	
                 </CvList>
 
-                <H3 id="approx-inf">Approximate Inference for Gaussian Processes</H3>
-                <CvList indent>
-                  <PubItem title="Variational Nearest Neighbor Gaussian Processes"
-                    authors={[
-                      "Luhuan Wu",
-                      "Geoff Pleiss",
-                      "John P. Cunningham",
-                    ]}
-                    arxiv="https://arxiv.org/abs/2202.01694"
-                    pdf="https://arxiv.org/pdf/2202.01694"
-                    conference="ICML"
-                    year="2022"
-                    github="https://docs.gpytorch.ai/en/latest/examples/04_Variational_and_Approximate_GPs/VNNGP.html"
-                    talk="https://slideslive.com/38983939/vnngp-variational-nearest-neighbor-gaussian-process?ref=search-presentations-geoff+pleiss"
-                  />
-                  <PubItem title="Scalable Cross Validation Losses for Gaussian Process Models"
-                    authors={[
-                      "Martin Jankowiak",
-                      "Geoff Pleiss"
-                    ]}
-                    arxiv="https://arxiv.org/abs/2105.11535"
-                    pdf="https://arxiv.org/pdf/2105.11535.pdf"
-                    techReport
-                    year="2021"
-                  />
-                  <PubItem title="Parametric Gaussian Process Regressors"
-                    authors={[
-                      "Martin Jankowiak",
-                      "Geoff Pleiss",
-                      "Jacob R. Gardner",
-                    ]}
-                    arxiv="https://arxiv.org/abs/1910.07123"
-                    pdf="https://arxiv.org/pdf/1910.07123.pdf"
-                    github="https://github.com/cornellius-gp/gpytorch/blob/master/examples/04_Variational_and_Approximate_GPs/Approximate_GP_Objective_Functions.ipynb"
-                    conference="ICML"
-                    talk="https://slideslive.com/38928016/parametric-gaussian-process-regressors?ref=search-presentations-geoff+pleiss"
-                    year="2020"
-                  />	
-                </CvList>
-
-                <H3 id="reliable-nn">"Reliable" Deep Learning</H3>
-                <CvList indent>
-                  <PubItem title="Identifying Mislabeled Data using the Area Under the Margin Ranking"
-                    authors={[
-                      "Geoff Pleiss",
-                      "Tianyi Zhang",
-                      "Ethan R. Elenberg",
-                      "Kilian Q. Weinberger"
-                    ]}
-                    website="/blog/aum.html"
-                    arxiv="https://arxiv.org/abs/2001.10528"
-                    pdf="https://arxiv.org/pdf/2001.10528.pdf"
-                    github="https://github.com/asappresearch/aum"
-                    talk="https://slideslive.com/38936900/identifying-mislabeled-data-using-the-area-under-the-margin-ranking?ref=speaker-27667-latest"
-                    conference="NeurIPS"
-                    year="2020"
-                  />	
-                  <PubItem title="Pseudo-lidar++: Accurate depth for 3d object detection in autonomous driving."
-                    authors={[
-                      "Yurong You*",
-                      "Yan Wang*",
-                      "Wei-Lun Chao*",
-                      "Divyansh Garg",
-                      "Geoff Pleiss",
-                      "Bharath Hariharan",
-                      "Mark Campbell",
-                      "Kilian Q. Weinberger"
-                    ]}
-                    arxiv="https://arxiv.org/abs/1906.06310"
-                    pdf="https://arxiv.org/pdf/1906.06310.pdf"
-                    github="https://github.com/mileyan/Pseudo_Lidar_V2"
-                    conference="ICLR"
-                    year="2020"
-                  />	
-                  <PubItem title="Convolutional Networks with Dense Connectivity"
-                    authors={[
-                      "Gao Huang*",
-                      "Zhuang Liu*",
-                      "Geoff Pleiss",
-                      "Laurens van der Maaten",
-                      "Kilian Q. Weinberger",
-                    ]}
-                    pdf={densenetJournal}
-                    conference="Pattern Analysis and Machine Intelligence"
-                    github="https://github.com/gpleiss/efficient_densenet_pytorch"
-                    year="2019"
-                  />	
-                  <PubItem title="Deep Feature Interpolation for Image Content Changes"
-                    authors={[
-                      "Paul Upchurch*",
-                      "Jacob R. Gardner*",
-                      "Geoff Pleiss",
-                      "Robert Pless",
-                      "Noah Snavely",
-                      "Kavita Bala",
-                      "Kilian Q. Weinberger"
-                    ]}
-                    conference="CVPR"
-                    year="2017"
-                    arxiv="https://arxiv.org/abs/1611.05507"
-                    pdf="https://arxiv.org/pdf/1611.05507.pdf"
-                    github="https://github.com/paulu/deepfeatinterp"
-                  />	
-                </CvList>
-
                 <H3 id="prob-modeling">Probabilistic Modeling</H3>
                 <CvList indent>
+                  <PubItem title="Harnessing Interpretable and Unsupervised Machine Learning to Address Big Data From Modern X-Ray Diffraction"
+                    authors={[
+                      "Jordan Venderley",
+                      "Michael Matty",
+                      "Krishnanand Mallayya",
+                      "Matthew Krogstad",
+                      "Jacob Ruff",
+                      "Geoff Pleiss",
+                      "Varsha Kishore",
+                      "David Mandrus",
+                      "Daniel Phelan",
+                      "Lekhanath Poudel",
+                      "Andrew Gordon Wilson",
+                      "Kilian Q. Weinberger",
+                      "Puspa Upreti",
+                      "Michael R. Norman",
+                      "Stephan Rosenkranz",
+                      "Ray Osborn",
+                      "Eun-Ah Kim",
+                    ]}
+                    arxiv="https://arxiv.org/abs/2008.03275"
+                    pdf="https://arxiv.org/pdf/2008.03275.pdf"
+                    conference="Proceedings of the National Academy of Sciences"
+                    year="2022"
+                  />
                   <PubItem title="Rectangular Flows for Manifold Learning"
                     authors={[
                       "Anthony L. Caterini*",
@@ -480,62 +519,68 @@ class Home extends React.Component {
                     conference="UAI"
                     year="2020"
                   />	
+                  <PubItem title="Parametric Gaussian Process Regressors"
+                    authors={[
+                      "Martin Jankowiak",
+                      "Geoff Pleiss",
+                      "Jacob R. Gardner",
+                    ]}
+                    arxiv="https://arxiv.org/abs/1910.07123"
+                    pdf="https://arxiv.org/pdf/1910.07123.pdf"
+                    github="https://github.com/cornellius-gp/gpytorch/blob/master/examples/04_Variational_and_Approximate_GPs/Approximate_GP_Objective_Functions.ipynb"
+                    conference="ICML"
+                    talk="https://slideslive.com/38928016/parametric-gaussian-process-regressors?ref=search-presentations-geoff+pleiss"
+                    year="2020"
+                  />	
                 </CvList>
 
-                <H3 id="sci-app">Scientific Applications</H3>
+                <H3 id="cv">Computer Vision</H3>
                 <CvList indent>
-                  <PubItem title="Harnessing Interpretable and Unsupervised Machine Learning to Address Big Data From Modern X-Ray Diffraction"
+                  <PubItem title="Pseudo-lidar++: Accurate depth for 3d object detection in autonomous driving."
                     authors={[
-                      "Jordan Venderley",
-                      "Michael Matty",
-                      "Krishnanand Mallayya",
-                      "Matthew Krogstad",
-                      "Jacob Ruff",
+                      "Yurong You*",
+                      "Yan Wang*",
+                      "Wei-Lun Chao*",
+                      "Divyansh Garg",
                       "Geoff Pleiss",
-                      "Varsha Kishore",
-                      "David Mandrus",
-                      "Daniel Phelan",
-                      "Lekhanath Poudel",
-                      "Andrew Gordon Wilson",
-                      "Kilian Q. Weinberger",
-                      "Puspa Upreti",
-                      "Michael R. Norman",
-                      "Stephan Rosenkranz",
-                      "Ray Osborn",
-                      "Eun-Ah Kim",
+                      "Bharath Hariharan",
+                      "Mark Campbell",
+                      "Kilian Q. Weinberger"
                     ]}
-                    arxiv="https://arxiv.org/abs/2008.03275"
-                    pdf="https://arxiv.org/pdf/2008.03275.pdf"
-                    conference="Proceedings of the National Academy of Sciences"
-                    year="2022"
-                  />
-                  <PubItem title="Hierarchical Inducing Point Gaussian Process for Inter-domain Observations"
-                    authors={[
-                      "Luhuan Wu*",
-                      "Andrew Miller*",
-                      "Lauren Anderson",
-                      "Geoff Pleiss",
-                      "David Blei",
-                      "John P. Cunningham"
-                    ]}
-                    arxiv="https://arxiv.org/abs/2103.00393"
-                    pdf="https://arxiv.org/pdf/2103.00393.pdf"
-                    github="https://github.com/cunningham-lab/hipgp"
-                    conference="AISTATS"
-                    year="2021"
+                    arxiv="https://arxiv.org/abs/1906.06310"
+                    pdf="https://arxiv.org/pdf/1906.06310.pdf"
+                    github="https://github.com/mileyan/Pseudo_Lidar_V2"
+                    conference="ICLR"
+                    year="2020"
                   />	
-                  <PubItem title="Potential Predictability of Regional Precipitation and Discharge Extremes Using Synoptic-Scale Climate Information via Machine Learning"
+                  <PubItem title="Convolutional Networks with Dense Connectivity"
                     authors={[
-                      "James Knighton",
+                      "Gao Huang*",
+                      "Zhuang Liu*",
                       "Geoff Pleiss",
-                      "Elizabeth Carter",
-                      "Steven Lyon",
-                      "M Todd Walter",
-                      "Scott Steinschneider",
+                      "Laurens van der Maaten",
+                      "Kilian Q. Weinberger",
                     ]}
-                    pdf={hydrometeorologyJournal}
-                    conference="Journal of Hydrometeorology"
+                    pdf={densenetJournal}
+                    conference="Pattern Analysis and Machine Intelligence"
+                    github="https://github.com/gpleiss/efficient_densenet_pytorch"
                     year="2019"
+                  />	
+                  <PubItem title="Deep Feature Interpolation for Image Content Changes"
+                    authors={[
+                      "Paul Upchurch*",
+                      "Jacob R. Gardner*",
+                      "Geoff Pleiss",
+                      "Robert Pless",
+                      "Noah Snavely",
+                      "Kavita Bala",
+                      "Kilian Q. Weinberger"
+                    ]}
+                    conference="CVPR"
+                    year="2017"
+                    arxiv="https://arxiv.org/abs/1611.05507"
+                    pdf="https://arxiv.org/pdf/1611.05507.pdf"
+                    github="https://github.com/paulu/deepfeatinterp"
                   />	
                 </CvList>
               </div>
