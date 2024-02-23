@@ -536,6 +536,19 @@ class Home extends React.Component {
 
                 <H3 id="cv">Computer Vision</H3>
                 <CvList indent>
+                  <PubItem title="Layerwise proximal replay: A proximal point method for online continual learning."
+                    authors={[
+                      "Jinsoo Yoo",
+                      "Yunpeng Liu",
+                      "Frank Wood",
+                      "Geoff Pleiss",
+                    ]}
+                    isNew
+                    arxiv="https://arxiv.org/abs/2402.09542"
+                    pdf="https://arxiv.org/pdf/2402.09542.pdf"
+                    underSubmission
+                    year="2024"
+                  />
                   <PubItem title="Pseudo-lidar++: Accurate depth for 3d object detection in autonomous driving."
                     authors={[
                       "Yurong You*",

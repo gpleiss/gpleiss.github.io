@@ -13,7 +13,7 @@ class SoftwareItem extends React.Component {
             </Link>
             {(!! this.props.status) ? <span className="ml-3 badge badge-info p-2 pl-3 pr-3">{this.props.status}</span> : null}
           </h4>
-          <div>{this.props.tagline}</div>
+          <div className="ml-3 font-italic">{this.props.tagline}</div>
           <div className="ml-3 mt-1 mb-1">
             <small className="text-muted">
               Coauthors: {this.props.coauthors.join(', ')}

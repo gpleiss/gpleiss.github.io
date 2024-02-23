@@ -3,6 +3,7 @@ import { Link, H2 } from '../components/utils.js';
 import CvList from '../components/cv_list.js';
 import PubItem from '../components/pub_item.js';
 import SoftwareItem from '../components/software_item.js';
+import TalkItem from '../components/talk_item.js';
 import bio from '../components/bio.js';
 import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 import { faEnvelopeSquare } from '@fortawesome/fontawesome-free-solid';
@@ -173,6 +174,19 @@ class Home extends React.Component {
                 </p>
                 
                 <CvList className="list-unstyled">
+                  <PubItem title="Layerwise proximal replay: A proximal point method for online continual learning."
+                    authors={[
+                      "Jinsoo Yoo",
+                      "Yunpeng Liu",
+                      "Frank Wood",
+                      "Geoff Pleiss",
+                    ]}
+                    isNew
+                    arxiv="https://arxiv.org/abs/2402.09542"
+                    pdf="https://arxiv.org/pdf/2402.09542.pdf"
+                    underSubmission
+                    year="2024"
+                  />
                   <PubItem title="A Sober Look at LLMs for Material Discovery: Are They Actually Good for Bayesian Optimization Over Molecules?"
                     authors={[
                       "Agustinus Kristiadi",
@@ -321,19 +335,30 @@ class Home extends React.Component {
           </div>
         </section>
 
-        {/*
-          <section className="pt-8 pb-5 bg-medium text-light">
-            <div className="container">
-              <div className="row">
-                <div className="col-md-12">
-                  <H2 className="mb-1 text-light" noMb>Selected Talks</H2>
-                  <CvList>
-                  </CvList>
-                </div>
+        <section className="pt-8 pb-5 bg-medium text-light">
+          <div className="container">
+            <div className="row">
+              <div className="col-md-12">
+                <H2 className="mb-1 text-light" noMb>Recent and Selected Talks</H2>
+                <div className="mb-5"></div>
+                <CvList>
+                  <TalkItem
+                    title="Troubling Trajectories for Uncertainty Quantification and Decision Making with Neural Networks"
+                    tagline="A discussion of uncertainty quantification and my recent work on neural network ensembles."
+                    date="Dec. 2023"
+                    href="https://www.youtube.com/watch?v=703FzYv-j9o&ab_channel=VectorInstitute"
+                  />
+                  <TalkItem
+                    title="Bridging The Gap Between Deep Learning and Probabilistic Modeling"
+                    tagline="A talk connecting my Gaussian process and neural network research."
+                    date="Spring 2022"
+                    href="https://www.youtube.com/watch?v=TUV4oEY33pE&ab_channel=CUEngineeringAcademics"
+                  />
+                </CvList>
               </div>
             </div>
-          </section>
-        */}
+          </div>
+        </section>
 
         <section className="pt-8 pb-5 bg-dark text-light">
           <div className="container">
