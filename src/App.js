@@ -134,10 +134,10 @@ class App extends React.Component {
                     <DropdownItem href="/research/">Overview</DropdownItem>
                     <div className="dropdown-divider"></div>
                     <DropdownItem href="/research/#uq">Uncertainty Quantification</DropdownItem>
-                    <DropdownItem href="/research/#spatiotemporal">Spatiotemporal Modeling</DropdownItem>
                     <DropdownItem href="/research/#bo">Bayesian Optimization</DropdownItem>
                     <DropdownItem href="/research/#reliable-nn">"Reliable" Deep Learning</DropdownItem>
                     <DropdownItem href="/research/#nla">Scalable Gaussian Processes via Numerical Methods</DropdownItem>
+                    <DropdownItem href="/research/#spatiotemporal">Spatiotemporal Modeling</DropdownItem>
                     <DropdownItem href="/research/#prob-modeling">Probabilistic Modeling</DropdownItem>
                     <DropdownItem href="/research/#cv">Computer Vision</DropdownItem>
                   </DropdownMenu>

@@ -92,61 +92,6 @@ class Home extends React.Component {
                   />	
                 </CvList>
 
-                <H3 id="spatiotemporal">Spatiotemporal Modeling</H3>
-                <CvList indent>
-                  <PubItem title="Variational Nearest Neighbor Gaussian Processes"
-                    authors={[
-                      "Luhuan Wu",
-                      "Geoff Pleiss",
-                      "John P. Cunningham",
-                    ]}
-                    arxiv="https://arxiv.org/abs/2202.01694"
-                    pdf="https://arxiv.org/pdf/2202.01694"
-                    conference="ICML"
-                    year="2022"
-                    github="https://docs.gpytorch.ai/en/latest/examples/04_Variational_and_Approximate_GPs/VNNGP.html"
-                    talk="https://slideslive.com/38983939/vnngp-variational-nearest-neighbor-gaussian-process?ref=search-presentations-geoff+pleiss"
-                  />
-                  <PubItem title="Scalable Cross Validation Losses for Gaussian Process Models"
-                    authors={[
-                      "Martin Jankowiak",
-                      "Geoff Pleiss"
-                    ]}
-                    arxiv="https://arxiv.org/abs/2105.11535"
-                    pdf="https://arxiv.org/pdf/2105.11535.pdf"
-                    techReport
-                    year="2021"
-                  />
-                  <PubItem title="Hierarchical Inducing Point Gaussian Process for Inter-domain Observations"
-                    authors={[
-                      "Luhuan Wu*",
-                      "Andrew Miller*",
-                      "Lauren Anderson",
-                      "Geoff Pleiss",
-                      "David Blei",
-                      "John P. Cunningham"
-                    ]}
-                    arxiv="https://arxiv.org/abs/2103.00393"
-                    pdf="https://arxiv.org/pdf/2103.00393.pdf"
-                    github="https://github.com/cunningham-lab/hipgp"
-                    conference="AISTATS"
-                    year="2021"
-                  />	
-                  <PubItem title="Potential Predictability of Regional Precipitation and Discharge Extremes Using Synoptic-Scale Climate Information via Machine Learning"
-                    authors={[
-                      "James Knighton",
-                      "Geoff Pleiss",
-                      "Elizabeth Carter",
-                      "Steven Lyon",
-                      "M Todd Walter",
-                      "Scott Steinschneider",
-                    ]}
-                    pdf={hydrometeorologyJournal}
-                    conference="Journal of Hydrometeorology"
-                    year="2019"
-                  />	
-                </CvList>
-
                 <H3 id="bo">Bayesian Optimization</H3>
                 <CvList indent>
                   <PubItem title="A Sober Look at LLMs for Material Discovery: Are They Actually Good for Bayesian Optimization Over Molecules?"
@@ -439,6 +384,62 @@ class Home extends React.Component {
                     github="https://github.com/cornellius-gp/gpytorch"
                   />	
                 </CvList>
+
+                <H3 id="spatiotemporal">Spatiotemporal Modeling</H3>
+                <CvList indent>
+                  <PubItem title="Variational Nearest Neighbor Gaussian Processes"
+                    authors={[
+                      "Luhuan Wu",
+                      "Geoff Pleiss",
+                      "John P. Cunningham",
+                    ]}
+                    arxiv="https://arxiv.org/abs/2202.01694"
+                    pdf="https://arxiv.org/pdf/2202.01694"
+                    conference="ICML"
+                    year="2022"
+                    github="https://docs.gpytorch.ai/en/latest/examples/04_Variational_and_Approximate_GPs/VNNGP.html"
+                    talk="https://slideslive.com/38983939/vnngp-variational-nearest-neighbor-gaussian-process?ref=search-presentations-geoff+pleiss"
+                  />
+                  <PubItem title="Scalable Cross Validation Losses for Gaussian Process Models"
+                    authors={[
+                      "Martin Jankowiak",
+                      "Geoff Pleiss"
+                    ]}
+                    arxiv="https://arxiv.org/abs/2105.11535"
+                    pdf="https://arxiv.org/pdf/2105.11535.pdf"
+                    techReport
+                    year="2021"
+                  />
+                  <PubItem title="Hierarchical Inducing Point Gaussian Process for Inter-domain Observations"
+                    authors={[
+                      "Luhuan Wu*",
+                      "Andrew Miller*",
+                      "Lauren Anderson",
+                      "Geoff Pleiss",
+                      "David Blei",
+                      "John P. Cunningham"
+                    ]}
+                    arxiv="https://arxiv.org/abs/2103.00393"
+                    pdf="https://arxiv.org/pdf/2103.00393.pdf"
+                    github="https://github.com/cunningham-lab/hipgp"
+                    conference="AISTATS"
+                    year="2021"
+                  />	
+                  <PubItem title="Potential Predictability of Regional Precipitation and Discharge Extremes Using Synoptic-Scale Climate Information via Machine Learning"
+                    authors={[
+                      "James Knighton",
+                      "Geoff Pleiss",
+                      "Elizabeth Carter",
+                      "Steven Lyon",
+                      "M Todd Walter",
+                      "Scott Steinschneider",
+                    ]}
+                    pdf={hydrometeorologyJournal}
+                    conference="Journal of Hydrometeorology"
+                    year="2019"
+                  />	
+                </CvList>
+
 
                 <H3 id="prob-modeling">Probabilistic Modeling</H3>
                 <CvList indent>
