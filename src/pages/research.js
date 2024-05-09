@@ -158,7 +158,7 @@ class Home extends React.Component {
                       "Al\u00E1n Aspuru-Guzik",
                       "Geoff Pleiss",
                     ]}
-                    isNew
+                    conference="ICML"
                     arxiv="https://arxiv.org/abs/2402.05015"
                     pdf="https://arxiv.org/pdf/2402.05015.pdf"
                     underSubmission
@@ -543,7 +543,7 @@ class Home extends React.Component {
                       "Frank Wood",
                       "Geoff Pleiss",
                     ]}
-                    isNew
+                    conference="ICML"
                     arxiv="https://arxiv.org/abs/2402.09542"
                     pdf="https://arxiv.org/pdf/2402.09542.pdf"
                     underSubmission

@@ -184,7 +184,7 @@ class Home extends React.Component {
                     isNew
                     arxiv="https://arxiv.org/abs/2402.09542"
                     pdf="https://arxiv.org/pdf/2402.09542.pdf"
-                    underSubmission
+                    conference="ICML"
                     year="2024"
                   />
                   <PubItem title="A Sober Look at LLMs for Material Discovery: Are They Actually Good for Bayesian Optimization Over Molecules?"
@@ -199,7 +199,7 @@ class Home extends React.Component {
                     isNew
                     arxiv="https://arxiv.org/abs/2402.05015"
                     pdf="https://arxiv.org/pdf/2402.05015.pdf"
-                    underSubmission
+                    conference="ICML"
                     year="2024"
                   />
                   <PubItem title="Large-Scale Gaussian Processes via Alternating Projection"
