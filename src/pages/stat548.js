@@ -8,7 +8,7 @@ import { Link, H1, SmallH2, SmallH3, Section } from '../components/utils.js';
 //];
 //const today = new Date();
 //const updated = today.getDate() + ' ' + monthNames[today.getMonth()] + ' ' + today.getFullYear();
-const updated = "29 August 2023";
+const updated = "6 August 2024";
 
 
 class PaperLi extends React.Component {
@@ -63,7 +63,7 @@ class Stat548 extends React.Component {
             <div className="col-sm-12">
               <Section>
                 <div>
-                  <strong>Published:</strong> 10 August 2023
+                  <strong>Published:</strong> 6 August 2024
                   <br />
                   <strong>Last Updated:</strong> { updated }
                 </div>
@@ -102,22 +102,28 @@ class Stat548 extends React.Component {
                 </p>
                 <ol className="my-3">
                   <li>Gaussian processes,</li>
-                  <li>Bayesian optimization,</li>
-                  <li>neural networks, and</li>
-                  <li>ensemble methods.</li>
+                  <li>Bayesian optimization, and</li>
+                  <li>neural networks.</li>
                 </ol>
                 <p>
-                  Within the realm of neural networks, my primary focus includes uncertainty quantification,
-                  robustness under covariate shift, theoretical models of overparameterization/fine-tuning, and connections to Bayesian inference.
+                  Within the realm of neural networks, my primary focus includes uncertainty quantification
+                  and connections to Bayesian inference.
+                  More generally, I'm interested in how heuristic an approximate notions of uncertainty
+                  from machine learning models can inform reliable and optimal downstream decisions,
+                  especially within the contexts of experimental design and scientific discovery.
+                  { /*
                   I'm also open to supervising qualifying papers on generative models (though you'll need to propose your own paper).
+                  */ }
                 </p>
 
+                { /*
                 <p>
                   In general, I aim to supervise projects (and students) who are interested in either theoretical or methodological projects.
                   Consider which research style you would like to pursue under my supervision.
                   (In either case, expect to do both math and coding!)
                   I'm also happy to work with students who want to relate/apply/extend one of the qualifying papers to a specific subject domain.
                 </p>
+                */ }
               </Section>
 
               <Section>
@@ -131,9 +137,10 @@ class Stat548 extends React.Component {
 
                 <SmallH3>Part 1: The Extended Review</SmallH3>
                 <p>
-                  The extended review should be divided into three sections:
+                  The extended review should be divided into two sections:
                 </p>
                 <ol>
+                  { /*
                   <li className="mb-3">
                     <strong>Publication-style review (roughly 2 pages)</strong><br />
                     <p>
@@ -156,6 +163,7 @@ class Stat548 extends React.Component {
                       <li>A list of more than 2 questions you have for the authors.</li>
                     </ul>
                   </li>
+                  */ }
 
                   <li className="mb-3">
                     <strong>Technical/methodological summary (roughly 3 pages)</strong><br />
@@ -173,7 +181,7 @@ class Stat548 extends React.Component {
                         Highlight innovative proof techniques.
                       </li>
                       <li>
-                        <em>Methodological papers:</em> Explain the proposed methodology and its theoretical properties.
+                        <em>Methodological/applied papers:</em> Explain the proposed methodology and its theoretical properties.
                         Discuss computational complexity.
                         Identify crucial aspects and potential bottlenecks.
                         Mention alternative methods that could also be appplied to the given problem.
@@ -215,7 +223,7 @@ class Stat548 extends React.Component {
                     different problem, etc).
                   </li>
                   <li>
-                    <em>Methodological papers:</em> Expect a mix of theory and
+                    <em>Methodological/applied papers:</em> Expect a mix of theory and
                     coding, as well as getting your hands dirty with some
                     real-world data.  (If you want to use a language other than
                     Python, you will need a really convincing argument!)
@@ -283,19 +291,29 @@ class Stat548 extends React.Component {
                 </p>
                 <ol>
                   <PaperLi
-                    title="Matérn Gaussian Processes on Graphs"
-                    authors="V. Borovitskiy, I. Azangulov, A. Terenin, P. Mostowsky, M.P. Deisenroth, N. Durrande"
+                    title="Discovering Many Diverse Solutions with Bayesian Optimization"
+                    authors="N. Maus, K. Wu, D. Eriksson, J.R. Gardner"
                     venue="AISTATS"
-                    year="2021"
-                    link="https://arxiv.org/abs/2010.15538"
-                    topics="Gaussian processes, kernels"
-                    styl="Methodological"
-                    taken
+                    year="2023"
+                    link="https://arxiv.org/abs/2210.10953"
+                    topics="Bayesian optimization, molecule generation"
+                    styl="Applied, methodological"
+                  >
+                  </PaperLi>
+                  <PaperLi
+                    title="Bayesian Optimization of Function Networks with Partial Evaluations"
+                    authors="P. Buathong, J. Wan, R. Astudillo, S. Daulton, M. Balandat, P.I. Frazier"
+                    venue="ICML"
+                    year="2024"
+                    link="https://arxiv.org/abs/2311.02146"
+                    topics="Bayesian optimization, molecule generation"
+                    styl="Methodological, applied"
                   >
                   </PaperLi>
                   <PaperLi
                     title="The Behavior and Convergence of Local Bayesian Optimization"
                     authors="K. Wu, K. Kim, R. Garnett, J.R. Gardner"
+                    venue="NeurIPS"
                     year="2023"
                     link="https://arxiv.org/abs/2305.15572"
                     topics="Bayesian optimization"
@@ -303,46 +321,23 @@ class Stat548 extends React.Component {
                   >
                   </PaperLi>
                   <PaperLi
-                    title="Bayesian Optimization with Conformal Prediction Sets"
-                    authors="S. Stanton, W. Maddox, A.G. Wilson"
-                    venue="AISTATS"
-                    year="2023"
-                    link="https://arxiv.org/abs/2210.12496"
-                    topics="Bayesian optimization, conformal prediction"
-                    styl="Methodological"
-                  >
-                  </PaperLi>
-                  <PaperLi
-                    title="Prediction-Powered Inference"
-                    authors="A. Angelopoulos, S. Bates, C. Fannjiang, M.I. Jordan, T. Zrnic"
-                    year="2023"
-                    link="https://arxiv.org/abs/2301.09633"
+                    title="Active Statistical Inference"
+                    authors="T. Zrnic, E.J. Candès"
+                    venue="ICML"
+                    year="2024"
+                    link="https://arxiv.org/abs/2403.03208"
                     topics="Uncertainty quantification, neural networks, conformal prediction"
-                    styl="Methodological"
-                    taken
+                    styl="Methodological, theoretical"
                   >
                   </PaperLi>
                   <PaperLi
-                    title="Generalization Properties of Learning with Random Features"
-                    authors="A. Rudi, L. Rosasco"
-                    venue="NeurIPS"
-                    year="2017"
-                    link="https://arxiv.org/abs/1602.04474"
-                    topics="Kernels, neural networks"
+                    title="Is In-Context Learning in Large Language Models Bayesian? A Martingale Perspective"
+                    authors="F. Falck, Z. Wang, C. Holmes"
+                    venue="ICML"
+                    year="2024"
+                    link="https://arxiv.org/abs/2406.00793"
+                    topics="Uncertainty quantification, LLMs, Bayesian inference"
                     styl="Theoretical"
-                  >
-                    Although this paper is about kernel machines more generally,
-                    I am interested in applying some of its techniques to neural network ensembles.
-                    You should consider this paper if you are interested in deep learning theory.
-                  </PaperLi>
-                  <PaperLi
-                    title="Fine-Tuning can Distort Pretrained Features and Underperform Out-of-Distribution"
-                    authors="A. Kumar, A. Raghunathan, R. Jones, T. Ma, P. Liang"
-                    venue="ICLR"
-                    year="2022"
-                    link="https://arxiv.org/abs/2202.10054"
-                    topics="Neural networks, pretraining, covariate shift"
-                    styl="Theoretical, methodological"
                   >
                   </PaperLi>
                 </ol>
