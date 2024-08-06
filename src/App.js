@@ -147,7 +147,8 @@ class App extends React.Component {
                     Teaching
                   </DropdownToggle>
                   <DropdownMenu>
-                    <DropdownItem href="/teaching/stat520p/">STAT 520P (Bayesian Optimization)</DropdownItem>
+                    <DropdownItem href="https://ubc-stat.github.io/stat-406/">(2024-25 S1) STAT 406 (Methods for Statistical Learning)</DropdownItem>
+                    <DropdownItem href="/teaching/stat520p/">(2023-24 S1) STAT 520P (Bayesian Optimization)</DropdownItem>
                     <DropdownItem href="/teaching/stat548/">STAT 548 (PhD Qualifying Course)</DropdownItem>
                   </DropdownMenu>
                 </UncontrolledDropdown>
