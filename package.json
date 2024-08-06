@@ -35,8 +35,7 @@
     "build": "npm-run-all build-css build-js",
     "postbuild": "react-snapshot && tidy -m -indent --indent-spaces 2 -w 160 build/*.html build/**/*.html build/**/**/*.html ; echo 0",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -b master -d build",
-    "stage": "npm run build && cd build && mv index.html home.html && echo '<?php include_once(\"home.html\"); ?>' > index.php && echo '{}' > composer.json && git init && git add . && git ci -m Stuff && git remote add heroku https://git.heroku.com/geoffpleiss.git && git push heroku master -f; cd -",
+    "deploy": "gh-pages -b main -d build",
     "test": "react-scripts test --openssl-legacy-provider --env=jsdom",
     "eject": "react-scripts eject"
   },

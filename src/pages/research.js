@@ -94,6 +94,20 @@ class Home extends React.Component {
 
                 <H3 id="bo">Bayesian Optimization</H3>
                 <CvList indent>
+                  <PubItem title="Approximation-Aware Bayesian Optimization"
+                    authors={[
+                      "Natalie Maus",
+                      "Kyurae Kim",
+                      "Geoff Pleiss",
+                      "David Eriksson",
+                      "John P. Cunningham",
+                      "Jacob R. Gardner",
+                    ]}
+                    arxiv="https://arxiv.org/abs/2406.04308"
+                    pdf="https://arxiv.org/pdf/2406.04308.pdf"
+                    underSubmission
+                    year="2024"
+                  />
                   <PubItem title="A Sober Look at LLMs for Material Discovery: Are They Actually Good for Bayesian Optimization Over Molecules?"
                     authors={[
                       "Agustinus Kristiadi",
@@ -135,7 +149,6 @@ class Home extends React.Component {
                       "Geoff Pleiss",
                       "John P. Cunningham",
                     ]}
-                    isNew
                     award="featured paper"
                     arxiv="https://arxiv.org/abs/2302.00704"
                     pdf="https://arxiv.org/pdf/2302.00704.pdf"
@@ -238,7 +251,6 @@ class Home extends React.Component {
                       "Geoff Pleiss",
                       "Jacob R. Gardner",
                     ]}
-                    isNew
                     arxiv="https://arxiv.org/abs/2310.17137"
                     pdf="https://arxiv.org/pdf/2310.17137.pdf"
                     conference="AISTATS"
@@ -443,6 +455,18 @@ class Home extends React.Component {
 
                 <H3 id="prob-modeling">Probabilistic Modeling</H3>
                 <CvList indent>
+                  <PubItem title="How Inductive Bias in Machine Learning Aligns with Optimality in Economic Dynamics"
+                    authors={[
+                      "Mahdi Ebrahimi Kahou",
+                      "James Yu",
+                      "Jesse Perla",
+                      "Geoff Pleiss",
+                    ]}
+                    arxiv="https://arxiv.org/abs/2406.01898"
+                    pdf="https://arxiv.org/pdf/2406.01898.pdf"
+                    underSubmission
+                    year="2024"
+                  />
                   <PubItem title="Harnessing Interpretable and Unsupervised Machine Learning to Address Big Data From Modern X-Ray Diffraction"
                     authors={[
                       "Jordan Venderley",

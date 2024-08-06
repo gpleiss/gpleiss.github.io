@@ -145,8 +145,7 @@ class Home extends React.Component {
             <div className="col-sm-12">
               <p>
                 <strong>Interested in joining my lab?</strong> I
-                am looking for prospective M.S. students, Ph.D students, and postdocs with research interests similar to my own.
-                While I am open to strong students with any ML/stats interests, I am particularly hoping to hire lab members interested
+                am looking for prospective M.S. students, Ph.D students, and postdocs with research interests similar to my own. While I am open to strong students with any ML/stats interests, I am particularly hoping to hire lab members interested
                 in theoretical or applied work on Bayesian optimization or neural network uncertainty quantification.
               </p>
               <p>
@@ -166,17 +165,19 @@ class Home extends React.Component {
                 </p>
                 
                 <CvList className="list-unstyled">
-                  <PubItem title="Layerwise proximal replay: A proximal point method for online continual learning."
+                  <PubItem title="Approximation-Aware Bayesian Optimization"
                     authors={[
-                      "Jinsoo Yoo",
-                      "Yunpeng Liu",
-                      "Frank Wood",
+                      "Natalie Maus",
+                      "Kyurae Kim",
                       "Geoff Pleiss",
+                      "David Eriksson",
+                      "John P. Cunningham",
+                      "Jacob R. Gardner",
                     ]}
                     isNew
-                    arxiv="https://arxiv.org/abs/2402.09542"
-                    pdf="https://arxiv.org/pdf/2402.09542.pdf"
-                    conference="ICML"
+                    arxiv="https://arxiv.org/abs/2406.04308"
+                    pdf="https://arxiv.org/pdf/2406.04308.pdf"
+                    underSubmission
                     year="2024"
                   />
                   <PubItem title="A Sober Look at LLMs for Material Discovery: Are They Actually Good for Bayesian Optimization Over Molecules?"
@@ -188,25 +189,11 @@ class Home extends React.Component {
                       "Al\u00E1n Aspuru-Guzik",
                       "Geoff Pleiss",
                     ]}
-                    isNew
                     arxiv="https://arxiv.org/abs/2402.05015"
                     pdf="https://arxiv.org/pdf/2402.05015.pdf"
                     conference="ICML"
                     year="2024"
-                  />
-                  <PubItem title="Large-Scale Gaussian Processes via Alternating Projection"
-                    authors={[
-                      "Kaiwen Wu",
-                      "Jonathan Wenger",
-                      "Hadyn Jones",
-                      "Geoff Pleiss",
-                      "Jacob R. Gardner",
-                    ]}
                     isNew
-                    arxiv="https://arxiv.org/abs/2310.17137"
-                    pdf="https://arxiv.org/pdf/2310.17137.pdf"
-                    conference="AISTATS"
-                    year="2024"
                   />
                   <PubItem title="Pathologies of Predictive Diversity in Deep Ensembles"
                     authors={[
@@ -218,22 +205,8 @@ class Home extends React.Component {
                     award="featured paper"
                     arxiv="https://arxiv.org/abs/2302.00704"
                     pdf="https://arxiv.org/pdf/2302.00704.pdf"
-                    isNew
                     conference="TMLR"
                     year="2024"
-                  />
-                  <PubItem title="CoLA: Exploiting Compositional Structure for Automatic and Efficient Numerical Linear Algebra"
-                    authors={[
-                      "Andres Potapczynski*",
-                      "Marc Anton Finzi*",
-                      "Geoff Pleiss",
-                      "Andrew Gordon Wilson",
-                    ]}
-                    arxiv="https://arxiv.org/abs/2309.03060"
-                    pdf="https://arxiv.org/pdf/2309.03060.pdf"
-                    github="https://github.com/wilson-labs/cola"
-                    conference="NeurIPS"
-                    year="2023"
                   />
                   <PubItem title="Posterior and Computational Uncertainty in Gaussian Processes"
                     authors={[
