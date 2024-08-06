@@ -97,23 +97,10 @@ class Stat548 extends React.Component {
               <Section>
                 <SmallH2>What to Expect From Me as a Supervisor</SmallH2>
                 <p>
-                  The qualifying papers I've listed below are representative of my research interests,
-                  which broadly encompass many sub-areas of machine learning:
-                </p>
-                <ol className="my-3">
-                  <li>Gaussian processes,</li>
-                  <li>Bayesian optimization, and</li>
-                  <li>neural networks.</li>
-                </ol>
-                <p>
-                  Within the realm of neural networks, my primary focus includes uncertainty quantification
-                  and connections to Bayesian inference.
-                  More generally, I'm interested in how heuristic an approximate notions of uncertainty
-                  from machine learning models can inform reliable and optimal downstream decisions,
-                  especially within the contexts of experimental design and scientific discovery.
-                  { /*
-                  I'm also open to supervising qualifying papers on generative models (though you'll need to propose your own paper).
-                  */ }
+                  The qualifying papers I've listed below are representative of my current research interests:
+                  Bayesian optimization and neural network uncertainty quantification.
+                  More specifically, I'm interested in heuristic and approximate notions of uncertainty from machine learning models,
+                  and how they can inform reliable and optimal downstream decisions within the contexts of experimental design and scientific discovery.
                 </p>
 
                 { /*

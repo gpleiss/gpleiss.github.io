@@ -91,32 +91,26 @@ class Home extends React.Component {
             <div className="col-sm-12">
               <p className="d-xl-none">{ introText }</p>
               <p>
-                Previously, I was a postdoc at Columbia University with <Link href="https://stat.columbia.edu/~cunningham/">John P. Cunningham</Link>.
-                I received my Ph.D. from the CS department at Cornell University in August 2020.
-                where I was advised by <Link href="http://kilian.cs.cornell.edu/">Kilian Weinberger</Link> and
-                also worked closely with <Link href="https://cims.nyu.edu/~andrewgw/">Andrew Gordon Wilson</Link>.
-              </p>
-              <p>
                 My research interests intersect deep learning and probablistic modeling.
+                More specifically, I'm interested in heuristic and approximate notions of uncertainty from machine learning models,
+                and how they can inform reliable and optimal downstream decisions within the contexts of experimental design and scientific discovery.
                 Major focuses of my work include:
               </p>
               <ol>
-                <li>neural networks,</li>
-                <li>uncertainty quantification,</li>
-                <li>probabilistic modeling, and</li>
-                <li>Bayesian optimization.</li>
-              </ol>
-              <p>
-                More specifically, some recent interests include
-              </p>
-              <ol>
-                <li>"reliable" neural networks,</li>
-                <li>ensemble methods, and</li>
-                <li>Gaussian processes.</li>
+                <li>neural network uncertainty quantification,</li>
+                <li>Bayesian optimization,</li>
+                <li>Gaussian processes, and</li>
+                <li>ensemble methods.</li>
               </ol>
               <p>
                 I am also an active open source contributior.
                 Most notably, I co-created and maintain the <Link href="http://gpytorch.ai">GPyTorch</Link> Gaussian process library with <Link href="https://jacobrgardner.github.io/">Jake Gardner</Link>.
+              </p>
+              <p>
+                Previously, I was a postdoc at Columbia University with <Link href="https://stat.columbia.edu/~cunningham/">John P. Cunningham</Link>.
+                I received my Ph.D. from the CS department at Cornell University in 2020.
+                where I was advised by <Link href="http://kilian.cs.cornell.edu/">Kilian Weinberger</Link> and
+                also worked closely with <Link href="https://cims.nyu.edu/~andrewgw/">Andrew Gordon Wilson</Link>.
               </p>
             </div>
             <div className="col-md-12">
@@ -152,14 +146,12 @@ class Home extends React.Component {
               <p>
                 <strong>Interested in joining my lab?</strong> I
                 am looking for prospective M.S. students, Ph.D students, and postdocs with research interests similar to my own.
-                While I am open to strong students with any ML/stats interests, I am particularly hoping to hire lab members for the following research topics:
+                While I am open to strong students with any ML/stats interests, I am particularly hoping to hire lab members interested
+                in theoretical or applied work on Bayesian optimization or neural network uncertainty quantification.
               </p>
-              <ul>
-                <li>Bayesian optimization,</li>
-                <li>spatiotemporal modeling, and</li>
-                <li>neural network uncertainty quantification.</li>
-              </ul>
-              See the <Link inside href="/prospective_member.html">page on joining my lab</Link> for information on how to apply/contact me.
+              <p>
+                See the <Link inside href="/prospective_member.html">page on joining my lab</Link> for information on how to apply/contact me.
+              </p>
             </div>
           </div>
         </div>
