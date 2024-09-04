@@ -8,7 +8,7 @@ class Stat520PPapers extends React.Component {
   render() {
     return (
       <div className="col-12">
-        <Section>
+        <Section first>
           <SmallH2>
             Special Topics Papers
           </SmallH2>

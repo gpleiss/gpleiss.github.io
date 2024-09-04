@@ -33,7 +33,7 @@ class Stat520PSyllabus extends React.Component {
 
     return (
       <div className="col-12">
-        <Section>
+        <Section first>
           <p>
             This course takes place in the traditional, ancestral and unceded territory of the xʷməθkʷəy̓əm
             (<Link href="https://www.musqueam.bc.ca/">Musqueam</Link>).

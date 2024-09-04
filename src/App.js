@@ -18,10 +18,12 @@ import AUM from './pages/aum.js';
 import Research from './pages/research.js';
 import Bio from './pages/bio.js';
 import Stat520P_2023 from './pages/stat520p.js';
+import Stat547U_2025 from './pages/stat547u.js';
+import Stat547UIndex_2025 from './pages/stat547u_index.js';
 import Stat520PIndex_2023 from './pages/stat520p_index.js';
 import Stat520PPapers_2023 from './pages/stat520p_papers.js';
 import Stat520PSyllabus_2023 from './pages/stat520p_syllabus.js';
-import Stat548_2023 from './pages/stat548.js';
+import Stat548 from './pages/stat548.js';
 
 // Assets
 import './sass/App.css';
@@ -89,9 +91,20 @@ class App extends React.Component {
                 element: <Outlet />,
                 children: [
                   // eslint-disable-next-line
-                  { index: true, element: <Stat548_2023 /> },
+                  { index: true, element: <Stat548 /> },
                   // eslint-disable-next-line
                   { path: "index.html", element: <Navigate to="/teaching/stat548/" /> },
+                ],
+              },
+              {
+                path: "stat547u",
+                // eslint-disable-next-line
+                element: <Stat547U_2025 />,
+                children: [
+                  // eslint-disable-next-line
+                  { index: true, element: <Stat547UIndex_2025 /> },
+                  // eslint-disable-next-line
+                  { path: "index.html", element: <Navigate to="/teaching/stat547u/" /> },
                 ],
               },
               {
@@ -147,8 +160,9 @@ class App extends React.Component {
                     Teaching
                   </DropdownToggle>
                   <DropdownMenu>
-                    <DropdownItem href="https://ubc-stat.github.io/stat-406/">(2024-25 S1) STAT 406 (Methods for Statistical Learning)</DropdownItem>
-                    <DropdownItem href="/teaching/stat520p/">(2023-24 S1) STAT 520P (Bayesian Optimization)</DropdownItem>
+                    <DropdownItem href="/teaching/stat547u/">(2025) STAT 547U (Topics in Deep Learning Theory)</DropdownItem>
+                    <DropdownItem href="https://ubc-stat.github.io/stat-406/">(2024) STAT 406 (Methods for Statistical Learning)</DropdownItem>
+                    <DropdownItem href="/teaching/stat520p/">(2023) STAT 520P (Bayesian Optimization)</DropdownItem>
                     <DropdownItem href="/teaching/stat548/">STAT 548 (PhD Qualifying Course)</DropdownItem>
                   </DropdownMenu>
                 </UncontrolledDropdown>

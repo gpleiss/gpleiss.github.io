@@ -24,7 +24,7 @@ class Stat520PIndex extends React.Component {
         </Section>
         */ }
 
-        <Section id="schedule">
+        <Section id="schedule" first>
           <SmallH2>
             Schedule
           </SmallH2>
