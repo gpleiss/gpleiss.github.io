@@ -108,7 +108,7 @@ class Home extends React.Component {
               </p>
               <p>
                 Previously, I was a postdoc at Columbia University with <Link href="https://stat.columbia.edu/~cunningham/">John P. Cunningham</Link>.
-                I received my Ph.D. from the CS department at Cornell University in 2020.
+                I received my Ph.D. from the CS department at Cornell University in 2020
                 where I was advised by <Link href="http://kilian.cs.cornell.edu/">Kilian Weinberger</Link> and
                 also worked closely with <Link href="https://cims.nyu.edu/~andrewgw/">Andrew Gordon Wilson</Link>.
               </p>
@@ -177,7 +177,20 @@ class Home extends React.Component {
                     isNew
                     arxiv="https://arxiv.org/abs/2406.04308"
                     pdf="https://arxiv.org/pdf/2406.04308.pdf"
-                    underSubmission
+                    conference="NeurIPS"
+                    year="2024"
+                  />
+                  <PubItem title="Computation-Aware Gaussian Processes: Model Selection And Linear-Time Inference"
+                    authors={[
+                      "Jonathan Wenger",
+                      "Kaiwen Wu",
+                      "Philipp Hennig",
+                      "Jacob R. Gardner",
+                      "Geoff Pleiss",
+                      "John P. Cunningham",
+                    ]}
+                    isNew
+                    conference="NeurIPS"
                     year="2024"
                   />
                   <PubItem title="A Sober Look at LLMs for Material Discovery: Are They Actually Good for Bayesian Optimization Over Molecules?"
@@ -191,9 +204,9 @@ class Home extends React.Component {
                     ]}
                     arxiv="https://arxiv.org/abs/2402.05015"
                     pdf="https://arxiv.org/pdf/2402.05015.pdf"
+                    github="https://github.com/wiseodd/lapeft-bayesopt"
                     conference="ICML"
                     year="2024"
-                    isNew
                   />
                   <PubItem title="Pathologies of Predictive Diversity in Deep Ensembles"
                     authors={[
@@ -335,7 +348,7 @@ class Home extends React.Component {
                 </p>
                 <CvList>
                   <SoftwareItem title="GPyTorch"
-                    status="v1.11 Release"
+                    status="v1.13 Release"
                     coauthors={[
                       "Jacob R. Gardner"
                     ]}

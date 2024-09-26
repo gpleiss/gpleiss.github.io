@@ -105,7 +105,7 @@ class Home extends React.Component {
                     ]}
                     arxiv="https://arxiv.org/abs/2406.04308"
                     pdf="https://arxiv.org/pdf/2406.04308.pdf"
-                    underSubmission
+                    conference="NeurIPS"
                     year="2024"
                   />
                   <PubItem title="A Sober Look at LLMs for Material Discovery: Are They Actually Good for Bayesian Optimization Over Molecules?"
@@ -120,7 +120,7 @@ class Home extends React.Component {
                     conference="ICML"
                     arxiv="https://arxiv.org/abs/2402.05015"
                     pdf="https://arxiv.org/pdf/2402.05015.pdf"
-                    underSubmission
+                    github="https://github.com/wiseodd/lapeft-bayesopt"
                     year="2024"
                   />
                   <PubItem title="Fast Matrix Square Roots with Applications to Gaussian Processes and Bayesian Optimization"
@@ -155,6 +155,7 @@ class Home extends React.Component {
                     conference="TMLR"
                     year="2024"
                   />
+                  {/*
                   <PubItem title="The Best Deep Ensembles Sacrifice Predictive Diversity"
                     authors={[
                       "Taiga Abe*",
@@ -167,6 +168,7 @@ class Home extends React.Component {
                     conference="NeurIPS &quot;I Can&#39;t Believe It&#39;s Not Better&#33;&quot; Workshop"
                     year="2022"
                   />
+                  */}
                   <PubItem title="Deep Ensembles Work, But Are They Necessary?"
                     authors={[
                       "Taiga Abe*",
@@ -243,6 +245,18 @@ class Home extends React.Component {
 
                 <H3 id="nla">Scalable Gaussian Processes via Numerical Methods</H3>
                 <CvList indent>
+                  <PubItem title="Computation-Aware Gaussian Processes: Model Selection And Linear-Time Inference"
+                    authors={[
+                      "Jonathan Wenger",
+                      "Kaiwen Wu",
+                      "Philipp Hennig",
+                      "Jacob R. Gardner",
+                      "Geoff Pleiss",
+                      "John P. Cunningham",
+                    ]}
+                    conference="NeurIPS"
+                    year="2024"
+                  />
                   <PubItem title="Large-Scale Gaussian Processes via Alternating Projection"
                     authors={[
                       "Kaiwen Wu",
@@ -254,6 +268,7 @@ class Home extends React.Component {
                     arxiv="https://arxiv.org/abs/2310.17137"
                     pdf="https://arxiv.org/pdf/2310.17137.pdf"
                     conference="AISTATS"
+                    github="https://github.com/kayween/alternating-projection-for-gp"
                     year="2024"
                   />
                   <PubItem title="CoLA: Exploiting Compositional Structure for Automatic and Efficient Numerical Linear Algebra"
@@ -571,7 +586,7 @@ class Home extends React.Component {
                     conference="ICML"
                     arxiv="https://arxiv.org/abs/2402.09542"
                     pdf="https://arxiv.org/pdf/2402.09542.pdf"
-                    underSubmission
+                    github="https://github.com/plai-group/lpr"
                     year="2024"
                   />
                   <PubItem title="Pseudo-lidar++: Accurate depth for 3d object detection in autonomous driving."
