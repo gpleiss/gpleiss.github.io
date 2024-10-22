@@ -165,6 +165,19 @@ class Home extends React.Component {
                 </p>
                 
                 <CvList className="list-unstyled">
+                  <PubItem title="Theoretical Limitations of Ensembles in the Age of Overparameterization"
+                    authors={[
+                      "Niclas Dern",
+                      "John P. Cunningham",
+                      "Geoff Pleiss",
+                    ]}
+                    arxiv="https://arxiv.org/abs/2410.16201"
+                    pdf="https://arxiv.org/pdf/2410.16201.pdf"
+                    github="https://github.com/nic-dern/theoretical-limitations-overparameterized-ensembles"
+                    underSubmission
+                    isNew
+                    year="2024"
+                  />
                   <PubItem title="Approximation-Aware Bayesian Optimization"
                     authors={[
                       "Natalie Maus",

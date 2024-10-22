@@ -21,6 +21,19 @@ class Home extends React.Component {
 
                 <H3 id="uq">Uncertainty Quantification</H3>
                 <CvList indent>
+                  <PubItem title="Theoretical Limitations of Ensembles in the Age of Overparameterization"
+                    authors={[
+                      "Niclas Dern",
+                      "John P. Cunningham",
+                      "Geoff Pleiss",
+                    ]}
+                    arxiv="https://arxiv.org/abs/2410.16201"
+                    pdf="https://arxiv.org/pdf/2410.16201.pdf"
+                    github="https://github.com/nic-dern/theoretical-limitations-overparameterized-ensembles"
+                    underSubmission
+                    isNew
+                    year="2024"
+                  />
                   <PubItem title="Sharp Calibrated Gaussian Processes"
                     authors={[
                       "Alexandre Capone",
@@ -142,6 +155,19 @@ class Home extends React.Component {
 
                 <H3 id="reliable-nn">"Reliable" Deep Learning</H3>
                 <CvList indent>
+                  <PubItem title="Theoretical Limitations of Ensembles in the Age of Overparameterization"
+                    authors={[
+                      "Niclas Dern",
+                      "John P. Cunningham",
+                      "Geoff Pleiss",
+                    ]}
+                    arxiv="https://arxiv.org/abs/2410.16201"
+                    pdf="https://arxiv.org/pdf/2410.16201.pdf"
+                    github="https://github.com/nic-dern/theoretical-limitations-overparameterized-ensembles"
+                    underSubmission
+                    isNew
+                    year="2024"
+                  />
                   <PubItem title="Pathologies of Predictive Diversity in Deep Ensembles"
                     authors={[
                       "Taiga Abe",
