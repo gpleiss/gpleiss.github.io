@@ -178,6 +178,7 @@ class Home extends React.Component {
                     award="featured paper"
                     arxiv="https://arxiv.org/abs/2302.00704"
                     pdf="https://arxiv.org/pdf/2302.00704.pdf"
+                    talk="https://www.youtube.com/watch?v=LINT01z05Bs"
                     conference="TMLR"
                     year="2024"
                   />

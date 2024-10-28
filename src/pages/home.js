@@ -231,6 +231,7 @@ class Home extends React.Component {
                     award="featured paper"
                     arxiv="https://arxiv.org/abs/2302.00704"
                     pdf="https://arxiv.org/pdf/2302.00704.pdf"
+                    talk="https://www.youtube.com/watch?v=LINT01z05Bs"
                     conference="TMLR"
                     year="2024"
                   />
@@ -333,6 +334,12 @@ class Home extends React.Component {
                 <H2 className="mb-1 text-light" noMb>Recent and Selected Talks</H2>
                 <div className="mb-5"></div>
                 <CvList>
+                  <TalkItem
+                    title="Ensembles in the Age of Overparameterization: Promises and Pathologies"
+                    tagline="Recent empirical and theoretical work characterizing ensembles of neural networks."
+                    date="Oct. 2024"
+                    href="https://www.youtube.com/watch?v=LINT01z05Bs"
+                  />
                   <TalkItem
                     title="Troubling Trajectories for Uncertainty Quantification and Decision Making with Neural Networks"
                     tagline="A discussion of uncertainty quantification and my recent work on neural network ensembles."
