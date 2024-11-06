@@ -118,6 +118,7 @@ class Home extends React.Component {
                     ]}
                     arxiv="https://arxiv.org/abs/2406.04308"
                     pdf="https://arxiv.org/pdf/2406.04308.pdf"
+                    github="https://github.com/nataliemaus/improvement-vi"
                     conference="NeurIPS"
                     year="2024"
                   />
@@ -153,7 +154,7 @@ class Home extends React.Component {
                   />	
                 </CvList>
 
-                <H3 id="reliable-nn">"Reliable" Deep Learning</H3>
+                <H3 id="reliable-nn">Deep Learning</H3>
                 <CvList indent>
                   <PubItem title="Theoretical Limitations of Ensembles in the Age of Overparameterization"
                     authors={[
@@ -272,6 +273,22 @@ class Home extends React.Component {
 
                 <H3 id="nla">Scalable Gaussian Processes via Numerical Methods</H3>
                 <CvList indent>
+                  <PubItem title="Computation-Aware Gaussian Processes: Model Selection And Linear-Time Inference"
+                    authors={[
+                      "Jonathan Wenger",
+                      "Kaiwen Wu",
+                      "Philipp Hennig",
+                      "Jacob R. Gardner",
+                      "Geoff Pleiss",
+                      "John P. Cunningham",
+                    ]}
+                    isNew
+                    arxiv="https://arxiv.org/abs/2411.01036"
+                    pdf="https://arxiv.org/pdf/2411.01036.pdf"
+                    github="https://github.com/cornellius-gp/gpytorch/blob/e0e8cd5365e7eea72befaa02d644f588984fd337/gpytorch/models/computation_aware_gp.py"
+                    conference="NeurIPS"
+                    year="2024"
+                  />
                   <PubItem title="Computation-Aware Gaussian Processes: Model Selection And Linear-Time Inference"
                     authors={[
                       "Jonathan Wenger",

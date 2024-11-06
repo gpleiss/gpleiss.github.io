@@ -190,6 +190,7 @@ class Home extends React.Component {
                     isNew
                     arxiv="https://arxiv.org/abs/2406.04308"
                     pdf="https://arxiv.org/pdf/2406.04308.pdf"
+                    github="https://github.com/nataliemaus/improvement-vi"
                     conference="NeurIPS"
                     year="2024"
                   />
@@ -203,6 +204,9 @@ class Home extends React.Component {
                       "John P. Cunningham",
                     ]}
                     isNew
+                    arxiv="https://arxiv.org/abs/2411.01036"
+                    pdf="https://arxiv.org/pdf/2411.01036.pdf"
+                    github="https://github.com/cornellius-gp/gpytorch/blob/e0e8cd5365e7eea72befaa02d644f588984fd337/gpytorch/models/computation_aware_gp.py"
                     conference="NeurIPS"
                     year="2024"
                   />
