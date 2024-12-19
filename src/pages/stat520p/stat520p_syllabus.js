@@ -115,14 +115,8 @@ class Stat520PSyllabus extends React.Component {
             <small>(This is my first course, so please be nice!)</small>
           </p>
           <p>
-            <strong>Office hours</strong> will be held in my office (ESB 3142):
-          </p>
-          <ul>
-            <li>immediately after class Thursdays (2:30&mdash;3:30 PM) and</li>
-            <li>by appointment.</li>
-          </ul>
-          <p>
-            I'll also stick around to chat for ~10 minutes after class on Tuesdays.
+            <strong>Office hours:</strong> see { canvas } for details.
+            I will also stick around after class for ~10 minutes.
           </p>
           <p>
             <strong id="contact">How to contact me</strong>.
