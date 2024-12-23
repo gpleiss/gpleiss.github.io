@@ -1,7 +1,7 @@
 import React from 'react';
 import { Table } from 'reactstrap';
-import { Link, Section, SmallH2 } from '../components/utils.js';
-import paperData from '../data/stat520p_2023_potential_papers.json';
+import { Link, Section, SmallH2 } from '../../components/utils.js';
+import paperData from './stat520p_2023_potential_papers.json';
 
 
 class Stat520PPapers extends React.Component {

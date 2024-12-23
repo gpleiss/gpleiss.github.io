@@ -3,7 +3,7 @@ import {
   //NavLink,
   Outlet,
 } from "react-router-dom";
-import { H1, H2 } from '../components/utils.js';
+import { H1, H2 } from '../../components/utils.js';
 
 
 //class NavLinkCustom extends React.Component {

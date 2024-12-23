@@ -17,12 +17,12 @@ import NNCalibration from './pages/nn_calibration.js';
 import AUM from './pages/aum.js';
 import Research from './pages/research.js';
 import Bio from './pages/bio.js';
-import Stat520P_2023 from './pages/stat520p.js';
-import Stat547U_2025 from './pages/stat547u.js';
-import Stat547UIndex_2025 from './pages/stat547u_index.js';
-import Stat520PIndex_2023 from './pages/stat520p_index.js';
-import Stat520PPapers_2023 from './pages/stat520p_papers.js';
-import Stat520PSyllabus_2023 from './pages/stat520p_syllabus.js';
+import Stat547U_2025 from './pages/stat547u/stat547u.js';
+import Stat547UIndex_2025 from './pages/stat547u/stat547u_index.js';
+import Stat520P_2023 from './pages/stat520p/stat520p.js';
+import Stat520PIndex_2023 from './pages/stat520p/stat520p_index.js';
+import Stat520PPapers_2023 from './pages/stat520p/stat520p_papers.js';
+import Stat520PSyllabus_2023 from './pages/stat520p/stat520p_syllabus.js';
 import Stat548 from './pages/stat548.js';
 
 // Assets

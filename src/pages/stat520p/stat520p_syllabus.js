@@ -1,6 +1,6 @@
 import React from 'react';
 import { Table } from 'reactstrap';
-import { Link, SmallH2, SmallH3, Section, AnonFeedback } from '../components/utils.js';
+import { Link, SmallH2, SmallH3, Section, AnonFeedback } from '../../components/utils.js';
 
 
 function formatAuthorName(authorName) {

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Table } from 'reactstrap';
-import { Link, SmallH2, Section } from '../components/utils.js';
+import { Link, SmallH2, Section } from '../../components/utils.js';
 
 
 class Stat520PIndex extends React.Component {

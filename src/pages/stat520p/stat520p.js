@@ -7,7 +7,7 @@ import {
   Nav,
   NavItem,
 } from "reactstrap";
-import { H1, H2, Link } from '../components/utils.js';
+import { H1, H2, Link } from '../../components/utils.js';
 
 
 class NavLinkCustom extends React.Component {

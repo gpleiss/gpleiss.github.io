@@ -4,7 +4,7 @@ import {
   //Link,
   //SmallH2,
   Section
-} from '../components/utils.js';
+} from '../../components/utils.js';
 
 
 class Stat547UIndex extends React.Component {
