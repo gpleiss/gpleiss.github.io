@@ -1,20 +1,24 @@
 import React from 'react';
 import {
-  //NavLink,
+  NavLink,
   Outlet,
 } from "react-router-dom";
-import { H1, H2 } from '../../components/utils.js';
+import {
+  Nav,
+  NavItem,
+} from "reactstrap";
+import { H1, H2, Link } from '../../components/utils.js';
 
 
-//class NavLinkCustom extends React.Component {
-  //render() {
-    //return (
-      //<NavLink to={ this.props.to } className={({ isActive, _ }) => isActive ? 'text-dark font-weight-bold' : '' }>
-        //{ this.props.children }
-      //</NavLink>
-    //);
-  //}
-//}
+class NavLinkCustom extends React.Component {
+  render() {
+    return (
+      <NavLink to={ this.props.to } className="nav-link" active={({ isActive, _ }) => isActive}>
+        { this.props.children }
+      </NavLink>
+    );
+  }
+}
 
 
 class Stat547U extends React.Component {
@@ -30,6 +34,22 @@ class Stat547U extends React.Component {
 
         <div className="container">
           <div className="row">
+            <div className="col-xs-12 pt-5 mb-5">
+              <Nav tabs>
+                <NavItem>
+                  <NavLinkCustom to="/teaching/stat547u/">Course Homepage</NavLinkCustom>
+                </NavItem>
+                <NavItem>
+                  <NavLinkCustom to="/teaching/stat547u/syllabus.html">Syllabus</NavLinkCustom>
+                </NavItem>
+                <NavItem>
+                  <NavLinkCustom to="/teaching/stat547u/final.html">Final Paper Reading Assignment</NavLinkCustom>
+                </NavItem>
+                <NavItem>
+                  <Link className="nav-link" href="https://canvas.ubc.ca/courses/158224">Canvas Course Page</Link>
+                </NavItem>
+              </Nav>
+            </div>
             <Outlet />
           </div>
         </div>

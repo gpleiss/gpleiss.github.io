@@ -19,6 +19,8 @@ import Research from './pages/research.js';
 import Bio from './pages/bio.js';
 import Stat547U_2025 from './pages/stat547u/stat547u.js';
 import Stat547UIndex_2025 from './pages/stat547u/stat547u_index.js';
+import Stat547UFinal_2025 from './pages/stat547u/stat547u_final.js';
+import Stat547USyllabus_2025 from './pages/stat547u/stat547u_syllabus.js';
 import Stat520P_2023 from './pages/stat520p/stat520p.js';
 import Stat520PIndex_2023 from './pages/stat520p/stat520p_index.js';
 import Stat520PPapers_2023 from './pages/stat520p/stat520p_papers.js';
@@ -105,6 +107,10 @@ class App extends React.Component {
                   { index: true, element: <Stat547UIndex_2025 /> },
                   // eslint-disable-next-line
                   { path: "index.html", element: <Navigate to="/teaching/stat547u/" /> },
+                  // eslint-disable-next-line
+                  { path: "syllabus.html", element: <Stat547USyllabus_2025 /> },
+                  // eslint-disable-next-line
+                  { path: "final.html", element: <Stat547UFinal_2025 /> },
                 ],
               },
               {
