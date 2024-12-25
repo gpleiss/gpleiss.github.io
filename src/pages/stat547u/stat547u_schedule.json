@@ -1,0 +1,92 @@
+[
+  {
+    "type": "class",
+    "topic": "Introduction, course logistics"
+  },
+  {
+    "type": "class",
+    "topic": "Failures of classical learning theory, reproducing kernel Hilbert spaces"
+  },
+  {
+    "type": "section",
+    "topic": "Part 1: Linear regression with kernels/high dimensional inputs",
+    "assignment": "assignment1"
+  },
+  {
+    "type": "class",
+    "topic": "Double descent, implicit bias of gradient descent for regression",
+    "assignment": "Diagnostic problem set due",
+    "readingTitle": "Fit Without Fear",
+    "readingAuthorYear": "Belkin, 2021",
+    "readingUrl": "https://arxiv.org/abs/2105.14368"
+  },
+  {
+    "type": "class",
+    "topic": "Effective regularization, risk of kernel ridge regression",
+    "readingTitle": "The Eigenlearning Framework (Sections 1-5)",
+    "readingAuthorYear": "Simon et al., 2023",
+    "readingUrl": "https://arxiv.org/abs/2110.03922"
+  },
+  {
+    "type": "class",
+    "topic": "Benign overfitting",
+    "readingTitle": "Benign, Tempered, or Catastrophic: A Taxonomy of Overfitting",
+    "readingAuthorYear": "Mallinar et al., 2022",
+    "readingUrl": "https://arxiv.org/abs/2207.06569"
+  },
+  {
+    "type": "section",
+    "topic": "Part 2: Approximating neural networks as kernel machines"
+  },
+  {
+    "type": "class",
+    "topic": "Random infinite width limits: Neural Network Gaussian Processes",
+    "readingTitle": "Neural Network Gaussian Processes",
+    "readingAuthorYear": "Blog post, 2024",
+    "readingUrl": "https://rbcborealis.com/research-blogs/neural-network-gaussian-processes/"
+  },
+  {
+    "type": "class",
+    "topic": "Learned infinite width limits: Neural Tangent Kernel (Pt 1)",
+    "readingTitle": "Deep Learning Theory Lecture Notes, Ch 4.",
+    "readingAuthorYear": "Telgarsky, 2021",
+    "readingUrl": "https://mjt.cs.illinois.edu/dlt/#approximation-near-initialization-and-the-neural-tangent-kernel"
+  },
+  {
+    "type": "class",
+    "topic": "Learned infinite width limits: Neural Tangent Kernel (Pt 2)",
+    "readingTitle": "Understanding the Neural Tangent Kernel",
+    "readingAuthorYear": "Blog post, 2019",
+    "readingUrl": "https://www.eigentales.com/NTK/"
+  },
+  {
+    "type": "class",
+    "topic": "Feature learning, rich vs lazy regimes",
+    "readingTitle": "The lazy (NTK) and rich (µP) regimes: A gentle tutorial",
+    "readingAuthorYear": "Karkada, 2024",
+    "readingUrl": "https://arxiv.org/pdf/2404.19719"
+  },
+  {
+    "type": "section",
+    "topic": "Part 3: Advanced topics"
+  },
+  {
+    "type": "class",
+    "topic": "Neural networks for classification",
+    "readingTitle": "Deep Learning Theory Lecture Notes, Ch 10.",
+    "readingAuthorYear": "Telgarsky, 2021",
+    "readingUrl": "https://mjt.cs.illinois.edu/dlt/#sec:margin_opt"
+  },
+  {
+    "type": "class",
+    "topic": "Effects of depth"
+  },
+  {
+    "type": "class",
+    "topic": "Topic TBD (scaling laws, in-context learning, etc.)"
+  },
+  {
+    "type": "section",
+    "topic": "Feb 14 (or other times): oral presentations for final paper reading assignment"
+  }
+]
