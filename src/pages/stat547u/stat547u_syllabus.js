@@ -26,8 +26,8 @@ class Stat547USyllabus extends React.Component {
           <p>
             <strong>Description.</strong>{ " " }
             The success of neural networks defies classical statistical learning theory.
-            While a detailed analysis of neural networks remains theoretically intractible,
-            recent analyses of high dimensional linear regression and infinite-width neural networks
+            While a detailed analysis of neural networks remains theoretically intractable,
+            recent analyses of high-dimensional linear regression and infinite-width neural networks
             have shed light on
             <ol>
               <li>why neural networks optimize well, despite the inherent non-convexity of training, and</li>
@@ -37,12 +37,12 @@ class Stat547USyllabus extends React.Component {
 
           <p>
             This course will be a self-contained exploration of recent theoretical results in the theory of
-            neural networks and high dimensional regression.
-            Students will learn from lectures that simplify the complex mathematics
-            as well as recent resaearch papers that prove theorems in full technical detail.
+            neural networks and high-dimensional regression.
+            Students will learn from lectures that simplify complex mathematics
+            and recent research papers that prove theorems in full technical detail.
             Students will gain familiarity with existing research,
-            common problem setups and symplifying assumptions,
-            as well as common techniques used to prove theoretical results.
+            common problem setups and simplifying assumptions,
+            and common techniques used to prove theoretical results.
           </p>
 
           <p>
@@ -51,13 +51,13 @@ class Stat547USyllabus extends React.Component {
           </p>
           <ul>
             <li>articulate the limitations of classical learning theory methods,</li>
-            <li>understand why neural network optimize,</li>
-            <li>understand why high dimensional linear models generalize,</li>
+            <li>understand why neural network optimize well despite non-convexity,</li>
+            <li>understand why high-dimensional linear models generalize despite overparameterization,</li>
             <li>understand how to approximate neural networks with linear models,</li>
-            <li>know how to set up high dimensional asymptotic proofs, and</li>
+            <li>know how to set up high-dimensional asymptotic proofs,</li>
             <li>be fluent with the basic mathematical techniques underpinning neural network theory (linear algebra, probability theory, etc), and</li>
             <li>become familiar with advanced mathematical techniques necessary for proofs (chaining arguments, random matrix theory, etc.), and</li>
-            <li>feel confident reading theoretical machine learning papers.</li>
+            <li>gain confidence at reading theoretical machine learning papers.</li>
           </ul>
 
           <p>
@@ -73,12 +73,12 @@ class Stat547USyllabus extends React.Component {
 
           <p>
             <strong>Values.</strong>{ " " }
-            This course will be safe and inclusive learning environment for all.
+            This course will be a safe and inclusive learning environment for all.
             If you are treated unfairly or disrespectfully&mdash;whether by another student or myself&mdash;please
             (1) { contactMe } directly (if you feel comfortable), (2) submit an <AnonFeedback />, or (3)
             work with the <Link href="https://ombudsoffice.ubc.ca/how-we-can-help/">UBC ombudsperson office</Link>.
             I also aim to accommodate neurodiversity, mental health, and access needs within the course.
-            Please { contactMe } for requests with special accommodation requests,
+            Please { contactMe } for special accommodation requests
             or take advantage of <Link href="https://senate.ubc.ca/policies-resources-support-student-success/">UBC's student resources</Link>.
           </p>
         </Section>
@@ -88,18 +88,18 @@ class Stat547USyllabus extends React.Component {
           <p>
             <strong>About me</strong>.{ " " }
             I am an assistant professor in the stats department.
-            My research generally encompasses machine learning, with an emphasis on uncertainty quantifiation and decision making.
-            I work on neural networks&mdash;both from theoretical as well as methodological perspectives&mdash;
+            My research generally encompasses machine learning, with an emphasis on uncertainty quantification and decision making.
+            I work on neural networks&mdash;both from theoretical and methodological perspectives&mdash;
             Bayesian optimization, and spatiotemporal modelling with Gaussian processes.
           </p>
           <p>
-            <strong>Office hours:</strong> see { canvas } for details.
+            <strong>Office hours.</strong> See { canvas } for details.
             I'll also stick around to chat for ~10 minutes after class.
           </p>
           <p>
             <strong id="contact">How to contact me</strong>.{ " " }
             Send me a message through { canvas }, the UBC Stats Slack (preferred, if you have access), or email (only if you absolutely need to).
-            Please note that I will not respond on weekends or after 6PM on weekdays. 
+            Please note that I will not respond on weekends or after 6 PM on weekdays.
           </p>
         </Section>
 
@@ -107,7 +107,7 @@ class Stat547USyllabus extends React.Component {
           <SmallH2>Learning Activities and Assessment</SmallH2>
           <p>
             Neural network theory is a challenging subject that cannot be learned passively.{ " " }
-            <emph>If you simply plan to sit through lectures, you will likely not come away with an understanding of the material.</emph>
+            <emph>If you plan to just sit through lectures, you will likely not come away with an understanding of the material.</emph>
           </p>
           <p>
             You will learn through the following activities:
@@ -117,49 +117,49 @@ class Stat547USyllabus extends React.Component {
           <p>
             Class is where we will cover most of the technical content in this course.
             I will present the material in self-contained lectures.{ " " }
-            <em>Note: you will not be able to learn the material simply by sitting through lectures.</em>{ " " }
+            <em>Again, you cannot learn the material simply by sitting through lectures.</em>{ " " }
             You are expected to read material before class (see below)
-            and to actively participate with questions and comments during class.
+            and to actively participate with questions and comments.
           </p>
 
           <SmallH3>Readings and written summaries</SmallH3>
           <p>
             Most lectures will have required readings that you are expected to complete <em>before</em> class.
-            These readings will be a mix of book chapters as well as some recent (accessible) research and review papers.
+            These readings will be a mix of book chapters and some recent (accessible) research and review papers.
           </p>
           <p>
-            To further facilitate your understanding, you will be required to write a half-page summary of each reading.
+            To further facilitate your understanding, you are required to write a half-page summary of each reading (to be uploaded to { canvas }).
             Each summary should include exactly 4 paragraphs:
           </p>
           <ol>
             <li><strong>Setting</strong> (problem formulation, assumptions, etc.)</li>
-            <li><strong>The Goal and Main Result</strong> (what is trying to be proved, what has been proven before, etc.)</li>
+            <li><strong>The Goal and Main Result</strong> (what is trying to be proved, what other papers have already proved, etc.)</li>
             <li><strong>Description of Mathematical Techniques</strong> (what types of math are used to arrive at each theoretical result)</li>
             <li><strong>Points of Confusion</strong> (what were you not able to understand)</li>
           </ol>
           <p>
-            You should put in roughly 2 hours on each reading and 1 hour on each written summary.
+            You should spend roughly 2 hours on each reading and 1 hour on each written summary.
           </p>
 
           <SmallH3>Diagnostic assignment</SmallH3>
           <p>
-            There will be a single problem set for this course, <em>due at the beginning of the second week of class.</em>{ " " }
-            The purpose of this problem set is to gauge your fluency with linear algebra and probability theory,
+            There will be a single problem set for this course, <em>which is due on { canvas } at the beginning of the second week of class.</em>{ " " }
+            This problem set aims to gauge your fluency with linear algebra and probability theory
             while also setting up the material for the first few lectures.
-            If you put in the effort on this diagonstic, you will be well-prepared for the mathematics in rest of the course.
-            If you struggle with it, you will difficulty with the rest of the material in this course.
+            If you give this diagnostic a reasonable effort, you will be well-prepared for the mathematics in this course.
+            If you struggle with it, you will struggle with the rest of the material.
           </p>
 
           <SmallH3>Final paper reading assignment</SmallH3>
           <p>
-            The final assessment for this course entails <emph>thoroughly</emph> reading a modern research paper on neural network theory,
-            with an oral examination to access your understanding.
+            The final assessment for this course involves <emph>thoroughly</emph> reading a modern research paper on neural network theory
+            and a 30 minute oral examination to assess your understanding.
           </p>
           <p>
             You will select a paper from a <Link inside href="final.html">predetermined list</Link>.
-            All of the papers are quite challenging with advanced mathetmatical techniques that will not be covered in class.
-            You will need to spend a significant amount of time on the paper (read: 2+ weeks),
-            reading it multiple times,
+            All of the papers are quite challenging, with advanced mathematical techniques that will not be covered in class.
+            You will need to spend significant time on the paper (read: 2+ weeks);
+            reading it multiple times
             and researching the background mathematics necessary to understand the paper.
           </p>
           <p>
@@ -174,16 +174,25 @@ class Stat547USyllabus extends React.Component {
             </ui>
           </p>
           <p>
-            To ensure you're on track, there will be a written intermediate checkin assignment,
-            in which you are expected to write a 1 page summary of the paper you have chosen.
+            To ensure you're on track, there will be a written intermediate check-in assignment,
+            in which you are expected to write a 1-page summary of the paper you have chosen.
             It should follow the same format as the written summaries of the readings, with the same 4 paragraphs.
-            Each paragraph will be graded on a 2.5 point scale, for a total of 10 points.
-            (The ruberic will be the same as the written summaries of the readings, with everything scaled by 1.25.)
+            Each paragraph will be graded on a 2.5-point scale, for a total of 10 points.
+            (The rubric will be the same as the written summaries of the readings, with everything scaled by 1.25.)
           </p>
         </Section>
 
         <Section id="assessment">
           <SmallH2>Assessment</SmallH2>
+          <p>
+            The grades and weightings target the following scale:
+          </p>
+          <ul>
+            <li>An <tt>A-</tt> represents a cursory understanding of NN theory (e.g. comprehending the lecture material but not the readings).</li>
+            <li>An <tt>A</tt> represents an in-depth understanding of NN theory (e.g. comprehending the lecture material and readings to a great extent).</li>
+            <li>An <tt>A+</tt> represents that you are ready to perform research on NN theory (e.g. going above and beyond the course materials).</li>
+          </ul>
+
           <Table striped hover>
             <thead>
               <tr>
@@ -214,14 +223,14 @@ class Stat547USyllabus extends React.Component {
                     See description above.
                     There are 6 written summaries,
                     each worth 8 points (2 points per paragraph),
-                    for a total of 48 pts.
-                    Your grade will be <tt>min(40, total_pts)</tt>.
+                    for a total of 48 points.
+                    Your grade will be <tt>min(40, total_points)</tt>.
                   </p>
 
                   <p>
                     Each paragraph will be graded on the following scale:
                     (1 points) demonstrates that you skimmed the reading,
-                    (2 points) demonstrates that you read thoroughly (for a 2-3 hour effort).
+                    (2 points) demonstrates that you read the paper/chapter thoroughly.
                   </p>
                 </td>
               </tr>
@@ -229,8 +238,8 @@ class Stat547USyllabus extends React.Component {
                 <td>Final exam</td>
                 <td>35%</td>
                 <td>See description above.
-                  The intermediate check-in will be 10 pts,
-                  and the oral presentation will be 25 pts.
+                  The intermediate check-in will be 10 points,
+                  and the oral presentation will be 25 points.
                 </td>
               </tr>
             </tbody>
@@ -246,7 +255,7 @@ class Stat547USyllabus extends React.Component {
             I understand the effects of life events, health circumstances (mental or physical), and scheduling,
             and I will work with you to best structure your learning/assessment. 
             Please also refer to <Link href="https://vancouver.calendar.ubc.ca/campus-wide-policies-and-regulations/academic-concession">
-              UBC's policies on academic concession.
+              UBC's policies on academic concessions
             </Link>.
           </p>
         </Section>
@@ -264,8 +273,8 @@ class Stat547USyllabus extends React.Component {
 
           <SmallH3>Readings (required and optional)</SmallH3>
           <p>
-            Please see the <Link href="schedule.html">schedule</Link> for required readings,
-            as well as a bibliography of additional papers related to lecture content.
+            Please see the <Link href="schedule.html">schedule</Link> for required readings
+            and a bibliography of additional papers related to each lecture.
           </p>
 
           <SmallH3 id="textbook">Other References</SmallH3>
@@ -284,18 +293,18 @@ class Stat547USyllabus extends React.Component {
         <Section>
           <SmallH2>Policies and Values</SmallH2>
           <p>
-            UBC provides resources to support student learning and to maintain
-            healthy lifestyles but recognizes that sometimes crises arise and
-            so there are additional resources to access including those for
+            UBC provides resources to support student learning and maintaining
+            healthy lifestyles but recognizes that crises sometimes arise.
+            There are additional resources to access, including those for
             survivors of sexual violence. UBC values respect for the person and
-            ideas of all members of the academic community. Harassment and
-            discrimination are not tolerated nor is suppression of academic
-            freedom. UBC provides appropriate accommodation for students with
-            disabilities and for religious, spiritual and cultural observances.
-            UBC values academic honesty and students are expected to
-            acknowledge the ideas generated by others and to uphold the highest
-            academic standards in all of their actions. Details of the policies
-            and how to access support are available <Link href="http://senate.ubc.ca/policies-resources-support-student-success">here</Link>.
+            ideas of all academic community members. Harassment and discrimination
+            are not tolerated, nor is suppression of academic freedom. UBC provides
+            appropriate accommodation for students with disabilities and religious,
+            spiritual and cultural observances. UBC values academic honesty, and students
+            are expected to acknowledge the ideas generated by others and to uphold the
+            highest academic standards in all of their actions. Details of the policies and
+            how to access support are available { " " }
+            <Link href="http://senate.ubc.ca/policies-resources-support-student-success">here</Link>.
           </p>
         </Section>
       </div>
