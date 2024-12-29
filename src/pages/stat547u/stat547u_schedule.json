@@ -15,11 +15,10 @@
   {
     "type": "class",
     "topic": "Double descent, implicit bias of gradient descent for regression",
-    "assignment": "Diagnostic problem set due",
     "readingTitle": "Fit Without Fear (Sections 1-3)",
     "readingAuthorYear": "Belkin, 2021",
     "readingUrl": "https://arxiv.org/abs/2105.14368",
-    "note": "No reading summary due."
+    "note": "Required reading, but no reading summary due."
   },
   {
     "type": "section",
@@ -48,7 +47,8 @@
   },
   {
     "type": "section",
-    "topic": "Part 2: Approximating neural networks as kernel machines"
+    "topic": "Part 2: Approximating neural networks as kernel machines",
+    "assignment": "assignment2"
   },
   {
     "type": "class",
@@ -69,7 +69,8 @@
     "topic": "Feature learning, rich vs lazy regimes",
     "readingTitle": "The lazy (NTK) and rich (µP) regimes: A gentle tutorial",
     "readingAuthorYear": "Karkada, 2024",
-    "readingUrl": "https://arxiv.org/pdf/2404.19719"
+    "readingUrl": "https://arxiv.org/pdf/2404.19719",
+    "note": "Optional reading; no reading summary due."
   },
   {
     "type": "section",

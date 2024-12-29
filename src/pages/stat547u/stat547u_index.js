@@ -33,7 +33,11 @@ const assignments = {
         <Link href="../../math_commands.tex">math_commands.tex</Link> macros file.
       )
     </span>
-  
+  ),
+  "assignment2:": (
+    <span>
+      Final project intermediate check-in due on Tues, Feb 04.
+    </span>
   ),
 }
 
