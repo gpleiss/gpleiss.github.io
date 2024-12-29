@@ -27,9 +27,9 @@ const classDates = [
 const assignments = {
   "assignment1": (
     <span>
-      <Link href="../../stat547u_pset1.pdf">Diagnostic problem set</Link> due on Tues, Jan 14.{ " " }
+      <Link href="../../stat547u_pset01_instructions.pdf">Diagnostic problem set</Link> due on Tues, Jan 14.{ " " }
       (
-        <Link href="../../stat547u_pset1.tex">TeX template</Link> and{ " " }
+        <Link href="../../stat547u_pset01_template.tex">TeX template</Link> and{ " " }
         <Link href="../../math_commands.tex">math_commands.tex</Link> macros file.
       )
     </span>
@@ -78,6 +78,7 @@ class Stat547UIndex extends React.Component {
                     </td>
                     <td>
                       <Link href={row.readingUrl}>{row.readingTitle}</Link>
+                      { (row.note) ? <div>({row.note})</div> : <span></span> }
                     </td>
                   </tr>
                 ) : (row.type === "section") ? (

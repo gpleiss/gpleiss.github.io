@@ -1,0 +1,346 @@
+%%%%% Custom comments stuff
+\newif\ifcomments
+%\commentsfalse
+\commentstrue
+
+\documentclass[11pt,letterpaper]{article}
+\usepackage[top=0.75in, bottom=0.75in, left=0.75in, right=0.75in]{geometry}
+\usepackage{amsmath,amsfonts,amsthm,amssymb,cancel}  % Standard math packages
+\usepackage{hyperref}  % For hyperlinks
+\usepackage[capitalize]{cleveref}  % for better citations
+\usepackage{color,xcolor}  % For colored text
+\usepackage{enumitem}  % For better list support
+\usepackage{titlesec}  % For formatting title
+\usepackage{comment}  % For ``commenting'' out answer envirnoment
+\usepackage{soul}  % For strikethroughs \st
+
+
+% Edit title
+\makeatletter
+\renewcommand{\@maketitle}{
+  \begin{center}%
+    {\Large \bf \noindent \textsc{\@title}}%
+    \\
+    {\large \noindent \textsc{\@author}}%
+    \vspace{-0.5em}
+  \end{center}%
+}
+\makeatother
+
+
+% Redefine section headers/paragraph spacing
+\titleformat{\section}{\large\bfseries\scshape}{\thesection)}{1em}{}
+\titlespacing{\section}{0em}{1em}{-0.25em}
+\titlespacing{\paragraph}{0em}{0em}{0.5em}
+\setlength{\parindent}{0em}
+\setlength{\parskip}{1em}
+
+% Section break
+\newcommand{\sectionbreak}{%
+  \vspace{1em}
+  \hrule
+}
+
+
+% Macros
+\input{math_commands}
+
+
+%% Document info
+\title{STAT547U Diagnostic Problem Set}
+\author{Your Name}  % Please replace with your name!
+
+
+% Turn answers on and off
+\newif\ifshowanswers
+%\showanswersfalse
+\showanswerstrue
+
+% Change document color
+\ifshowanswers
+  \newcommand{\doccolor}{gray}
+\else
+  \newcommand{\doccolor}{black}
+\fi
+
+% Answer environment
+\ifshowanswers
+  \newenvironment{answer}{%
+    \vspace{1em}
+    \color{black}
+    \paragraph{Answer.}
+  }{%
+    \vspace{1em}
+  }
+\else
+  \excludecomment{answer}
+\fi
+
+
+%% Document
+\begin{document}
+\maketitle
+
+\color{\doccolor}
+The purpose of this problem set is to ensure that you are fluent with linear algebra and basic probability theory,
+which will be necessary for the course.
+If these problems feels extremely difficult, then you will likely find this course to be technically overwhelming.
+
+There are 3 questions (broken into subquestions) in this problem set for a total of 60 pts.
+
+\sectionbreak
+
+\paragraph{A quick note on notation.}
+Variable names should use the following convention:
+\begin{itemize}
+  \item Scalars (deterministic and random) will be represented by lowercase/non-bold letters (e.g. $a$, $\theta$, etc.).
+  \item Vectors (deterministic and random) will be represented by lowercase/bold letters (e.g. $\va$, $\vtheta$, etc.).
+  \item Matrices (deterministic and random) will be represented by uppercase/bold letters (e.g. $\mA$, $\mTheta$, etc.).
+\end{itemize}
+
+
+
+\section{Ridge(less) Linear Regression (20 pts)}
+
+Assume that we are performing linear regression
+to predict a real-valued response variable $y \in \R$ from
+a $d$-dimensional input variable $\vx \in \R^d$
+using the parameter vector $\vtheta^*$:
+%
+\[
+  y = \vx^\top \vtheta^*
+\]
+%
+Given training data $(\vx_1, y_1), \ldots, (\vx_n, y_n)$,
+the ridge regression estimator $\hat\vtheta_\lambda$ is given by:
+%
+\begin{equation}
+  \hat\vtheta_\lambda = \left( \lambda \mI + \mX^\top \mX \right)^{-1} \mX^\top \vy.
+  \label{eqn:ridge_std}
+\end{equation}
+%
+\begin{itemize}
+  \item $\mX \in \R^{n \times d}$ is a matrix where each \emph{row} represents a training input
+    (i.e. $\mX^\top = \begin{bmatrix} \vx_1 & \ldots & \vx_n \end{bmatrix}$),
+  \item $\vy \in \R^n$ is the concatenation of the training responses, and
+  \item $\lambda > 0$ is the ridge constant.
+\end{itemize}
+%
+For all problems, assume that $\mX$ is full rank..
+
+\begin{enumerate}
+  \item (5 points.)
+    Using \href{https://en.wikipedia.org/wiki/Woodbury_matrix_identity}{Woodbury's matrix inversion lemma},
+    prove that $\hat\vtheta_\lambda$ is equal to
+    %
+    \begin{equation}
+      \hat\vtheta_\lambda = \mX^\top \left( \lambda \mI + \mX \mX^\top \right)^{-1} \vy.
+      \label{eqn:ridge_other}
+    \end{equation}
+    %
+    (Hint: after applying Woodbury, consider rewriting $\mI$ as
+    $(\lambda \mI + \mX \mX^\top)^{-1} (\lambda \mI + \mX \mX^\top)$.)
+
+\begin{answer}
+  TODO
+\end{answer}
+
+  \item (3 points.)
+    We now have two formula for $\hat\vtheta_\lambda$: \cref{eqn:ridge_std} and \cref{eqn:ridge_other}.
+    From a computational perspective, which formula is preferable when $n > d$?
+    When $d < n$?
+    Justify your answer in $\approx 2$ sentences.
+    (Hint: think about the matrices you have to invert.)
+
+\begin{answer}
+  TODO
+\end{answer}
+
+  \item (3 points.)
+    Consider the scenario where $d > n$; i.e. we have more features than training data.
+    This scenario is often referred to as the \emph{overparameterized regime}.
+    Assuming that $\mX$ is full rank,
+    show that the ridge estimator \emph{interpolates} the training data as $\lambda \to 0$;
+    i.e.
+    \[
+      \lim_{\lambda \to 0} \mX \hat\vtheta_\lambda = \vy.
+    \]
+    This proof should take you $\approx 2$ lines.
+
+\begin{answer}
+  TODO
+\end{answer}
+
+  \item (3 points.)
+    Now consider the scenario where $n < d$; i.e. we have more training data than features.
+    This scenario is often referred to as the \emph{underparameterized regime}.
+    Assuming that $\mX$ is full rank,
+    show that
+    \[
+      \mX \left( \mX^\top \mX \right)^{-1} \mX^\top = \mU \mU^\top,
+    \]
+    where $\mU$ is some $n \times d$ orthonormal matrix.
+
+\begin{answer}
+  TODO
+\end{answer}
+
+  \item (3 points.)
+    In $\approx 3$ sentences, derive the eigenvalues and the corresponding eigenvectors of $\mU \mU^\top$.
+
+\begin{answer}
+  TODO
+\end{answer}
+
+  \item (3 points.)
+    Putting the last two results together,
+    argue why---in general---$\hat\vtheta_\lambda$ does not interpolate the training data in the \emph{underparameterized ridgeless regime}
+    ($\lambda = 0$, $n > d$).
+
+\begin{answer}
+  TODO
+\end{answer}
+
+\end{enumerate}
+
+
+
+\section{Bias-Variance Tradeoff (20 pts)}
+
+Now imagine that $\vx_1, \ldots, \vx_n$ from the previous problem are i.i.d. samples from a distribution $\mu(\vx)$
+and $y_i \sim \normal(\vx_i^\top \vtheta^*, \sigma^2)$ for each $i \in [1, n]$.
+Assume that the $y_i$ are conditionally independent given $\vx_i$.
+Let $\hat\vtheta_\lambda$ be the ridge estimator given in \cref{eqn:ridge_std} (or, equivalently, in \cref{eqn:ridge_other}).
+
+Consider a new (independent) test point $(\vx, y)$, where $\vx \sim \mu(\vx)$ and $y \sim \normal(\vx^\top \vtheta^*, \sigma^2)$,
+the \emph{risk} is defined as
+%
+\[
+  \risk := \E \left[ \left( \vx^\top \hat\vtheta_\lambda - \vx^\top \vtheta^* \right)^2 \right].
+\]
+
+\begin{enumerate}
+  \item (8 points.) Decompose $\risk$ into two components that represent \emph{squared bias} and \emph{variance} of $\vx^\top \hat\vtheta_\lambda$.
+    (Hint: consider adding and subtracting $\vx^\top \E[\hat\vtheta_\lambda]$ inside the parentheses.)
+
+\begin{answer}
+  TODO
+\end{answer}
+
+  \item (6 points.) Show that the squared bias of $\vx^\top \hat\vtheta_\lambda$ is 0 when $\lambda = 0$ and $n > d$.
+    (This proof should take 3 lines when you write $\E[\hat\vtheta_{\lambda=0}]$ as $\E[(\mX^\top\mX)^{-1}\mX\vy]$ and rewrite $\vy$ in terms of $\mX$.)
+
+\begin{answer}
+  TODO
+\end{answer}
+
+  \item (8 points.) Show that bias term of is nonzero when $d > n$ and $\lambda \to 0$.
+    For this problem you can make the following assumptions:
+    \begin{itemize}
+      \item Limits and expectations can be interchanged---
+        i.e. you can assume that $\lim_{\lambda \to 0} \E[\hat\vtheta_\lambda] = \E[ \mX^\top (\mX \mX^\top)^{-1} \vy]$.
+        No need to dive into the measure theory!
+      \item $\E[\vx \vx^\top] := \mSigma$ is positive definite.
+    \end{itemize}
+
+    (There are many ways to prove this statement. Use your linear algebra and probability skills. Be creative!)
+
+
+\begin{answer}
+  TODO
+\end{answer}
+
+\end{enumerate}
+
+
+
+
+
+\section{Introduction to Functional Analysis (20 pts)}
+
+Let $p(\vx_i)$ be a probability density over $\R^d$ with mean 0 and covariance $\mSigma$; i.e.
+%
+$$\E[\vx_i] = 0, \qquad \E[\vx_i \vx_i^\top] = \mSigma \in \R^{d \times d}. $$
+%
+Consider the space of linear $\R^d \to \R$ functions $\rkhs := \{ f(\vx) = \vtheta^\top \vx : \vtheta \in \R^d \}$.
+
+\begin{enumerate}
+
+  \item (4 points. L2 inner products)
+    For any two functions $f(\vx) = \vtheta^\top \vx$ and $f'(\vx) = \vtheta^{\prime\top} \vx$,
+    define the $L2$ inner product $\langle f, f' \rangle_{\rkhs}$ as
+    $$ \left\langle f, f' \right\rangle_{L2} := \int \left( f(\vx) f'(\vx) \right) p(\vx) d\vx = \E[ f(\vx) f'(\vx) ]. $$
+    Show that this inner product is equal to $\vtheta^\top \mSigma \vtheta'$.
+
+\begin{answer}
+  TODO
+\end{answer}
+
+  \item (4 points. Orthonormal functions)
+    An orthonormal basis of $\rkhs$ is a set of functions $\{ \phi_1, \ldots, \phi_d \}$ such that
+    \begin{itemize}
+      \item any function $f(\vx) \in \rkhs$ can be written as the linear combination of $\phi_1, \ldots, \phi_d$ and
+      \item $\int \phi_i(\vx) \phi_j(\vx) p(\vx) d\vx = \begin{cases} 1 & i=j \\ 0 & i \ne j \end{cases}.$
+    \end{itemize}
+    %
+    Construct an orthonormal basis of $\rkhs$---$\phi_1(\vx), \ldots, \phi_d(\vx)$---%
+    in terms of $(\lambda_1, \vv_1), \ldots, (\lambda_d, \vv_d)$---the eigenvalues and eigenvectors of $\mSigma$.
+
+    (Hint: This answer should take you $\approx 5$ lines.)
+
+\begin{answer}
+  TODO
+\end{answer}
+
+  \item (4 points. $\rkhs$ inner products)
+    For any two functions $f(\vx) = \vtheta^\top \vx$ and $f'(\vx) = \vtheta^{\prime\top} \vx$,
+    define the $\rkhs$ inner product $\langle f, f' \rangle_{\rkhs}$ as
+    $$ \left\langle f, f' \right\rangle_{L2} := \sum_{i=1}^d
+      \tfrac{1}{\lambda_i}
+      \left\langle f, \phi_i \right\rangle_{L2}
+      \left\langle f', \phi_i \right\rangle_{L2},
+    $$
+    where $\{ \phi_1, \ldots, \phi_d \}$ is any orthonormal basis of $\rkhs$.
+    Show that this inner product is equal to $\vtheta^\top \vtheta'$.
+
+    (Hint: This proof should take you $\approx 4$ lines.)
+
+\begin{answer}
+  TODO
+\end{answer}
+
+
+  %\item (3 points. Reproducing property.)
+    %For any function $f \in \rkhs$ and input $\vx \in \R^D$, argue that there exists some $k_\vx \in \rkhs$
+    %such that $f(\vx) = \langle f, k_\vx \rangle_{\rkhs}$.
+    %(This argument should take 1-2 sentences.)
+
+\begin{answer}
+  TODO
+\end{answer}
+
+
+  \item (4 points. $\rkhs \subset L2$.)
+    Now assume that $d \to \infty$.
+    Assuming that the eigenvalues of $\mSigma$ are summable (i.e. $\lim_{d \to \infty} \sum_{i=1}^d \lambda_i < \infty$),
+    prove that---for any $f \in \rkhs$---$\Vert f \Vert_{L2} < \infty$ if $\Vert f \Vert_{\rkhs} < \infty,$ where
+    %
+    $$\Vert f \Vert_{L2} := \sqrt{\langle f, f \rangle_{L2}}, \qquad \Vert f \Vert_{\rkhs} := \sqrt{\langle f, f \rangle_{\rkhs}}. $$
+    %
+    (Note: if you're smart with your linear algebra, this proof should take you $\approx 4$ lines.)
+
+\begin{answer}
+  TODO
+\end{answer}
+
+  \item (4 points. $L2 \not\subset \rkhs$.)
+    Show that the converse is not true.
+    I.e., as $d \to \infty$, construct a function where $\Vert f \Vert_{L2} < \infty$ but $\Vert f \Vert_{\rkhs} = \infty$.
+    (You should continue to assume that $\lim_{d \to \infty} \sum_{i=1}^d \lambda_i < \infty$.)
+
+\begin{answer}
+  TODO
+\end{answer}
+\end{enumerate}
+
+\end{document}

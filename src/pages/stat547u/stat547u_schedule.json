@@ -1,5 +1,10 @@
 [
   {
+    "type": "section",
+    "topic": "Part 0: Introduction",
+    "assignment": "assignment1"
+  },
+  {
     "type": "class",
     "topic": "Introduction, course logistics"
   },
@@ -8,29 +13,36 @@
     "topic": "Failures of classical learning theory, reproducing kernel Hilbert spaces"
   },
   {
-    "type": "section",
-    "topic": "Part 1: Linear regression with kernels/high dimensional inputs",
-    "assignment": "assignment1"
-  },
-  {
     "type": "class",
     "topic": "Double descent, implicit bias of gradient descent for regression",
     "assignment": "Diagnostic problem set due",
-    "readingTitle": "Fit Without Fear",
+    "readingTitle": "Fit Without Fear (Sections 1-3)",
     "readingAuthorYear": "Belkin, 2021",
-    "readingUrl": "https://arxiv.org/abs/2105.14368"
+    "readingUrl": "https://arxiv.org/abs/2105.14368",
+    "note": "No reading summary due."
+  },
+  {
+    "type": "section",
+    "topic": "Part 1: Overparameterized linear regression"
   },
   {
     "type": "class",
-    "topic": "Effective regularization, risk of kernel ridge regression",
-    "readingTitle": "The Eigenlearning Framework (Sections 1-5)",
-    "readingAuthorYear": "Simon et al., 2023",
-    "readingUrl": "https://arxiv.org/abs/2110.03922"
+    "topic": "Introduction to high-dimensional asymptotics and random matrix theory",
+    "readingTitle": "High Dimensional Regression (Sections 1-2)",
+    "readingAuthorYear": "Hastie, 2023",
+    "readingUrl": "https://www.stat.berkeley.edu/~ryantibs/statlearn-s23/lectures/ridge.pdf"
+  },
+  {
+    "type": "class",
+    "topic": "Effective regularization, risk of overparameterized ridge regression",
+    "readingTitle": "High Dimensional Regression (Sections 3-4)",
+    "readingAuthorYear": "Hastie, 2023",
+    "readingUrl": "https://www.stat.berkeley.edu/~ryantibs/statlearn-s23/lectures/ridge.pdf"
   },
   {
     "type": "class",
     "topic": "Benign overfitting",
-    "readingTitle": "Benign, Tempered, or Catastrophic: A Taxonomy of Overfitting",
+    "readingTitle": "Benign, Tempered, or Catastrophic: A Taxonomy of Overfitting (Section 2-3)",
     "readingAuthorYear": "Mallinar et al., 2022",
     "readingUrl": "https://arxiv.org/abs/2207.06569"
   },
@@ -40,23 +52,16 @@
   },
   {
     "type": "class",
-    "topic": "Random infinite width limits: Neural Network Gaussian Processes",
-    "readingTitle": "Neural Network Gaussian Processes",
-    "readingAuthorYear": "Blog post, 2024",
-    "readingUrl": "https://rbcborealis.com/research-blogs/neural-network-gaussian-processes/"
-  },
-  {
-    "type": "class",
-    "topic": "Learned infinite width limits: Neural Tangent Kernel (Pt 1)",
+    "topic": "Infinite width NNs: Neural Tangent Kernel (Pt 1)",
     "readingTitle": "Deep Learning Theory Lecture Notes, Ch 4.",
     "readingAuthorYear": "Telgarsky, 2021",
     "readingUrl": "https://mjt.cs.illinois.edu/dlt/#approximation-near-initialization-and-the-neural-tangent-kernel"
   },
   {
     "type": "class",
-    "topic": "Learned infinite width limits: Neural Tangent Kernel (Pt 2)",
+    "topic": "Infinite width NNs: Neural Tangent Kernel (Pt 2)",
     "readingTitle": "Understanding the Neural Tangent Kernel",
-    "readingAuthorYear": "Blog post, 2019",
+    "readingAuthorYear": "Dwaraknath, 2019",
     "readingUrl": "https://www.eigentales.com/NTK/"
   },
   {
@@ -87,6 +92,6 @@
   },
   {
     "type": "section",
-    "topic": "Feb 14 (or other times): oral presentations for final paper reading assignment"
+    "topic": "Feb 14: oral presentations for final paper reading assignment"
   }
 ]
