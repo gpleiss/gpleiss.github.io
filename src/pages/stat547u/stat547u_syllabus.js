@@ -150,7 +150,7 @@ class Stat547USyllabus extends React.Component {
             If you struggle with it, you will struggle with the rest of the material.
           </p>
 
-          <SmallH3>Final paper reading assignment</SmallH3>
+          <SmallH3 id="final-paper-reading-assignment">Final paper reading assignment</SmallH3>
           <p>
             The final assessment for this course involves <emph>thoroughly</emph> reading a modern research paper on neural network theory
             and a 30 minute oral examination to assess your understanding.

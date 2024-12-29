@@ -17,11 +17,144 @@
   },
   {
     "id": "bach2024learning",
-    "title": "Deep learning theory lecture notes",
+    "title": "Deep Learning Theory Lecture Notes",
     "authors": "Matus Telgarsky",
     "year": 2021,
     "url": "https://mjt.cs.illinois.edu/dlt/",
     "tags": ["resource"]
+  },
+  {
+    "id": "bach2024learning",
+    "title": "High-Dimensional Statistics: A Non-Asymptotic Viewpoint (Ch. 12)",
+    "authors": "Martin Wainwright",
+    "venue": "Cambridge University Press",
+    "year": 2019,
+    "url": "https://gw2jh3xr2c.search.serialssolutions.com/?sid=sersol&SS_jc=TC0002134402&title=High-dimensional%20statistics%20%3A%20a%20non-asymptotic%20viewpoint",
+    "tags": ["RKHS"]
+  },
+  {
+    "id": "jacot2020implicit",
+    "title": "Implicit Regularization of Random Feature Models",
+    "authors": "Arthur Jacot, Berfin Şimşek, Francesco Spadaro, Clément Hongler, Franck Gabriel",
+    "venue": "ICML",
+    "year": 2020,
+    "url": "https://arxiv.org/abs/2002.08404",
+    "tags": ["generalization"]
+  },
+  {
+    "id": "jacot2020implicit",
+    "final": true,
+    "title": "Implicit Regularization of Random Feature Models",
+    "authors": "Arthur Jacot, Berfin Şimşek, Francesco Spadaro, Clément Hongler, Franck Gabriel",
+    "venue": "ICML",
+    "year": 2020,
+    "url": "https://arxiv.org/abs/2002.08404",
+    "tags": ["effective regularization"]
+  },
+  {
+    "id": "hastie2022surprises",
+    "title": "Surprises in High-Dimensional Ridgeless Least Squares Interpolation",
+    "authors": "Trevor Hastie, Andrea Montanari, Saharon Rosset, Ryan J. Tibshirani",
+    "venue": "Annals of Statistics",
+    "year": 2022,
+    "url": "https://arxiv.org/abs/1903.08560",
+    "tags": ["effective regularization"]
+  },
+  {
+    "id": "simon2023eigenlearning",
+    "title": "The Eigenlearning Framework: A Conservation Law Perspective on Kernel Regression and Wide Neural Networks",
+    "authors": "James B. Simon, Madeline Dickens, Dhruva Karkada, Michael R. DeWeese",
+    "venue": "TMLR",
+    "year": 2023,
+    "url": "https://arxiv.org/abs/2110.03922",
+    "tags": ["effective regularization"]
+  },
+  {
+    "id": "mei2021generalizatoin",
+    "title": "The Generalization Error of Random Features Regression: Precise Asymptotics and Double Descent Curve",
+    "authors": "Song Mei, Andrea Montanari",
+    "venue": "Communications on Pure and Applied Mathematics",
+    "year": 2021,
+    "url": "https://arxiv.org/abs/1908.05355",
+    "tags": ["effective regularization"]
+  },
+  {
+    "id": "bartlett2020benign",
+    "final": true,
+    "title": "Benign Overfitting in Linear Regression",
+    "authors": "Peter L. Bartlett, Philip M. Long, Gábor Lugosi, Alexander Tsigler",
+    "venue": "Proceedings of the National Academy of Sciences",
+    "year": 2020,
+    "url": "https://arxiv.org/abs/1906.11300",
+    "tags": ["benign overfitting"]
+  },
+  {
+    "id": "chizat2019lazy",
+    "final": true,
+    "title": "On Lazy Training in Differentiable Programming",
+    "authors": "Lenaic Chizat, Edouard Oyallon, Francis Bach",
+    "venue": "NeurIPS",
+    "year": 2019,
+    "url": "https://arxiv.org/abs/1812.07956",
+    "tags": ["infinite width"]
+  },
+  {
+    "id": "matthews2018gaussian",
+    "final": true,
+    "title": "Gaussian Process Behaviour in Wide Deep Neural Networks",
+    "authors": "Alexander G. de G. Matthews, Mark Rowland, Jiri Hron, Richard E. Turner, Zoubin Ghahramani",
+    "venue": "ICLR",
+    "year": 2018,
+    "url": "https://arxiv.org/abs/1804.11271",
+    "tags": ["infinite width"]
+  },
+  {
+    "id": "jacot2018neural",
+    "title": "Neural Tangent Kernel: Convergence and Generalization in Neural Networks",
+    "authors": "Arthur Jacot, Franck Gabriel, Clément Hongler",
+    "venue": "NeurIPS",
+    "year": 2018,
+    "url": "https://arxiv.org/abs/1806.07572",
+    "tags": ["infinite width"]
+  },
+  {
+    "id": "arora2019exact",
+    "title": "On Exact Computation with an Infinitely Wide Neural Net",
+    "authors": "Sanjeev Arora, Simon S. Du, Wei Hu, Zhiyuan Li, Ruslan Salakhutdinov, Ruosong Wang",
+    "venue": "NeurIPS",
+    "year": 2019,
+    "url": "https://arxiv.org/abs/1904.11955",
+    "tags": ["infinite width"]
+  },
+  {
+    "id": "woodworth2020kernel",
+    "final": true,
+    "title": "Kernel and Rich Regimes in Overparametrized Models",
+    "authors": "Blake Woodworth, Suriya Gunasekar, Jason D. Lee, Edward Moroshko, Pedro Savarese, Itay Golan, Daniel Soudry, Nathan Srebro",
+    "venue": "CoLT",
+    "year": 2020,
+    "url": "https://arxiv.org/abs/2002.09277",
+    "tags": ["feature learning"]
+  },
+  {
+    "id": "lyu2020gradient",
+    "final": true,
+    "title": "Gradient Descent Maximizes the Margin of Homogeneous Neural Networks",
+    "authors": "Kaifeng Lyu, Jian Li",
+    "venue": "ICLR",
+    "year": 2020,
+    "url": "https://arxiv.org/abs/1906.05890",
+    "tags": ["classification"]
+  },
+  {
+    "id": "bahri2024explaining",
+    "final": true,
+    "title": "Explaining Neural Scaling Laws",
+    "authors": "Yasaman Bahri, Ethan Dyer, Jared Kaplan, Jaehoon Lee, Utkarsh Sharma",
+    "venue": "Proceedings of the National Academy of Sciences",
+    "year": 2024,
+    "url": "https://arxiv.org/abs/2102.06701",
+    "tags": ["scaling laws"]
   },
   {}
 ]
