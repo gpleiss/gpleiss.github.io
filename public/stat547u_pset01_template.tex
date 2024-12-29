@@ -100,6 +100,99 @@ Variable names should use the following convention:
 
 
 
+\section{Introduction to Functional Analysis (20 pts)}
+
+Let $\mu(\vx_i)$ be a probability distribution over $\R^d$ with mean 0 and covariance $\mSigma$; i.e.
+%
+$$\E[\vx_i] = 0, \qquad \E[\vx_i \vx_i^\top] = \mSigma \in \R^{d \times d}. $$
+%
+Consider the space of linear $\R^d \to \R$ functions $\rkhs := \{ f(\vx) = \vtheta^\top \vx : \vtheta \in \R^d \}$.
+
+\begin{enumerate}
+
+  \item (4 points. L2 inner products)
+    For any two functions $f(\vx) = \vtheta^\top \vx$ and $f'(\vx) = \vtheta^{\prime\top} \vx$,
+    define the $L2$ inner product $\langle f, f' \rangle_{\rkhs}$ as
+    $$ \left\langle f, f' \right\rangle_{L2} := \E[ f(\vx) f'(\vx) ]. $$
+    Show that this inner product is equal to $\vtheta^\top \mSigma \vtheta'$.
+
+\begin{answer}
+  TODO
+\end{answer}
+
+  \item (4 points. Orthonormal functions)
+    An orthonormal basis of $\rkhs$ is a set of functions $\{ \phi_1, \ldots, \phi_d \}$ such that
+    \begin{itemize}
+      \item any function $f(\vx) \in \rkhs$ can be written as the linear combination of $\phi_1, \ldots, \phi_d$ and
+      \item $\E[ \phi_i(\vx) \phi_j(\vx) ]= \begin{cases} 1 & i=j \\ 0 & i \ne j \end{cases}.$
+    \end{itemize}
+    %
+    Construct an orthonormal basis of $\rkhs$---$\phi_1(\vx), \ldots, \phi_d(\vx)$---%
+    in terms of $(\lambda_1, \vv_1), \ldots, (\lambda_d, \vv_d)$---the eigenvalues and eigenvectors of $\mSigma$.
+
+    (Hint: This answer should take you $\approx 5$ lines.)
+
+\begin{answer}
+  TODO
+\end{answer}
+
+  \item (4 points. $\rkhs$ inner products)
+    For any two functions $f(\vx) = \vtheta^\top \vx$ and $f'(\vx) = \vtheta^{\prime\top} \vx$,
+    define the $\rkhs$ inner product $\langle f, f' \rangle_{\rkhs}$ as
+    $$ \left\langle f, f' \right\rangle_{L2} := \sum_{i=1}^d
+      \tfrac{1}{\sigma_i}
+      \left\langle f, \phi_i \right\rangle_{L2}
+      \left\langle f', \phi_i \right\rangle_{L2},
+    $$
+    where $\{ \phi_1, \ldots, \phi_d \}$ is any orthonormal basis of $\rkhs$,
+    and $\sigma_1, \ldots, \sigma_d$ are scalars such that, for any $\vz \in \R^d$ that is fixed (i.e. not random),
+    $$
+      \int \phi_i(\vx) (\vx^\top \vz) d\mu(\vx) = \E[ \phi_i(\vx) (\vx^\top \vz)] = \sigma_i \vz
+    $$
+    Show that this inner product is equal to $\vtheta^\top \vtheta'$.
+
+    (Hint: This proof should take you $\approx 6$ lines.)
+
+\begin{answer}
+  TODO
+\end{answer}
+
+
+  %\item (3 points. Reproducing property.)
+    %For any function $f \in \rkhs$ and input $\vx \in \R^D$, argue that there exists some $k_\vx \in \rkhs$
+    %such that $f(\vx) = \langle f, k_\vx \rangle_{\rkhs}$.
+    %(This argument should take 1-2 sentences.)
+
+\begin{answer}
+  TODO
+\end{answer}
+
+
+  \item (4 points. $\rkhs \subset L2$.)
+    Now assume that $d \to \infty$.
+    Assuming that the eigenvalues of $\mSigma$ are summable (i.e. $\lim_{d \to \infty} \sum_{i=1}^d \lambda_i < \infty$),
+    prove that---for any $f \in \rkhs$---$\Vert f \Vert_{L2} < \infty$ if $\Vert f \Vert_{\rkhs} < \infty,$ where
+    %
+    $$\Vert f \Vert_{L2} := \sqrt{\langle f, f \rangle_{L2}}, \qquad \Vert f \Vert_{\rkhs} := \sqrt{\langle f, f \rangle_{\rkhs}}. $$
+    %
+    (Note: if you're smart with your linear algebra, this proof should take you $\approx 4$ lines.)
+
+\begin{answer}
+  TODO
+\end{answer}
+
+  \item (4 points. $L2 \not\subset \rkhs$.)
+    Show that the converse is not true.
+    I.e., as $d \to \infty$, construct a function where $\Vert f \Vert_{L2} < \infty$ but $\Vert f \Vert_{\rkhs} = \infty$.
+    (You should continue to assume that $\lim_{d \to \infty} \sum_{i=1}^d \lambda_i < \infty$.)
+
+\begin{answer}
+  TODO
+\end{answer}
+\end{enumerate}
+
+
+
 \section{Ridge(less) Linear Regression (20 pts)}
 
 Assume that we are performing linear regression
@@ -256,91 +349,5 @@ the \emph{risk} is defined as
 
 
 
-\section{Introduction to Functional Analysis (20 pts)}
-
-Let $p(\vx_i)$ be a probability density over $\R^d$ with mean 0 and covariance $\mSigma$; i.e.
-%
-$$\E[\vx_i] = 0, \qquad \E[\vx_i \vx_i^\top] = \mSigma \in \R^{d \times d}. $$
-%
-Consider the space of linear $\R^d \to \R$ functions $\rkhs := \{ f(\vx) = \vtheta^\top \vx : \vtheta \in \R^d \}$.
-
-\begin{enumerate}
-
-  \item (4 points. L2 inner products)
-    For any two functions $f(\vx) = \vtheta^\top \vx$ and $f'(\vx) = \vtheta^{\prime\top} \vx$,
-    define the $L2$ inner product $\langle f, f' \rangle_{\rkhs}$ as
-    $$ \left\langle f, f' \right\rangle_{L2} := \int \left( f(\vx) f'(\vx) \right) p(\vx) d\vx = \E[ f(\vx) f'(\vx) ]. $$
-    Show that this inner product is equal to $\vtheta^\top \mSigma \vtheta'$.
-
-\begin{answer}
-  TODO
-\end{answer}
-
-  \item (4 points. Orthonormal functions)
-    An orthonormal basis of $\rkhs$ is a set of functions $\{ \phi_1, \ldots, \phi_d \}$ such that
-    \begin{itemize}
-      \item any function $f(\vx) \in \rkhs$ can be written as the linear combination of $\phi_1, \ldots, \phi_d$ and
-      \item $\int \phi_i(\vx) \phi_j(\vx) p(\vx) d\vx = \begin{cases} 1 & i=j \\ 0 & i \ne j \end{cases}.$
-    \end{itemize}
-    %
-    Construct an orthonormal basis of $\rkhs$---$\phi_1(\vx), \ldots, \phi_d(\vx)$---%
-    in terms of $(\lambda_1, \vv_1), \ldots, (\lambda_d, \vv_d)$---the eigenvalues and eigenvectors of $\mSigma$.
-
-    (Hint: This answer should take you $\approx 5$ lines.)
-
-\begin{answer}
-  TODO
-\end{answer}
-
-  \item (4 points. $\rkhs$ inner products)
-    For any two functions $f(\vx) = \vtheta^\top \vx$ and $f'(\vx) = \vtheta^{\prime\top} \vx$,
-    define the $\rkhs$ inner product $\langle f, f' \rangle_{\rkhs}$ as
-    $$ \left\langle f, f' \right\rangle_{L2} := \sum_{i=1}^d
-      \tfrac{1}{\lambda_i}
-      \left\langle f, \phi_i \right\rangle_{L2}
-      \left\langle f', \phi_i \right\rangle_{L2},
-    $$
-    where $\{ \phi_1, \ldots, \phi_d \}$ is any orthonormal basis of $\rkhs$.
-    Show that this inner product is equal to $\vtheta^\top \vtheta'$.
-
-    (Hint: This proof should take you $\approx 4$ lines.)
-
-\begin{answer}
-  TODO
-\end{answer}
-
-
-  %\item (3 points. Reproducing property.)
-    %For any function $f \in \rkhs$ and input $\vx \in \R^D$, argue that there exists some $k_\vx \in \rkhs$
-    %such that $f(\vx) = \langle f, k_\vx \rangle_{\rkhs}$.
-    %(This argument should take 1-2 sentences.)
-
-\begin{answer}
-  TODO
-\end{answer}
-
-
-  \item (4 points. $\rkhs \subset L2$.)
-    Now assume that $d \to \infty$.
-    Assuming that the eigenvalues of $\mSigma$ are summable (i.e. $\lim_{d \to \infty} \sum_{i=1}^d \lambda_i < \infty$),
-    prove that---for any $f \in \rkhs$---$\Vert f \Vert_{L2} < \infty$ if $\Vert f \Vert_{\rkhs} < \infty,$ where
-    %
-    $$\Vert f \Vert_{L2} := \sqrt{\langle f, f \rangle_{L2}}, \qquad \Vert f \Vert_{\rkhs} := \sqrt{\langle f, f \rangle_{\rkhs}}. $$
-    %
-    (Note: if you're smart with your linear algebra, this proof should take you $\approx 4$ lines.)
-
-\begin{answer}
-  TODO
-\end{answer}
-
-  \item (4 points. $L2 \not\subset \rkhs$.)
-    Show that the converse is not true.
-    I.e., as $d \to \infty$, construct a function where $\Vert f \Vert_{L2} < \infty$ but $\Vert f \Vert_{\rkhs} = \infty$.
-    (You should continue to assume that $\lim_{d \to \infty} \sum_{i=1}^d \lambda_i < \infty$.)
-
-\begin{answer}
-  TODO
-\end{answer}
-\end{enumerate}
 
 \end{document}
