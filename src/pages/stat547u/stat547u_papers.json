@@ -1,0 +1,27 @@
+[
+  {
+    "id": "misakiewicz2023six",
+    "title": "Six Lectures on Linearized Neural Networks",
+    "authors": "Theodor Misiakiewicz, Andrea Montanari",
+    "year": 2023,
+    "url": "https://arxiv.org/abs/2308.13431",
+    "tags": ["resource"]
+  },
+  {
+    "id": "bach2024learning",
+    "title": "Learning Theory from First Principles",
+    "authors": "Francis Bach",
+    "year": 2024,
+    "url": "https://www.di.ens.fr/~fbach/ltfp_book.pdf",
+    "tags": ["resource"]
+  },
+  {
+    "id": "bach2024learning",
+    "title": "Deep learning theory lecture notes",
+    "authors": "Matus Telgarsky",
+    "year": 2021,
+    "url": "https://mjt.cs.illinois.edu/dlt/",
+    "tags": ["resource"]
+  },
+  {}
+]
