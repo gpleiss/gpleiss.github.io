@@ -216,7 +216,7 @@ class Stat547USyllabus extends React.Component {
                 </td>
               </tr>
               <tr>
-                <td>Written summaries of readings</td>
+                <td>Reading summaries</td>
                 <td>40%</td>
                 <td>
                   <p>
@@ -235,7 +235,7 @@ class Stat547USyllabus extends React.Component {
                 </td>
               </tr>
               <tr>
-                <td>Final exam</td>
+                <td>Final paper reading assignment</td>
                 <td>35%</td>
                 <td>See description above.
                   The intermediate check-in will be 10 points,

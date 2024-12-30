@@ -34,9 +34,10 @@ const assignments = {
       )
     </span>
   ),
-  "assignment2:": (
+  "assignment2": (
     <span>
-      Final project intermediate check-in due on Tues, Feb 04.
+      <Link href="syllabus.html#final-paper-reading-assignment" inside>Final project intermediate check-in</Link>{ " " }
+      due on Tues, Feb 04.
     </span>
   ),
 }
@@ -90,7 +91,7 @@ class Stat547UIndex extends React.Component {
                     <td colSpan="4" className="text-center">
                       <em>{row.topic}</em>
                       {(row.assignment) ? <br /> : (<span></span>)}
-                      {(row.assignment) ? (assignments[row.assignment]) : (<span></span>)}
+                      {(row.assignment) ? <span>{assignments[row.assignment]}</span> : (<span></span>)}
                     </td>
                   </tr>
                 ) : (<div></div>)

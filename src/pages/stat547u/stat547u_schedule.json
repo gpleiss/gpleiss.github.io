@@ -53,7 +53,7 @@
   {
     "type": "class",
     "topic": "Infinite width NNs: Neural Tangent Kernel (Pt 1)",
-    "readingTitle": "Deep Learning Theory Lecture Notes, Ch 4.",
+    "readingTitle": "Deep Learning Theory Lecture Notes (Ch. 4)",
     "readingAuthorYear": "Telgarsky, 2021",
     "readingUrl": "https://mjt.cs.illinois.edu/dlt/#approximation-near-initialization-and-the-neural-tangent-kernel"
   },
@@ -79,7 +79,7 @@
   {
     "type": "class",
     "topic": "Neural networks for classification",
-    "readingTitle": "Deep Learning Theory Lecture Notes, Ch 10.",
+    "readingTitle": "Deep Learning Theory Lecture Notes (Ch. 10)",
     "readingAuthorYear": "Telgarsky, 2021",
     "readingUrl": "https://mjt.cs.illinois.edu/dlt/#sec:margin_opt"
   },
