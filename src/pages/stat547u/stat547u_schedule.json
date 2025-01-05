@@ -6,11 +6,13 @@
   },
   {
     "type": "class",
-    "topic": "Introduction, course logistics"
+    "topic": "Course logistics, introduction, failures of classical learning theory"
   },
   {
     "type": "class",
-    "topic": "Failures of classical learning theory, reproducing kernel Hilbert spaces"
+    "topic": "Failures of classical learning theory, reproducing kernel Hilbert spaces",
+    "lectureNotes": "rkhsLecture",
+    "refsTag": "RKHS"
   },
   {
     "type": "class",

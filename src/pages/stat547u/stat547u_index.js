@@ -5,7 +5,9 @@ import {
   SmallH2,
   Section
 } from '../../components/utils.js';
+
 import classSchedule from './stat547u_schedule.json';
+import lectureNotes from './stat547u_lecture_notes.js';
 
 
 const classDates = [
@@ -70,6 +72,7 @@ class Stat547UIndex extends React.Component {
                 <th>Class/Date</th>
                 <th>Class Topic</th>
                 <th>Reading Due</th>
+                <th>Resources</th>
               </tr>
             </thead>
 
@@ -84,6 +87,20 @@ class Stat547UIndex extends React.Component {
                     <td>
                       <Link href={row.readingUrl}>{row.readingTitle}</Link>
                       { (row.note) ? <div>({row.note})</div> : <span></span> }
+                    </td>
+                    <td>
+                      {
+                        (row.lectureNotes) ? 
+                        <Link className="btn btn-pdf btn-sm" role="button" href={ lectureNotes[row.lectureNotes] }>Lecture Notes</Link> :
+                        <span></span>
+                      }
+                      {
+                        /*
+                        (row.refsTag) ? 
+                        <Button color="secondary" size="sm">References</Button> :
+                        <span></span>
+                        */
+                      }
                     </td>
                   </tr>
                 ) : (row.type === "section") ? (

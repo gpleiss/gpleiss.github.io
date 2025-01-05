@@ -24,6 +24,22 @@
     "tags": ["resource"]
   },
   {
+    "id": "kimeldorf1970correspondence",
+    "title": "A Correspondence Between Bayesian Estimation on Stochastic Processes and Smoothing by Splines",
+    "authors": "G. S. Kimeldorf and G. Wahb",
+    "venue": "The Annals of Mathematical Statistics",
+    "year": 1970,
+    "tags": ["RKHS"]
+  },
+  {
+    "id": "scholkopf",
+    "title": "A Generalized Representer Theorem",
+    "authors": "B. Sch¨olkopf, R. Herbrich, and A. J. Smola",
+    "venue": "International Conference on Computational Learning Theory",
+    "year": 2001,
+    "tags": ["RKHS"]
+  },
+  {
     "id": "bach2024learning",
     "title": "High-Dimensional Statistics: A Non-Asymptotic Viewpoint (Ch. 12)",
     "authors": "Martin Wainwright",
