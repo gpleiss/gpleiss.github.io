@@ -2,6 +2,9 @@ import React from 'react';
 import { Table } from 'reactstrap';
 import { Link, SmallH2, Section } from '../../components/utils.js';
 
+import pset01Instructions from './pset01/stat520p_pset1.pdf';
+import pset01Template from './pset01/stat520p_pset1.tex';
+
 
 class Stat520PIndex extends React.Component {
   render() {
@@ -69,9 +72,9 @@ class Stat520PIndex extends React.Component {
                 </td>
                 <td>{ textbook } Ch. 3, 9.1 (optional)</td>
                 <td>
-                  <Link href="../../stat520p_pset1.pdf">Diagonstic problem set</Link>{ " " }
+                  <Link href={ pset01Instructions }>Diagonstic problem set</Link>{ " " }
                   (
-                    <Link href="../../stat520p_pset1.tex">TeX template</Link> and{ " " }
+                    <Link href={ pset01Template }>TeX template</Link> and{ " " }
                     <Link href="../../math_commands.tex">math_commands.tex</Link> macros file)
                 </td>
               </tr>

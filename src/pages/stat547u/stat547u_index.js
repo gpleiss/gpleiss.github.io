@@ -9,6 +9,9 @@ import {
 import classSchedule from './stat547u_schedule.json';
 import lectureNotes from './stat547u_lecture_notes.js';
 
+import pset01Instructions from './pset01/stat547u_pset01_instructions.pdf';
+import pset01Template from './pset01/stat547u_pset01_template.tex';
+
 
 const classDates = [
   "07 Jan 2025",
@@ -29,9 +32,9 @@ const classDates = [
 const assignments = {
   "assignment1": (
     <span>
-      <Link href="../../stat547u_pset01_instructions.pdf">Diagnostic problem set</Link> due on Tues, Jan 14.{ " " }
+      <Link href={ pset01Instructions }>Diagnostic problem set</Link> due on Tues, Jan 14.{ " " }
       (
-        <Link href="../../stat547u_pset01_template.tex">TeX template</Link> and{ " " }
+        <Link href={ pset01Template }>TeX template</Link> and{ " " }
         <Link href="../../math_commands.tex">math_commands.tex</Link> macros file.
       )
     </span>
