@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/static/css/main.6167a1a5.chunk.css",
-    "main.js": "/static/js/main.748cd47e.chunk.js",
-    "main.js.map": "/static/js/main.748cd47e.chunk.js.map",
+    "main.js": "/static/js/main.c94782e0.chunk.js",
+    "main.js.map": "/static/js/main.c94782e0.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.016e9839.js",
     "runtime-main.js.map": "/static/js/runtime-main.016e9839.js.map",
     "static/css/2.56ad470f.chunk.css": "/static/css/2.56ad470f.chunk.css",
-    "static/js/2.c21560a7.chunk.js": "/static/js/2.c21560a7.chunk.js",
-    "static/js/2.c21560a7.chunk.js.map": "/static/js/2.c21560a7.chunk.js.map",
+    "static/js/2.956f8081.chunk.js": "/static/js/2.956f8081.chunk.js",
+    "static/js/2.956f8081.chunk.js.map": "/static/js/2.956f8081.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.c3317c3341105e970fa358bea73583a5.js": "/precache-manifest.c3317c3341105e970fa358bea73583a5.js",
+    "precache-manifest.07bfcf62315a1183432c6670b4214ec7.js": "/precache-manifest.07bfcf62315a1183432c6670b4214ec7.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.56ad470f.chunk.css.map": "/static/css/2.56ad470f.chunk.css.map",
     "static/css/main.6167a1a5.chunk.css.map": "/static/css/main.6167a1a5.chunk.css.map",
-    "static/js/2.c21560a7.chunk.js.LICENSE.txt": "/static/js/2.c21560a7.chunk.js.LICENSE.txt",
+    "static/js/2.956f8081.chunk.js.LICENSE.txt": "/static/js/2.956f8081.chunk.js.LICENSE.txt",
     "static/media/DenseNet_Journal.pdf": "/static/media/DenseNet_Journal.8791eef8.pdf",
     "static/media/Hydrometeorology_Journal.pdf": "/static/media/Hydrometeorology_Journal.f6acb318.pdf",
     "static/media/katex.css": "/static/media/KaTeX_Typewriter-Regular.f43e8696.woff2",
@@ -43,6 +43,11 @@
     "static/media/me.jpg": "/static/media/me.0c3be0b6.jpg",
     "static/media/mnist.png": "/static/media/mnist.4cb9b0a5.png",
     "static/media/App.css": "/static/media/proxima_nova_alt_regular-webfont.e802340f.eot",
+    "static/media/stat520p_pset1.pdf": "/static/media/stat520p_pset1.60818d1b.pdf",
+    "static/media/stat520p_pset1.tex": "/static/media/stat520p_pset1.83ad06d5.tex",
+    "static/media/stat547u_lecture02.pdf": "/static/media/stat547u_lecture02.020f747d.pdf",
+    "static/media/stat547u_pset01_instructions.pdf": "/static/media/stat547u_pset01_instructions.2ddb6224.pdf",
+    "static/media/stat547u_pset01_template.tex": "/static/media/stat547u_pset01_template.5df32a5e.tex",
     "static/media/webvision1.png": "/static/media/webvision1.1b88f3e8.png",
     "static/media/webvision2.png": "/static/media/webvision2.32099f40.png",
     "static/media/webvision3.png": "/static/media/webvision3.41fc1c20.png",
@@ -55,8 +60,8 @@
   "entrypoints": [
     "static/js/runtime-main.016e9839.js",
     "static/css/2.56ad470f.chunk.css",
-    "static/js/2.c21560a7.chunk.js",
+    "static/js/2.956f8081.chunk.js",
     "static/css/main.6167a1a5.chunk.css",
-    "static/js/main.748cd47e.chunk.js"
+    "static/js/main.c94782e0.chunk.js"
   ]
 }
