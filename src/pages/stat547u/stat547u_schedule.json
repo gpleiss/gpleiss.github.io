@@ -6,7 +6,9 @@
   },
   {
     "type": "class",
-    "topic": "Course logistics, introduction, failures of classical learning theory"
+    "topic": "Course logistics, introduction, failures of classical learning theory",
+    "lectureNotes": "introLecture",
+    "refsTag": "intro"
   },
   {
     "type": "class",
