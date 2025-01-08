@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "367826114ab79f11a36e62805f2f9077",
+    "revision": "6db2826daf2a1ecdc3de5a9b74e2d916",
     "url": "/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/css/2.56ad470f.chunk.css"
   },
   {
-    "revision": "919fa0e99bd76ca9d6d5",
+    "revision": "596525eeab7e143b7ae1",
     "url": "/static/css/main.6167a1a5.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.02c5681f.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "919fa0e99bd76ca9d6d5",
-    "url": "/static/js/main.a9dbc7ea.chunk.js"
+    "revision": "596525eeab7e143b7ae1",
+    "url": "/static/js/main.27e5e83a.chunk.js"
   },
   {
     "revision": "ddbfd08e02def1fb30c5",
@@ -432,12 +432,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/stat547u_lecture02.020f747d.pdf"
   },
   {
-    "revision": "9e2796a84e4bdfd249106a5f4cfd420d",
-    "url": "/static/media/stat547u_pset01_instructions.9e2796a8.pdf"
+    "revision": "c9ce111b87d4f5376466402f92ebdce6",
+    "url": "/static/media/stat547u_pset01_instructions.c9ce111b.pdf"
   },
   {
-    "revision": "973ec94b150988f88a97cc53c9728a35",
-    "url": "/static/media/stat547u_pset01_template.973ec94b.tex"
+    "revision": "47e9bc6f96d7265fe52f2209f9145c6e",
+    "url": "/static/media/stat547u_pset01_template.47e9bc6f.tex"
   },
   {
     "revision": "1b88f3e8a84ea9b82c7c75285247e06a",
