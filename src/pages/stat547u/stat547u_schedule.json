@@ -7,14 +7,12 @@
   {
     "type": "class",
     "topic": "Course logistics, introduction, failures of classical learning theory",
-    "lectureNotes": "introLecture",
-    "refsTag": "intro"
+    "lectureNotes": "introLecture"
   },
   {
     "type": "class",
     "topic": "Introduction to functional analysis, reproducing kernel Hilbert spaces",
-    "lectureNotes": "rkhsLecture",
-    "refsTag": "RKHS"
+    "lectureNotes": "rkhsLecture"
   },
   {
     "type": "class",
@@ -22,7 +20,8 @@
     "readingTitle": "Fit Without Fear (Sections 1-3.9)",
     "readingAuthorYear": "Belkin, 2021",
     "readingUrl": "https://arxiv.org/abs/2105.14368",
-    "note": "Required reading, but no reading summary due."
+    "note": "Required reading, but no reading summary due.",
+    "lectureNotes": "doubleDescentLecture"
   },
   {
     "type": "section",
