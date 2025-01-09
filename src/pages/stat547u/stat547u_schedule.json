@@ -19,7 +19,7 @@
   {
     "type": "class",
     "topic": "Double descent, implicit bias of gradient descent for regression",
-    "readingTitle": "Fit Without Fear (Sections 1-3)",
+    "readingTitle": "Fit Without Fear (Sections 1-3.9)",
     "readingAuthorYear": "Belkin, 2021",
     "readingUrl": "https://arxiv.org/abs/2105.14368",
     "note": "Required reading, but no reading summary due."
@@ -31,14 +31,14 @@
   {
     "type": "class",
     "topic": "Introduction to high-dimensional asymptotics and random matrix theory",
-    "readingTitle": "High Dimensional Regression (Sections 1-2)",
+    "readingTitle": "High Dimensional Regression (Section 2)",
     "readingAuthorYear": "Hastie, 2023",
     "readingUrl": "https://www.stat.berkeley.edu/~ryantibs/statlearn-s23/lectures/ridge.pdf"
   },
   {
     "type": "class",
     "topic": "Effective regularization, risk of overparameterized ridge regression",
-    "readingTitle": "High Dimensional Regression (Sections 3-4)",
+    "readingTitle": "High Dimensional Regression (Section 4)",
     "readingAuthorYear": "Hastie, 2023",
     "readingUrl": "https://www.stat.berkeley.edu/~ryantibs/statlearn-s23/lectures/ridge.pdf"
   },
