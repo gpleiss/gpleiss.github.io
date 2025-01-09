@@ -273,7 +273,7 @@ class Stat547USyllabus extends React.Component {
 
           <SmallH3>Readings (required and optional)</SmallH3>
           <p>
-            Please see the <Link href="schedule.html">schedule</Link> for required readings
+            Please see the <Link href="index.html">schedule</Link> for required readings
             and a bibliography of additional papers related to each lecture.
           </p>
 
