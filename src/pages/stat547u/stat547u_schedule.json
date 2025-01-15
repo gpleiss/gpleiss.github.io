@@ -32,7 +32,8 @@
     "topic": "Introduction to high-dimensional asymptotics and random matrix theory",
     "readingTitle": "High Dimensional Regression (Section 2)",
     "readingAuthorYear": "Hastie, 2023",
-    "readingUrl": "https://www.stat.berkeley.edu/~ryantibs/statlearn-s23/lectures/ridge.pdf"
+    "readingUrl": "https://www.stat.berkeley.edu/~ryantibs/statlearn-s23/lectures/ridge.pdf",
+    "lectureNotes": "rmtLecture"
   },
   {
     "type": "class",
