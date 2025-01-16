@@ -98,11 +98,9 @@ class Stat547UIndex extends React.Component {
                         <span></span>
                       }
                       {
-                        /*
-                        (row.refsTag) ? 
-                        <Button color="secondary" size="sm">References</Button> :
-                        <span></span>
-                        */
+                        (row.links || []).map((link) => (
+                          <Link className="btn btn-info btn-sm" role="button" href={ link.url }>{ link.name }</Link>
+                        ))
                       }
                     </td>
                   </tr>

@@ -33,7 +33,13 @@
     "readingTitle": "High Dimensional Regression (Section 2)",
     "readingAuthorYear": "Hastie, 2023",
     "readingUrl": "https://www.stat.berkeley.edu/~ryantibs/statlearn-s23/lectures/ridge.pdf",
-    "lectureNotes": "rmtLecture"
+    "lectureNotes": "rmtLecture",
+    "links": [
+      {
+        "name": "Demo",
+        "url": "https://colab.research.google.com/drive/1-9EfwXkcQTvxTz_GbzCrG6uK7Q_WUcjn?usp=sharing"
+      }
+    ]
   },
   {
     "type": "class",
