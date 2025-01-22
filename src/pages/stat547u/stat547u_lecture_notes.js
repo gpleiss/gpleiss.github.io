@@ -3,6 +3,7 @@ import rkhsLecture from './lecture_notes/stat547u_lecture02.pdf';
 import doubleDescentLecture from './lecture_notes/stat547u_lecture03.pdf';
 import rmtLecture from './lecture_notes/stat547u_lecture04.pdf';
 import implicitRegLecture from './lecture_notes/stat547u_lecture05.pdf';
+import benignOverfitLecture from './lecture_notes/stat547u_lecture06.pdf';
 
 export default {
   "introLecture": introLecture,
@@ -10,4 +11,5 @@ export default {
   "doubleDescentLecture": doubleDescentLecture,
   "rmtLecture": rmtLecture,
   "implicitRegLecture": implicitRegLecture,
+  "benignOverfitLecture": benignOverfitLecture,
 };

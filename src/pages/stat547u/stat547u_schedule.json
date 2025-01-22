@@ -54,7 +54,8 @@
     "topic": "Benign overfitting",
     "readingTitle": "Benign, Tempered, or Catastrophic: A Taxonomy of Overfitting (Section 2-3)",
     "readingAuthorYear": "Mallinar et al., 2022",
-    "readingUrl": "https://arxiv.org/abs/2207.06569"
+    "readingUrl": "https://arxiv.org/abs/2207.06569",
+    "lectureNotes": "benignOverfitLecture"
   },
   {
     "type": "section",
