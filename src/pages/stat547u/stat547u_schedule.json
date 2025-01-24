@@ -64,25 +64,22 @@
   },
   {
     "type": "class",
-    "topic": "Infinite width NNs: Neural Tangent Kernel (Pt 1)",
+    "topic": "Linearized neural networks, introduction to the neural tangent kernel",
     "readingTitle": "Deep Learning Theory Lecture Notes (Ch. 4)",
     "readingAuthorYear": "Telgarsky, 2021",
     "readingUrl": "https://mjt.cs.illinois.edu/dlt/#approximation-near-initialization-and-the-neural-tangent-kernel"
   },
   {
     "type": "class",
-    "topic": "Infinite width NNs: Neural Tangent Kernel (Pt 2)",
-    "readingTitle": "Understanding the Neural Tangent Kernel",
-    "readingAuthorYear": "Dwaraknath, 2019",
-    "readingUrl": "https://www.eigentales.com/NTK/"
+    "topic": "Neural Tangent Kernel approximation at initialization",
+    "note": "No reading; work on final project intermediate check-in"
   },
   {
     "type": "class",
-    "topic": "Feature learning, rich vs lazy regimes",
-    "readingTitle": "The lazy (NTK) and rich (µP) regimes: A gentle tutorial",
-    "readingAuthorYear": "Karkada, 2024",
-    "readingUrl": "https://arxiv.org/pdf/2404.19719",
-    "note": "Optional reading; no reading summary due."
+    "topic": "Neural Tangent Kernel approximation during optmization",
+    "readingTitle": "Understanding the Neural Tangent Kernel",
+    "readingAuthorYear": "Dwaraknath, 2019",
+    "readingUrl": "https://www.eigentales.com/NTK/"
   },
   {
     "type": "section",
@@ -97,11 +94,15 @@
   },
   {
     "type": "class",
-    "topic": "Effects of depth"
+    "topic": "Feature learning, rich vs lazy regimes",
+    "readingTitle": "The lazy (NTK) and rich (µP) regimes: A gentle tutorial",
+    "readingAuthorYear": "Karkada, 2024",
+    "readingUrl": "https://arxiv.org/pdf/2404.19719",
+    "note": "Optional reading; no reading summary due."
   },
   {
     "type": "class",
-    "topic": "Topic TBD (scaling laws, in-context learning, etc.)"
+    "topic": "Topic TBD (effects of depth, scaling laws, in-context learning, etc.)"
   },
   {
     "type": "section",
