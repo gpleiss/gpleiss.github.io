@@ -64,19 +64,26 @@
   },
   {
     "type": "class",
-    "topic": "Linearized neural networks, introduction to the neural tangent kernel",
+    "topic": "Linear approximations of neural networks",
     "readingTitle": "Deep Learning Theory Lecture Notes (Ch. 4)",
     "readingAuthorYear": "Telgarsky, 2021",
-    "readingUrl": "https://mjt.cs.illinois.edu/dlt/#approximation-near-initialization-and-the-neural-tangent-kernel"
+    "readingUrl": "https://mjt.cs.illinois.edu/dlt/#approximation-near-initialization-and-the-neural-tangent-kernel",
+    "lectureNotes": "linApproxLecture",
+    "links": [
+      {
+        "name": "Demo",
+        "url": "https://colab.research.google.com/drive/1hKIyZzWk3CrDbqEXNIBz8rHh9kXjbyVZ?usp=sharing"
+      }
+    ]
   },
   {
     "type": "class",
-    "topic": "Neural Tangent Kernel approximation at initialization",
+    "topic": "The neural tangent kernel approximation at initialization",
     "note": "No reading; work on final project intermediate check-in"
   },
   {
     "type": "class",
-    "topic": "Neural Tangent Kernel approximation during optmization",
+    "topic": "The neural tangent kernel during optmization",
     "readingTitle": "Understanding the Neural Tangent Kernel",
     "readingAuthorYear": "Dwaraknath, 2019",
     "readingUrl": "https://www.eigentales.com/NTK/"
