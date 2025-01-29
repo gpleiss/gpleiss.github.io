@@ -79,7 +79,8 @@
   {
     "type": "class",
     "topic": "The neural tangent kernel approximation at initialization",
-    "note": "No reading; work on final project intermediate check-in"
+    "note": "No reading; work on final project intermediate check-in",
+    "lectureNotes": "ntkInitLecture"
   },
   {
     "type": "class",
