@@ -87,7 +87,8 @@
     "topic": "The neural tangent kernel during optmization",
     "readingTitle": "Understanding the Neural Tangent Kernel",
     "readingAuthorYear": "Dwaraknath, 2019",
-    "readingUrl": "https://www.eigentales.com/NTK/"
+    "readingUrl": "https://www.eigentales.com/NTK/",
+    "lectureNotes": "ntkOptLecture"
   },
   {
     "type": "section",

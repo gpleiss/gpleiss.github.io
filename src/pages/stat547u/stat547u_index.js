@@ -1,5 +1,5 @@
 import React from 'react';
-import { Table } from 'reactstrap';
+import { Alert, Table } from 'reactstrap';
 import {
   Link,
   SmallH2,
@@ -63,6 +63,11 @@ class Stat547UIndex extends React.Component {
 
     return (
         <Section id="schedule" first>
+          <div id="announcements" className="mb-5">
+            <Alert color="warning">
+              Class on 4 Feb 2025 will be held on Zoom. The link is available on Canvas or by messaging me.
+            </Alert>
+          </div>
           <SmallH2>
             Schedule
           </SmallH2>
