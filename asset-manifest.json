@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/static/css/main.6167a1a5.chunk.css",
-    "main.js": "/static/js/main.5720a0e8.chunk.js",
-    "main.js.map": "/static/js/main.5720a0e8.chunk.js.map",
+    "main.js": "/static/js/main.b9473822.chunk.js",
+    "main.js.map": "/static/js/main.b9473822.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.016e9839.js",
     "runtime-main.js.map": "/static/js/runtime-main.016e9839.js.map",
     "static/css/2.56ad470f.chunk.css": "/static/css/2.56ad470f.chunk.css",
-    "static/js/2.300cfc3b.chunk.js": "/static/js/2.300cfc3b.chunk.js",
-    "static/js/2.300cfc3b.chunk.js.map": "/static/js/2.300cfc3b.chunk.js.map",
+    "static/js/2.0752d309.chunk.js": "/static/js/2.0752d309.chunk.js",
+    "static/js/2.0752d309.chunk.js.map": "/static/js/2.0752d309.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.9219c5980881f46e30205d1415fb587b.js": "/precache-manifest.9219c5980881f46e30205d1415fb587b.js",
+    "precache-manifest.c7580f8aed1631883c4aa2abf663fd65.js": "/precache-manifest.c7580f8aed1631883c4aa2abf663fd65.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.56ad470f.chunk.css.map": "/static/css/2.56ad470f.chunk.css.map",
     "static/css/main.6167a1a5.chunk.css.map": "/static/css/main.6167a1a5.chunk.css.map",
-    "static/js/2.300cfc3b.chunk.js.LICENSE.txt": "/static/js/2.300cfc3b.chunk.js.LICENSE.txt",
+    "static/js/2.0752d309.chunk.js.LICENSE.txt": "/static/js/2.0752d309.chunk.js.LICENSE.txt",
     "static/media/DenseNet_Journal.pdf": "/static/media/DenseNet_Journal.8791eef8.pdf",
     "static/media/Hydrometeorology_Journal.pdf": "/static/media/Hydrometeorology_Journal.f6acb318.pdf",
     "static/media/katex.css": "/static/media/KaTeX_Typewriter-Regular.f43e8696.woff2",
@@ -53,6 +53,7 @@
     "static/media/stat547u_lecture06.pdf": "/static/media/stat547u_lecture06.ab3e5fcd.pdf",
     "static/media/stat547u_lecture07.pdf": "/static/media/stat547u_lecture07.9f356a56.pdf",
     "static/media/stat547u_lecture08.pdf": "/static/media/stat547u_lecture08.4241dbbd.pdf",
+    "static/media/stat547u_lecture09.pdf": "/static/media/stat547u_lecture09.b6ba3219.pdf",
     "static/media/stat547u_pset01_instructions.pdf": "/static/media/stat547u_pset01_instructions.b225090d.pdf",
     "static/media/stat547u_pset01_template.tex": "/static/media/stat547u_pset01_template.4f1350ca.tex",
     "static/media/webvision1.png": "/static/media/webvision1.1b88f3e8.png",
@@ -67,8 +68,8 @@
   "entrypoints": [
     "static/js/runtime-main.016e9839.js",
     "static/css/2.56ad470f.chunk.css",
-    "static/js/2.300cfc3b.chunk.js",
+    "static/js/2.0752d309.chunk.js",
     "static/css/main.6167a1a5.chunk.css",
-    "static/js/main.5720a0e8.chunk.js"
+    "static/js/main.b9473822.chunk.js"
   ]
 }
