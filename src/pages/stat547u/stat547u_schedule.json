@@ -99,7 +99,8 @@
     "topic": "Neural networks for classification",
     "readingTitle": "Deep Learning Theory Lecture Notes (Ch. 10)",
     "readingAuthorYear": "Telgarsky, 2021",
-    "readingUrl": "https://mjt.cs.illinois.edu/dlt/#sec:margin_opt"
+    "readingUrl": "https://mjt.cs.illinois.edu/dlt/#sec:margin_opt",
+    "lectureNotes": "classification"
   },
   {
     "type": "class",
