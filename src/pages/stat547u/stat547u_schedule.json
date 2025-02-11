@@ -113,7 +113,11 @@
   },
   {
     "type": "class",
-    "topic": "Topic TBD (effects of depth, scaling laws, in-context learning, etc.)"
+    "topic": "My recent research (ensembles of neural networks)",
+    "readingTitle": "Theoretical Limitations of Ensembles in the Age of Overparameterization",
+    "readingAuthorYear": "Dern et al., 2025",
+    "readingUrl": "https://arxiv.org/abs/2410.16201",
+    "note": "Optional reading; no reading summary due."
   },
   {
     "type": "section",
