@@ -7,7 +7,8 @@ import benignOverfitLecture from './lecture_notes/stat547u_lecture06.pdf';
 import linApproxLecture from './lecture_notes/stat547u_lecture07.pdf';
 import ntkInitLecture from './lecture_notes/stat547u_lecture08.pdf';
 import ntkOptLecture from './lecture_notes/stat547u_lecture09.pdf';
-import classification from './lecture_notes/stat547u_lecture10.pdf';
+import classificationLecture from './lecture_notes/stat547u_lecture10.pdf';
+import featureLearningLecture from './lecture_notes/stat547u_lecture11.pdf';
 
 export default {
   "introLecture": introLecture,
@@ -19,5 +20,6 @@ export default {
   "linApproxLecture": linApproxLecture,
   "ntkInitLecture": ntkInitLecture,
   "ntkOptLecture": ntkOptLecture,
-  "classification": classification,
+  "classificationLecture": classificationLecture,
+  "featureLearningLecture": featureLearningLecture,
 };
