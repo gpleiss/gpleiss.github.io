@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, H1, SmallH2, Img, Section } from '../components/utils.js';
+import { Link, Header, H1, SmallH2, Img, Section } from '../components/utils.js';
 import { Code } from '../components/code.js';
 import { Math } from '../components/math.js';
 import { Tooltip, Modal, ModalHeader, ModalBody } from 'reactstrap';
@@ -49,11 +49,9 @@ class NNCalibration extends React.Component {
   render() {
     return (
       <div>
-        <div className="bg-gradient-primary pt-10 pb-5 shadow-bottom">
-          <div className="container text-center">
-            <H1>Calibrating Neural Networks</H1>
-          </div>
-        </div>
+        <Header>
+          <H1>Calibrating Neural Networks</H1>
+        </Header>
 
         <div className="bg-gradient-light pt-5 pb-4 shadow-bottom" id="reliability-diagrams">
           <div className="container text-center">
@@ -112,9 +110,9 @@ class NNCalibration extends React.Component {
               <Section first>
                 <SmallH2>Motivation</SmallH2>
                 <p>
-                  Neural networks output "confidence" scores along with predictions in classification. 
-                  Ideally, these confidence scores should match the true correctness likelihood. 
-                  For example, if we assign 80% confidence to 100 predictions, then we'd expect that 80% of the predictions are actually correct. 
+                  Neural networks output "confidence" scores along with predictions in classification.
+                  Ideally, these confidence scores should match the true correctness likelihood.
+                  For example, if we assign 80% confidence to 100 predictions, then we'd expect that 80% of the predictions are actually correct.
                   If this is the case, we say the network is <strong>calibrated</strong>.
                   Modern neural networks tend to be very poorly calibrated.
                   We find that this is a result of recent architectural trends, such as increased network capacity and less regularization.
@@ -131,8 +129,8 @@ class NNCalibration extends React.Component {
                   a function of confidence (known as a <strong><a
                       href="http://www.datascienceassn.org/sites/default/files/Predicting%20good%20probabilities%20with%20supervised%20learning.pdf"
                       id="cite-niculescu2005predicting">reliability
-                      diagram</a></strong>). 
-                  Since confidence should reflect accuracy, we'd like for the plot to be an identity function. 
+                      diagram</a></strong>).
+                  Since confidence should reflect accuracy, we'd like for the plot to be an identity function.
                   In the <Link inside href="#reliability-diagrams">reliability diagram above</Link> on the left, we see that a DenseNet
                   trained on CIFAR-100 is extremely overconfident.
                   However, after applying temperature scaling, the network becomes very well calibrated.
@@ -148,18 +146,18 @@ class NNCalibration extends React.Component {
 								<p>
                   For classification problems, the neural network output a vector known as the <strong>logits</strong>.
                   The logits vector is passed through a softmax function to get class probabilities.
-                  Temperature scaling simply divides the logits vector by a learned scalar parameter, i.e. 
+                  Temperature scaling simply divides the logits vector by a learned scalar parameter, i.e.
 								</p>
 								<div className="text-center bg-light border-rounded p-1 mb-3 mt-3">
-                  <Math> 
+                  <Math>
                     { "P( \\hat \\mathbf y ) = \\frac{e^{\\mathbf z / T}}{\\sum_j e^{z_j / T}}" }
                   </Math>
 								</div>
 								<p>
                   where <Math inline>{"\\hat y"}</Math> is the prediction, where <Math inline>{"\\mathbf z"}</Math> is the logit, and <Math inline>{"T"}</Math> is the learned parameter.
-									We learn this parameter on a validation set, where <Math inline>{"T"}</Math> is chosen to minimize negative log likelihood. 
-                  Intuitively, temperature scaling simply softens the neural network outputs. 
-                  This makes the network slightly less confident, which makes the confidence scores reflect true probabilities. 
+									We learn this parameter on a validation set, where <Math inline>{"T"}</Math> is chosen to minimize negative log likelihood.
+                  Intuitively, temperature scaling simply softens the neural network outputs.
+                  This makes the network slightly less confident, which makes the confidence scores reflect true probabilities.
                 </p>
               </Section>
 
@@ -170,7 +168,7 @@ class NNCalibration extends React.Component {
                 </p>
                 <blockquote className="text-center mt-2 mb-3">
                   Guo, C., Pleiss, G., Sun, Y. and Weinberger, K.Q.  <strong>On Calibration of Modern Neural Networks</strong>. In <em>ICML</em>, 2017.
-                </blockquote>	
+                </blockquote>
                 <ul>
                   <li><Link href="https://arxiv.org/abs/1706.04599">Paper on ArXiV</Link></li>
                   <li><button className="btn btn-link p-0" type="button" onClick={this.toggleBibtexModal}>BibTeX</button></li>
@@ -186,7 +184,7 @@ class NNCalibration extends React.Component {
   author={Guo, Chuan and Pleiss, Geoff and Sun, Yu and Weinberger, Kilian Q},
   journal={ICML},
   year={2017}
-}	
+}
 										`}</pre>
 									</ModalBody>
 								</Modal>
@@ -219,15 +217,15 @@ class Model(torch.nn.Module):
                 <SmallH2>FAQ</SmallH2>
                 <p className="mb-1">
                   <strong>Does temperature scaling work for regression?</strong>
-                </p> 
+                </p>
                 <p className="ml-4">
-                  Temperature scaling only works for classification. 
-                  On regression probles, networks tend to output only point predictions, so there is no measure of uncertainty to calibrate. 
+                  Temperature scaling only works for classification.
+                  On regression probles, networks tend to output only point predictions, so there is no measure of uncertainty to calibrate.
                 </p>
 
                 <p className="mb-1">
                   <strong>Can temperature scaling be used to detect adversarial examples?</strong>
-                </p> 
+                </p>
                 <p className="ml-4">
                   Temperature scaling works when the test distribution is the same as the training distribution.
                   Since adversarial examples don't belong to the training distribution, temperature scaling is not guarenteed to produce a calibrated probability on these samples.
@@ -235,10 +233,10 @@ class Model(torch.nn.Module):
 
                 <p className="mb-1">
                   <strong>Why is temperature scaling a post-processing step? Can you find the temperature during training?</strong>
-                </p> 
+                </p>
                 <p className="ml-4">
-                  The temperature parameter can't be adjusted at training time. 
-                  The network would simply learn to make the temperature as low as possible, so that it can be very confident on the training examples. 
+                  The temperature parameter can't be adjusted at training time.
+                  The network would simply learn to make the temperature as low as possible, so that it can be very confident on the training examples.
                   (This is why miscalibration occurs in the first place.)
                 </p>
               </Section>

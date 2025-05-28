@@ -1,0 +1,104 @@
+[
+    {
+      "id": "donneyFan",
+      "name": "Donney Fan",
+      "current": true,
+      "website": "https://donneyfan.com/",
+      "roles": [
+        {
+          "type": "PhD",
+          "status": "Student",
+          "university": "UBC",
+          "department": "Computer Science",
+          "start": 2024,
+          "end": null,
+          "cosupervisors": [
+            {
+              "name": "Mark Schmidt",
+              "link": "https://www.cs.ubc.ca/~schmidtm/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "timZhou",
+      "name": "Tim G. Zhou",
+      "current": true,
+      "website": "https://timothyzg.github.io/",
+      "roles": [
+        {
+          "type": "MSc",
+          "status": "Student",
+          "university": "UBC",
+          "department": "Computer Science",
+          "start": 2025,
+          "end": null,
+          "cosupervisors": [
+            {
+              "name": "Evan Shelhamer",
+              "link": "https://imaginarynumber.net/research/"
+            }
+          ]
+        },
+        {
+          "type": "BSc",
+          "university": "UBC",
+          "department": "Computer Science",
+          "start": 2024,
+          "end": 2025,
+          "cosupervisor": null
+        }
+      ]
+    },
+    {
+      "id": "zacharyLau",
+      "name": "Zachary Lau",
+      "current": true,
+      "website": "https://www.stat.ubc.ca/zachary-lau-0",
+      "roles": [
+        {
+          "type": "MSc",
+          "status": "Student",
+          "university": "UBC",
+          "department": "Statistics",
+          "start": 2025,
+          "end": 2026,
+          "cosupervisor": null
+        }
+      ]
+    },
+    {
+      "id": "nathanCantafio",
+      "name": "Nathan Cantafio",
+      "current": true,
+      "website": null,
+      "roles": [
+        {
+          "type": "BSc",
+          "status": "Student",
+          "university": "UBC",
+          "department": "Statistics",
+          "start": 2025,
+          "end": 2025,
+          "cosupervisor": null
+        }
+      ]
+    },
+    {
+      "id": "tristanCinquin",
+      "name": "Tristan Cinquin",
+      "current": true,
+      "website": null,
+      "roles": [
+        {
+          "type": "Research Intern",
+          "university": "Vector Institute",
+          "department": null,
+          "start": 2025,
+          "end": 2025,
+          "cosupervisor": null
+        }
+      ]
+    }
+  ]

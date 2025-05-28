@@ -1,6 +1,8 @@
 import React from 'react';
-import { Link, H1, SmallH2, SmallH3, Section } from '../components/utils.js';
+import { Link, H1, Header, SmallH2, SmallH3, Section } from '../components/utils.js';
 
+// Assets
+import gitWizard from '../pdfs/git_wizard.pdf';
 
 //const monthNames = [
   //"January", "February", "March", "April", "May", "June",
@@ -22,7 +24,7 @@ class PaperLi extends React.Component {
         <p className="font-italic text-secondary">({ this.props.children })</p>
       )
     }
-    
+
     const link = this.props.taken ? (
       <del>{ this.props.title }</del>
     ) : (
@@ -52,11 +54,9 @@ class Stat548 extends React.Component {
   render() {
     return (
       <div>
-        <div className="bg-gradient-primary pt-10 pb-5 shadow-bottom">
-          <div className="container text-center">
-            <H1>STAT548 PhD Qualifying Course Papers</H1>
-          </div>
-        </div>
+        <Header>
+          <H1>STAT548 PhD Qualifying Course Papers</H1>
+        </Header>
 
         <div className="container">
           <div className="row">
@@ -181,7 +181,7 @@ class Stat548 extends React.Component {
                     <p>
                       This section should demonstrate your ability to think creatively about research.
                       Brainstorm a generalization, extension, or novel application of the paper's content.
-                      Dreaming too big is better than dreaming too small:  
+                      Dreaming too big is better than dreaming too small:
                       aim for a project with potential for publication or inclusion in your thesis.
                       (I'll help you scope whatever you come up with into a 3-4 week mini-project.)
                     </p>
@@ -189,7 +189,7 @@ class Stat548 extends React.Component {
                       Your proposal should
                       (1) describe the area of opportunity,
                       (2) propose a method/approach,
-                      (3) identify expected technical challenges/bottlenecks, and 
+                      (3) identify expected technical challenges/bottlenecks, and
                       (4) predict potential impact.
                     </p>
                   </li>
@@ -343,7 +343,7 @@ class Stat548 extends React.Component {
                     <li>Trevor Campbell's <Link href="https://docs.google.com/presentation/d/13vwchlzQAZjjfiI3AiBC_kM-syI6GJKzbuZoLxgy1a4/edit">talk on "How to Explain Things,"</Link></li>
                     <li>Knuth, Larrabee, and Roberts <Link href="http://www.jmlr.org/reviewing-papers/knuth_mathematical_writing.pdf">on mathematical writing,</Link></li>
                     <li>"Getting Started with Git": <Link href="https://git-scm.com/book/en/v2">Chapters 1 and 2</Link>, and</li>
-                    <li>my <Link href="../../git_wizard.pdf">talk on "How to Be a Git Wizard"</Link> (if git still scares you after reading the above resource).</li>
+                    <li>my <Link href={gitWizard}>talk on "How to Be a Git Wizard"</Link> (if git still scares you after reading the above resource).</li>
                   </ul>
               </Section>
 

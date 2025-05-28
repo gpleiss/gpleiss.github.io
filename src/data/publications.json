@@ -1,0 +1,684 @@
+[
+    {
+        "id": "zhou2025asymmetric",
+        "type": "submission",
+        "title": "Asymmetric Duos: Sidekicks Improve Uncertainty",
+        "authors": ["Tim G. Zhou", "Evan Shelhamer", "Geoff Pleiss"],
+        "year": 2025,
+        "arxiv": "https://arxiv.org/abs/2505.18636",
+        "github": null,
+        "talk": null,
+        "isnew": true,
+        "tags": {
+            "uq": true,
+            "dl": true
+        }
+    },
+    {
+        "id": "dern2025theoretical",
+        "type": "conference",
+        "title": "Theoretical Limitations of Ensembles in the Age of Overparameterization",
+        "authors": ["Niclas Dern", "John P. Cunningham", "Geoff Pleiss"],
+        "booktitle": "International Conference on Machine Learning",
+        "year": 2025,
+        "award": "Spotlight presentation",
+        "awardnote": "Top $2.6\\%$ of submissions",
+        "arxiv": "https://arxiv.org/abs/2410.16201",
+        "github": "https://github.com/nic-dern/theoretical-limitations-overparameterized-ensembles",
+        "talk": "https://www.youtube.com/watch?v=LINT01z05Bs",
+        "isnew": true,
+        "tags": {
+            "uq": true,
+            "dl": true
+        }
+    },
+    {
+        "id": "cinquin2025what",
+        "type": "techreport",
+        "title": "What Actually Matters for Materials Discovery: Pitfalls and Recommendations in {B}ayesian Optimization",
+        "authors": ["Tristan Cinquin", "Stanley Lo", "Felix Strieth-Kalthoff", "Al\\`an Aspuru-Guzik", "Geoff Pleiss", "Robert Balmer", "Tim G. J. Rudner", "Vincent Fortuin", "Agustinus Kristiadi"],
+        "booktitle": "Symposium on Advances in Approximate Bayesian Inference, Workshop Track",
+        "year": 2025,
+        "arxiv": null,
+        "github": null,
+        "talk": null,
+        "isnew": true,
+        "tags": {
+            "bo": true
+        }
+    },
+    {
+        "id": "yoo2025lifelong",
+        "type": "submission",
+        "title": "Lifelong Learning of Video Diffusion Models From a Single Video Stream",
+        "authors": ["Jason Yoo", "Yingchen He", "Saeid Naderiparizi", "Dylan Green", "Gido M. van de Ven", "Geoff Pleiss", "Frank Wood"],
+        "year": 2025,
+        "arxiv": "https://arxiv.org/abs/2406.04814",
+        "github": null,
+        "talk": null,
+        "isnew": true,
+        "tags": {
+            "cv": true
+        }
+    },
+    {
+        "id": "burkhard2025nearby",
+        "type": "journal",
+        "title": "A Nearby Dark Molecular Cloud in the Local Bubble Revealed via ${H}_2$ Fluorescence",
+        "authors": ["Blakesley Burkhart", "Thavisha E. Dharmawardena", "Shmuel Bialy", "Thomas J. Haworth", "Fernando Cruz Aguirre", "Young-Soo Jo", "B.G. Andersson", "Haeun Chung", "Jerry Edelstein", "Isabelle Grenier", "Erika T. Hamden", "Wonyong Han", "Keri Hoadley", "Min-Young Lee", "Kyoung-Wook Min", "Thomas M\\\"uller", "Kate Pattle", "J. E. G. Peek", "Geoff Pleiss", "David Schiminovich", "Kwang-Il Seon", "Andrew Gordon Wilson", "Catherine Zucker"],
+        "journal": "Nature Astronomy",
+        "year": 2025,
+        "pages": "1--9",
+        "doi": "https://doi.org/10.1038/s41550-025-02541-7",
+        "arxiv": "https://arxiv.org/abs/2504.17843",
+        "github": null,
+        "talk": null,
+        "isnew": true,
+        "tags": {
+            "stm": true
+        }
+    },
+    {
+        "id": "maus2024approximation",
+        "type": "conference",
+        "title": "Approximation-Aware {B}ayesian Optimization",
+        "authors": ["Natalie Maus", "Kyurae Kim", "Geoff Pleiss", "David Eriksson", "John P. Cunningham", "Jacob R. Gardner"],
+        "booktitle": "Neural Information Processing Systems",
+        "year": 2024,
+        "award": "Spotlight presentation",
+        "awardnote": "Top $4\\%$ of submissions",
+        "arxiv": "https://arxiv.org/abs/2406.04308",
+        "github": "https://github.com/nataliemaus/improvement-vi",
+        "talk": null,
+        "tags": {
+            "bo": true
+        }
+    },
+    {
+        "id": "wenger2024computational",
+        "type": "conference",
+        "title": "Computation-Aware {G}aussian Processes: Model Selection And Linear-Time Inference",
+        "authors": ["Jonathan Wenger", "Kaiwen Wu", "Philipp Hennig", "Jacob R. Gardner", "Geoff Pleiss", "John P. Cunningham"],
+        "booktitle": "Neural Information Processing Systems",
+        "year": 2024,
+        "arxiv": "https://arxiv.org/abs/2411.01036",
+        "github": "https://github.com/cornellius-gp/gpytorch/blob/e0e8cd5365e7eea72befaa02d644f588984fd337/gpytorch/models/computation_aware_gp.py",
+        "talk": null,
+        "tags": {
+            "gp_nla": true
+        }
+    },
+    {
+        "id": "kristiadi2024how",
+        "type": "techreport",
+        "title": "How Useful is Intermittent, Asynchronous Expert Feedback for {B}ayesian Optimization?",
+        "authors": ["Agustinus Kristiadi", "Felix Strieth-Kalthoff", "Sriram Ganapathi Subramanian", "Vincent Fortuin", "Pascal Poupart", "Geoff Pleiss"],
+        "booktitle": "Symposium on Advances in Approximate Bayesian Inference, Workshop Track",
+        "year": 2024,
+        "arxiv": "https://arxiv.org/abs/2406.06459",
+        "github": "https://github.com/wiseodd/bo-async-feedback",
+        "talk": null,
+        "tags": {
+            "bo": true
+        }
+    },
+    {
+        "id": "kahou2024inductive",
+        "type": "submission",
+        "title": "How Inductive Bias in Machine Learning Aligns with Optimality in Economic Dynamics",
+        "authors": ["Mahdi Ebrahimi Kahou", "James Yu", "Jesse Perla", "Geoff Pleiss"],
+        "year": 2024,
+        "arxiv": "https://arxiv.org/abs/2406.01898",
+        "github": null,
+        "talk": null,
+        "tags": {
+            "pm": true
+        }
+    },
+    {
+        "id": "kristiadi2024sober",
+        "type": "conference",
+        "title": "A Sober Look at LLMs for Material Discovery: Are They Actually Good for {B}ayesian Optimization Over Molecules?",
+        "authors": ["Agustinus Kristiadi", "Felix Strieth-Kalthoff", "Marta Skreta", "Pascal Poupart", "Al\\`an Aspuru-Guzik", "Geoff Pleiss"],
+        "booktitle": "International Conference on Machine Learning",
+        "year": 2024,
+        "arxiv": "https://arxiv.org/abs/2402.05015",
+        "github": "https://github.com/wiseodd/lapeft-bayesopt",
+        "talk": null,
+        "tags": {
+            "bo": true
+        }
+    },
+    {
+        "id": "abe2024pathologies",
+        "type": "journal",
+        "title": "Pathologies of Predictive Diversity in Deep Ensembles",
+        "authors": ["Taiga Abe", "E. Kelly Buchanan", "Geoff Pleiss", "John P. Cunningham"],
+        "journal": "Transactions on Machine Learning Research",
+        "year": 2024,
+        "award": "Featured Paper",
+        "awardnote": "Top $2\\%$ of submissions",
+        "arxiv": "https://arxiv.org/abs/2302.00704",
+        "github": null,
+        "talk": "https://www.youtube.com/watch?v=LINT01z05Bs",
+        "tags": {
+            "dl": true
+        }
+    },
+    {
+        "id": "yoo2024layerwise",
+        "type": "conference",
+        "title": "Layerwise Proximal Replay: A Proximal Point Method for Online Continual Learning",
+        "authors": ["Jinsoo Yoo", "Yunpeng Liu", "Frank Wood", "Geoff Pleiss"],
+        "booktitle": "International Conference on Machine Learning",
+        "year": 2024,
+        "arxiv": "https://arxiv.org/abs/2402.09542",
+        "github": "https://github.com/plai-group/lpr",
+        "talk": null,
+        "tags": {
+            "cv": true
+        }
+    },
+    {
+        "id": "wu2024large",
+        "type": "conference",
+        "title": "Large-Scale {G}aussian Processes via Alternating Projection",
+        "authors": ["Kaiwen Wu", "Jonathan Wenger", "Hadyn Jones", "Geoff Pleiss", "Jacob R. Gardner"],
+        "booktitle": "Artificial Intelligence and Statistics",
+        "year": 2024,
+        "arxiv": "https://arxiv.org/abs/2310.17137",
+        "github": "https://github.com/kayween/alternating-projection-for-gp",
+        "talk": null,
+        "tags": {
+            "gp_nla": true
+        }
+    },
+    {
+        "id": "bouchard2024mcmc",
+        "type": "submission",
+        "title": "MCMC-driven learning",
+        "authors": ["Alexandre Bouchard-C\\^ot\\`e", "Trevor Campbell", "Geoff Pleiss", "Nikola Surjanovic"],
+        "year": 2024,
+        "arxiv": "https://arxiv.org/abs/2402.09598",
+        "github": null,
+        "talk": null,
+        "tags": {
+            "pm": true
+        }
+    },
+    {
+        "id": "buchanan2023effects",
+        "type": "techreport",
+        "title": "The Effects of Ensembling on Long-Tailed Data",
+        "authors": ["E. Kelly Buchanan", "Geoff Pleiss", "Yixin Wang", "John P. Cunningham"],
+        "booktitle": "NeurIPS \"Heavy Tails in ML: Structure, Stability, Dynamics\" Workshop",
+        "year": 2023,
+        "arxiv": null,
+        "pdf": "https://openreview.net/pdf?id=l4GYs60kre",
+        "github": "https://github.com/ekellbuch/longtail_ensembles",
+        "talk": null,
+        "tags": {
+            "dl": true
+        }
+    },
+    {
+        "id": "potapczynski2023exploiting",
+        "type": "conference",
+        "title": "CoLA: Exploiting Compositional Structure for Automatic and Efficient Numerical Linear Algebra",
+        "authors": ["Andres Potapczynski*", "Marc Anton Finzi*", "Geoff Pleiss", "Andrew Gordon Wilson"],
+        "booktitle": "Neural Information Processing Systems",
+        "year": 2023,
+        "arxiv": "https://arxiv.org/abs/2309.03060",
+        "github": "https://github.com/wilson-labs/cola",
+        "talk": null,
+        "tags": {
+            "gp_nla": true
+        }
+    },
+    {
+        "id": "capone2023sharp",
+        "type": "conference",
+        "title": "Sharp Calibrated {G}aussian Processes",
+        "authors": ["Alexandre Capone", "Sandra Hirche", "Geoff Pleiss"],
+        "booktitle": "Neural Information Processing Systems",
+        "year": 2023,
+        "arxiv": "https://arxiv.org/abs/2302.11961",
+        "github": null,
+        "talk": null,
+        "tags": {
+            "uq": true
+        }
+    },
+    {
+        "id": "zhang2023trend",
+        "hide": true,
+        "type": "patent",
+        "title": "Trend Detection via Machine Learning Models",
+        "authors": ["Tianyi Zhang", "Sam Altschul", "Kilian Q. Weinberger", "Michael Griffiths", "Geoff Pleiss"],
+        "year": 2023,
+        "month": "September",
+        "publisher": "Google Patents",
+        "note": "US Patent #11,763,230",
+        "tags": {}
+    },
+    {
+        "id": "abe2022best",
+        "type": "techreport",
+        "title": "The Best Deep Ensembles Sacrifice Predictive Diversity",
+        "authors": ["Taiga Abe*", "E. Kelly Buchanan*", "Geoff Pleiss", "John P. Cunningham"],
+        "booktitle": "NeurIPS \"I Can't Believe It's Not Better!\" Workshop",
+        "award": "Oral Presentation",
+        "year": 2022,
+        "arxiv": null,
+        "pdf": "https://openreview.net/pdf?id=6sBiAIpkUiO",
+        "github": null,
+        "talk": null,
+        "tags": {
+            "dl": true
+        }
+    },
+    {
+        "id": "wenger2022posterior",
+        "type": "conference",
+        "title": "Posterior and Computational Uncertainty in {G}aussian Processes",
+        "authors": ["Jonathan Wenger", "Geoff Pleiss", "Marvin Pf\\\"ortner", "Philipp Hennig", "John P. Cunningham"],
+        "booktitle": "Neural Information Processing Systems",
+        "year": 2022,
+        "arxiv": "https://arxiv.org/abs/2205.15449",
+        "github": "https://github.com/JonathanWenger/itergp",
+        "talk": null,
+        "tags": {
+            "uq": true,
+            "gp_nla": true
+        }
+    },
+    {
+        "id": "abe2022deep",
+        "type": "conference",
+        "title": "Deep Ensembles Work, But Are They Necessary?",
+        "authors": ["Taiga Abe*", "E. Kelly Buchanan*", "Geoff Pleiss", "Richard Zemel", "John P. Cunningham"],
+        "booktitle": "Neural Information Processing Systems",
+        "year": 2022,
+        "arxiv": "https://arxiv.org/abs/2202.06985",
+        "github": "https://github.com/cellistigs/interp_ensembles",
+        "talk": "https://www.youtube.com/watch?v=703FzYv-j9o&ab_channel=VectorInstitute",
+        "tags": {
+            "uq": true,
+            "dl": true
+        }
+    },
+    {
+        "id": "wu2022variational",
+        "type": "conference",
+        "title": "Variational Nearest Neighbor {G}aussian Processes",
+        "authors": ["Luhuan Wu", "Geoff Pleiss", "John P. Cunningham"],
+        "booktitle": "International Conference on Machine Learning",
+        "year": 2022,
+        "arxiv": "https://arxiv.org/abs/2202.01694",
+        "github": "https://docs.gpytorch.ai/en/latest/examples/04_Variational_and_Approximate_GPs/VNNGP.html",
+        "talk": "https://slideslive.com/38983939/vnngp-variational-nearest-neighbor-{G}aussian-process?ref=search-presentations-geoff+pleiss",
+        "tags": {
+            "stm": true
+        }
+    },
+    {
+        "id": "wenger2022preconditioning",
+        "type": "conference",
+        "title": "Preconditioning for Scalable {G}aussian Process Hyperparameter Optimization",
+        "authors": ["Jonathan Wenger", "Geoff Pleiss", "Philipp Hennig", "John P. Cunningham", "Jacob R. Gardner"],
+        "booktitle": "International Conference on Machine Learning",
+        "year": 2022,
+        "award": "Oral Presentation",
+        "awardnote": "Top $2\\%$ of submissions",
+        "arxiv": "https://arxiv.org/abs/2107.00243",
+        "github": "https://github.com/cornellius-gp/gpytorch",
+        "talk": "https://slideslive.com/38983179/preconditioning-for-scalable-{G}aussian-process-hyperparameter-optimization?ref=search-presentations-geoff+pleiss",
+        "tags": {
+            "gp_nla": true
+        }
+    },
+    {
+        "id": "venderley2022harnessing",
+        "type": "journal",
+        "title": "Harnessing Interpretable and Unsupervised Machine Learning to Address Big Data From Modern X-Ray Diffraction",
+        "authors": ["Jordan Venderley", "Michael Matty", "Krishnanand Mallayya", "Matthew Krogstad", "Jacob Ruff", "Geoff Pleiss", "Varsha Kishore", "David Mandrus", "Daniel Phelan", "Lekhanath Poudel", "Andrew Gordon Wilson", "Kilian Q. Weinberger", "Puspa Upreti", "Michael R. Norman", "Stephan Rosenkranz", "Ray Osborn", "Eun-Ah Kim"],
+        "journal": "Proceedings of the National Academy of Sciences",
+        "year": 2022,
+        "volume": 119,
+        "number": 24,
+        "doi": "https://doi.org/10.1073/pnas.2109665119",
+        "arxiv": "https://arxiv.org/abs/2008.03275",
+        "github": null,
+        "talk": null,
+        "tags": {
+            "pm": true
+        }
+    },
+    {
+        "id": "pleiss2021limitations",
+        "type": "conference",
+        "title": "The Limitations of Large Width in Neural Networks: A Deep {G}aussian Process Perspective",
+        "authors": ["Geoff Pleiss", "John P. Cunningham"],
+        "booktitle": "Neural Information Processing Systems",
+        "year": 2021,
+        "arxiv": "https://arxiv.org/abs/2106.06529",
+        "github": "https://github.com/gpleiss/limits_of_large_width",
+        "talk": "https://slideslive.com/38967621/the-limitations-of-large-width-in-neural-networks-a-deep-{G}aussian-process-perspective?ref=search-presentations-geoff+pleiss",
+        "tags": {
+            "dl": true,
+            "pm": true
+        }
+    },
+    {
+        "id": "caterini2021rectangular",
+        "type": "conference",
+        "title": "Rectangular Flows for Manifold Learning",
+        "authors": ["Anthony L. Caterini*", "Gabriel Loaiza-Ganem*", "Geoff Pleiss", "John P. Cunningham"],
+        "booktitle": "Neural Information Processing Systems",
+        "year": 2021,
+        "arxiv": "https://arxiv.org/abs/2106.06529",
+        "github": "https://github.com/layer6ai-labs/rectangular-flows",
+        "talk": "https://slideslive.com/38966976/rectangular-flows-for-manifold-learning-proceedings-of-neural-information-processing-systems?ref=search-presentations-geoff+pleiss",
+        "tags": {
+            "pm": true
+        }
+    },
+    {
+        "id": "jankowiak2021scalable",
+        "type": "techreport",
+        "title": "Scalable Cross Validation Losses for {G}aussian Process Models",
+        "authors": ["Martin Jankowiak", "Geoff Pleiss"],
+        "year": 2021,
+        "arxiv": "https://arxiv.org/abs/2105.11535",
+        "github": null,
+        "talk": null,
+        "tags": {
+            "stm": true
+        }
+    },
+    {
+        "id": "potapczynski2021bias",
+        "type": "conference",
+        "title": "Bias-Free Scalable {G}aussian Processes via Randomized Truncations",
+        "authors": ["Andres Potapczynski*", "Luhuan Wu*", "Dan Biderman*", "Geoff Pleiss", "John P. Cunningham"],
+        "booktitle": "International Conference on Machine Learning",
+        "year": 2021,
+        "arxiv": "https://arxiv.org/abs/2102.06695",
+        "github": "https://github.com/cunningham-lab/RTGPS",
+        "talk": "https://slideslive.com/38959632/biasfree-scalable-{G}aussian-processes-via-randomized-truncations?ref=search-presentations-geoff+pleiss",
+        "tags": {
+            "gp_nla": true
+        }
+    },
+    {
+        "id": "wu2021hierarchical",
+        "type": "conference",
+        "title": "Hierarchical Inducing Point {G}aussian Process for Inter-domain Observations",
+        "authors": ["Luhuan Wu*", "Andrew Miller*", "Lauren Anderson", "Geoff Pleiss", "David Blei", "John P. Cunningham"],
+        "booktitle": "Artificial Intelligence and Statistics",
+        "year": 2021,
+        "arxiv": "https://arxiv.org/abs/2103.00393",
+        "github": "https://github.com/cunningham-lab/hipgp",
+        "talk": null,
+        "tags": {
+            "stm": true
+        }
+    },
+    {
+        "id": "gordon2020uses",
+        "type": "techreport",
+        "title": "Uses and Abuses of the Cross-Entropy Loss: Case Studies in Modern Deep Learning",
+        "authors": ["Elliott Gordon-Rodriguez", "Gabriel Loaiza-Ganem", "Geoff Pleiss", "John P. Cunningham"],
+        "booktitle": "NeurIPS \"I Can't Believe It's Not Better!\" Workshop",
+        "year": 2020,
+        "award": "Oral Presentation",
+        "arxiv": "https://arxiv.org/abs/2011.05231",
+        "github": "https://github.com/cunningham-lab/cb_and_cc",
+        "talk": null,
+        "tags": {
+            "pm": true
+        }
+    },
+    {
+        "id": "pleiss2020fast",
+        "type": "conference",
+        "title": "Fast Matrix Square Roots with Applications to {G}aussian Processes and {B}ayesian Optimization",
+        "authors": ["Geoff Pleiss", "Martin Jankowiak", "David Eriksson", "Anil Damle", "Jacob R. Gardner"],
+        "booktitle": "Neural Information Processing Systems",
+        "year": 2020,
+        "arxiv": "https://arxiv.org/abs/2006.11267",
+        "github": "https://github.com/cornellius-gp/gpytorch/blob/main/examples/02_Scalable_Exact_GPs/Exact_GP_Posterior_Sampling_with_CIQ.ipynb",
+        "talk": "https://slideslive.com/38936908/fast-matrix-square-roots-with-applications-to-{G}aussian-processes-and-{B}ayesian-optimization?ref=speaker-27667-latest",
+        "tags": {
+            "bo": true,
+            "gp_nla": true
+        }
+    },
+    {
+        "id": "pleiss2020identifying",
+        "type": "conference",
+        "title": "Identifying Mislabeled Data using the Area Under the Margin Ranking",
+        "authors": ["Geoff Pleiss", "Tianyi Zhang", "Ethan Elenberg", "Kilian Q. Weinberger"],
+        "booktitle": "Neural Information Processing Systems",
+        "year": 2020,
+        "arxiv": "https://arxiv.org/abs/2001.10528",
+        "github": "https://github.com/asappresearch/aum",
+        "talk": "https://slideslive.com/38936900/identifying-mislabeled-data-using-the-area-under-the-margin-ranking?ref=speaker-27667-latest",
+        "tags": {
+            "dl": true
+        }
+    },
+    {
+        "id": "pleiss2020scalable",
+        "hide": true,
+        "type": "phdthesis",
+        "title": "A Scalable and Flexible Framework for {G}aussian Processes via Matrix-Vector Multiplication",
+        "authors": ["Geoff Pleiss"],
+        "year": 2020,
+        "publisher": "Cornell University",
+        "tags": {}
+    },
+    {
+        "id": "jankowiak2020deep",
+        "type": "conference",
+        "title": "Deep Sigma Point Processes",
+        "authors": ["Martin Jankowiak", "Geoff Pleiss", "Jacob R. Gardner"],
+        "booktitle": "Uncertainty in Artificial Intelligence",
+        "year": 2020,
+        "arxiv": "https://arxiv.org/abs/2002.09112",
+        "github": "https://github.com/cornellius-gp/gpytorch/blob/master/examples/05_Deep_{G}aussian_Processes/Deep_Sigma_Point_Processes.ipynb",
+        "talk": null,
+        "tags": {
+            "pm": true
+        }
+    },
+    {
+        "id": "janowiak2020parametric",
+        "type": "conference",
+        "title": "Parametric {G}aussian Process Regressors",
+        "authors": ["Martin Jankowiak", "Geoff Pleiss", "Jacob R. Gardner"],
+        "booktitle": "International Conference on Machine Learning",
+        "year": 2020,
+        "arxiv": "https://arxiv.org/abs/1910.07123",
+        "github": "https://github.com/cornellius-gp/gpytorch/blob/master/examples/04_Variational_and_Approximate_GPs/Approximate_GP_Objective_Functions.ipynb",
+        "talk": "https://slideslive.com/38928016/parametric-{G}aussian-process-regressors?ref=search-presentations-geoff+pleiss",
+        "tags": {
+            "pm": true
+        }
+    },
+    {
+        "id": "you2020pseudo",
+        "type": "conference",
+        "title": "Pseudo-lidar++: Accurate depth for 3d object detection in autonomous driving",
+        "authors": ["Yurong You*", "Yan Wang*", "Wei-Lun Chao*", "Divyansh Garg", "Geoff Pleiss", "Bharath Hariharan", "Mark Campbell", "Kilian Q. Weinberger"],
+        "booktitle": "International Conference on Learning Representations",
+        "year": 2020,
+        "arxiv": "https://arxiv.org/abs/1906.06310",
+        "github": "https://github.com/mileyan/Pseudo_Lidar_V2",
+        "talk": null,
+        "tags": {
+            "cv": true
+        }
+    },
+    {
+        "id": "wang2019exact",
+        "type": "conference",
+        "title": "Exact {G}aussian processes on a million data points",
+        "authors": ["Ke Wang*", "Geoff Pleiss*", "Jacob R. Gardner", "Stephen Tyree", "Kilian Q. Weinberger", "Andrew Gordon Wilson"],
+        "booktitle": "Neural Information Processing Systems",
+        "year": 2019,
+        "arxiv": "https://arxiv.org/abs/1903.08114",
+        "github": "https://github.com/cornellius-gp/gpytorch/blob/master/examples/01_Simple_GP_Regression/Simple_MultiGPU_GP_Regression.ipynb",
+        "talk": null,
+        "tags": {
+            "gp_nla": true
+        }
+    },
+    {
+        "id": "huang2019convolutional",
+        "type": "journal",
+        "title": "Convolutional Networks with Dense Connectivity",
+        "authors": ["Gao Huang*", "Zhuang Liu*", "Geoff Pleiss", "Laurens van der Maaten", "Kilian Q. Weinberger"],
+        "journal": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+        "year": 2019,
+        "doi": "https://doi.org/10.1109/TPAMI.2019.2918284",
+        "arxiv": "https://arxiv.org/abs/2001.02394",
+        "github": "https://github.com/gpleiss/efficient_densenet_pytorch",
+        "talk": null,
+        "tags": {
+            "dl": true
+        }
+    },
+    {
+        "id": "knighton2019potential",
+        "type": "journal",
+        "title": "Potential Predictability of Regional Precipitation and Discharge Extremes Using Synoptic-Scale Climate Information via Machine Learning",
+        "authors": ["James Knighton", "Geoff Pleiss", "Elizabeth Carter", "Steven Lyon", "M. Todd Walter", "Scott Steinschneider"],
+        "journal": "Journal of Hydrometeorology",
+        "volume": 20,
+        "number": 5,
+        "pages": "883--900",
+        "year": 2019,
+        "doi": "https://doi.org/10.1175/JHM-D-18-0196.1",
+        "arxiv": null,
+        "github": null,
+        "talk": null,
+        "tags": {
+            "stm": true
+        }
+    },
+    {
+        "id": "gardner2018gpytorch",
+        "type": "conference",
+        "title": "{GPyTorch}: Blackbox Matrix-Matrix {G}aussian Process Inference with GPU Acceleration.",
+        "authors": ["Jacob R. Gardner*", "Geoff Pleiss*", "David Bindel", "Kilian Q. Weinberger", "Andrew Gordon Wilson"],
+        "booktitle": "Neural Information Processing Systems",
+        "year": 2018,
+        "award": "Spotlight presentation",
+        "awardnote": "Top $4\\%$ of submissions",
+        "arxiv": "https://arxiv.org/abs/1809.11165",
+        "github": "https://github.com/cornellius-gp/gpytorch",
+        "talk": "https://www.videoken.com/embed/QcFGBPNh24E?tocitem=101",
+        "tags": {
+            "gp_nla": true
+        }
+    },
+    {
+        "id": "pleiss2018constant",
+        "type": "conference",
+        "title": "Constant Time Predictive Distributions for {G}aussian Processes",
+        "authors": ["Geoff Pleiss", "Jacob R. Gardner", "Andrew Gordon Wilson", "Kilian Q. Weinberger"],
+        "booktitle": "International Conference on Machine Learning",
+        "year": 2018,
+        "arxiv": "https://arxiv.org/abs/1803.06058",
+        "github": "https://github.com/cornellius-gp/gpytorch",
+        "talk": null,
+        "tags": {
+            "gp_nla": true
+        }
+    },
+    {
+        "id": "gardner2018",
+        "type": "conference",
+        "title": "Product Kernel Interpolation for Scalable {G}aussian Processes",
+        "authors": ["Jacob R. Gardner", "Geoff Pleiss", "Ruihan Wu", "Andrew Gordon Wilson", "Kilian Q. Weinberger"],
+        "booktitle": "Artificial Intelligence and Statistics",
+        "year": 2018,
+        "arxiv": "https://arxiv.org/abs/1802.08903",
+        "github": "https://github.com/cornellius-gp/gpytorch/blob/main/examples/02_Scalable_Exact_GPs/Scalable_Kernel_Interpolation_for_Products_CUDA.ipynb",
+        "talk": null,
+        "tags": {
+            "gp_nla": true
+        }
+    },
+    {
+        "id": "pleiss2017fairness",
+        "type": "conference",
+        "title": "On Fairness and Calibration",
+        "authors": ["Geoff Pleiss*", "Manish Raghavan*", "Felix Wu", "Jon Kleinberg", "Kilian Q. Weinberger"],
+        "booktitle": "Neural Information Processing Systems",
+        "year": 2017,
+        "arxiv": "https://arxiv.org/abs/1709.02012",
+        "github": "https://github.com/gpleiss/equalized_odds_and_calibration",
+        "talk": null,
+        "tags": {
+            "uq": true
+        }
+    },
+    {
+        "id": "guo2017calibration",
+        "type": "conference",
+        "title": "On Calibration of Modern Neural Networks",
+        "authors": ["Chuan Guo*", "Geoff Pleiss*", "Yu Sun*", "Kilian Q. Weinberger"],
+        "booktitle": "International Conference on Machine Learning",
+        "year": 2017,
+        "arxiv": "https://arxiv.org/abs/1706.04599",
+        "github": "https://github.com/gpleiss/temperature_scaling",
+        "talk": "https://vimeo.com/238242536",
+        "tags": {
+            "uq": true,
+            "dl": true
+        }
+    },
+    {
+        "id": "pleiss2017memory",
+        "type": "techreport",
+        "title": "Memory-Efficient Implementation of {D}ense{N}ets",
+        "authors": ["Geoff Pleiss*", "Danlu Chen*", "Gao Huang", "Tongcheng Li", "Laurens van der Maaten", "Kilian Q. Weinberger"],
+        "year": 2017,
+        "arxiv": "https://arxiv.org/abs/1707.06990",
+        "github": "https://github.com/gpleiss/efficient_densenet_pytorch",
+        "talk": null,
+        "tags": {
+            "dl": true
+        }
+    },
+    {
+        "id": "upchurch2016deep",
+        "type": "conference",
+        "title": "Deep feature interpolation for image content changes",
+        "authors": ["Paul Upchurch*", "Jacob Gardner*", "Geoff Pleiss", "Kavita Bala", "Robert Pless", "Noah Snavely", "Kilian Q. Weinberger"],
+        "booktitle": "Computer Vision and Pattern Recognition",
+        "year": 2017,
+        "arxiv": "https://arxiv.org/abs/1611.05507",
+        "github": "https://github.com/paulu/deepfeatinterp",
+        "talk": null,
+        "tags": {
+            "cv": true
+        }
+    },
+    {
+        "id": "huang2017snapshot",
+        "type": "conference",
+        "title": "Snapshot Ensembles: Train 1, Get M for Free",
+        "authors": ["Gao Huang*", "Yixuan Li*", "Geoff Pleiss", "Zhuang Liu", "John E. Hopcroft", "Kilian Q. Weinberger"],
+        "booktitle": "International Conference on Learning Representations",
+        "year": 2017,
+        "arxiv": "https://arxiv.org/abs/1704.00109",
+        "github": "https://github.com/gaohuang/SnapshotEnsemble",
+        "talk": null,
+        "tags": {
+            "dl": true
+        }
+    }
+  ]

@@ -13,21 +13,29 @@ class Link extends React.Component {
 
 class H1 extends React.Component {
   render() {
-    let {children, ...props} = this.props;
-    return <h1 className="mb-0 text-light font-weight-bold" {...props}>{children}</h1>
+    let {children, className, mb, ...props} = this.props;
+    className = className || "";
+    className = "text-uppercase h2 " + className;
+    className += ` mb-${mb || 5}`;
+    return <h1 className={className} {...props}>{children}</h1>
   }
 }
 
 class H2 extends React.Component {
   render() {
-    let {children, className, noMb, ...props} = this.props;
+    let {children, className, mb, small, center, ...props} = this.props;
     className = className || "";
-    let fontName = className.indexOf("text-") === -1 ? "text-dark" : "";
-    className = fontName + " text-uppercase " + className;
-    if (!noMb) {
-      className += " mb-5";
+    className += ` mb-${mb || 5}`;
+    if (small) {
+      className += " h5 text-uppercase mb-5 text-center";
+      if (!center) {
+        className += " text-md-left";
+      }
+      return <h2 className={className} {...props}>{children}</h2>
+    } else {
+      className = "text-uppercase " + className;
+      return <h2 className={className} {...props}>{children}</h2>
     }
-    return <h2 className={className} {...props}>{children}</h2>
   }
 }
 
@@ -46,11 +54,16 @@ class SmallH2 extends React.Component {
 
 class H3 extends React.Component {
   render() {
-    let {children, className, noMb, ...props} = this.props;
+    let {children, className, center, small, ...props} = this.props;
     className = className || "";
-    if (!noMb) {
+    if (small) {
+      className += " h6 text-uppercase mb-3 mt-4 text-center";
+    } else {
       className += " h4 mt-5 mb-4";
     }
+    if (!center) {
+			className += " text-md-left";
+		}
     return <h3 className={className} {...props}><u>{children}</u></h3>
   }
 }
@@ -119,6 +132,19 @@ class InfoBlock extends React.Component {
   }
 }
 
+class Header extends React.Component {
+  render() {
+    let {children, ...props} = this.props;
+    return (
+      <div className="bg-gradient-primary pt-10 pb-5 shadow-bottom" {...props}>
+        <div className="container text-center text-light">
+          {children}
+        </div>
+      </div>
+    );
+  }
+}
+
 class Section extends React.Component {
   render() {
     let {first, firstMd, children, ...props} = this.props;
@@ -162,6 +188,7 @@ export {
 	H1,
 	H2,
   H3,
+  Header,
   SmallH2,
   NavH3,
   SmallH3,

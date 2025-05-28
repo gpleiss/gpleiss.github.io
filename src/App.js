@@ -30,6 +30,8 @@ import Stat548 from './pages/stat548.js';
 // Assets
 import './sass/App.css';
 import gscholarWhite from './images/gscholar-white.png';
+import cv from './pdfs/geoffpleiss_cv.pdf';
+
 
 class App extends React.Component {
   constructor(props) {
@@ -199,7 +201,7 @@ class App extends React.Component {
                   </DropdownMenu>
                 </UncontrolledDropdown>
                 <NavItem>
-                  <NavLink href="/geoffpleiss_cv.pdf" target="_blank">
+                  <NavLink href={cv} target="_blank">
                     CV
                   </NavLink>
                 </NavItem>

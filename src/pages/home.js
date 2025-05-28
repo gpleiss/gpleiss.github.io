@@ -1,16 +1,25 @@
 import React from 'react';
-import { Link, H2 } from '../components/utils.js';
+import { Link, H1, H2 } from '../components/utils.js';
 import CvList from '../components/cv_list.js';
 import PubItem from '../components/pub_item.js';
 import SoftwareItem from '../components/software_item.js';
+import Student from '../components/student.js';
 import TalkItem from '../components/talk_item.js';
 import bio from '../components/bio.js';
 import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 import { faEnvelopeSquare } from '@fortawesome/fontawesome-free-solid';
 import { Modal, ModalHeader, ModalBody } from 'reactstrap';
 
+// Data
+import { students } from '../data/students';
+import { publicationsDict } from '../data/publications';
+
 // Assets
 import meImg from '../images/me.jpg';
+import cv from '../pdfs/geoffpleiss_cv.pdf';
+import researchStatement from '../pdfs/geoffpleiss_research_statement.pdf';
+import teachingStatement from '../pdfs/geoffpleiss_teaching_statement.pdf';
+import deiStatement from '../pdfs/geoffpleiss_dei_statement.pdf';
 
 
 class Home extends React.Component {
@@ -59,12 +68,24 @@ class Home extends React.Component {
       </span>
     );
 
+    const homePagePublicationIds = [
+      "zhou2025asymmetric",
+      "dern2025theoretical",
+      "maus2024approximation",
+      // "wenger2024computational",
+      "abe2022deep",
+      "pleiss2020fast",
+      "gardner2018gpytorch",
+      "pleiss2017fairness",
+      "guo2017calibration",
+    ]
+
     return (
       <div>
         <div className="container py-8 pt-md-10">
           <div className="row">
             <div className="col-12 col-md-6 col-xl-8">
-              <H2 noMb className="text-center text-md-left">Geoff Pleiss</H2>
+              <H1 mb="0" className="text-center text-md-left">Geoff Pleiss</H1>
 
               <div className="col-12 d-md-none text-center my-3">{ picture }</div>
 
@@ -116,19 +137,19 @@ class Home extends React.Component {
             <div className="col-md-12">
               <ul className="list-inline mt-2">
                 <li className="list-inline-item mt-2">
-                  <Link className="btn btn-light" role="button" href="/geoffpleiss_cv.pdf">CV</Link>
+                  <Link className="btn btn-light" role="button" href={cv}>CV</Link>
                 </li>
                 <li className="list-inline-item mt-2">
                   <button className="btn btn-light" onClick={this.toggleShortBioModal}>Short Bio</button>
                 </li>
                 <li className="list-inline-item mt-2">
-                  <Link className="btn btn-light" role="button" href="/geoffpleiss_research_statement.pdf">Research Statement</Link>
+                  <Link className="btn btn-light" role="button" href={researchStatement}>Research Statement</Link>
                 </li>
                 <li className="list-inline-item mt-2">
-                  <Link className="btn btn-light" role="button" href="/geoffpleiss_teaching_statement.pdf">Teaching Statement</Link>
+                  <Link className="btn btn-light" role="button" href={teachingStatement}>Teaching Statement</Link>
                 </li>
                 <li className="list-inline-item mt-2">
-                  <Link className="btn btn-light" role="button" href="/geoffpleiss_dei_statement.pdf">DEI Statement</Link>
+                  <Link className="btn btn-light" role="button" href={deiStatement}>DEI Statement</Link>
                 </li>
               </ul>
               <Modal size="lg" isOpen={this.state.shortBioModalOpen} toggle={this.toggleShortBioModal}>
@@ -139,203 +160,59 @@ class Home extends React.Component {
               </Modal>
             </div>
           </div>
-          <div className="clearfix"></div>
-          <hr className="mt-4 mb-5" />
-          <div className="row">
-            <div className="col-sm-12">
-              <p>
-                <strong>Interested in joining my lab?</strong> I
-                am looking for prospective M.S. students, Ph.D students, and postdocs with research interests similar to my own. While I am open to strong students with any ML/stats interests, I am particularly hoping to hire lab members interested
-                in theoretical or applied work on Bayesian optimization or neural network uncertainty quantification.
-              </p>
-              <p>
-                See the <Link inside href="/prospective_member.html">page on joining my lab</Link> for information on how to apply/contact me.
-              </p>
-            </div>
-          </div>
         </div>
 
         <section className="pt-10 pb-8 bg-light">
           <div className="container">
-            <div className="row pt-4 pb-8">  
-              <div className="col-md-12">
-                <H2 className="mb-1" noMb>Recent and Selected Publications</H2>
-                <p className="mb-5">
-                  <small className="font-italic">For a full list of publications, please see my <Link href="/geoffpleiss_cv.pdf">CV</Link> or my <Link href="https://scholar.google.com/citations?user=XO8T-Y4AAAAJ&hl=en&oi=ao">Google Scholar</Link> page.</small>
+            <H2 className="mb-1" mb="0">Current Students and Interns</H2>
+            <ul className="mt-5 list-unstyled row">
+              {
+                students.filter((student) => !!student.current).map((student) => <Student {...student} />)
+              }
+            </ul>
+            <div className="clearfix"></div>
+            <hr className="mt-4 mb-5" />
+            <div className="row">
+              <div className="col-sm-12">
+                <p>
+                  <strong>Interested in joining my lab?</strong>
+                {/*
+                  I am looking for prospective M.S. students, Ph.D students, and postdocs with research interests similar to my own.
+                  While I am open to strong students with any ML/stats interests,
+                  I am particularly hoping to hire lab members interested in theoretical or applied work on Bayesian optimization or neural network uncertainty quantification.
                 </p>
-                
+                <p>
+                */}
+                  {' '}
+                  See the <Link inside href="/prospective_member.html">page on joining my lab</Link> for information on how to apply/contact me.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="pt-10 pb-8">
+          <div className="container">
+            <div className="row pt-4 pb-8">
+              <div className="col-md-12">
+                <H2 className="mb-1" mb="0">Recent and Selected Publications</H2>
+                <p className="mb-5">
+                  <small className="font-italic">For a full list of publications, please see my <Link href={cv}>CV</Link> or my <Link href="https://scholar.google.com/citations?user=XO8T-Y4AAAAJ&hl=en&oi=ao">Google Scholar</Link> page.</small>
+                </p>
+
                 <CvList className="list-unstyled">
-                  <PubItem title="Theoretical Limitations of Ensembles in the Age of Overparameterization"
-                    authors={[
-                      "Niclas Dern",
-                      "John P. Cunningham",
-                      "Geoff Pleiss",
-                    ]}
-                    arxiv="https://arxiv.org/abs/2410.16201"
-                    pdf="https://arxiv.org/pdf/2410.16201.pdf"
-                    github="https://github.com/nic-dern/theoretical-limitations-overparameterized-ensembles"
-                    underSubmission
-                    isNew
-                    year="2024"
-                  />
-                  <PubItem title="Approximation-Aware Bayesian Optimization"
-                    authors={[
-                      "Natalie Maus",
-                      "Kyurae Kim",
-                      "Geoff Pleiss",
-                      "David Eriksson",
-                      "John P. Cunningham",
-                      "Jacob R. Gardner",
-                    ]}
-                    isNew
-                    arxiv="https://arxiv.org/abs/2406.04308"
-                    pdf="https://arxiv.org/pdf/2406.04308.pdf"
-                    github="https://github.com/nataliemaus/improvement-vi"
-                    conference="NeurIPS"
-                    year="2024"
-                  />
-                  <PubItem title="Computation-Aware Gaussian Processes: Model Selection And Linear-Time Inference"
-                    authors={[
-                      "Jonathan Wenger",
-                      "Kaiwen Wu",
-                      "Philipp Hennig",
-                      "Jacob R. Gardner",
-                      "Geoff Pleiss",
-                      "John P. Cunningham",
-                    ]}
-                    isNew
-                    arxiv="https://arxiv.org/abs/2411.01036"
-                    pdf="https://arxiv.org/pdf/2411.01036.pdf"
-                    github="https://github.com/cornellius-gp/gpytorch/blob/e0e8cd5365e7eea72befaa02d644f588984fd337/gpytorch/models/computation_aware_gp.py"
-                    conference="NeurIPS"
-                    year="2024"
-                  />
-                  <PubItem title="A Sober Look at LLMs for Material Discovery: Are They Actually Good for Bayesian Optimization Over Molecules?"
-                    authors={[
-                      "Agustinus Kristiadi",
-                      "Felix Strieth-Kalthoff",
-                      "Marta Skreta",
-                      "Pascal Poupart",
-                      "Al\u00E1n Aspuru-Guzik",
-                      "Geoff Pleiss",
-                    ]}
-                    arxiv="https://arxiv.org/abs/2402.05015"
-                    pdf="https://arxiv.org/pdf/2402.05015.pdf"
-                    github="https://github.com/wiseodd/lapeft-bayesopt"
-                    conference="ICML"
-                    year="2024"
-                  />
-                  <PubItem title="Pathologies of Predictive Diversity in Deep Ensembles"
-                    authors={[
-                      "Taiga Abe",
-                      "E. Kelly Buchanan",
-                      "Geoff Pleiss",
-                      "John P. Cunningham",
-                    ]}
-                    award="featured paper"
-                    arxiv="https://arxiv.org/abs/2302.00704"
-                    pdf="https://arxiv.org/pdf/2302.00704.pdf"
-                    talk="https://www.youtube.com/watch?v=LINT01z05Bs"
-                    conference="TMLR"
-                    year="2024"
-                  />
-                  <PubItem title="Posterior and Computational Uncertainty in Gaussian Processes"
-                    authors={[
-                      "Jonathan Wenger",
-                      "Geoff Pleiss",
-                      "Marvin Pf\u00f6rtner",
-                      "Philipp Hennig",
-                      "John P. Cunningham",
-                    ]}
-                    arxiv="https://arxiv.org/abs/2205.15449"
-                    pdf="https://arxiv.org/pdf/2205.15449.pdf"
-                    github="https://github.com/JonathanWenger/itergp"
-                    conference="NeurIPS"
-                    year="2022"
-                  />
-                  <PubItem title="Deep Ensembles Work, But Are They Necessary?"
-                    authors={[
-                      "Taiga Abe*",
-                      "E. Kelly Buchanan*",
-                      "Geoff Pleiss",
-                      "Richard Zemel",
-                      "John P. Cunningham",
-                    ]}
-                    arxiv="https://arxiv.org/abs/2202.06985"
-                    pdf="https://arxiv.org/pdf/2202.06985.pdf"
-                    github="https://github.com/cellistigs/interp_ensembles"
-                    talk="https://www.youtube.com/watch?v=703FzYv-j9o&ab_channel=VectorInstitute"
-                    conference="NeurIPS"
-                    year="2022"
-                  />
-                  <PubItem title="The Limitations of Large Width in Neural Networks: A Deep Gaussian Process Perspective"
-                    authors={[
-                      "Geoff Pleiss",
-                      "John P. Cunningham"
-                    ]}
-                    arxiv="https://arxiv.org/abs/2106.06529"
-                    pdf="https://arxiv.org/pdf/2106.06529.pdf"
-                    conference="NeurIPS"
-                    github="https://github.com/gpleiss/limits_of_large_width"
-                    talk="https://slideslive.com/38967621/the-limitations-of-large-width-in-neural-networks-a-deep-gaussian-process-perspective?ref=search-presentations-geoff+pleiss"
-                    year="2021"
-                  />
-                  <PubItem title="GPyTorch: Blackbox Matrix-Matrix Gaussian Process Inference with GPU Acceleration"
-                    authors={[
-                      "Jacob R. Gardner*",
-                      "Geoff Pleiss*",
-                      "David Bindel",
-                      "Kilian Q. Weinberger",
-                      "Andrew Gordon Wilson",
-                    ]}
-                    arxiv="https://arxiv.org/abs/1809.11165"
-                    pdf="https://arxiv.org/pdf/1809.11165.pdf"
-                    award="spotlight"
-                    conference="NeurIPS"
-                    year="2018"
-                    talk="https://www.videoken.com/embed/QcFGBPNh24E?tocitem=101"
-                    github="https://github.com/cornellius-gp/gpytorch"
-                  />	
-                  <PubItem title="On Fairness and Calibration"
-                    authors={[
-                      "Geoff Pleiss*",
-                      "Manish Raghavan*",
-                      "Felix Wu",
-                      "Jon Kleinberg",
-                      "Kilian Q. Weinberger",
-                    ]}
-                    conference="NeurIPS"
-                    year="2017"
-                    arxiv="https://arxiv.org/abs/1709.02012"
-                    pdf="https://arxiv.org/pdf/1709.02012.pdf"
-                    github="https://github.com/gpleiss/equalized_odds_and_calibration"
-                  />	
-                  <PubItem title="On Calibration of Modern Neural Networks"
-                    authors={[
-                      "Chuan Gao*",
-                      "Geoff Pleiss*",
-                      "Yu Sun*",
-                      "Kilian Q. Weinberger",
-                    ]}
-                    conference="ICML"
-                    year="2017"
-                    website="/blog/nn_calibration.html"
-                    arxiv="https://arxiv.org/abs/1706.04599"
-                    pdf="https://arxiv.org/pdf/1706.04599.pdf"
-                    github="https://github.com/gpleiss/temperature_scaling"
-                    talk="https://vimeo.com/238242536"
-                  />	
+                  { homePagePublicationIds.map((id) => <PubItem {...publicationsDict[id] } />) }
                 </CvList>
               </div>
             </div>
           </div>
         </section>
 
-        <section className="pt-8 pb-5 bg-medium text-light">
+        <section className="pt-8 pb-5 bg-light">
           <div className="container">
             <div className="row">
               <div className="col-md-12">
-                <H2 className="mb-1 text-light" noMb>Recent and Selected Talks</H2>
+                <H2 className="mb-1" mb="0">Recent and Selected Talks</H2>
                 <div className="mb-5"></div>
                 <CvList>
                   <TalkItem
@@ -362,11 +239,11 @@ class Home extends React.Component {
           </div>
         </section>
 
-        <section className="pt-8 pb-5 bg-dark text-light">
+        <section className="pt-8 pb-5">
           <div className="container">
-            <div className="row">  
+            <div className="row">
               <div className="col-md-12">
-                <H2 className="mb-1 text-light" noMb>Selected Open Source</H2>
+                <H2 className="mb-1" mb="0">Selected Open Source</H2>
                 <p className="mb-5">
                   <small className="font-italic">For a full list of respositories I actively contribute to, please see my <Link href="https://github.com/gpleiss">Github</Link> page.</small>
                 </p>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, H1, SmallH2, SmallH3, Img, Section } from '../components/utils.js';
+import { Link, Header, H1, SmallH2, SmallH3, Img, Section } from '../components/utils.js';
 import { Code } from '../components/code.js';
 import { Math } from '../components/math.js';
 import { Tooltip, Modal, ModalHeader, ModalBody } from 'reactstrap';
@@ -85,11 +85,9 @@ class AUM extends React.Component {
   render() {
     return (
       <div>
-        <div className="bg-gradient-primary pt-10 pb-5 shadow-bottom">
-          <div className="container text-center">
-            <H1>The Area Under the Margin (AUM) Statistic</H1>
-          </div>
-        </div>
+        <Header>
+          <H1>The Area Under the Margin (AUM) Statistic</H1>
+        </Header>
 
         <div className="bg-gradient-light pt-5 pb-4 shadow-bottom">
           <div className="container text-center">
@@ -198,19 +196,19 @@ class AUM extends React.Component {
 								</p>
 
 								<Tooltip placement="bottom" isOpen={this.state.marginTooltipOpen} target="margin-paper" toggle={this.toggleMarginTooltip}>
-									E.g. 
+									E.g.
 									Jiang, Y., Krishnan, D., Mobahi, H. and Bengio, S., 2018. <strong>Predicting the generalization gap in deep networks with margin distributions.</strong> In <em>ICLR</em>, 2019.
 								</Tooltip>
 
 								<div className="text-center bg-light border-rounded p-1 mb-3 mt-3">
-                  <Math> 
+                  <Math>
                     { "M^{(t)} (\\mathbf x, y) = z_y^{(t)}(\\mathbf x) - \\max_{i \\ne y} z_i^{(t)}(\\mathbf x)" }
                   </Math>
 									<small>
 										<Math inline>{"(z_i^{(t)}(\\mathbf x)"}</Math> is the model's logit&mdash;pre-softmax output&mdash;corresponding to class <Math inline>i</Math>.)
 									</small>
                 </div>
-              
+
                 <p>
                   Intuitively, the margin for any given sample is affected by two forces.
 								</p>
@@ -230,7 +228,7 @@ class AUM extends React.Component {
                 </p>
 
 								<div className="text-center bg-light border-rounded p-1 mb-3 mt-3">
-                  <Math> 
+                  <Math>
                     { "\\text{AUM} (\\mathbf x, y) = \\frac 1 T \\sum_{t=1}^T M^{(t)} (\\mathbf x, y)" }
                   </Math>
 								</div>
@@ -405,7 +403,7 @@ for batch in loader:
                 <SmallH2>FAQ</SmallH2>
                 <p className="mb-1">
                   <strong>How do i determine which samples are mislabeled from the AUM statistic?</strong>
-                </p> 
+                </p>
                 <p className="ml-4">
 									AUM provides a ranking of all training points (lower = more likely to be mislabeled).
 									To learn an AUM value that separates clean and mislabeled data, we provide a method of <strong>threshold samples</strong> (described in Section 3 of <Link href="https://arxiv.org/abs/2001.10528">the paper</Link>).
@@ -417,7 +415,7 @@ for batch in loader:
                 <SmallH2>References</SmallH2>
                 <blockquote className="text-center mt-2 mb-3">
                   Pleiss, G., Zhang, T., Elenberg, E. R., & Weinberger, K. Q. <strong>Identifying Mislabeled Data using the Area Under the Margin Ranking.</strong> In <em>Neural Information Processing Systems</em> (2020).
-                </blockquote>	
+                </blockquote>
                 <ul>
                   <li><Link href="https://arxiv.org/abs/2001.10528">Paper on ArXiV</Link></li>
                   <li><button className="btn btn-link p-0" type="button" onClick={this.toggleBibtexModal}>BibTeX</button></li>
