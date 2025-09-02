@@ -122,36 +122,7 @@ class Stat548 extends React.Component {
                   Part 1 (the extended review) should take 2-3 weeks, and Part 2 (the project) should take 3-4 weeks.
                 </p>
 
-                <SmallH3>Part 1: The Extended Review</SmallH3>
-                <p>
-                  The extended review should be divided into two sections:
-                </p>
                 <ol>
-                  { /*
-                  <li className="mb-3">
-                    <strong>Publication-style review (roughly 2 pages)</strong><br />
-                    <p>
-                      Write a review of the paper as if you were on the program committee for a conference/journal.
-                      This exercise will help you think critically about the paper,
-                      and it will prepare you for future reviewing tasks.
-                      Your review should include the following:
-                    </p>
-                    <ul>
-                      <li>A 1-paragraph summary of the paper in your own words.</li>
-                      <li>A paragraph with high-level comments on the paper's strengths/weaknesses/relation to other work.</li>
-                      <li>4 paragraphs covering each of the following dimensions (taken from NeurIPS guidelines):
-                        <ol>
-                          <li><em>Originality:</em> Are the tasks or methods new? Is the work a novel combination of well-known techniques? (This can be valuable!) Is it clear how this work differs from previous contributions? Is related work adequately cited.</li>
-                          <li><em>Quality:</em> Is the submission technically sound? Are claims well supported (e.g., by theoretical analysis or experimental results)? Are the methods used appropriate? Is this a complete piece of work or work in progress? Are the authors careful and honest about evaluating both the strengths and weaknesses of their work.</li>
-                          <li><em>Clarity:</em> Is the submission clearly written? Is it well organized? (If not, please make constructive suggestions for improving its clarity.) Does it adequately inform the reader? (Note that a superbly written paper provides enough information for an expert reader to reproduce its results.)</li>
-                          <li><em>Significance:</em> Are the results important? Are others (researchers or practitioners) likely to use the ideas or build on them? Does the submission address a difficult task in a better way than previous work? Does it advance the state of the art in a demonstrable way? Does it provide unique data, unique conclusions about existing data, or a unique theoretical or experimental approach?</li>
-                        </ol>
-                      </li>
-                      <li>A list of more than 2 questions you have for the authors.</li>
-                    </ul>
-                  </li>
-                  */ }
-
                   <li className="mb-3">
                     <strong>Technical/methodological summary (roughly 3 pages)</strong><br />
                     <p>
@@ -198,7 +169,8 @@ class Stat548 extends React.Component {
                 <SmallH3>Part 2: The (Mini) Project</SmallH3>
                 <p>
                   After completing a draft of your extended review, we'll meet one-on-one to define a 3-4 week project based on your proposal.
-                  You will turn in a 4+ page report along with associated code and data.
+                  You will turn in a 2+ page report along with associated code and data.
+                  We'll chat weekly (as needed) to discuss your progress and any challenges you encounter.
                   The content of the project will depend on the style of the paper
                 </p>
                 <ul>
@@ -227,17 +199,14 @@ class Stat548 extends React.Component {
                   If results seem promising in a week or two, continue pursuing the idea. Otherwise, adapt or pivot.
                 </p>
                 <p>
-                  I expect you to check in with me at least once (ideally more) over the course of your project.
+                  I expect you to check in with me frequently over the course of the project.
                   Share (1) early results indicating your approach's viability and (2) your plan to pivot or adapt based on those results.
                   Slack communication is preferred, but I'm always happy to meet in person if you want to bounce ideas off of each other.
                 </p>
                 <p>
-                  <strong>Formatting:</strong> Submit the report as a GitHub repository, using the template
-                  at <Link href="https://github.com/ben-br/qp-template/">https://github.com/ben-br/qp-template/</Link>.  The
-                  template includes a LATEX style file that should be used for the report.
-                  (Detailed instructions for usage can be found in the repository’s README file.)
+                  <strong>Formatting:</strong> Submit the report as a GitHub repository, along with code (and data).
+                  Write reusable/documented/well-commented Python code.
                   Ensure that the experimental results are reproducible.
-                  Write reusable/documented/well-commented Python code, and publish the code in a GitHub repo that I have access to.
                   I should easily install and run your experiments.
                 </p>
               </Section>
@@ -278,25 +247,14 @@ class Stat548 extends React.Component {
                 </p>
                 <ol>
                   <PaperLi
-                    title="Discovering Many Diverse Solutions with Bayesian Optimization"
-                    authors="N. Maus, K. Wu, D. Eriksson, J.R. Gardner"
-                    venue="AISTATS"
-                    year="2023"
-                    link="https://arxiv.org/abs/2210.10953"
-                    topics="Bayesian optimization, molecule generation"
-                    styl="Applied, methodological"
-                  >
-                  </PaperLi>
-                  <PaperLi
-                    title="Bayesian Optimization of Function Networks with Partial Evaluations"
-                    authors="P. Buathong, J. Wan, R. Astudillo, S. Daulton, M. Balandat, P.I. Frazier"
-                    venue="ICML"
-                    year="2024"
-                    link="https://arxiv.org/abs/2311.02146"
-                    topics="Bayesian optimization, molecule generation"
-                    styl="Methodological, applied"
-                  >
-                  </PaperLi>
+                    title="Transformers Can Do Bayesian Inference"
+                    authors="S. Müller, N. Hollmann, S. P. Arango, J. Grabocka, F. Hutter"
+                    venue="ICLR"
+                    year="2022"
+                    link="https://arxiv.org/abs/2112.10510"
+                    topics="Uncertainty quantification, Bayesian inference"
+                    styl="Methodological"
+                  ></PaperLi>
                   <PaperLi
                     title="The Behavior and Convergence of Local Bayesian Optimization"
                     authors="K. Wu, K. Kim, R. Garnett, J.R. Gardner"
@@ -318,15 +276,23 @@ class Stat548 extends React.Component {
                   >
                   </PaperLi>
                   <PaperLi
-                    title="Is In-Context Learning in Large Language Models Bayesian? A Martingale Perspective"
-                    authors="F. Falck, Z. Wang, C. Holmes"
-                    venue="ICML"
+                    title="Martingale Posterior Distributions"
+                    authors="E. Fong, C. Holmes, S. G. Walker"
+                    venue="Journal of the Royal Statistical Society"
                     year="2024"
-                    link="https://arxiv.org/abs/2406.00793"
-                    topics="Uncertainty quantification, LLMs, Bayesian inference"
+                    link="https://arxiv.org/abs/2103.15671"
+                    topics="Uncertainty quantification, Bayesian inference"
                     styl="Theoretical"
-                  >
-                  </PaperLi>
+                  ></PaperLi>
+                  <PaperLi
+                    title="Latent Bayesian Optimization via Autoregressive Normalizing Flows"
+                    authors="S. Lee, J. Park, J. Chu, M. Yoon, H. J. Kim"
+                    venue="ICLR"
+                    year="2025"
+                    link="https://arxiv.org/abs/2504.14889"
+                    topics="Bayesian optimization, drug discovery"
+                    styl="Methodological"
+                  ></PaperLi>
                 </ol>
               </Section>
 
