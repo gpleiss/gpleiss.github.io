@@ -26,6 +26,7 @@ const publications = rawPublications.filter((item) => !item.hide).map((item) => 
   if (!Object.values(item.tags).some((v) => v)) {
     console.warn("No tags in item:", item.id);
   }
+  item.booktitle = item.booktitle ? item.booktitle.replaceAll("``", "\"").replaceAll("''", "\"") : null;
   item.pdf = _publicationPdfs[item.id] || (item.arxiv ? item.arxiv.replace("/abs/", "/pdf/") + ".pdf" : item.pdf);
   return item;
 });

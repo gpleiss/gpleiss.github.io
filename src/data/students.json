@@ -47,7 +47,7 @@
           "department": "Computer Science",
           "start": 2024,
           "end": 2025,
-          "cosupervisor": null
+          "cosupervisors": null
         }
       ]
     },
@@ -64,14 +64,14 @@
           "department": "Statistics",
           "start": 2025,
           "end": 2026,
-          "cosupervisor": null
+          "cosupervisors": null
         }
       ]
     },
     {
       "id": "nathanCantafio",
       "name": "Nathan Cantafio",
-      "current": true,
+      "current": false,
       "website": null,
       "roles": [
         {
@@ -81,14 +81,14 @@
           "department": "Statistics",
           "start": 2025,
           "end": 2025,
-          "cosupervisor": null
+          "cosupervisors": null
         }
       ]
     },
     {
       "id": "tristanCinquin",
       "name": "Tristan Cinquin",
-      "current": true,
+      "current": false,
       "website": null,
       "roles": [
         {
@@ -97,7 +97,7 @@
           "department": null,
           "start": 2025,
           "end": 2025,
-          "cosupervisor": null
+          "cosupervisors": null
         }
       ]
     }
