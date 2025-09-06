@@ -1,5 +1,5 @@
 import React from 'react';
-import { Alert, Table } from 'reactstrap';
+import { Table } from 'reactstrap';
 import {
   Link,
   SmallH2,
@@ -95,7 +95,7 @@ class Stat547UIndex extends React.Component {
                     </td>
                     <td>
                       {
-                        (row.lectureNotes) ? 
+                        (row.lectureNotes) ?
                         <Link className="btn btn-pdf btn-sm" role="button" href={ lectureNotes[row.lectureNotes] }>Lecture Notes</Link> :
                         <span></span>
                       }
