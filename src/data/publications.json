@@ -1,6 +1,21 @@
 
 [
     {
+        "id": "cinquin2025limits",
+        "type": "techreport",
+        "title": "Limits of PRM-Guided Tree Search for Mathematical Reasoning with LLMs",
+        "authors": ["Tristan Cinquin", "Geoff Pleiss", "Agustinus Kristiadi"],
+        "booktitle": "NeurIPS Workshop on Mathematical Reasoning and AI (MATH-AI)",
+        "year": 2025,
+        "arxiv": "https://arxiv.org/pdf/2510.20272",
+        "github": null,
+        "talk": null,
+        "isnew": false,
+        "tags": {
+            "dl": true
+        }
+    },
+    {
         "id": "kahou2025solving",
         "type": "submission",
         "title": "Solving Models of Economic Dynamics with Ridgeless Kernel Regressions",
