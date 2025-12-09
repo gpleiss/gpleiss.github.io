@@ -69,6 +69,40 @@
       ]
     },
     {
+      "id": "isaacRankin",
+      "name": "Isaac Rankin",
+      "current": true,
+      "website": "https://www.stat.ubc.ca/users/isaac-e-u-c-rankin",
+      "roles": [
+        {
+          "type": "PhD",
+          "status": "Student",
+          "university": "UBC",
+          "department": "Statistics",
+          "start": 2025,
+          "end": null,
+          "cosupervisors": null
+        }
+      ]
+    },
+    {
+      "id": "loganYates",
+      "name": "Logan Yates",
+      "current": true,
+      "website": "https://www.stat.ubc.ca/users/loganyates",
+      "roles": [
+        {
+          "type": "PhD",
+          "status": "Student",
+          "university": "UBC",
+          "department": "Statistics",
+          "start": 2025,
+          "end": null,
+          "cosupervisors": null
+        }
+      ]
+    },
+    {
       "id": "nathanCantafio",
       "name": "Nathan Cantafio",
       "current": false,

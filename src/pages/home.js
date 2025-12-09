@@ -69,12 +69,11 @@ class Home extends React.Component {
     );
 
     const homePagePublicationIds = [
+      "doumont2026we",
       "zhou2025asymmetric",
       "dern2025theoretical",
       "maus2024approximation",
-      // "wenger2024computational",
       "abe2022deep",
-      "pleiss2020fast",
       "gardner2018gpytorch",
       "pleiss2017fairness",
       "guo2017calibration",
@@ -249,7 +248,7 @@ class Home extends React.Component {
                 </p>
                 <CvList>
                   <SoftwareItem title="GPyTorch"
-                    status="v1.13 Release"
+                    status="v1.14 Release"
                     coauthors={[
                       "Jacob R. Gardner"
                     ]}
@@ -269,15 +268,15 @@ class Home extends React.Component {
                     github="https://github.com/wilson-labs/cola"
                   >
                   </SoftwareItem>
+                  <SoftwareItem title="LinearOperator"
+                    status="v0.6 Release"
+                    coauthors={["Max Balandat"]}
+                    tagline="A library for structured linear algebra operations in PyTorch."
+                    website="https://linear-operator.readthedocs.io/en/latest/"
+                    github="https://github.com/cornellius-gp/linear_operator"
+                  >
+                  </SoftwareItem>
                   {/*
-                    <SoftwareItem title="LinearOperator"
-                      status="v0.5 Release"
-                      coauthors={["Max Balandat"]}
-                      tagline="A library for structured linear algebra operations in PyTorch."
-                      website="https://linear-operator.readthedocs.io/en/latest/"
-                      github="https://github.com/cornellius-gp/linear_operator"
-                    >
-                    </SoftwareItem>
                     <SoftwareItem title="Area Under the Margin (AUM)"
                       coauthors={[
                         "Josh Shapiro"

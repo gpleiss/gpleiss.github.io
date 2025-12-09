@@ -2,14 +2,17 @@ import rawStudents from './students.json';
 
 import donneyFan from '../images/donney_fan.jpg';
 import timZhou from '../images/tim_zhou.jpg';
+import isaacRankin from '../images/isaac_rankin.png';
+import nathanCantafio from '../images/nathan_cantafio.jpeg';
 import profileOutline from '../images/profile_outline.jpg';
 
 const _studentImages = {
     "donneyFan": donneyFan,
     "timZhou": timZhou,
     "zacharyLau": null,
-    "nathanCantafio": null,
-    "tristanCinquin": null,
+    "isaacRankin": isaacRankin,
+    "loganYates": null,
+    "nathanCantafio": nathanCantafio,
 }
 
 const students = rawStudents.map((student) => {

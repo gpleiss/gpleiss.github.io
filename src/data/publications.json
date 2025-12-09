@@ -1,11 +1,39 @@
 
 [
     {
+        "id": "doumont2026we",
+        "type": "submission",
+        "title": "We Still Don't Understand High-Dimensional Bayesian Optimization",
+        "authors": ["Colin Doumont", "Donney Fan", "Natalie Maus", "Jacob R. Gardner", "Henry Moss", "Geoff Pleiss"],
+        "year": 2026,
+        "arxiv": "https://arxiv.org/abs/2512.00170",
+        "github": "https://github.com/colmont/linear-bo",
+        "talk": null,
+        "isnew": true,
+        "tags": {
+            "bo": true
+        }
+    },
+    {
+        "id": "fan2026adaptive",
+        "type": "submission",
+        "title": "Adaptive Candidate Point Thompson Sampling for High-Dimensional Bayesian Optimization",
+        "authors": ["Donney Fan", "Geoff Pleiss"],
+        "year": 2026,
+        "arxiv": null,
+        "github": null,
+        "talk": null,
+        "isnew": true,
+        "tags": {
+            "bo": true
+        }
+    },
+    {
         "id": "cinquin2025limits",
         "type": "techreport",
         "title": "Limits of PRM-Guided Tree Search for Mathematical Reasoning with LLMs",
         "authors": ["Tristan Cinquin", "Geoff Pleiss", "Agustinus Kristiadi"],
-        "booktitle": "NeurIPS Workshop on Mathematical Reasoning and AI (MATH-AI)",
+        "booktitle": "NeurIPS Workshop on Mathematical Reasoning and AI",
         "year": 2025,
         "arxiv": "https://arxiv.org/pdf/2510.20272",
         "github": null,
@@ -29,22 +57,6 @@
         }
     },
     {
-        "id": "capone2025calipso",
-        "type": "techreport",
-        "title": "CaliPSo: Calibrated Predictive Models with Sharpness as Loss Function",
-        "authors": ["Alexandre Capone", "Kamron Zaidi", "Tianyu Xu", "Brian Yang", "Geoff Pleiss", "Jeff Schneider"],
-        "booktitle": "ICML Workshop on Methods and Opportunities at Small Scale",
-        "year": 2025,
-        "arxiv": null,
-        "pdf": "https://openreview.net/pdf?id=aj7JZBV5t8",
-        "github": null,
-        "talk": null,
-        "isnew": false,
-        "tags": {
-            "uq": true
-        }
-    },
-    {
         "id": "zhou2025asymmetric",
         "type": "conference",
         "title": "Asymmetric Duos: Sidekicks Improve Uncertainty",
@@ -63,6 +75,22 @@
         }
     },
     {
+        "id": "capone2025calipso",
+        "type": "techreport",
+        "title": "CaliPSo: Calibrated Predictive Models with Sharpness as Loss Function",
+        "authors": ["Alexandre Capone", "Kamron Zaidi", "Tianyu Xu", "Brian Yang", "Geoff Pleiss", "Jeff Schneider"],
+        "booktitle": "ICML Workshop on Methods and Opportunities at Small Scale",
+        "year": 2025,
+        "arxiv": null,
+        "pdf": "https://openreview.net/pdf?id=aj7JZBV5t8",
+        "github": null,
+        "talk": null,
+        "isnew": false,
+        "tags": {
+            "uq": true
+        }
+    },
+    {
         "id": "dern2025theoretical",
         "type": "conference",
         "title": "Theoretical Limitations of Ensembles in the Age of Overparameterization",
@@ -74,7 +102,7 @@
         "arxiv": "https://arxiv.org/abs/2410.16201",
         "github": "https://github.com/nic-dern/theoretical-limitations-overparameterized-ensembles",
         "talk": "https://www.youtube.com/watch?v=LINT01z05Bs",
-        "isnew": true,
+        "isnew": false,
         "tags": {
             "uq": true,
             "dl": true
@@ -88,9 +116,10 @@
         "booktitle": "Symposium on Advances in Approximate Bayesian Inference, Workshop Track",
         "year": 2025,
         "arxiv": null,
+        "pdf": "https://openreview.net/pdf?id=GbV2JjfnSY",
         "github": null,
         "talk": null,
-        "isnew": true,
+        "isnew": false,
         "tags": {
             "bo": true
         }
@@ -104,7 +133,7 @@
         "arxiv": "https://arxiv.org/abs/2406.04814",
         "github": null,
         "talk": null,
-        "isnew": true,
+        "isnew": false,
         "tags": {
             "cv": true
         }
@@ -121,7 +150,7 @@
         "arxiv": "https://arxiv.org/abs/2504.17843",
         "github": null,
         "talk": null,
-        "isnew": true,
+        "isnew": false,
         "tags": {
             "stm": true
         }
@@ -692,7 +721,7 @@
         "id": "upchurch2016deep",
         "type": "conference",
         "title": "Deep Feature Interpolation For Image Content Changes",
-        "authors": ["Paul Upchurch*", "Jacob Gardner*", "Geoff Pleiss", "Kavita Bala", "Robert Pless", "Noah Snavely", "Kilian Q. Weinberger"],
+        "authors": ["Paul Upchurch*", "Jacob R. Gardner*", "Geoff Pleiss", "Kavita Bala", "Robert Pless", "Noah Snavely", "Kilian Q. Weinberger"],
         "booktitle": "Computer Vision and Pattern Recognition",
         "year": 2017,
         "arxiv": "https://arxiv.org/abs/1611.05507",
