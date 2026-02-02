@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/static/css/main.6167a1a5.chunk.css",
-    "main.js": "/static/js/main.b5e707a5.chunk.js",
-    "main.js.map": "/static/js/main.b5e707a5.chunk.js.map",
+    "main.js": "/static/js/main.3ab5094e.chunk.js",
+    "main.js.map": "/static/js/main.3ab5094e.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.016e9839.js",
     "runtime-main.js.map": "/static/js/runtime-main.016e9839.js.map",
     "static/css/2.56ad470f.chunk.css": "/static/css/2.56ad470f.chunk.css",
-    "static/js/2.4298f7bb.chunk.js": "/static/js/2.4298f7bb.chunk.js",
-    "static/js/2.4298f7bb.chunk.js.map": "/static/js/2.4298f7bb.chunk.js.map",
+    "static/js/2.152151ea.chunk.js": "/static/js/2.152151ea.chunk.js",
+    "static/js/2.152151ea.chunk.js.map": "/static/js/2.152151ea.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.b4ca74384740f82263e91d6ca1eeccaa.js": "/precache-manifest.b4ca74384740f82263e91d6ca1eeccaa.js",
+    "precache-manifest.14f8c4f779072467063db1ae76342659.js": "/precache-manifest.14f8c4f779072467063db1ae76342659.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.56ad470f.chunk.css.map": "/static/css/2.56ad470f.chunk.css.map",
     "static/css/main.6167a1a5.chunk.css.map": "/static/css/main.6167a1a5.chunk.css.map",
-    "static/js/2.4298f7bb.chunk.js.LICENSE.txt": "/static/js/2.4298f7bb.chunk.js.LICENSE.txt",
+    "static/js/2.152151ea.chunk.js.LICENSE.txt": "/static/js/2.152151ea.chunk.js.LICENSE.txt",
     "static/media/katex.css": "/static/media/KaTeX_Typewriter-Regular.f43e8696.woff2",
     "static/media/averaged_trajectories_clean.png": "/static/media/averaged_trajectories_clean.d1e0f3f2.png",
     "static/media/averaged_trajectories_mislabeled.png": "/static/media/averaged_trajectories_mislabeled.f16b9d8d.png",
@@ -30,12 +30,11 @@
     "static/media/cifar_temp.png": "/static/media/cifar_temp.8c566b45.png",
     "static/media/cifar_uncal.png": "/static/media/cifar_uncal.eed183f7.png",
     "static/media/donney_fan.jpg": "/static/media/donney_fan.a5beb751.jpg",
-    "static/media/geoffpleiss_cv.pdf": "/static/media/geoffpleiss_cv.ccf364da.pdf",
+    "static/media/geoffpleiss_cv.pdf": "/static/media/geoffpleiss_cv.e4621d53.pdf",
     "static/media/geoffpleiss_dei_statement.pdf": "/static/media/geoffpleiss_dei_statement.e69ed76a.pdf",
     "static/media/geoffpleiss_research_statement.pdf": "/static/media/geoffpleiss_research_statement.7e8b199a.pdf",
     "static/media/geoffpleiss_teaching_statement.pdf": "/static/media/geoffpleiss_teaching_statement.e6e5dac3.pdf",
     "static/media/git_wizard.pdf": "/static/media/git_wizard.aeee2897.pdf",
-    "static/media/gpleiss_thesis.pdf": "/static/media/gpleiss_thesis.d218bc00.pdf",
     "static/media/imagenet1.png": "/static/media/imagenet1.90666ccb.png",
     "static/media/imagenet2.png": "/static/media/imagenet2.4607c876.png",
     "static/media/imagenet3.png": "/static/media/imagenet3.df4f16c1.png",
@@ -45,7 +44,6 @@
     "static/media/imagenet7.png": "/static/media/imagenet7.e8009a7f.png",
     "static/media/imagenet8.png": "/static/media/imagenet8.1396e7e6.png",
     "static/media/isaac_rankin.png": "/static/media/isaac_rankin.6775b3ec.png",
-    "static/media/knighton2019potential.pdf": "/static/media/knighton2019potential.f6acb318.pdf",
     "static/media/me.jpg": "/static/media/me.0c3be0b6.jpg",
     "static/media/mnist.png": "/static/media/mnist.4cb9b0a5.png",
     "static/media/App.css": "/static/media/proxima_nova_alt_regular-webfont.e802340f.eot",
@@ -77,8 +75,8 @@
   "entrypoints": [
     "static/js/runtime-main.016e9839.js",
     "static/css/2.56ad470f.chunk.css",
-    "static/js/2.4298f7bb.chunk.js",
+    "static/js/2.152151ea.chunk.js",
     "static/css/main.6167a1a5.chunk.css",
-    "static/js/main.b5e707a5.chunk.js"
+    "static/js/main.3ab5094e.chunk.js"
   ]
 }
