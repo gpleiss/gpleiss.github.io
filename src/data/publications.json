@@ -1,11 +1,32 @@
 
 [
     {
+        "id": "bouchard2026mcmc",
+        "type": "bookchapter",
+        "title": "MCMC-driven learning",
+        "authors": ["Alexandre Bouchard-C\\^ot\\`e", "Trevor Campbell", "Geoff Pleiss", "Nikola Surjanovic"],
+        "booktitle": "Handbook of Markov Chain Monte Carlo",
+        "pages": null,
+        "editors": ["Radu V. Craiu", "Dootika Vats", "Galin L. Jones", "Steve Brooks", "Andrew Gelman", "Xiao-Li Meng"],
+        "publisher": "CRC Press",
+        "year": 2026,
+        "doi": null,
+        "arxiv": "https://arxiv.org/abs/2402.09598",
+        "github": null,
+        "talk": null,
+        "tags": {
+            "pm": true
+        }
+    },
+    {
         "id": "doumont2026we",
-        "type": "submission",
+        "type": "conference",
         "title": "We Still Don't Understand High-Dimensional Bayesian Optimization",
         "authors": ["Colin Doumont", "Donney Fan", "Natalie Maus", "Jacob R. Gardner", "Henry Moss", "Geoff Pleiss"],
+        "booktitle": "Artificial Intelligence and Statistics",
         "year": 2026,
+        "award": "Oral presentation",
+        "awardnote": "Top $0.5\\%$ of submissions",
         "arxiv": "https://arxiv.org/abs/2512.00170",
         "github": "https://github.com/colmont/linear-bo",
         "talk": null,
@@ -16,9 +37,10 @@
     },
     {
         "id": "fan2026adaptive",
-        "type": "submission",
+        "type": "conference",
         "title": "Adaptive Candidate Point Thompson Sampling for High-Dimensional Bayesian Optimization",
         "authors": ["Donney Fan", "Geoff Pleiss"],
+        "booktitle": "Artificial Intelligence and Statistics",
         "year": 2026,
         "arxiv": null,
         "github": null,
@@ -35,7 +57,7 @@
         "authors": ["Tristan Cinquin", "Geoff Pleiss", "Agustinus Kristiadi"],
         "booktitle": "NeurIPS Workshop on Mathematical Reasoning and AI",
         "year": 2025,
-        "arxiv": "https://arxiv.org/pdf/2510.20272",
+        "arxiv": "https://arxiv.org/abs/2510.20272",
         "github": null,
         "talk": null,
         "isnew": false,
@@ -255,19 +277,6 @@
         "talk": null,
         "tags": {
             "gp_nla": true
-        }
-    },
-    {
-        "id": "bouchard2024mcmc",
-        "type": "submission",
-        "title": "MCMC-driven learning",
-        "authors": ["Alexandre Bouchard-C\\^ot\\`e", "Trevor Campbell", "Geoff Pleiss", "Nikola Surjanovic"],
-        "year": 2024,
-        "arxiv": "https://arxiv.org/abs/2402.09598",
-        "github": null,
-        "talk": null,
-        "tags": {
-            "pm": true
         }
     },
     {
@@ -540,6 +549,7 @@
         "authors": ["Geoff Pleiss"],
         "year": 2020,
         "publisher": "Cornell University",
+        "pdf": "https://geoffpleiss.com/gpleiss_thesis.pdf",
         "tags": {}
     },
     {
@@ -625,6 +635,7 @@
         "year": 2019,
         "doi": "https://doi.org/10.1175/JHM-D-18-0196.1",
         "arxiv": null,
+        "pdf": "https://geoffpleiss.com/knighton2019potential.pdf",
         "github": null,
         "talk": null,
         "tags": {

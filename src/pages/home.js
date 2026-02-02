@@ -70,6 +70,7 @@ class Home extends React.Component {
 
     const homePagePublicationIds = [
       "doumont2026we",
+      "fan2026adaptive",
       "zhou2025asymmetric",
       "dern2025theoretical",
       "maus2024approximation",
@@ -111,7 +112,7 @@ class Home extends React.Component {
             <div className="col-sm-12">
               <p className="d-xl-none">{ introText }</p>
               <p>
-                My research interests intersect deep learning and probablistic modeling.
+                My research interests intersect deep learning and probabilistic modeling.
                 More specifically, I'm interested in heuristic and approximate notions of uncertainty from machine learning models,
                 and how they can inform reliable and optimal downstream decisions within the contexts of experimental design and scientific discovery.
                 Major focuses of my work include:
@@ -123,7 +124,7 @@ class Home extends React.Component {
                 <li>ensemble methods.</li>
               </ol>
               <p>
-                I am also an active open source contributior.
+                I am also an active open source contributor.
                 Most notably, I co-created and maintain the <Link href="http://gpytorch.ai">GPyTorch</Link> Gaussian process library with <Link href="https://jacobrgardner.github.io/">Jake Gardner</Link>.
               </p>
               <p>
@@ -248,7 +249,7 @@ class Home extends React.Component {
                 </p>
                 <CvList>
                   <SoftwareItem title="GPyTorch"
-                    status="v1.14 Release"
+                    status="v1.15 Release"
                     coauthors={[
                       "Jacob R. Gardner"
                     ]}
