@@ -25,7 +25,7 @@
       "id": "timZhou",
       "name": "Tim G. Zhou",
       "current": true,
-      "website": "https://timothyzg.github.io/",
+      "website": "https://timgzhou.github.io/",
       "roles": [
         {
           "type": "MSc",
@@ -55,7 +55,7 @@
       "id": "zacharyLau",
       "name": "Zachary Lau",
       "current": true,
-      "website": "https://www.stat.ubc.ca/zachary-lau-0",
+      "website": "https://www.stat.ubc.ca/users/zachary-lau",
       "roles": [
         {
           "type": "MSc",
@@ -72,7 +72,7 @@
       "id": "isaacRankin",
       "name": "Isaac Rankin",
       "current": true,
-      "website": "https://www.stat.ubc.ca/users/isaac-e-u-c-rankin",
+      "website": "https://1saacrankin.github.io/",
       "roles": [
         {
           "type": "PhD",
@@ -105,9 +105,18 @@
     {
       "id": "nathanCantafio",
       "name": "Nathan Cantafio",
-      "current": false,
-      "website": null,
+      "current": true,
+      "website": "https://nathancantafio.com/",
       "roles": [
+        {
+          "type": "MSc",
+          "status": "Student",
+          "university": "UBC",
+          "department": "Statistics",
+          "start": 2025,
+          "end": null,
+          "cosupervisors": null
+        },
         {
           "type": "BSc",
           "status": "Student",

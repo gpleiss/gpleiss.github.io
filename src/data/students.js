@@ -5,11 +5,12 @@ import timZhou from '../images/tim_zhou.jpg';
 import isaacRankin from '../images/isaac_rankin.png';
 import nathanCantafio from '../images/nathan_cantafio.jpeg';
 import profileOutline from '../images/profile_outline.jpg';
+import zacharyLau from '../images/zachary_lau.jpg';
 
 const _studentImages = {
     "donneyFan": donneyFan,
     "timZhou": timZhou,
-    "zacharyLau": null,
+    "zacharyLau": zacharyLau,
     "isaacRankin": isaacRankin,
     "loganYates": null,
     "nathanCantafio": nathanCantafio,
