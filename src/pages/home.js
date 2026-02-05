@@ -57,14 +57,14 @@ class Home extends React.Component {
     const introText = (
       <span>
         I am an assistant professor in the {" "}
-        <Link className="text-muted" href="http://stat.ubc.ca/">Department of Statistics</Link>{" "}
+        <Link className="text-muted" href="https://stat.ubc.ca/">Department of Statistics</Link>{" "}
         at the University of British Columbia,
         where I am an inaugural member of {" "}
-        <Link className="text-muted" href="http://caida.ubc.ca/">CAIDA's</Link> {" "}
-        <Link className="text-muted" href="http://caida.ubc.ca/aim-si">AIM-SI</Link> (AI Methods for Scientific Impact) cluster.
+        <Link className="text-muted" href="https://caida.ubc.ca/">CAIDA's</Link> {" "}
+        <Link className="text-muted" href="https://caida.ubc.ca/aim-si">AIM-SI</Link> (AI Methods for Scientific Impact) cluster.
         I am also a <Link className="text-muted" href="https://cifar.ca/ai/canada-cifar-ai-chairs/">Canada CIFAR AI Chair</Link>{" "}
         and a faculty member at the {" "}
-        <Link className="text-muted" href="http://vectorinstitue.ai/">Vector Institute</Link>.
+        <Link className="text-muted" href="https://vectorinstitue.ai/">Vector Institute</Link>.
       </span>
     );
 
@@ -92,10 +92,10 @@ class Home extends React.Component {
               <div className="row mx-0 mb-5 text-muted font-italic text-center text-md-left">
                 <div className="col-12 col-xl-12 px-md-0 mt-3">
                   Assistant Professor,{" "}
-                  <Link className="text-muted" href="http://stat.ubc.ca/">UBC Department of Statistics</Link>
+                  <Link className="text-muted" href="https://stat.ubc.ca/">UBC Department of Statistics</Link>
                   <br />
                   CIFAR AI Chair,{" "}
-                  <Link className="text-muted" href="http://vectorinstitute.ai/">Vector Institute</Link>
+                  <Link className="text-muted" href="https://vectorinstitute.ai/">Vector Institute</Link>
                   <br />
                   <FontAwesomeIcon icon={faEnvelopeSquare} size="1x" title="Email: " className="mr-3" />
                   geoff.pleiss &lt;at&gt; stat.ubc.ca
@@ -125,12 +125,12 @@ class Home extends React.Component {
               </ol>
               <p>
                 I am also an active open source contributor.
-                Most notably, I co-created and maintain the <Link href="http://gpytorch.ai">GPyTorch</Link> Gaussian process library with <Link href="https://jacobrgardner.github.io/">Jake Gardner</Link>.
+                Most notably, I co-created and maintain the <Link href="https://gpytorch.ai">GPyTorch</Link> Gaussian process library with <Link href="https://jacobrgardner.github.io/">Jake Gardner</Link>.
               </p>
               <p>
                 Previously, I was a postdoc at Columbia University with <Link href="https://stat.columbia.edu/~cunningham/">John P. Cunningham</Link>.
                 I received my Ph.D. from the CS department at Cornell University in 2020
-                where I was advised by <Link href="http://kilian.cs.cornell.edu/">Kilian Weinberger</Link> and
+                where I was advised by <Link href="https://kilian.cs.cornell.edu/">Kilian Weinberger</Link> and
                 also worked closely with <Link href="https://cims.nyu.edu/~andrewgw/">Andrew Gordon Wilson</Link>.
               </p>
             </div>

@@ -211,7 +211,7 @@
    "Paper": "Efficient Nonmyopic Active Search",
    "Tags": "generalizations of BO, non-myopic decision making",
    "Date": 2017,
-   "URL": "http://proceedings.mlr.press/v70/jiang17d.html",
+   "URL": "https://proceedings.mlr.press/v70/jiang17d.html",
    "Venue": "ICML",
    "Authors": "Shali Jiang, Gustavo Malkomes, Geoff Converse, Alyssa Shofner, Benjamin Moseley, Roman Garnett"
  },
@@ -235,7 +235,7 @@
    "Paper": "Bayesian Optimization with Inequality Constraints",
    "Tags": "constrained BO",
    "Date": 2014,
-   "URL": "http://proceedings.mlr.press/v32/gardner14.pdf",
+   "URL": "https://proceedings.mlr.press/v32/gardner14.pdf",
    "Venue": "ICML",
    "Authors": "Jacob R. Gardner, Matt J. Kusner, Zhixiang Xu, Kilian Q. Weinberger, John P. Cunningham"
  },

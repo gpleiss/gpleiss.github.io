@@ -217,7 +217,7 @@ class App extends React.Component {
                   </NavLink>
                 </NavItem>
                 <NavItem className="d-inline d-lg-none">
-                  <NavLink href="http://github.com/gpleiss" target="_blank">
+                  <NavLink href="https://github.com/gpleiss" target="_blank">
                     Github
                   </NavLink>
                 </NavItem>
@@ -230,7 +230,7 @@ class App extends React.Component {
                 </NavLink>
               </NavItem>
               <NavItem className="ml-3">
-                <NavLink className="text-white" href="http://github.com/gpleiss" target="_blank">
+                <NavLink className="text-white" href="https://github.com/gpleiss" target="_blank">
                   <FontAwesomeIcon icon={faGithub} size="2x" title="Github" />
                 </NavLink>
               </NavItem>

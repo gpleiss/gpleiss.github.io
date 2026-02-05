@@ -127,7 +127,7 @@ class NNCalibration extends React.Component {
                 <p>
                   A simple way to visualize calibration is plotting accuracy as
                   a function of confidence (known as a <strong><a
-                      href="http://www.datascienceassn.org/sites/default/files/Predicting%20good%20probabilities%20with%20supervised%20learning.pdf"
+                      href="https://www.datascienceassn.org/sites/default/files/Predicting%20good%20probabilities%20with%20supervised%20learning.pdf"
                       id="cite-niculescu2005predicting">reliability
                       diagram</a></strong>).
                   Since confidence should reflect accuracy, we'd like for the plot to be an identity function.

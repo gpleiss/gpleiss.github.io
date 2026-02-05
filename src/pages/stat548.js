@@ -304,10 +304,10 @@ class Stat548 extends React.Component {
                     Many of these links have been shared by other faculty members as well:
                   </p>
                   <ul>
-                    <li>Nancy Heckman's <Link href="http://ugrad.stat.ubc.ca/~nancy/writing/">page on technical writing,</Link></li>
-                    <li>Harry Joe's <Link href="http://www.stat.ubc.ca/~harry/papers/">page on mathematical writing and typesetting in LaTeX,</Link></li>
+                    <li>Nancy Heckman's <Link href="https://ugrad.stat.ubc.ca/~nancy/writing/">page on technical writing,</Link></li>
+                    <li>Harry Joe's <Link href="https://www.stat.ubc.ca/~harry/papers/">page on mathematical writing and typesetting in LaTeX,</Link></li>
                     <li>Trevor Campbell's <Link href="https://docs.google.com/presentation/d/13vwchlzQAZjjfiI3AiBC_kM-syI6GJKzbuZoLxgy1a4/edit">talk on "How to Explain Things,"</Link></li>
-                    <li>Knuth, Larrabee, and Roberts <Link href="http://www.jmlr.org/reviewing-papers/knuth_mathematical_writing.pdf">on mathematical writing,</Link></li>
+                    <li>Knuth, Larrabee, and Roberts <Link href="https://www.jmlr.org/reviewing-papers/knuth_mathematical_writing.pdf">on mathematical writing,</Link></li>
                     <li>"Getting Started with Git": <Link href="https://git-scm.com/book/en/v2">Chapters 1 and 2</Link>, and</li>
                     <li>my <Link href={gitWizard}>talk on "How to Be a Git Wizard"</Link> (if git still scares you after reading the above resource).</li>
                   </ul>

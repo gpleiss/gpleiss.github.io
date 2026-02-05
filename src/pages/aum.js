@@ -133,7 +133,7 @@ class AUM extends React.Component {
                   <ul className="list-unstyled text-center text-dark">
                     <li className="pt-2"><Link inside href="/">Geoff Pleiss</Link></li>
                     <li className="pt-2"><Link href="https://tiiiger.github.io/">Tianyi Zhang</Link></li>
-                    <li className="pt-2"><Link href="http://eelenberg.github.io/">Ethan R. Elenberg</Link></li>
+                    <li className="pt-2"><Link href="https://eelenberg.github.io/">Ethan R. Elenberg</Link></li>
                     <li className="pt-2"><Link href="https://www.cs.cornell.edu/~kilian/">Kilian Weinberger</Link></li>
                   </ul>
                 </Section>
@@ -369,7 +369,7 @@ class AUM extends React.Component {
               <Section>
                 <SmallH2>Code</SmallH2>
 								<p>
-                  We offer a simple PyTorch library (written by <Link href="http://www.jshapiro.info/">Josh Shapiro</Link>) for computing the AUM statistic:
+                  We offer a simple PyTorch library (written by <Link href="https://www.jshapiro.info/">Josh Shapiro</Link>) for computing the AUM statistic:
                 </p>
                 <Code className="shell text-center shadow-subtle pl-4 pr-4 pt-0 pb-0 mb-3 mt-3" style={{fontSize: "1.25em"}}>{`
 pip install aum
@@ -419,7 +419,7 @@ for batch in loader:
                 <ul>
                   <li><Link href="https://arxiv.org/abs/2001.10528">Paper on ArXiV</Link></li>
                   <li><button className="btn btn-link p-0" type="button" onClick={this.toggleBibtexModal}>BibTeX</button></li>
-                  <li><Link href="https://github.com/asappresearch/aum">Code</Link> (written by <Link href="http://www.jshapiro.info/">Josh Shaprio</Link>)</li>
+                  <li><Link href="https://github.com/asappresearch/aum">Code</Link> (written by <Link href="https://www.jshapiro.info/">Josh Shaprio</Link>)</li>
                 </ul>
 
 				        <Modal size="lg" isOpen={this.state.bibtexModalOpen} toggle={this.toggleBibtexModal}>
