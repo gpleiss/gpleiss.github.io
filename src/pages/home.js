@@ -17,9 +17,9 @@ import { publicationsDict } from '../data/publications';
 // Assets
 import meImg from '../images/me.jpg';
 import cv from '../pdfs/geoffpleiss_cv.pdf';
-import researchStatement from '../pdfs/geoffpleiss_research_statement.pdf';
-import teachingStatement from '../pdfs/geoffpleiss_teaching_statement.pdf';
-import deiStatement from '../pdfs/geoffpleiss_dei_statement.pdf';
+// import researchStatement from '../pdfs/geoffpleiss_research_statement.pdf';
+// import teachingStatement from '../pdfs/geoffpleiss_teaching_statement.pdf';
+// import deiStatement from '../pdfs/geoffpleiss_dei_statement.pdf';
 
 
 class Home extends React.Component {
@@ -142,7 +142,7 @@ class Home extends React.Component {
                 <li className="list-inline-item mt-2">
                   <button className="btn btn-light" onClick={this.toggleShortBioModal}>Short Bio</button>
                 </li>
-                <li className="list-inline-item mt-2">
+                {/* <li className="list-inline-item mt-2">
                   <Link className="btn btn-light" role="button" href={researchStatement}>Research Statement</Link>
                 </li>
                 <li className="list-inline-item mt-2">
@@ -150,7 +150,7 @@ class Home extends React.Component {
                 </li>
                 <li className="list-inline-item mt-2">
                   <Link className="btn btn-light" role="button" href={deiStatement}>DEI Statement</Link>
-                </li>
+                </li> */}
               </ul>
               <Modal size="lg" isOpen={this.state.shortBioModalOpen} toggle={this.toggleShortBioModal}>
                 <ModalHeader className="ml-3 mr-3" toggle={this.toggleShortBioModal}>Short Bio</ModalHeader>
