@@ -1,6 +1,37 @@
 
 [
     {
+        "id": "taranukhin2026info",
+        "type": "submission",
+        "title": "InfoGatherer: Principled Information Seeking via Evidence Retrieval and Strategic Questioning",
+        "authors": ["Maksym Taranukhin", "Shuyue Stella Li", "Evangelos Milios", "Geoff Pleiss", "Yulia Tsvetkov", "Vered Shwartz"],
+        "year": 2026,
+        "arxiv": "https://arxiv.org/abs/2603.05909",
+        "github": null,
+        "talk": null,
+        "isnew": true,
+        "tags": {
+            "uq": true
+        }
+    },
+    {
+        "id": "zhou2026changing",
+        "type": "techreport",
+        "title": "Changing Modalities by Cross-Band Transfer, Addition, and Peeking",
+        "authors": ["Tim G. Zhou", "Anthony Fuller", "Geoff Pleiss", "Evan Shelhamer"],
+        "booktitle": "ICLR Workshop on Machine Learning for Remote Sensing",
+        "year": 2026,
+        "arxiv": null,
+        "pdf": "https://openreview.net/attachment?id=rkGlI80m12&name=pdf",
+        "github": null,
+        "talk": null,
+        "isnew": true,
+        "tags": {
+            "dl": true,
+            "cv": true
+        }
+    },
+    {
         "id": "bouchard2026mcmc",
         "type": "bookchapter",
         "title": "MCMC-driven learning",
@@ -25,8 +56,7 @@
         "authors": ["Colin Doumont", "Donney Fan", "Natalie Maus", "Jacob R. Gardner", "Henry Moss", "Geoff Pleiss"],
         "booktitle": "Artificial Intelligence and Statistics",
         "year": 2026,
-        "award": "Oral presentation",
-        "awardnote": "Top $0.5\\%$ of submissions",
+        "award": "Best Student Paper",
         "arxiv": "https://arxiv.org/abs/2512.00170",
         "github": "https://github.com/colmont/linear-bo",
         "talk": null,
@@ -42,8 +72,8 @@
         "authors": ["Donney Fan", "Geoff Pleiss"],
         "booktitle": "Artificial Intelligence and Statistics",
         "year": 2026,
-        "arxiv": null,
-        "github": null,
+        "arxiv": "https://arxiv.org/abs/2604.08891",
+        "github": "https://github.com/DonneyF/ACTS",
         "talk": null,
         "isnew": true,
         "tags": {
@@ -72,7 +102,7 @@
         "authors": ["Mahdi Ebrahimi Kahou", "Jesse Perla", "Geoff Pleiss"],
         "year": 2025,
         "arxiv": "https://arxiv.org/abs/2406.01898",
-        "github": null,
+        "github": "https://github.com/HighDimensionalEconLab/kernel_econ_alignment",
         "talk": null,
         "tags": {
             "pm": true
@@ -88,9 +118,9 @@
         "award": "Spotlight presentation",
         "awardnote": "Top $3.2\\%$ of submissions",
         "arxiv": "https://arxiv.org/abs/2505.18636",
-        "github": null,
+        "github": "https://github.com/timgzhou/asymmetric-duos",
         "talk": null,
-        "isnew": true,
+        "isnew": false,
         "tags": {
             "uq": true,
             "dl": true
@@ -170,7 +200,7 @@
         "pages": "1--9",
         "doi": "https://doi.org/10.1038/s41550-025-02541-7",
         "arxiv": "https://arxiv.org/abs/2504.17843",
-        "github": null,
+        "github": "https://github.com/Thavisha/Dustribution",
         "talk": null,
         "isnew": false,
         "tags": {
@@ -245,7 +275,7 @@
         "award": "Featured Paper",
         "awardnote": "Top $2\\%$ of submissions",
         "arxiv": "https://arxiv.org/abs/2302.00704",
-        "github": null,
+        "github": "https://github.com/cellistigs/ensemble_attention/tree/dkl",
         "talk": "https://www.youtube.com/watch?v=LINT01z05Bs",
         "tags": {
             "dl": true

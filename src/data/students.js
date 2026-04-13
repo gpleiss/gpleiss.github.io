@@ -1,18 +1,17 @@
 import rawStudents from './students.json';
 
-import donneyFan from '../images/donney_fan.jpg';
-import timZhou from '../images/tim_zhou.jpg';
-import isaacRankin from '../images/isaac_rankin.png';
-import nathanCantafio from '../images/nathan_cantafio.jpeg';
 import profileOutline from '../images/profile_outline.jpg';
+import donneyFan from '../images/donney_fan.jpg';
+import loganYates from '../images/logan_yates.jpg';
+import nathanCantafio from '../images/nathan_cantafio.jpeg';
+import timZhou from '../images/tim_zhou.jpg';
 import zacharyLau from '../images/zachary_lau.jpg';
 
 const _studentImages = {
     "donneyFan": donneyFan,
     "timZhou": timZhou,
     "zacharyLau": zacharyLau,
-    "isaacRankin": isaacRankin,
-    "loganYates": null,
+    "loganYates": loganYates,
     "nathanCantafio": nathanCantafio,
 }
 

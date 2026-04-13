@@ -69,23 +69,6 @@
       ]
     },
     {
-      "id": "isaacRankin",
-      "name": "Isaac Rankin",
-      "current": true,
-      "website": "https://1saacrankin.github.io/",
-      "roles": [
-        {
-          "type": "PhD",
-          "status": "Student",
-          "university": "UBC",
-          "department": "Statistics",
-          "start": 2025,
-          "end": null,
-          "cosupervisors": null
-        }
-      ]
-    },
-    {
       "id": "loganYates",
       "name": "Logan Yates",
       "current": true,
@@ -108,15 +91,6 @@
       "current": true,
       "website": "https://nathancantafio.com/",
       "roles": [
-        {
-          "type": "MSc",
-          "status": "Student",
-          "university": "UBC",
-          "department": "Statistics",
-          "start": 2025,
-          "end": null,
-          "cosupervisors": null
-        },
         {
           "type": "BSc",
           "status": "Student",

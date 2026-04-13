@@ -169,8 +169,8 @@ class App extends React.Component {
                   </DropdownToggle>
                   <DropdownMenu>
                     <DropdownItem href="https://github.com/UBC-DSCI/dsci-100-student">(2026) DSCI 100 (Introduction to Data Science)</DropdownItem>
+                    <DropdownItem href="https://ubc-stat.github.io/stat-406/">(2025,2024) STAT 406 (Methods for Statistical Learning)</DropdownItem>
                     <DropdownItem href="/teaching/stat547u/">(2025) STAT 547U (Topics in Deep Learning Theory)</DropdownItem>
-                    <DropdownItem href="https://ubc-stat.github.io/stat-406/">(2024-2025) STAT 406 (Methods for Statistical Learning)</DropdownItem>
                     <DropdownItem href="/teaching/stat520p/">(2023) STAT 520P (Bayesian Optimization)</DropdownItem>
                     <DropdownItem href="/teaching/stat548/">STAT 548 (PhD Qualifying Course)</DropdownItem>
                   </DropdownMenu>
