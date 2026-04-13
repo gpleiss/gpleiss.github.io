@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/static/css/main.6167a1a5.chunk.css",
-    "main.js": "/static/js/main.ac776f05.chunk.js",
-    "main.js.map": "/static/js/main.ac776f05.chunk.js.map",
+    "main.js": "/static/js/main.1a570ecf.chunk.js",
+    "main.js.map": "/static/js/main.1a570ecf.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.016e9839.js",
     "runtime-main.js.map": "/static/js/runtime-main.016e9839.js.map",
     "static/css/2.56ad470f.chunk.css": "/static/css/2.56ad470f.chunk.css",
     "static/js/2.83ad93c6.chunk.js": "/static/js/2.83ad93c6.chunk.js",
     "static/js/2.83ad93c6.chunk.js.map": "/static/js/2.83ad93c6.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.e66d6cd40311d0f910c914e309093062.js": "/precache-manifest.e66d6cd40311d0f910c914e309093062.js",
+    "precache-manifest.ba3c3d391445dd68265c5cdf456e2bc5.js": "/precache-manifest.ba3c3d391445dd68265c5cdf456e2bc5.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.56ad470f.chunk.css.map": "/static/css/2.56ad470f.chunk.css.map",
     "static/css/main.6167a1a5.chunk.css.map": "/static/css/main.6167a1a5.chunk.css.map",
@@ -30,7 +30,7 @@
     "static/media/cifar_temp.png": "/static/media/cifar_temp.8c566b45.png",
     "static/media/cifar_uncal.png": "/static/media/cifar_uncal.eed183f7.png",
     "static/media/donney_fan.jpg": "/static/media/donney_fan.a5beb751.jpg",
-    "static/media/geoffpleiss_cv.pdf": "/static/media/geoffpleiss_cv.e4621d53.pdf",
+    "static/media/geoffpleiss_cv.pdf": "/static/media/geoffpleiss_cv.113e73fe.pdf",
     "static/media/git_wizard.pdf": "/static/media/git_wizard.aeee2897.pdf",
     "static/media/imagenet1.png": "/static/media/imagenet1.90666ccb.png",
     "static/media/imagenet2.png": "/static/media/imagenet2.4607c876.png",
@@ -40,7 +40,7 @@
     "static/media/imagenet6.png": "/static/media/imagenet6.ba3be719.png",
     "static/media/imagenet7.png": "/static/media/imagenet7.e8009a7f.png",
     "static/media/imagenet8.png": "/static/media/imagenet8.1396e7e6.png",
-    "static/media/isaac_rankin.png": "/static/media/isaac_rankin.6775b3ec.png",
+    "static/media/logan_yates.jpg": "/static/media/logan_yates.e478160d.jpg",
     "static/media/me.jpg": "/static/media/me.0c3be0b6.jpg",
     "static/media/mnist.png": "/static/media/mnist.4cb9b0a5.png",
     "static/media/App.css": "/static/media/proxima_nova_alt_regular-webfont.e802340f.eot",
@@ -75,6 +75,6 @@
     "static/css/2.56ad470f.chunk.css",
     "static/js/2.83ad93c6.chunk.js",
     "static/css/main.6167a1a5.chunk.css",
-    "static/js/main.ac776f05.chunk.js"
+    "static/js/main.1a570ecf.chunk.js"
   ]
 }
