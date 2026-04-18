@@ -13,16 +13,35 @@ class ProspectiveMember extends React.Component {
                 <H2>How to Apply</H2>
                 <dl className="row">
                   <dt className="col-lg-3">
-                    Prospective MSc/PhD students:
+                    Prospective PhD students:
                   </dt>
                   <dd className="col-lg-9">
                     <p>
-                      Applications go through the <Link href="https://www.stat.ubc.ca/graduate-admissions">UBC stats department</Link>. Mention me as a potential advisor.
+                      Apply to the <Link href="https://www.stat.ubc.ca/graduate-admissions">UBC stats department</Link>. Mention me as a potential advisor.
                     </p>
                     <p>
-                      You can also apply to the <Link href="https://www.cs.ubc.ca/students/grad/admissions">UBC CS department</Link> if you would prefer to take CS courses/fulfil CS degree requirements.
-                      (I will also have the ability to be the primary advisor for CS students.)
+                      You can alternatively apply to the <Link href="https://www.cs.ubc.ca/students/grad/admissions">UBC CS department</Link> if you would prefer to take CS courses/fulfil CS degree requirements.
                       Again, mention me as a potential advisor.
+                      (I can admit and advise students through either department.)
+                    </p>
+                    <p>
+                      If you are coming directly from undergrad (without a MSc), I will only consider your application if you have a sufficient research background and a clear vision.
+                      You will have to apply for the "PhD-track MSc" program in either CS or Stats.
+                      It is, for all intents and purposes, the same as applying directly to a PhD program in the US.
+                    </p>
+                  </dd>
+                  <dt className="col-lg-3">
+                    Prospective MSc students:
+                  </dt>
+                  <dd className="col-lg-9">
+                    <p>
+                      Apply to the <Link href="https://www.stat.ubc.ca/graduate-admissions">UBC stats department</Link>.
+                      MSc students are admitted into the program rather than directly into the lab
+                      (with the exeception of PhD-track MSc students; see above).
+                      If you are admitted, then we can assess your fit during your first year at UBC.
+                    </p>
+                    <p>
+                      I do not supervise MSc students in the CS department (again, with the exception of PhD-track MSc students; see above).
                     </p>
                   </dd>
                   <dt className="col-lg-3 mt-3">
@@ -53,8 +72,13 @@ class ProspectiveMember extends React.Component {
               <section className="mt-5">
                 <H2>Are There Internship, Undergraduate, or Visiting Student Opportunities?</H2>
                 <p>
-                  I will likely hire undergraduates directly through UBC's internal programs.
-                  Look out for postings this winter.
+                  I occasionally hire 4-month research interns through <Link href="https://vectorinstitute.ai/research-talent/students/ai-research-internships/">Vector's internship program,</Link> though I generally only consider graduate students who list me as their top-choice supervisor.
+                </p>
+                <p>
+                  I sometimes supervise undergraduates through UBC's internal programs.
+                  Look for postings in the winter.
+                </p>
+                <p>
                   It doesn't hurt to contact me about other opportunities, but again I won't respond unless you pique my interest.
                 </p>
               </section>

@@ -10,6 +10,8 @@
         "github": null,
         "talk": null,
         "isnew": true,
+        "num_pages_main": null,
+        "num_pages_appendix": null,
         "tags": {
             "uq": true
         }
@@ -26,6 +28,8 @@
         "github": null,
         "talk": null,
         "isnew": true,
+        "num_pages_main": 6,
+        "num_pages_appendix": 3,
         "tags": {
             "dl": true,
             "cv": true
@@ -37,14 +41,16 @@
         "title": "MCMC-driven learning",
         "authors": ["Alexandre Bouchard-C\\^ot\\`e", "Trevor Campbell", "Geoff Pleiss", "Nikola Surjanovic"],
         "booktitle": "Handbook of Markov Chain Monte Carlo",
-        "pages": null,
+        "pages": "620--663",
         "editors": ["Radu V. Craiu", "Dootika Vats", "Galin L. Jones", "Steve Brooks", "Andrew Gelman", "Xiao-Li Meng"],
         "publisher": "CRC Press",
         "year": 2026,
-        "doi": null,
+        "doi": "https://doi.org/10.1201/9781003453420",
         "arxiv": "https://arxiv.org/abs/2402.09598",
         "github": null,
         "talk": null,
+        "num_pages_main": 45,
+        "num_pages_appendix": 0,
         "tags": {
             "pm": true
         }
@@ -61,6 +67,8 @@
         "github": "https://github.com/colmont/linear-bo",
         "talk": null,
         "isnew": true,
+        "num_pages_main": 12,
+        "num_pages_appendix": 11,
         "tags": {
             "bo": true
         }
@@ -76,6 +84,8 @@
         "github": "https://github.com/DonneyF/ACTS",
         "talk": null,
         "isnew": true,
+        "num_pages_main": 11,
+        "num_pages_appendix": 12,
         "tags": {
             "bo": true
         }
@@ -91,6 +101,8 @@
         "github": null,
         "talk": null,
         "isnew": false,
+        "num_pages_main": 8,
+        "num_pages_appendix": 5,
         "tags": {
             "dl": true
         }
@@ -104,6 +116,8 @@
         "arxiv": "https://arxiv.org/abs/2406.01898",
         "github": "https://github.com/HighDimensionalEconLab/kernel_econ_alignment",
         "talk": null,
+        "num_pages_main": null,
+        "num_pages_appendix": null,
         "tags": {
             "pm": true
         }
@@ -121,25 +135,11 @@
         "github": "https://github.com/timgzhou/asymmetric-duos",
         "talk": null,
         "isnew": false,
+        "num_pages_main": 14,
+        "num_pages_appendix": 16,
         "tags": {
             "uq": true,
             "dl": true
-        }
-    },
-    {
-        "id": "capone2025calipso",
-        "type": "techreport",
-        "title": "CaliPSo: Calibrated Predictive Models with Sharpness as Loss Function",
-        "authors": ["Alexandre Capone", "Kamron Zaidi", "Tianyu Xu", "Brian Yang", "Geoff Pleiss", "Jeff Schneider"],
-        "booktitle": "ICML Workshop on Methods and Opportunities at Small Scale",
-        "year": 2025,
-        "arxiv": null,
-        "pdf": "https://openreview.net/pdf?id=aj7JZBV5t8",
-        "github": null,
-        "talk": null,
-        "isnew": false,
-        "tags": {
-            "uq": true
         }
     },
     {
@@ -155,6 +155,8 @@
         "github": "https://github.com/nic-dern/theoretical-limitations-overparameterized-ensembles",
         "talk": "https://www.youtube.com/watch?v=LINT01z05Bs",
         "isnew": false,
+        "num_pages_main": 12,
+        "num_pages_appendix": 21,
         "tags": {
             "uq": true,
             "dl": true
@@ -172,6 +174,8 @@
         "github": null,
         "talk": null,
         "isnew": false,
+        "num_pages_main": 12,
+        "num_pages_appendix": 18,
         "tags": {
             "bo": true
         }
@@ -186,6 +190,8 @@
         "github": null,
         "talk": null,
         "isnew": false,
+        "num_pages_main": 15,
+        "num_pages_appendix": 7,
         "tags": {
             "cv": true
         }
@@ -203,6 +209,8 @@
         "github": "https://github.com/Thavisha/Dustribution",
         "talk": null,
         "isnew": false,
+        "num_pages_main": 9,
+        "num_pages_appendix": 5,
         "tags": {
             "stm": true
         }
@@ -219,6 +227,8 @@
         "arxiv": "https://arxiv.org/abs/2406.04308",
         "github": "https://github.com/nataliemaus/improvement-vi",
         "talk": null,
+        "num_pages_main": 14,
+        "num_pages_appendix": 5,
         "tags": {
             "bo": true
         }
@@ -233,6 +243,8 @@
         "arxiv": "https://arxiv.org/abs/2411.01036",
         "github": "https://github.com/cornellius-gp/gpytorch/blob/e0e8cd5365e7eea72befaa02d644f588984fd337/gpytorch/models/computation_aware_gp.py",
         "talk": null,
+        "num_pages_main": 14,
+        "num_pages_appendix": 13,
         "tags": {
             "gp_nla": true
         }
@@ -247,6 +259,8 @@
         "arxiv": "https://arxiv.org/abs/2406.06459",
         "github": "https://github.com/wiseodd/bo-async-feedback",
         "talk": null,
+        "num_pages_main": 10,
+        "num_pages_appendix": 3,
         "tags": {
             "bo": true
         }
@@ -261,6 +275,8 @@
         "arxiv": "https://arxiv.org/abs/2402.05015",
         "github": "https://github.com/wiseodd/lapeft-bayesopt",
         "talk": null,
+        "num_pages_main": 13,
+        "num_pages_appendix": 7,
         "tags": {
             "bo": true
         }
@@ -277,6 +293,8 @@
         "arxiv": "https://arxiv.org/abs/2302.00704",
         "github": "https://github.com/cellistigs/ensemble_attention/tree/dkl",
         "talk": "https://www.youtube.com/watch?v=LINT01z05Bs",
+        "num_pages_main": 20,
+        "num_pages_appendix": 24,
         "tags": {
             "dl": true
         }
@@ -291,6 +309,8 @@
         "arxiv": "https://arxiv.org/abs/2402.09542",
         "github": "https://github.com/plai-group/lpr",
         "talk": null,
+        "num_pages_main": 10,
+        "num_pages_appendix": 8,
         "tags": {
             "cv": true
         }
@@ -305,6 +325,8 @@
         "arxiv": "https://arxiv.org/abs/2310.17137",
         "github": "https://github.com/kayween/alternating-projection-for-gp",
         "talk": null,
+        "num_pages_main": 11,
+        "num_pages_appendix": 8,
         "tags": {
             "gp_nla": true
         }
@@ -320,6 +342,8 @@
         "pdf": "https://openreview.net/pdf?id=l4GYs60kre",
         "github": "https://github.com/ekellbuch/longtail_ensembles",
         "talk": null,
+        "num_pages_main": 9,
+        "num_pages_appendix": 12,
         "tags": {
             "dl": true
         }
@@ -334,6 +358,8 @@
         "arxiv": "https://arxiv.org/abs/2309.03060",
         "github": "https://github.com/wilson-labs/cola",
         "talk": null,
+        "num_pages_main": 13,
+        "num_pages_appendix": 11,
         "tags": {
             "gp_nla": true
         }
@@ -348,6 +374,8 @@
         "arxiv": "https://arxiv.org/abs/2302.11961",
         "github": null,
         "talk": null,
+        "num_pages_main": 12,
+        "num_pages_appendix": 5,
         "tags": {
             "uq": true
         }
@@ -362,6 +390,8 @@
         "month": "September",
         "publisher": "Google Patents",
         "note": "US Patent #11,763,230",
+        "num_pages_main": null,
+        "num_pages_appendix": null,
         "tags": {}
     },
     {
@@ -376,6 +406,8 @@
         "pdf": "https://openreview.net/pdf?id=6sBiAIpkUiO",
         "github": null,
         "talk": null,
+        "num_pages_main": 9,
+        "num_pages_appendix": 5,
         "tags": {
             "dl": true
         }
@@ -390,6 +422,8 @@
         "arxiv": "https://arxiv.org/abs/2205.15449",
         "github": "https://github.com/JonathanWenger/itergp",
         "talk": null,
+        "num_pages_main": 14,
+        "num_pages_appendix": 15,
         "tags": {
             "uq": true,
             "gp_nla": true
@@ -405,6 +439,8 @@
         "arxiv": "https://arxiv.org/abs/2202.06985",
         "github": "https://github.com/cellistigs/interp_ensembles",
         "talk": "https://www.youtube.com/watch?v=703FzYv-j9o&ab_channel=VectorInstitute",
+        "num_pages_main": 13,
+        "num_pages_appendix": 20,
         "tags": {
             "uq": true,
             "dl": true
@@ -420,6 +456,8 @@
         "arxiv": "https://arxiv.org/abs/2202.01694",
         "github": "https://docs.gpytorch.ai/en/latest/examples/04_Variational_and_Approximate_GPs/VNNGP.html",
         "talk": "https://slideslive.com/38983939/vnngp-variational-nearest-neighbor-Gaussian-process?ref=search-presentations-geoff+pleiss",
+        "num_pages_main": 11,
+        "num_pages_appendix": 6,
         "tags": {
             "stm": true
         }
@@ -436,6 +474,8 @@
         "arxiv": "https://arxiv.org/abs/2107.00243",
         "github": "https://github.com/cornellius-gp/gpytorch",
         "talk": "https://slideslive.com/38983179/preconditioning-for-scalable-Gaussian-process-hyperparameter-optimization?ref=search-presentations-geoff+pleiss",
+        "num_pages_main": 10,
+        "num_pages_appendix": 20,
         "tags": {
             "gp_nla": true
         }
@@ -453,6 +493,8 @@
         "arxiv": "https://arxiv.org/abs/2008.03275",
         "github": null,
         "talk": null,
+        "num_pages_main": 10,
+        "num_pages_appendix": 15,
         "tags": {
             "pm": true
         }
@@ -467,6 +509,8 @@
         "arxiv": "https://arxiv.org/abs/2106.06529",
         "github": "https://github.com/gpleiss/limits_of_large_width",
         "talk": "https://slideslive.com/38967621/the-limitations-of-large-width-in-neural-networks-a-deep-Gaussian-process-perspective?ref=search-presentations-geoff+pleiss",
+        "num_pages_main": 14,
+        "num_pages_appendix": 19,
         "tags": {
             "dl": true,
             "pm": true
@@ -482,6 +526,8 @@
         "arxiv": "https://arxiv.org/abs/2106.06529",
         "github": "https://github.com/layer6ai-labs/rectangular-flows",
         "talk": "https://slideslive.com/38966976/rectangular-flows-for-manifold-learning-proceedings-of-neural-information-processing-systems?ref=search-presentations-geoff+pleiss",
+        "num_pages_main": 13,
+        "num_pages_appendix": 8,
         "tags": {
             "pm": true
         }
@@ -495,6 +541,8 @@
         "arxiv": "https://arxiv.org/abs/2105.11535",
         "github": null,
         "talk": null,
+        "num_pages_main": 10,
+        "num_pages_appendix": 10,
         "tags": {
             "stm": true
         }
@@ -509,6 +557,8 @@
         "arxiv": "https://arxiv.org/abs/2102.06695",
         "github": "https://github.com/cunningham-lab/RTGPS",
         "talk": "https://slideslive.com/38959632/biasfree-scalable-Gaussian-processes-via-randomized-truncations?ref=search-presentations-geoff+pleiss",
+        "num_pages_main": 11,
+        "num_pages_appendix": 8,
         "tags": {
             "gp_nla": true
         }
@@ -523,6 +573,8 @@
         "arxiv": "https://arxiv.org/abs/2103.00393",
         "github": "https://github.com/cunningham-lab/hipgp",
         "talk": null,
+        "num_pages_main": 11,
+        "num_pages_appendix": 6,
         "tags": {
             "stm": true
         }
@@ -538,6 +590,8 @@
         "arxiv": "https://arxiv.org/abs/2011.05231",
         "github": "https://github.com/cunningham-lab/cb_and_cc",
         "talk": null,
+        "num_pages_main": 10,
+        "num_pages_appendix": 1,
         "tags": {
             "pm": true
         }
@@ -552,6 +606,8 @@
         "arxiv": "https://arxiv.org/abs/2006.11267",
         "github": "https://github.com/cornellius-gp/gpytorch/blob/main/examples/02_Scalable_Exact_GPs/Exact_GP_Posterior_Sampling_with_CIQ.ipynb",
         "talk": "https://slideslive.com/38936908/fast-matrix-square-roots-with-applications-to-Gaussian-processes-and-Bayesian-optimization?ref=speaker-27667-latest",
+        "num_pages_main": 14,
+        "num_pages_appendix": 18,
         "tags": {
             "bo": true,
             "gp_nla": true
@@ -567,6 +623,8 @@
         "arxiv": "https://arxiv.org/abs/2001.10528",
         "github": "https://github.com/asappresearch/aum",
         "talk": "https://slideslive.com/38936900/identifying-mislabeled-data-using-the-area-under-the-margin-ranking?ref=speaker-27667-latest",
+        "num_pages_main": 13,
+        "num_pages_appendix": 4,
         "tags": {
             "dl": true
         }
@@ -580,6 +638,8 @@
         "year": 2020,
         "publisher": "Cornell University",
         "pdf": "https://geoffpleiss.com/gpleiss_thesis.pdf",
+        "num_pages_main": null,
+        "num_pages_appendix": null,
         "tags": {}
     },
     {
@@ -592,6 +652,8 @@
         "arxiv": "https://arxiv.org/abs/2002.09112",
         "github": "https://github.com/cornellius-gp/gpytorch/blob/master/examples/05_Deep_Gaussian_Processes/Deep_Sigma_Point_Processes.ipynb",
         "talk": null,
+        "num_pages_main": 10,
+        "num_pages_appendix": 5,
         "tags": {
             "pm": true
         }
@@ -606,6 +668,8 @@
         "arxiv": "https://arxiv.org/abs/1910.07123",
         "github": "https://github.com/cornellius-gp/gpytorch/blob/master/examples/04_Variational_and_Approximate_GPs/Approximate_GP_Objective_Functions.ipynb",
         "talk": "https://slideslive.com/38928016/parametric-Gaussian-process-regressors?ref=search-presentations-geoff+pleiss",
+        "num_pages_main": 11,
+        "num_pages_appendix": 6,
         "tags": {
             "pm": true
         }
@@ -620,6 +684,8 @@
         "arxiv": "https://arxiv.org/abs/1906.06310",
         "github": "https://github.com/mileyan/Pseudo_Lidar_V2",
         "talk": null,
+        "num_pages_main": 13,
+        "num_pages_appendix": 9,
         "tags": {
             "cv": true
         }
@@ -634,6 +700,8 @@
         "arxiv": "https://arxiv.org/abs/1903.08114",
         "github": "https://github.com/cornellius-gp/gpytorch/blob/master/examples/01_Simple_GP_Regression/Simple_MultiGPU_GP_Regression.ipynb",
         "talk": null,
+        "num_pages_main": 12,
+        "num_pages_appendix": 3,
         "tags": {
             "gp_nla": true
         }
@@ -649,6 +717,8 @@
         "arxiv": "https://arxiv.org/abs/2001.02394",
         "github": "https://github.com/gpleiss/efficient_densenet_pytorch",
         "talk": null,
+        "num_pages_main": 12,
+        "num_pages_appendix": 0,
         "tags": {
             "dl": true
         }
@@ -668,6 +738,8 @@
         "pdf": "https://geoffpleiss.com/knighton2019potential.pdf",
         "github": null,
         "talk": null,
+        "num_pages_main": 18,
+        "num_pages_appendix": 12,
         "tags": {
             "stm": true
         }
@@ -684,6 +756,8 @@
         "arxiv": "https://arxiv.org/abs/1809.11165",
         "github": "https://github.com/cornellius-gp/gpytorch",
         "talk": "https://www.videoken.com/embed/QcFGBPNh24E?tocitem=101",
+        "num_pages_main": 11,
+        "num_pages_appendix": 10,
         "tags": {
             "gp_nla": true
         }
@@ -698,6 +772,8 @@
         "arxiv": "https://arxiv.org/abs/1803.06058",
         "github": "https://github.com/cornellius-gp/gpytorch",
         "talk": null,
+        "num_pages_main": 10,
+        "num_pages_appendix": 0,
         "tags": {
             "gp_nla": true
         }
@@ -712,6 +788,8 @@
         "arxiv": "https://arxiv.org/abs/1802.08903",
         "github": "https://github.com/cornellius-gp/gpytorch/blob/main/examples/02_Scalable_Exact_GPs/Scalable_Kernel_Interpolation_for_Products_CUDA.ipynb",
         "talk": null,
+        "num_pages_main": 10,
+        "num_pages_appendix": 1,
         "tags": {
             "gp_nla": true
         }
@@ -726,6 +804,8 @@
         "arxiv": "https://arxiv.org/abs/1709.02012",
         "github": "https://github.com/gpleiss/equalized_odds_and_calibration",
         "talk": null,
+        "num_pages_main": 10,
+        "num_pages_appendix": 9,
         "tags": {
             "uq": true
         }
@@ -740,6 +820,8 @@
         "arxiv": "https://arxiv.org/abs/1706.04599",
         "github": "https://github.com/gpleiss/temperature_scaling",
         "talk": "https://vimeo.com/238242536",
+        "num_pages_main": 10,
+        "num_pages_appendix": 4,
         "tags": {
             "uq": true,
             "dl": true
@@ -754,6 +836,8 @@
         "arxiv": "https://arxiv.org/abs/1707.06990",
         "github": "https://github.com/gpleiss/efficient_densenet_pytorch",
         "talk": null,
+        "num_pages_main": 8,
+        "num_pages_appendix": 0,
         "tags": {
             "dl": true
         }
@@ -768,6 +852,8 @@
         "arxiv": "https://arxiv.org/abs/1611.05507",
         "github": "https://github.com/paulu/deepfeatinterp",
         "talk": null,
+        "num_pages_main": 10,
+        "num_pages_appendix": 0,
         "tags": {
             "cv": true
         }
@@ -782,6 +868,8 @@
         "arxiv": "https://arxiv.org/abs/1704.00109",
         "github": "https://github.com/gaohuang/SnapshotEnsemble",
         "talk": null,
+        "num_pages_main": 11,
+        "num_pages_appendix": 3,
         "tags": {
             "dl": true
         }
